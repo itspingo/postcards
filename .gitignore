@@ -1,0 +1,5 @@
+.env
+app/Http/Controllers/Backend/Baseline/
+public/assets/templates/
+resources/views/designer/
+vendor/

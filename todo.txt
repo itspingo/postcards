@@ -1,0 +1,8 @@
+card title input
+user text color
+apply checks while submitting widget answers
+apply font and color on sender / receiver name at the time of view card.
+payment gateway
+front end of the website
+
+

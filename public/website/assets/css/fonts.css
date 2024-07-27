@@ -1,0 +1,269 @@
+@font-face {
+font-family: 'Mea Culpa';
+src: url('{{url("website/assets/fonts/MeaCulpa-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Lobster';
+src: url('{{url("website/assets/fonts/Lobster-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Allison';
+src: url('{{url("website/assets/fonts/Allison-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Amatic SC';
+src: url('{{url("website/assets/fonts/AmaticSC-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Bad Script';
+src: url('{{url("website/assets/fonts/BadScript-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Ballet';
+src: url('{{url("website/assets/fonts/Ballet[opsz].ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Barriecito';
+src: url('{{url("website/assets/fonts/Barriecito-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Berkshire Swash';
+src: url('{{url("website/assets/fonts/BerkshireSwash-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Bhu Tuka';
+src: url('{{url("website/assets/fonts/BhuTukaExpandedOne-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Bigelow Rules';
+src: url('{{url("website/assets/fonts/BigelowRules-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Black Ops';
+src: url('{{url("website/assets/fonts/BlackOpsOne-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Bonbon';
+src: url('{{url("website/assets/fonts/Bonbon-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Calistoga';
+src: url('{{url("website/assets/fonts/Calistoga-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Caramel';
+src: url('{{url("website/assets/fonts/Caramel-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Caveat Brush';
+src: url('{{url("website/assets/fonts/CaveatBrush-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Cedarville';
+src: url('{{url("website/assets/fonts/Cedarville-Cursive.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Combo';
+src: url('{{url("website/assets/fonts/Combo-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Dancing Script';
+src: url('{{url("website/assets/fonts/DancingScript[wght].ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Economica';
+src: url('{{url("website/assets/fonts/Economica-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Edu NSW ACT';
+src: url('{{url("website/assets/fonts/EduNSWACTFoundation[wght].ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Ephesis';
+src: url('{{url("website/assets/fonts/Ephesis-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Flavors';
+src: url('{{url("website/assets/fonts/Flavors-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Gluten';
+src: url('{{url("website/assets/fonts/Gluten[slnt,wght].ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Great Vibes';
+src: url('{{url("website/assets/fonts/GreatVibes-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Hanalei Fill';
+src: url('{{url("website/assets/fonts/HanaleiFill-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Handlee';
+src: url('{{url("website/assets/fonts/Handlee-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Hi Melody';
+src: url('{{url("website/assets/fonts/HiMelody-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Indie Flower';
+src: url('{{url("website/assets/fonts/IndieFlower-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Jim Nightshade';
+src: url('{{url("website/assets/fonts/JimNightshade-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Julius Sans';
+src: url('{{url("website/assets/fonts/JuliusSansOne-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Kalam';
+src: url('{{url("website/assets/fonts/Kalam-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Lilita One';
+src: url('{{url("website/assets/fonts/LilitaOne-Regular.ttf")}}') format('truetype');
+}
+
+@font-face {
+font-family: 'Meddon';
+src: url('{{url("website/assets/fonts/Meddon.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Miltonian Tattoo';
+src: url('{{url("website/assets/fonts/MiltonianTattoo-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Mitr';
+src: url('{{url("website/assets/fonts/Mitr-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Monoton';
+src: url('{{url("website/assets/fonts/Monoton-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Montez';
+src: url('{{url("website/assets/fonts/Montez-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Oi';
+src: url('{{url("website/assets/fonts/Oi-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Pacifico';
+src: url('{{url("website/assets/fonts/Pacifico-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Parisienne';
+src: url('{{url("website/assets/fonts/Parisienne-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Princess Sofia';
+src: url('{{url("website/assets/fonts/PrincessSofia-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Righteous';
+src: url('{{url("website/assets/fonts/Righteous-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Risque';
+src: url('{{url("website/assets/fonts/Risque-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Rock Salt';
+src: url('{{url("website/assets/fonts/RockSalt-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Rouge Script';
+src: url('{{url("website/assets/fonts/RougeScript-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Rubik Beastly';
+src: url('{{url("website/assets/fonts/RubikBeastly-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Rubik Moonrocks';
+src: url('{{url("website/assets/fonts/RubikMoonrocks-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Russo One';
+src: url('{{url("website/assets/fonts/RussoOne-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Sacramento';
+src: url('{{url("website/assets/fonts/Sacramento-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Sansita';
+src: url('{{url("website/assets/fonts/Sansita-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Satisfy';
+src: url('{{url("website/assets/fonts/Satisfy-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Sedgwick Ave';
+src: url('{{url("website/assets/fonts/SedgwickAve-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Send Flowers';
+src: url('{{url("website/assets/fonts/SendFlowers-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Shadows Into Light';
+src: url('{{url("website/assets/fonts/ShadowsIntoLight.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Sigmar One';
+src: url('{{url("website/assets/fonts/SigmarOne-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Sigmar';
+src: url('{{url("website/assets/fonts/Sigmar-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Snowburst One';
+src: url('{{url("website/assets/fonts/SnowburstOne-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Special Elite';
+src: url('{{url("website/assets/fonts/SpecialElite-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Square Peg';
+src: url('{{url("website/assets/fonts/SquarePeg-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Sriracha';
+src: url('{{url("website/assets/fonts/Sriracha-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Style Script';
+src: url('{{url("website/assets/fonts/StyleScript-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Sue Ellen Francisco';
+src: url('{{url("website/assets/fonts/SueEllenFrancisco-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Tangerine';
+src: url('{{url("website/assets/fonts/Tangerine-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Tourney';
+src: url('{{url("website/assets/fonts/Tourney[wdth,wght].ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Unlock';
+src: url('{{url("website/assets/fonts/Unlock-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Wendy One';
+src: url('{{url("website/assets/fonts/WendyOne-Regular.ttf")}}') format('truetype');
+}
+@font-face {
+font-family: 'Wind Song';
+src: url('{{url("website/assets/fonts/WindSong-Regular.ttf")}}') format('truetype');
+}
