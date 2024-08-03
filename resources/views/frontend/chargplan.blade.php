@@ -675,7 +675,7 @@
     const stampType = document.getElementById('charge_stamp').value; //'golden'; // Or dynamically determine this if needed
     const stampId = document.getElementById('charge_stamp_id').value;
     // alert('chargeAmount: '+chargeAmount+' , stampType: '+stampType);
-    const response = await fetch('/create-checkout-session', {
+    const response = await fetch('{{url("create-checkout-session")}}', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
