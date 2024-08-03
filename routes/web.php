@@ -91,11 +91,12 @@ use App\Http\Controllers\Frontend\Transactions;
 // });
 
 
-Route::get('/link', function () {        
-    $target =   '/home/sites/29b/e/e0347b3c2e/public_html/snoobix.com/demo/postcards/laravel/storage/app/public';
-    $shortcut = '/home/sites/29b/e/e0347b3c2e/public_html/snoobix.com/demo/postcards/storage';
+ Route::get('/link', function () {  
+    $target =   getcwd().'/laravel/storage/app/public';
+    $shortcut = getcwd().'/storage';
     symlink($target, $shortcut);
  });
+
 
  Route::get('backend/login', [AuthController::class, 'index'])->name('backend.login');
  Route::POST('backend/post-login', [AuthController::class, 'postLogin'])->name('backend.login.post'); 
