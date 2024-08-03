@@ -39,7 +39,7 @@
         </div>
     </div>
 </div>
- 
+
 
 <div id="div_more_stickers" class="jetp-dialog-overlay show" style="display: none;margin-top:20px;margin-left:30px;"> <!-- more sticker images -->
     <div class="jetp-dialog small">
@@ -195,7 +195,7 @@
                         CKEDITOR.replace('recipient_name');
                     </script> -->
 
-            </div>  
+            </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;">
             <button class="success" onclick="add_sender_name()">
@@ -325,7 +325,7 @@
                     </font>
                 </span></div>
             <div style="display: none;"></div>
-            <div class="jetp-close"  onclick="hide_div('div_crop_image')"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
+            <div class="jetp-close" onclick="hide_div('div_crop_image')"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                     <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
                     </path>
                 </svg></div>
@@ -334,7 +334,7 @@
 
         <div class="jetp-content nice-scrollbar align-items-center">
             <div class="jetp-picture-dialog">
-                <div class="jetp-crop-container" >
+                <div class="jetp-crop-container">
                     <!-- <img src="blob:https://digipostal.ir/b3ce3e13-ead5-41c8-a066-6f375455d8ae" class="cropper-hidden"> -->
                     <div class="cropper-container cropper-bg" touch-action="none" style="width: 1183px; height: 458px;">
                         <div class="cropper-wrap-box">
@@ -343,7 +343,7 @@
                             </div>
                         </div>
                         <div class="cropper-drag-box cropper-crop cropper-modal" data-cropper-action="crop"></div>
-                        
+
                     </div>
                 </div>
                 <!-- <div class="jetp-file-picker" style="display: none;">
@@ -358,7 +358,7 @@
                             </span></span></div>
                 </div> -->
             </div>
-        </div> 
+        </div>
 
         <div class="jetp-footer p-20-10" style="display: flex;"><button id="crop_button" class="success" style="display: block;"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                     <font style="vertical-align: inherit;">
@@ -385,7 +385,7 @@
                     </font>
                 </span></div>
             <div style="display: none;"></div>
-            <div class="jetp-close"  onclick="hide_div('div_crop_image_context')"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
+            <div class="jetp-close" onclick="hide_div('div_crop_image_context')"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                     <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
                     </path>
                 </svg></div>
@@ -394,7 +394,7 @@
 
         <div class="jetp-content nice-scrollbar align-items-center">
             <div class="jetp-picture-dialog">
-                <div class="jetp-crop-container" >
+                <div class="jetp-crop-container">
                     <!-- <img src="blob:https://digipostal.ir/b3ce3e13-ead5-41c8-a066-6f375455d8ae" class="cropper-hidden"> -->
                     <div class="cropper-container cropper-bg" touch-action="none" style="width: 1183px; height: 458px;">
                         <div class="cropper-wrap-box">
@@ -403,7 +403,7 @@
                             </div>
                         </div>
                         <div class="cropper-drag-box cropper-crop cropper-modal" data-cropper-action="crop"></div>
-                        
+
                     </div>
                 </div>
                 <!-- <div class="jetp-file-picker" style="display: none;">
@@ -418,7 +418,7 @@
                             </span></span></div>
                 </div> -->
             </div>
-        </div> 
+        </div>
 
         <div class="jetp-footer p-20-10" style="display: flex;"><button id="crop_button_context" class="success" style="display: block;"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                     <font style="vertical-align: inherit;">
@@ -452,10 +452,21 @@
                 <div class="jetp-category">
 
                     @foreach($backgrounds as $background)
-                    <div class="item" onclick="showmorebackgrounds('{{$background->more_images}}')">
+                    <div class="item" onclick="showmorebackgrounds('{{$background->id}}','{{$background->more_images}}')">
                         <img class="picture" src="{{url('storage/'.str_replace('public/','',$background->main_image))}}">
                         <div class="title no-wrap">
                             <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">{{$background->title}}</span>
+                            @if($background->ticket_type_id != '')
+                            <br>
+                            <div class="plan">
+                                <span class="ml-5"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                    <img src="storage/{{str_replace('public/','',getfieldval($background->ticket_type_id,'ticket_types','ticket_image'))}}" width="20px" height="15px" />
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Can be used with stamps</font>
+                                    </font>
+                                </span></span>
+                            </div>
+                            @endif
                         </div>
                     </div>
                     @endforeach
@@ -536,10 +547,21 @@
                 <div class="jetp-category">
 
                     @foreach($inside_images as $inside_image)
-                    <div class="item" onclick="showmoreinsideimages('{{$inside_image->more_images}}')">
+                    <div class="item" onclick="showmoreinsideimages('{{$inside_image->id}}','{{$inside_image->more_images}}')">
                         <img class="picture" src="{{url('storage/'.str_replace('public/','',$inside_image->main_image))}}">
                         <div class="title no-wrap">
                             <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">{{$inside_image->title}}</span>
+                            @if($inside_image->ticket_type_id != '')
+                            <br>
+                            <div class="plan">
+                                <span class="ml-5"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                    <img src="storage/{{str_replace('public/','',getfieldval($inside_image->ticket_type_id,'ticket_types','ticket_image'))}}" width="20px" height="15px" />
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Can be used with stamps</font>
+                                    </font>
+                                </span></span>
+                            </div>
+                            @endif
                         </div>
                     </div>
                     @endforeach
@@ -620,10 +642,21 @@
                 <div class="jetp-category">
 
                     @foreach($stamp_images as $stamp_image)
-                    <div class="item" onclick="showmorestampimages('{{$stamp_image->more_images}}')">
+                    <div class="item" onclick="showmorestampimages('{{$stamp_image->id}}','{{$stamp_image->more_images}}')">
                         <img class="picture" src="{{url('storage/'.str_replace('public/','',$stamp_image->main_image))}}">
                         <div class="title no-wrap">
                             <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">{{$stamp_image->title}}</span>
+                            @if($stamp_image->ticket_type_id != '')
+                            <br>
+                            <div class="plan">
+                                <span class="ml-5"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                    <img src="storage/{{str_replace('public/','',getfieldval($stamp_image->ticket_type_id,'ticket_types','ticket_image'))}}" width="20px" height="15px" />
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Can be used with stamps</font>
+                                    </font>
+                                </span></span>
+                            </div>
+                            @endif
                         </div>
                     </div>
                     @endforeach
@@ -703,11 +736,35 @@
                 <div class="jetp-category">
 
                     @foreach($stamp_designs as $stamp_design)
-                    <div class="item" onclick="showmorestampdesigns('{{$stamp_design->more_images}}')">
+                    <div class="item" onclick="showmorestampdesigns('{{$stamp_design->id}}','{{$stamp_design->more_images}}')">
                         <img class="picture" src="{{url('storage/'.str_replace('public/','',$stamp_design->main_image))}}">
                         <div class="title no-wrap">
                             <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">{{$stamp_design->title}}</span>
+                            @if($stamp_design->ticket_type_id != '')
+                            <br>
+                            <div class="plan">
+                                <span class="ml-5"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                    <img src="storage/{{str_replace('public/','',getfieldval($stamp_design->ticket_type_id,'ticket_types','ticket_image'))}}" width="20px" height="15px" />
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Can be used with stamps</font>
+                                    </font>
+                                </span></span>
+                            </div>
+                            @endif
                         </div>
+
+                        <!-- <div class="plan" style="display: flex;">
+                            <span class="ml-5"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Can be used with stamps</font>
+                                    </font>
+                                </span></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon" title="golden" style="color: rgb(255, 194, 0);">
+                                <path d="M2,2V5.5C3.1,5.5 4,6.62 4,8C4,9.38 3.1,10.5 2,10.5V13.5C3.1,13.5 4,14.62 4,16C4,17.38 3.1,18.5 2,18.5V22H5.5C5.5,20.9 6.62,20 8,20C9.38,20 10.5,20.9 10.5,22H13.5C13.5,20.9 14.62,20 16,20C17.38,20 18.5,20.9 18.5,22H22V18.5C20.9,18.5 20,17.38 20,16V16C20,14.62 20.9,13.5 22,13.5V10.5C20.9,10.5 20,9.38 20,8V8C20,6.62 20.9,5.5 22,5.5V2H18.5C18.5,3.1 17.38,4 16,4C14.62,4 13.5,3.1 13.5,2H10.5C10.5,3.1 9.38,4 8,4C6.62,4 5.5,3.1 5.5,2H2M6,6H18V18H6V6M9,7A2,2 0 0,0 7,9A2,2 0 0,0 9,11A2,2 0 0,0 11,9A2,2 0 0,0 9,7M17,10L14,13L12,12L7,17H17V10Z">
+                                </path>
+                            </svg>
+                        </div> -->
+
                     </div>
                     @endforeach
 
@@ -786,10 +843,21 @@
                 <div class="jetp-category">
 
                     @foreach($seal_designs as $seal_design)
-                    <div class="item" onclick="showmoresealdesigns('{{$seal_design->more_images}}')">
+                    <div class="item" onclick="showmoresealdesigns('{{$seal_design->id}}','{{$seal_design->more_images}}')">
                         <img class="picture" src="{{url('storage/'.str_replace('public/','',$seal_design->main_image))}}">
                         <div class="title no-wrap">
                             <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">{{$seal_design->title}}</span>
+                            @if($seal_design->ticket_type_id != '')
+                            <br>
+                            <div class="plan">
+                                <span class="ml-5"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                    <img src="storage/{{str_replace('public/','',getfieldval($seal_design->ticket_type_id,'ticket_types','ticket_image'))}}" width="20px" height="15px" />
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Can be used with stamps</font>
+                                    </font>
+                                </span></span>
+                            </div>
+                            @endif
                         </div>
                     </div>
                     @endforeach
@@ -869,10 +937,21 @@
                 <div class="jetp-category">
 
                     @foreach($envelop_designs as $envelop_design)
-                    <div class="item" onclick="showmoreenvelopdesigns('{{$envelop_design->design_parts}}')">
+                    <div class="item" onclick="showmoreenvelopdesigns('{{$envelop_design->id}}','{{$envelop_design->design_parts}}')">
                         <img class="picture" src="{{url('storage/'.str_replace('public/','',$envelop_design->main_image))}}">
                         <div class="title no-wrap">
                             <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">{{$envelop_design->title}}</span>
+                            @if($envelop_design->ticket_type_id != '')
+                            <br>
+                            <div class="plan">
+                                <span class="ml-5"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                    <img src="storage/{{str_replace('public/','',getfieldval($envelop_design->ticket_type_id,'ticket_types','ticket_image'))}}" width="20px" height="15px" />
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Can be used with stamps</font>
+                                    </font>
+                                </span></span>
+                            </div>
+                            @endif
                         </div>
                     </div>
                     @endforeach
@@ -953,10 +1032,21 @@
                 <div class="jetp-category">
 
                     @foreach($cardmusic as $card_music)
-                    <div class="item" onclick="showmorecardmusic('{{$card_music->music_files}}')">
+                    <div class="item" onclick="showmorecardmusic('{{$card_music->id}}','{{$card_music->music_files}}')">
                         <!-- <img class="picture" src="{{url('storage/'.str_replace('public/','',$card_music->main_image))}}"> -->
                         <div class="title no-wrap">
                             <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">{{$card_music->music_category}}</span>
+                            @if($card_music->ticket_type_id != '')
+                            <br>
+                            <div class="plan">
+                                <span class="ml-5"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                    <img src="storage/{{str_replace('public/','',getfieldval($card_music->ticket_type_id,'ticket_types','ticket_image'))}}" width="20px" height="15px" />
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Can be used with stamps</font>
+                                    </font>
+                                </span></span>
+                            </div>
+                            @endif
                         </div>
                     </div>
                     @endforeach

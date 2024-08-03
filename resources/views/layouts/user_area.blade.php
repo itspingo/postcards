@@ -32,7 +32,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Jcrop CSS and JS -->
     <link rel="stylesheet" href="{{url('website/assets/css/jquery.Jcrop.min.css')}}">
-    
+    <link href="{{url('website/assets/css/style-v21.1.css')}}" rel="stylesheet">
    
     
     <script>
@@ -592,7 +592,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
         }
                       
 
-        function addcBackgroundImage(imageURL){
+        function addcBackgroundImage(recid, imageURL){
 			// alert(imageURL);
 			// var imageURL2 = imageURL;
 
@@ -608,7 +608,8 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 				type: 'POST',
                 data: {
                         _token: '{{ csrf_token() }}',
-                        imageURL: imageURL
+                        imageURL: imageURL,
+                        recid: recid
                         },
 				success: function(response) {
 					console.log('Background image updated successfully');
@@ -621,7 +622,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 		}
 
 
-	    function addcInsideImage(imageURL){
+	    function addcInsideImage(recid, imageURL){
 					
                     document.getElementById('img_envelop_inside').src = imageURL;
                     document.getElementById('img_envelop_inside3').src = imageURL;
@@ -636,7 +637,8 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
                         method: "POST",
                         data: {
                             _token: csrfToken,
-                            imageURL: imageURL
+                            imageURL: imageURL,
+                            recid: recid
                         },
                         success: function(response) {
                             console.log('Background image updated successfully');
@@ -682,7 +684,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 		}
 		
 
-		function addStampImage(imageURL){
+		function addStampImage(recid, imageURL){
 			// var imageURL2 = imageURL;
 
 			document.getElementById('img_stamp_image').src = imageURL;
@@ -693,7 +695,8 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 				type: 'POST',
                 data: {
                         _token: '{{ csrf_token() }}',
-                        imageURL: imageURL
+                        imageURL: imageURL,
+                        recid: recid
                         },
 				success: function(response) {
 					console.log('Background image updated successfully');
@@ -705,7 +708,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 		}
 		
 
-		function addstampdesign(imageURL){
+		function addstampdesign(recid, imageURL){
 			// var imageURL2 = imageURL;
 
 			document.getElementById('img_stamp_design').src = imageURL;
@@ -716,7 +719,8 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 				type: 'POST',
                 data: {
                         _token: '{{ csrf_token() }}',
-                        imageURL: imageURL
+                        imageURL: imageURL,
+                        recid: recid
                         },
 				success: function(response) {
 					console.log('Background image updated successfully');
@@ -728,7 +732,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 		}
 
 
-		function addsealdesign(imageURL){
+		function addsealdesign(recid, imageURL){
 			// var imageURL2 = imageURL;
 
 			document.getElementById('img_seal_design').src = imageURL;
@@ -739,7 +743,8 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 				type: 'POST',
                 data: {
                         _token: '{{ csrf_token() }}',
-                        imageURL: imageURL
+                        imageURL: imageURL,
+                        recid: recid
                         },
 				success: function(response) {
 					console.log('Background image updated successfully');
@@ -750,7 +755,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 			});
 		}
 		
-		function addcardmusic(musictitle,musicfile){
+		function addcardmusic(recid, musictitle,musicfile){
 			// var imageURL2 = imageURL;
 			alert(musictitle);
 
@@ -762,7 +767,8 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
                 data: {
                         _token: '{{ csrf_token() }}',
                         musictitle: musictitle,
-                        musicfile: musicfile
+                        musicfile: musicfile,
+                        recid: recid
                         },
 				success: function(response) {
 					console.log('Background image updated successfully');
@@ -824,7 +830,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 		}
 
 
-		function addenvelopdesign(frontimage, backimage, flapimage){
+		function addenvelopdesign(recid, frontimage, backimage, flapimage){
 			// var imageURL2 = imageURL;
 			// alert(frontimage);
 
@@ -849,7 +855,8 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
                         _token: '{{ csrf_token() }}',
                         frontimage: frontimage,
                         backimage: backimage,
-                        flapimage: flapimage
+                        flapimage: flapimage,
+                        recid: recid
                         },
 				success: function(response) {
 					console.log('Envelop desing is updated');

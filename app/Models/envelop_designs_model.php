@@ -11,7 +11,7 @@ class envelop_designs_model extends Model
     use HasFactory;
 	
 	protected $fillable = [
-        'id','user_id','web_user_id','title','short_desc','main_image','active',
+        'id','user_id','web_user_id','title','short_desc','main_image','ticket_type_id','active',
     ];
 
     

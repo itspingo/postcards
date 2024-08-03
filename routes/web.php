@@ -49,6 +49,10 @@ use App\Http\Controllers\Frontend\Blog;
 use App\Http\Controllers\Frontend\Card_designer;
 use App\Http\Controllers\Frontend\Mycards;
 use App\Http\Controllers\Frontend\Play;
+use App\Http\Controllers\Frontend\Chargplan;
+use App\Http\Controllers\Frontend\TicketCheckoutController;
+use App\Http\Controllers\Frontend\CardCheckoutController;
+use App\Http\Controllers\Frontend\Transactions;
 
 
  use App\Http\Controllers\Backend\Stickers;
@@ -58,7 +62,24 @@ use App\Http\Controllers\Frontend\Play;
  use App\Http\Controllers\Backend\Envelop_Design_Parts;
  use App\Http\Controllers\Backend\Music_Categories;
  use App\Http\Controllers\Backend\Music_Files;
- /*[[useControllerLine]]*/                                                                                                     
+ use App\Http\Controllers\Backend\Attendance_Question;
+ use App\Http\Controllers\Backend\cont_and_comm;
+ use App\Http\Controllers\Backend\Countdown_Timer;
+ use App\Http\Controllers\Backend\Link;
+ use App\Http\Controllers\Backend\Optional_Question;
+ use App\Http\Controllers\Backend\Text_Question;
+ use App\Http\Controllers\Backend\Social_Network;
+ use App\Http\Controllers\Backend\Memorial_Request;
+ use App\Http\Controllers\Backend\USER_TEXT;
+ use App\Http\Controllers\Backend\User_Images;
+ use App\Http\Controllers\Backend\Card_Video;
+ use App\Http\Controllers\Backend\Card_Recipients;
+ 
+ use App\Http\Controllers\Backend\Widgets_Ticket_Type;
+ use App\Http\Controllers\Backend\Ticket_Types;
+ 
+ 
+ /*[[useControllerLine]]*/                                                                                                                    
 
 
  //Route::get('/', function () {
@@ -239,22 +260,40 @@ Route::post('card_designer/updateSenderName', [Card_designer::class, 'updateSend
 Route::post('card_designer/updateEnvelopDesign', [Card_designer::class, 'updateEnvelopDesign'])->middleware(['auth'])->name('card_designer.updateEnvelopDesign');
 Route::post('card_designer/updateEffects', [Card_designer::class, 'updateEffects'])->middleware(['auth'])->name('card_designer.updateEffects');
 Route::post('card_designer/saveCardObjects', [Card_designer::class, 'saveCardObjects'])->middleware(['auth'])->name('card_designer.saveCardObjects');
+Route::get('card_designer/store_card/{id}', [Card_designer::class, 'store_card'])->middleware(['auth'])->name('card_designer.store_card');
 Route::get('get-canvas-image/{cardId}', [Card_designer::class, 'getCanvasImage'])->name('getCanvasImage');
 
 Route::get('mycards', [Mycards::class, 'index'])->middleware(['auth'])->name('mycards');
 Route::get('mycards/messages/{id}', [Mycards::class, 'card_messages'])->middleware(['auth'])->name('mycards.messages');
 Route::get('mycards/save_recipient', [Mycards::class, 'save_recipient'])->middleware(['auth'])->name('mycards.save_recipient');
+Route::get('chargplan', [Chargplan::class, 'index'])->middleware(['auth'])->name('chargplan');
+Route::get('charge_cacelled', [Chargplan::class, 'charge_cacelled'])->middleware(['auth'])->name('charge_cacelled');
+Route::get('charge_success', [Chargplan::class, 'charge_success'])->middleware(['auth'])->name('charge_success');
+Route::get('transactions', [Transactions::class, 'index'])->middleware(['auth'])->name('transactions');
+
+
+
 
 Route::get('play/{id}', [Play::class, 'index'])->name('play');
 Route::post('play/save_answers', [Play::class, 'save_answers'])->name('play.save_answers');
 
 // Route::get('shop_items', [Shop::class, 'index'])->name('shop');
 
-Route::get('/stripe', [StripeController::class, 'index'])->name('index');
-Route::get('/stripe/checkout/{orderid}', [StripeController::class, 'checkout'])->name('frontend.stripe.checkout');
-Route::get('/stripe/success', [StripeController::class, 'success'])->name('frontend.stripe.success');
-Route::get('/stripe/cancel', [StripeController::class, 'cancel'])->name('frontend.stripe.cancel');
+// Route::get('/stripe', [StripeController::class, 'index'])->name('index');
+// Route::get('/stripe/checkout/{orderid}', [StripeController::class, 'checkout'])->name('frontend.stripe.checkout');
+// Route::get('/stripe/success', [StripeController::class, 'success'])->name('frontend.stripe.success');
+// Route::get('/stripe/cancel', [StripeController::class, 'cancel'])->name('frontend.stripe.cancel');
  
+
+Route::post('/create-checkout-session', [TicketCheckoutController::class, 'createCheckoutSession']);
+// Route::post('/create-checkout-session', [CardCheckoutController::class, 'createCheckoutSession']);
+
+// Route::get('/payment_success', function () {
+//     return 'Payment Successful!';
+// });
+
+// Route::get('/payment_canceled', [Payment_canceled::class, 'index']);
+    
 // Route::middleware(['auth', CheckUserSide::class . ':frontend'])->group(function () {   
 
     //shop registration 
@@ -439,4 +478,102 @@ Route::get('backend/music_files/{id}', [Music_Files::class, 'show'])->middleware
 Route::get('backend/music_files/{id}/edit', [Music_Files::class, 'edit'])->middleware(['auth'])->name('backend.music_files.edit');
 Route::post('backend/music_files/update', [Music_Files::class, 'update'])->middleware(['auth'])->name('backend.music_files.update');
 Route::post('backend/music_files/delete', [Music_Files::class, 'destroy'])->middleware(['auth'])->name('backend.music_files.delete');
+Route::get('backend/attendance_question', [Attendance_Question::class, 'index'])->middleware(['auth'])->name('backend.attendance_question');
+Route::get('backend/attendance_question/create', [Attendance_Question::class, 'create'])->middleware(['auth'])->name('backend.attendance_question.create');
+Route::post('backend/attendance_question', [Attendance_Question::class, 'store'])->middleware(['auth'])->name('backend.attendance_question.store');
+Route::get('backend/attendance_question/{id}', [Attendance_Question::class, 'show'])->middleware(['auth'])->name('backend.attendance_question.show');
+Route::get('backend/attendance_question/{id}/edit', [Attendance_Question::class, 'edit'])->middleware(['auth'])->name('backend.attendance_question.edit');
+Route::post('backend/attendance_question/update', [Attendance_Question::class, 'update'])->middleware(['auth'])->name('backend.attendance_question.update');
+Route::post('backend/attendance_question/delete', [Attendance_Question::class, 'destroy'])->middleware(['auth'])->name('backend.attendance_question.delete');
+Route::get('backend/cont_and_comm', [cont_and_comm::class, 'index'])->middleware(['auth'])->name('backend.cont_and_comm');
+Route::get('backend/cont_and_comm/create', [cont_and_comm::class, 'create'])->middleware(['auth'])->name('backend.cont_and_comm.create');
+Route::post('backend/cont_and_comm', [cont_and_comm::class, 'store'])->middleware(['auth'])->name('backend.cont_and_comm.store');
+Route::get('backend/cont_and_comm/{id}', [cont_and_comm::class, 'show'])->middleware(['auth'])->name('backend.cont_and_comm.show');
+Route::get('backend/cont_and_comm/{id}/edit', [cont_and_comm::class, 'edit'])->middleware(['auth'])->name('backend.cont_and_comm.edit');
+Route::post('backend/cont_and_comm/update', [cont_and_comm::class, 'update'])->middleware(['auth'])->name('backend.cont_and_comm.update');
+Route::post('backend/cont_and_comm/delete', [cont_and_comm::class, 'destroy'])->middleware(['auth'])->name('backend.cont_and_comm.delete');
+Route::get('backend/countdown_timer', [Countdown_Timer::class, 'index'])->middleware(['auth'])->name('backend.countdown_timer');
+Route::get('backend/countdown_timer/create', [Countdown_Timer::class, 'create'])->middleware(['auth'])->name('backend.countdown_timer.create');
+Route::post('backend/countdown_timer', [Countdown_Timer::class, 'store'])->middleware(['auth'])->name('backend.countdown_timer.store');
+Route::get('backend/countdown_timer/{id}', [Countdown_Timer::class, 'show'])->middleware(['auth'])->name('backend.countdown_timer.show');
+Route::get('backend/countdown_timer/{id}/edit', [Countdown_Timer::class, 'edit'])->middleware(['auth'])->name('backend.countdown_timer.edit');
+Route::post('backend/countdown_timer/update', [Countdown_Timer::class, 'update'])->middleware(['auth'])->name('backend.countdown_timer.update');
+Route::post('backend/countdown_timer/delete', [Countdown_Timer::class, 'destroy'])->middleware(['auth'])->name('backend.countdown_timer.delete');
+Route::get('backend/link', [Link::class, 'index'])->middleware(['auth'])->name('backend.link');
+Route::get('backend/link/create', [Link::class, 'create'])->middleware(['auth'])->name('backend.link.create');
+Route::post('backend/link', [Link::class, 'store'])->middleware(['auth'])->name('backend.link.store');
+Route::get('backend/link/{id}', [Link::class, 'show'])->middleware(['auth'])->name('backend.link.show');
+Route::get('backend/link/{id}/edit', [Link::class, 'edit'])->middleware(['auth'])->name('backend.link.edit');
+Route::post('backend/link/update', [Link::class, 'update'])->middleware(['auth'])->name('backend.link.update');
+Route::post('backend/link/delete', [Link::class, 'destroy'])->middleware(['auth'])->name('backend.link.delete');
+Route::get('backend/optional_question', [Optional_Question::class, 'index'])->middleware(['auth'])->name('backend.optional_question');
+Route::get('backend/optional_question/create', [Optional_Question::class, 'create'])->middleware(['auth'])->name('backend.optional_question.create');
+Route::post('backend/optional_question', [Optional_Question::class, 'store'])->middleware(['auth'])->name('backend.optional_question.store');
+Route::get('backend/optional_question/{id}', [Optional_Question::class, 'show'])->middleware(['auth'])->name('backend.optional_question.show');
+Route::get('backend/optional_question/{id}/edit', [Optional_Question::class, 'edit'])->middleware(['auth'])->name('backend.optional_question.edit');
+Route::post('backend/optional_question/update', [Optional_Question::class, 'update'])->middleware(['auth'])->name('backend.optional_question.update');
+Route::post('backend/optional_question/delete', [Optional_Question::class, 'destroy'])->middleware(['auth'])->name('backend.optional_question.delete');
+Route::get('backend/text_question', [Text_Question::class, 'index'])->middleware(['auth'])->name('backend.text_question');
+Route::get('backend/text_question/create', [Text_Question::class, 'create'])->middleware(['auth'])->name('backend.text_question.create');
+Route::post('backend/text_question', [Text_Question::class, 'store'])->middleware(['auth'])->name('backend.text_question.store');
+Route::get('backend/text_question/{id}', [Text_Question::class, 'show'])->middleware(['auth'])->name('backend.text_question.show');
+Route::get('backend/text_question/{id}/edit', [Text_Question::class, 'edit'])->middleware(['auth'])->name('backend.text_question.edit');
+Route::post('backend/text_question/update', [Text_Question::class, 'update'])->middleware(['auth'])->name('backend.text_question.update');
+Route::post('backend/text_question/delete', [Text_Question::class, 'destroy'])->middleware(['auth'])->name('backend.text_question.delete');
+Route::get('backend/social_network', [Social_Network::class, 'index'])->middleware(['auth'])->name('backend.social_network');
+Route::get('backend/social_network/create', [Social_Network::class, 'create'])->middleware(['auth'])->name('backend.social_network.create');
+Route::post('backend/social_network', [Social_Network::class, 'store'])->middleware(['auth'])->name('backend.social_network.store');
+Route::get('backend/social_network/{id}', [Social_Network::class, 'show'])->middleware(['auth'])->name('backend.social_network.show');
+Route::get('backend/social_network/{id}/edit', [Social_Network::class, 'edit'])->middleware(['auth'])->name('backend.social_network.edit');
+Route::post('backend/social_network/update', [Social_Network::class, 'update'])->middleware(['auth'])->name('backend.social_network.update');
+Route::post('backend/social_network/delete', [Social_Network::class, 'destroy'])->middleware(['auth'])->name('backend.social_network.delete');
+Route::get('backend/memorial_request', [Memorial_Request::class, 'index'])->middleware(['auth'])->name('backend.memorial_request');
+Route::get('backend/memorial_request/create', [Memorial_Request::class, 'create'])->middleware(['auth'])->name('backend.memorial_request.create');
+Route::post('backend/memorial_request', [Memorial_Request::class, 'store'])->middleware(['auth'])->name('backend.memorial_request.store');
+Route::get('backend/memorial_request/{id}', [Memorial_Request::class, 'show'])->middleware(['auth'])->name('backend.memorial_request.show');
+Route::get('backend/memorial_request/{id}/edit', [Memorial_Request::class, 'edit'])->middleware(['auth'])->name('backend.memorial_request.edit');
+Route::post('backend/memorial_request/update', [Memorial_Request::class, 'update'])->middleware(['auth'])->name('backend.memorial_request.update');
+Route::post('backend/memorial_request/delete', [Memorial_Request::class, 'destroy'])->middleware(['auth'])->name('backend.memorial_request.delete');
+Route::get('backend/user_text', [USER_TEXT::class, 'index'])->middleware(['auth'])->name('backend.user_text');
+Route::get('backend/user_text/create', [USER_TEXT::class, 'create'])->middleware(['auth'])->name('backend.user_text.create');
+Route::post('backend/user_text', [USER_TEXT::class, 'store'])->middleware(['auth'])->name('backend.user_text.store');
+Route::get('backend/user_text/{id}', [USER_TEXT::class, 'show'])->middleware(['auth'])->name('backend.user_text.show');
+Route::get('backend/user_text/{id}/edit', [USER_TEXT::class, 'edit'])->middleware(['auth'])->name('backend.user_text.edit');
+Route::post('backend/user_text/update', [USER_TEXT::class, 'update'])->middleware(['auth'])->name('backend.user_text.update');
+Route::post('backend/user_text/delete', [USER_TEXT::class, 'destroy'])->middleware(['auth'])->name('backend.user_text.delete');
+Route::get('backend/user_images', [User_Images::class, 'index'])->middleware(['auth'])->name('backend.user_images');
+Route::get('backend/user_images/create', [User_Images::class, 'create'])->middleware(['auth'])->name('backend.user_images.create');
+Route::post('backend/user_images', [User_Images::class, 'store'])->middleware(['auth'])->name('backend.user_images.store');
+Route::get('backend/user_images/{id}', [User_Images::class, 'show'])->middleware(['auth'])->name('backend.user_images.show');
+Route::get('backend/user_images/{id}/edit', [User_Images::class, 'edit'])->middleware(['auth'])->name('backend.user_images.edit');
+Route::post('backend/user_images/update', [User_Images::class, 'update'])->middleware(['auth'])->name('backend.user_images.update');
+Route::post('backend/user_images/delete', [User_Images::class, 'destroy'])->middleware(['auth'])->name('backend.user_images.delete');
+Route::get('backend/card_video', [Card_Video::class, 'index'])->middleware(['auth'])->name('backend.card_video');
+Route::get('backend/card_video/create', [Card_Video::class, 'create'])->middleware(['auth'])->name('backend.card_video.create');
+Route::post('backend/card_video', [Card_Video::class, 'store'])->middleware(['auth'])->name('backend.card_video.store');
+Route::get('backend/card_video/{id}', [Card_Video::class, 'show'])->middleware(['auth'])->name('backend.card_video.show');
+Route::get('backend/card_video/{id}/edit', [Card_Video::class, 'edit'])->middleware(['auth'])->name('backend.card_video.edit');
+Route::post('backend/card_video/update', [Card_Video::class, 'update'])->middleware(['auth'])->name('backend.card_video.update');
+Route::post('backend/card_video/delete', [Card_Video::class, 'destroy'])->middleware(['auth'])->name('backend.card_video.delete');
+Route::get('backend/card_recipients', [Card_Recipients::class, 'index'])->middleware(['auth'])->name('backend.card_recipients');
+Route::get('backend/card_recipients/create', [Card_Recipients::class, 'create'])->middleware(['auth'])->name('backend.card_recipients.create');
+Route::post('backend/card_recipients', [Card_Recipients::class, 'store'])->middleware(['auth'])->name('backend.card_recipients.store');
+Route::get('backend/card_recipients/{id}', [Card_Recipients::class, 'show'])->middleware(['auth'])->name('backend.card_recipients.show');
+Route::get('backend/card_recipients/{id}/edit', [Card_Recipients::class, 'edit'])->middleware(['auth'])->name('backend.card_recipients.edit');
+Route::post('backend/card_recipients/update', [Card_Recipients::class, 'update'])->middleware(['auth'])->name('backend.card_recipients.update');
+Route::post('backend/card_recipients/delete', [Card_Recipients::class, 'destroy'])->middleware(['auth'])->name('backend.card_recipients.delete');
+Route::get('backend/widgets_ticket_type', [Widgets_Ticket_Type::class, 'index'])->middleware(['auth'])->name('backend.widgets_ticket_type');
+Route::get('backend/widgets_ticket_type/create', [Widgets_Ticket_Type::class, 'create'])->middleware(['auth'])->name('backend.widgets_ticket_type.create');
+Route::post('backend/widgets_ticket_type', [Widgets_Ticket_Type::class, 'store'])->middleware(['auth'])->name('backend.widgets_ticket_type.store');
+Route::get('backend/widgets_ticket_type/{id}', [Widgets_Ticket_Type::class, 'show'])->middleware(['auth'])->name('backend.widgets_ticket_type.show');
+Route::get('backend/widgets_ticket_type/{id}/edit', [Widgets_Ticket_Type::class, 'edit'])->middleware(['auth'])->name('backend.widgets_ticket_type.edit');
+Route::post('backend/widgets_ticket_type/update', [Widgets_Ticket_Type::class, 'update'])->middleware(['auth'])->name('backend.widgets_ticket_type.update');
+Route::post('backend/widgets_ticket_type/delete', [Widgets_Ticket_Type::class, 'destroy'])->middleware(['auth'])->name('backend.widgets_ticket_type.delete');
+Route::get('backend/ticket_types', [Ticket_Types::class, 'index'])->middleware(['auth'])->name('backend.ticket_types');
+Route::get('backend/ticket_types/create', [Ticket_Types::class, 'create'])->middleware(['auth'])->name('backend.ticket_types.create');
+Route::post('backend/ticket_types', [Ticket_Types::class, 'store'])->middleware(['auth'])->name('backend.ticket_types.store');
+Route::get('backend/ticket_types/{id}', [Ticket_Types::class, 'show'])->middleware(['auth'])->name('backend.ticket_types.show');
+Route::get('backend/ticket_types/{id}/edit', [Ticket_Types::class, 'edit'])->middleware(['auth'])->name('backend.ticket_types.edit');
+Route::post('backend/ticket_types/update', [Ticket_Types::class, 'update'])->middleware(['auth'])->name('backend.ticket_types.update');
+Route::post('backend/ticket_types/delete', [Ticket_Types::class, 'destroy'])->middleware(['auth'])->name('backend.ticket_types.delete');
 /*[[routeResouceLine]]*/

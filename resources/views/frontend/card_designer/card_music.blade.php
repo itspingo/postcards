@@ -1,6 +1,9 @@
 <div id="div_card_music" class="jetp-envelope-editor" style="display:none;" style="background-color: rgb(163, 108, 66); background-image: url(&quot;/data/assets/background/61624_tn.webp&quot;);">
     <div class="envelope-background-gradiant"></div>
-    <header class="jetp-header"><button class="fl filled save animate__pulse"><span class="ml-5"><span wudooh="true" onclick="saveCard({{session()->get('sess_card_id')}})" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+    <header class="jetp-header">
+
+        <button class="fl filled save animate__pulse" onclick="{{url('card_designer/store_card/'.session()->get('sess_card_id'))}}">
+            <span class="ml-5"><span wudooh="true" {{-- onclick="saveCard({{session()->get('sess_card_id')}})" --}} style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Store</font>
                     </font>
@@ -9,7 +12,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon mr-5">
                 <path d="M17 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V7L17 3M19 19H5V5H16.17L19 7.83V19M12 12C10.34 12 9 13.34 9 15S10.34 18 12 18 15 16.66 15 15 13.66 12 12 12M6 6H15V10H6V6Z">
                 </path>
-            </svg></button>
+            </svg> 
+        </button>
 
         <button class="fl icon" style="color: rgb(205, 127, 50); display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                 <path d="M2,2V5.5C3.1,5.5 4,6.62 4,8C4,9.38 3.1,10.5 2,10.5V13.5C3.1,13.5 4,14.62 4,16C4,17.38 3.1,18.5 2,18.5V22H5.5C5.5,20.9 6.62,20 8,20C9.38,20 10.5,20.9 10.5,22H13.5C13.5,20.9 14.62,20 16,20C17.38,20 18.5,20.9 18.5,22H22V18.5C20.9,18.5 20,17.38 20,16V16C20,14.62 20.9,13.5 22,13.5V10.5C20.9,10.5 20,9.38 20,8V8C20,6.62 20.9,5.5 22,5.5V2H18.5C18.5,3.1 17.38,4 16,4C14.62,4 13.5,3.1 13.5,2H10.5C10.5,3.1 9.38,4 8,4C6.62,4 5.5,3.1 5.5,2H2M6,6H18V18H6V6M9,7A2,2 0 0,0 7,9A2,2 0 0,0 9,11A2,2 0 0,0 11,9A2,2 0 0,0 9,7M17,10L14,13L12,12L7,17H17V10Z">
@@ -81,6 +85,7 @@
                         <font style="vertical-align: inherit;">more information</font>
                     </font>
                 </div>
+
                 <!-- <div class="btn disable" style="float: right; margin-left: 6px;"><svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
@@ -90,6 +95,7 @@
                                                     d="M19,3H15V5H19V9H21V5C21,3.89 20.1,3 19,3M19,19H15V21H19A2,2 0 0,0 21,19V15H19M5,15H3V19A2,2 0 0,0 5,21H9V19H5M3,5V9H5V5H9V3H5A2,2 0 0,0 3,5Z">
                                                 </path>
                                             </svg></div> -->
+                                            
             </div>
         </div>
         <!-- <div class="effect-title" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg"

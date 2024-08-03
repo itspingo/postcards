@@ -10,7 +10,7 @@ class seal_designs_model extends Model
     use HasFactory;
 	
 	protected $fillable = [
-        'user_id','web_user_id','title','main_image','more_images','active',
+        'user_id','web_user_id','title','main_image','more_images','ticket_type_id','active',
     ];
 
 	

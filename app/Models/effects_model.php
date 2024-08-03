@@ -10,7 +10,7 @@ class effects_model extends Model
     use HasFactory;
 	
 	protected $fillable = [
-        'user_id','web_user_id','title','effects_file','active',
+        'user_id','web_user_id','title','effects_file','ticket_type_id','active',
     ];
 
 	

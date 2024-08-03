@@ -20,7 +20,7 @@
 		  
  
 
-		
+		 
 
 		  
 
@@ -296,7 +296,7 @@
 		
 		
 
-		function showmorebackgrounds(moreimage) {
+		function showmorebackgrounds(recid, moreimage) {
 			// alert(moreimage);
 			var armoreimages = moreimage.split(',');
 			var list_backgrounds = '';
@@ -304,7 +304,7 @@
 		
 			armoreimages.forEach(function(bgimage) {
 				bg_image = website_storage +  bgimage.replace('public/', '');
-				list_backgrounds += '<span class="item sticker"><img class="lazy entered loaded" onclick="addcBackgroundImage(\'' + bg_image + '\',\'div_more_stickers\')" data-src="' + bg_image + '" data-ll-status="loaded" src="' + bg_image + '"></span>';
+				list_backgrounds += '<span class="item sticker"><img class="lazy entered loaded" onclick="addcBackgroundImage(\'' + recid + '\',\'' + bg_image + '\',\'div_more_stickers\')" data-src="' + bg_image + '" data-ll-status="loaded" src="' + bg_image + '"></span>';
 			});
 		
 			document.getElementById('more_backgrounds').innerHTML = list_backgrounds;
@@ -316,7 +316,7 @@
 	
 		
 
-		function showmoreinsideimages(moreimage) {
+		function showmoreinsideimages(recid, moreimage) {
 			// alert(moreimage);
 			var armoreimages = moreimage.split(',');
 			var list_inside_images = '';
@@ -326,7 +326,7 @@
 			armoreimages.forEach(function(insideimage) {
 				// inside_image_url = "{{url('storage/'.'" + insideimage.replace('public/', '') + "')}}";
 				inside_image = website_storage +  insideimage.replace('public/', '');
-				list_inside_images += '<span class="item sticker"><img class="lazy entered loaded" onclick="addcInsideImage(\'' + inside_image + '\')" data-src="' + inside_image + '" data-ll-status="loaded" src="' + inside_image + '"></span>';
+				list_inside_images += '<span class="item sticker"><img class="lazy entered loaded" onclick="addcInsideImage(\'' + recid + '\',\'' + inside_image + '\')" data-src="' + inside_image + '" data-ll-status="loaded" src="' + inside_image + '"></span>';
 			});
 		
 			document.getElementById('more_inside_images').innerHTML = list_inside_images;
@@ -334,7 +334,7 @@
 		}
 
 
-		function showmorestampimages(moreimage) {
+		function showmorestampimages(recid, moreimage) {
 			// alert(moreimage);
 			var armoreimages = moreimage.split(',');
 			var list_stamp_images = '';
@@ -342,7 +342,7 @@
 		
 			armoreimages.forEach(function(stampimage) {
 				stamp_image = website_storage +  stampimage.replace('public/', '');
-				list_stamp_images += '<span class="item sticker"><img class="lazy entered loaded" onclick="addStampImage(\'' + stamp_image + '\')" data-src="' + stamp_image + '" data-ll-status="loaded" src="' + stamp_image + '"></span>';
+				list_stamp_images += '<span class="item sticker"><img class="lazy entered loaded" onclick="addStampImage(\'' + recid + '\',\'' + stamp_image + '\')" data-src="' + stamp_image + '" data-ll-status="loaded" src="' + stamp_image + '"></span>';
 			});
 		
 			document.getElementById('more_stamp_images').innerHTML = list_stamp_images;
@@ -353,7 +353,7 @@
 	
 		
 
-		function showmorestampdesigns(moreimage) { 
+		function showmorestampdesigns(recid, moreimage) { 
 			// alert(moreimage);
 			var armoreimages = moreimage.split(',');
 			var list_stamp_designs = '';
@@ -361,7 +361,7 @@
 		
 			armoreimages.forEach(function(stampdesign) {
 				stamp_design = website_storage +  stampdesign.replace('public/', '');
-				list_stamp_designs += '<span class="item sticker"><img class="lazy entered loaded" onclick="addstampdesign(\'' + stamp_design + '\')" data-src="' + stamp_design + '" data-ll-status="loaded" src="' + stamp_design + '"></span>';
+				list_stamp_designs += '<span class="item sticker"><img class="lazy entered loaded" onclick="addstampdesign(\'' + recid + '\',\'' + stamp_design + '\')" data-src="' + stamp_design + '" data-ll-status="loaded" src="' + stamp_design + '"></span>';
 			});
 		
 			document.getElementById('more_stamp_designs').innerHTML = list_stamp_designs;
@@ -372,7 +372,7 @@
 
 		
 
-		function showmoresealdesigns(moreimage) {
+		function showmoresealdesigns(recid, moreimage) {
 			// alert(moreimage);
 			var armoreimages = moreimage.split(',');
 			var list_seal_designs = '';
@@ -380,7 +380,7 @@
 		
 			armoreimages.forEach(function(sealdesign) {
 				seal_design = website_storage +  sealdesign.replace('public/', '');
-				list_seal_designs += '<span class="item sticker"><img class="lazy entered loaded" onclick="addsealdesign(\'' + seal_design + '\')" data-src="' + seal_design + '" data-ll-status="loaded" src="' + seal_design + '"></span>';
+				list_seal_designs += '<span class="item sticker"><img class="lazy entered loaded" onclick="addsealdesign(\'' + recid + '\',\'' + seal_design + '\')" data-src="' + seal_design + '" data-ll-status="loaded" src="' + seal_design + '"></span>';
 			});
 		
 			document.getElementById('more_seal_designs').innerHTML = list_seal_designs;
@@ -454,7 +454,7 @@
 		
 		
 
-		function showmoreenvelopdesigns(moreimage) {
+		function showmoreenvelopdesigns(recid, moreimage) {
 			// alert(moreimage);
 			const jsonObject = JSON.parse(moreimage);
 			var list_envelop_designs = '';
@@ -476,7 +476,7 @@
 				// console.log(`ID: ${design_part.id}, thumbnail: ${design_part.thumbnail}, thumbnail_file: ${thumbnail1}`);	
 				// thumbnail1 = website_storage +  thumbnail_path.replace('public/', '');
 				
-				list_envelop_designs += '<span class="item sticker"><img class="lazy entered loaded" onclick="addenvelopdesign(' + threeImages + ')" data-src="' + thumbnail1 + '" data-ll-status="loaded" src="' + thumbnail1 + '"></span>';
+				list_envelop_designs += '<span class="item sticker"><img class="lazy entered loaded" onclick="addenvelopdesign(\'' + recid + '\',' + threeImages + ')" data-src="' + thumbnail1 + '" data-ll-status="loaded" src="' + thumbnail1 + '"></span>';
 			  });
 
 			// var armoreimages = moreimage.split(',');

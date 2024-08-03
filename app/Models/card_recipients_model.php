@@ -10,7 +10,7 @@ class card_recipients_model extends Model
     use HasFactory;
 	
 	protected $fillable = [
-        'client_id', 'user_id', 'web_user_id', 'card_id', 'score_rating', 'full_name', 'review', 'base_lang', 'active', 'created_at', 'updated_at', 'deleted_at', 'deleted_for'
+        'user_id','web_user_id','card_id','prefix','recipient_name','mobile_no','active',
     ];
 
 	

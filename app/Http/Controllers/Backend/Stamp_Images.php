@@ -52,6 +52,7 @@ class Stamp_Images extends Controller
 		$iscreated = stamp_images_model::create($record); */
 
         $record = $request->all();
+        
         if ($request->hasFile('main_image')) {$imgFile = $request->file('main_image')->store('public');$record['main_image'] = $imgFile;}
         if ($request->hasFile('more_images')) {$imagePaths = [];foreach ($request->file('more_images') as $image) {$imagePath = $image->store('public');$imagePaths[] = $imagePath;}$record['more_images'] = implode(',', $imagePaths);}
         $savedid = stamp_images_model::create($record)->id;
@@ -79,6 +80,7 @@ class Stamp_Images extends Controller
 			'id' => str2id($id)
 		];
 		$data['row'] = stamp_images_model::where($recCond)->first();
+        // dd($data['row']);
 		return view("backend/stamp_images_addedit", $data);
     }
 
@@ -91,6 +93,7 @@ class Stamp_Images extends Controller
         $vstamp_images_model = stamp_images_model::find($id);
         
          $record = $request->all();
+        //  dd($record);
          if ($request->hasFile('main_image')) {$imgFile = $request->file('main_image')->store('public');$record['main_image'] = $imgFile;}
         if ($request->hasFile('more_images')) {$imagePaths = [];foreach ($request->file('more_images') as $image) {$imagePath = $image->store('public');$imagePaths[] = $imagePath;}$record['more_images'] = implode(',', $imagePaths);}
         $isaved = $vstamp_images_model->fill($record)->save();  //this will save record with all fillable items

@@ -38,7 +38,7 @@
                                             <thead>                                                
                                             <tr class="bg-info text-white">    
                                                 
-                                                <th>ID</th><th>CARD</th><th>SCORE RATING</th><th>FULL NAME</th><th>ACTIVE</th>
+                                                <th>ID</th><th>USER NAME</th><th>CARD</th><th>SCORE RATING</th><th>FULL NAME</th><th>ACTIVE</th>
                                            
                                                <th>Action</th>
                                             </tr>
@@ -48,7 +48,7 @@
                                             
                                             @foreach($rows as $row)
                                             <tr>
-                                                <td> {{ $row->id }}</td><td>{{getfieldval("$row->card_id","cards","title")}}</td><td> {{ $row->score_rating }}</td><td> {{ $row->full_name }}</td><td>{{getfieldval("$row->active","active_status","is_active")}}</td>
+                                                <td> {{ $row->id }}</td><td>{{getfieldval("$row->web_user_id","users","name")}}</td><td>{{getfieldval("$row->card_id","cards","title")}}</td><td> {{ $row->score_rating }}</td><td> {{ $row->full_name }}</td><td>{{getfieldval("$row->active","active_status","is_active")}}</td>
                                                 <td class="text-center"> 
                                                 <div class="btn-group">
                                                     <a href="{{url('backend/card_reviews/'.id2str($row->id).'/edit')}}" class="btn btn-info" ><i class="fas fa-edit"></i></a>

@@ -10,7 +10,7 @@ class widget_user_text_model extends Model
     use HasFactory;
 	
 	protected $fillable = [
-        'client_id', 'user_id', 'web_user_id', 'card_id', 'user_text', 'user_text_alignment', 'user_text_font_size', 'base_lang', 'active', 'created_at'
+        'client_id', 'user_id', 'web_user_id', 'card_id', 'user_text', 'user_text_alignment', 'user_text_font_size', 'base_lang', 'ticket_type_id','active', 'created_at'
     ];
 
 	

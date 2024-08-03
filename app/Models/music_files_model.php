@@ -10,7 +10,7 @@ class music_files_model extends Model
     use HasFactory;
 	
 	protected $fillable = [
-        'user_id','web_user_id','music_category_id','title','music_file','active',
+        'user_id','web_user_id','music_category_id','title','music_file','ticket_type_id','active',
     ];
 
 	
