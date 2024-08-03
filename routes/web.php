@@ -31,7 +31,7 @@ use App\Http\Controllers\Auth\AuthController;
     use App\Http\Controllers\Backend\Stamp_Images;
     use App\Http\Controllers\Backend\Custom_User_Images;
     use App\Http\Controllers\Backend\Custom_User_Voices;
-    use App\Http\Controllers\Backend\Sound_Files;
+    
     use App\Http\Controllers\Backend\Card_Categories;
     use App\Http\Controllers\Backend\Cards;
     use App\Http\Controllers\Backend\Card_Payments;
@@ -61,10 +61,8 @@ use App\Http\Controllers\Auth\AuthController;
     use App\Http\Controllers\Backend\Stickers;
     use App\Http\Controllers\Backend\Seal_Designs;
     use App\Http\Controllers\Backend\Envelop_Designs;
-
     use App\Http\Controllers\Backend\Envelop_Design_Parts;
     use App\Http\Controllers\Backend\Music_Categories;
-    use App\Http\Controllers\Backend\Music_Files;
     use App\Http\Controllers\Backend\Attendance_Question;
     use App\Http\Controllers\Backend\cont_and_comm;
     use App\Http\Controllers\Backend\Countdown_Timer;
@@ -80,7 +78,10 @@ use App\Http\Controllers\Auth\AuthController;
     use App\Http\Controllers\Backend\Widgets_Ticket_Type;
     use App\Http\Controllers\Backend\Ticket_Types;
 
- /*[[useControllerLine]]*/                                                                                                                     
+ 
+ 
+ use App\Http\Controllers\Backend\Music_Files;
+ /*[[useControllerLine]]*/                                                                                                                        
 
  //Route::get('/', function () {
  //    return view('welcome');
@@ -374,13 +375,6 @@ Route::get('backend/custom_user_voices/{id}', [Custom_User_Voices::class, 'show'
 Route::get('backend/custom_user_voices/{id}/edit', [Custom_User_Voices::class, 'edit'])->middleware(['auth'])->name('backend.custom_user_voices.edit');
 Route::post('backend/custom_user_voices/update', [Custom_User_Voices::class, 'update'])->middleware(['auth'])->name('backend.custom_user_voices.update');
 Route::post('backend/custom_user_voices/delete', [Custom_User_Voices::class, 'destroy'])->middleware(['auth'])->name('backend.custom_user_voices.delete');
-Route::get('backend/sound_files', [Sound_Files::class, 'index'])->middleware(['auth'])->name('backend.sound_files');
-Route::get('backend/sound_files/create', [Sound_Files::class, 'create'])->middleware(['auth'])->name('backend.sound_files.create');
-Route::post('backend/sound_files', [Sound_Files::class, 'store'])->middleware(['auth'])->name('backend.sound_files.store');
-Route::get('backend/sound_files/{id}', [Sound_Files::class, 'show'])->middleware(['auth'])->name('backend.sound_files.show');
-Route::get('backend/sound_files/{id}/edit', [Sound_Files::class, 'edit'])->middleware(['auth'])->name('backend.sound_files.edit');
-Route::post('backend/sound_files/update', [Sound_Files::class, 'update'])->middleware(['auth'])->name('backend.sound_files.update');
-Route::post('backend/sound_files/delete', [Sound_Files::class, 'destroy'])->middleware(['auth'])->name('backend.sound_files.delete');
 Route::get('backend/card_categories', [Card_Categories::class, 'index'])->middleware(['auth'])->name('backend.card_categories');
 Route::get('backend/card_categories/create', [Card_Categories::class, 'create'])->middleware(['auth'])->name('backend.card_categories.create');
 Route::post('backend/card_categories', [Card_Categories::class, 'store'])->middleware(['auth'])->name('backend.card_categories.store');
@@ -472,13 +466,6 @@ Route::get('backend/music_categories/{id}', [Music_Categories::class, 'show'])->
 Route::get('backend/music_categories/{id}/edit', [Music_Categories::class, 'edit'])->middleware(['auth'])->name('backend.music_categories.edit');
 Route::post('backend/music_categories/update', [Music_Categories::class, 'update'])->middleware(['auth'])->name('backend.music_categories.update');
 Route::post('backend/music_categories/delete', [Music_Categories::class, 'destroy'])->middleware(['auth'])->name('backend.music_categories.delete');
-Route::get('backend/music_files', [Music_Files::class, 'index'])->middleware(['auth'])->name('backend.music_files');
-Route::get('backend/music_files/create', [Music_Files::class, 'create'])->middleware(['auth'])->name('backend.music_files.create');
-Route::post('backend/music_files', [Music_Files::class, 'store'])->middleware(['auth'])->name('backend.music_files.store');
-Route::get('backend/music_files/{id}', [Music_Files::class, 'show'])->middleware(['auth'])->name('backend.music_files.show');
-Route::get('backend/music_files/{id}/edit', [Music_Files::class, 'edit'])->middleware(['auth'])->name('backend.music_files.edit');
-Route::post('backend/music_files/update', [Music_Files::class, 'update'])->middleware(['auth'])->name('backend.music_files.update');
-Route::post('backend/music_files/delete', [Music_Files::class, 'destroy'])->middleware(['auth'])->name('backend.music_files.delete');
 Route::get('backend/attendance_question', [Attendance_Question::class, 'index'])->middleware(['auth'])->name('backend.attendance_question');
 Route::get('backend/attendance_question/create', [Attendance_Question::class, 'create'])->middleware(['auth'])->name('backend.attendance_question.create');
 Route::post('backend/attendance_question', [Attendance_Question::class, 'store'])->middleware(['auth'])->name('backend.attendance_question.store');
@@ -577,4 +564,11 @@ Route::get('backend/ticket_types/{id}', [Ticket_Types::class, 'show'])->middlewa
 Route::get('backend/ticket_types/{id}/edit', [Ticket_Types::class, 'edit'])->middleware(['auth'])->name('backend.ticket_types.edit');
 Route::post('backend/ticket_types/update', [Ticket_Types::class, 'update'])->middleware(['auth'])->name('backend.ticket_types.update');
 Route::post('backend/ticket_types/delete', [Ticket_Types::class, 'destroy'])->middleware(['auth'])->name('backend.ticket_types.delete');
+Route::get('backend/music_files', [Music_Files::class, 'index'])->middleware(['auth'])->name('backend.music_files');
+Route::get('backend/music_files/create', [Music_Files::class, 'create'])->middleware(['auth'])->name('backend.music_files.create');
+Route::post('backend/music_files', [Music_Files::class, 'store'])->middleware(['auth'])->name('backend.music_files.store');
+Route::get('backend/music_files/{id}', [Music_Files::class, 'show'])->middleware(['auth'])->name('backend.music_files.show');
+Route::get('backend/music_files/{id}/edit', [Music_Files::class, 'edit'])->middleware(['auth'])->name('backend.music_files.edit');
+Route::post('backend/music_files/update', [Music_Files::class, 'update'])->middleware(['auth'])->name('backend.music_files.update');
+Route::post('backend/music_files/delete', [Music_Files::class, 'destroy'])->middleware(['auth'])->name('backend.music_files.delete');
 /*[[routeResouceLine]]*/

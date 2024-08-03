@@ -867,6 +867,48 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 			});
 		}
 
+
+        function showmorecardmusic($recid, musicfiles) {
+			// Parse the JSON input
+			var parsedMusicFiles = JSON.parse(musicfiles);
+			console.log(parsedMusicFiles);
+			var card_music_files = '';
+		
+			parsedMusicFiles.forEach(function(musicfile) {
+				// Construct the URL for the music file
+				var vmuscfile = musicfile.music_file;
+				var music_file = vmuscfile.replace('public/','');
+				//  //'http://127.0.0.1:8001/storage/Ethan_Sturock_Summer_Time.mp3';  //website_storage.''; // + musicfile.replace('public/', '');
+				var recno = musicfile.id;
+				// Add HTML for each music file
+				card_music_files += '<div class="item"> \
+					<div class="title no-wrap"> \
+						<span id="span_play_icon'+recno+'" ><i class="fas fa-play" style="margin-right: 8px; cursor: pointer;" onclick="playMusic(\'' + music_file + '\',\'' + recno + '\',\''+ musicfile.title+'\')"></i> </span>\
+						<span id="span_stop_icon'+recno+'" style="display:none;" ><i class="fas fa-stop" style="margin-right: 8px; cursor: pointer;" onclick="stopMusic(\'' + recno + '\')"></i> </span>\
+						<span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:\'Sahl Naskh\';">' + musicfile.title + '</span> \
+					</div> \
+				</div>';
+			});
+		
+			// Insert the constructed HTML into the DOM
+			document.getElementById('more_cardmusic').innerHTML = card_music_files;
+			showhide('div_more_cardmusic', ['div_cardmusic']);
+		}
+
+        var currentAudio = null;
+		function playMusic(musicFileUrl,recno,musicFileTitle) {
+			var baseUrl = '{{ url("storage") }}';
+			var vmusicFileUrl = baseUrl + '/' + musicFileUrl;
+			alert(vmusicFileUrl);
+			currentAudio = new Audio(vmusicFileUrl);
+			// currentAudio = audio;
+			currentAudio.play();
+			
+			document.getElementById('span_current_file_title').innerHTML = musicFileTitle;
+			document.getElementById('span_play_icon'+recno).style.display = 'none';
+			document.getElementById('span_stop_icon'+recno).style.display = 'inline';
+		}
+
         function saveCard() {
             // Set the canvas background to transparent
             fabcanvas.backgroundColor = 'rgba(0, 0, 0, 0)';

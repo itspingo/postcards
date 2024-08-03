@@ -1118,108 +1118,87 @@
                 <div class="jetp-category">
 
 
-                    <div class="item" style="display: flex; justify-content: space-between; ">
-                        <span>Cannon</span>
-                        <div class="title no-wrap" style="display: flex; align-items: left;">
+                   
 
-                            <div class="group" data-name="cannon" style="display: flex; align-items: left;margin-right: 280px;">
-                                <label class="run" style="margin: 0;">
-                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                </label>
-                                <div class="editor" style="display:none;"></div>
-                            </div>
 
+                    <div class="item" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+                        <span style="margin-right: 20px;">Realistic</span> <!-- Adjust margin as needed -->
+                        <div class="group" data-name="realistic" style="display: flex; align-items: center;">
+                            <label class="run">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </label>
+                            <div class="editor" style="display:none;"></div>
                         </div>
                     </div>
 
 
-
-                    <div class="item">
-                        <span>Random</span>
-                        <div class="title no-wrap">
-                            <div class="group" data-name="random" style="display: flex; align-items: left;margin-right: 280px;">
-                                <label class="run">
-                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                </label>
-                                <div class="editor" style="display:none;"></div>
-                            </div>
+                    <div class="item" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+                        <span style="margin-right: 20px;">Cannon</span>
+                        <div class="group" data-name="cannon" style="display: flex; align-items: center;">
+                            <label class="run" style="margin: 0;">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </label>
+                            <div class="editor" style="display:none;"></div>
                         </div>
                     </div>
 
-
-                    <div class="item">
-                        <span>Realistic</span>
-                        <div class="title no-wrap">
-                            <div class="group" data-name="realistic" style="display: flex; align-items: left;margin-right: 280px;">
-                                <label class="run">
-                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                </label>
-                                <div class="editor" style="display:none;"></div>
-                            </div>
+                    <div class="item" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+                        <span style="margin-right: 20px;">Random</span>
+                        <div class="group" data-name="random" style="display: flex; align-items: center;">
+                            <label class="run" style="margin: 0;">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </label>
+                            <div class="editor" style="display:none;"></div>
                         </div>
                     </div>
 
-
-                    <div class="item">
-                        <span>Stars</span>
-                        <div class="title no-wrap">
-                            <div class="group" data-name="stars" style="display: flex; align-items: left;margin-right: 320px;">
-                                <label class="run">
-                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                </label>
-                                <div class="editor" style="display:none;"></div>
-                            </div>
+                    <div class="item" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+                        <span style="margin-right: 20px;">Stars</span>
+                        <div class="group" data-name="stars" style="display: flex; align-items: center;">
+                            <label class="run" style="margin: 0;">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </label>
+                            <div class="editor" style="display:none;"></div>
                         </div>
                     </div>
 
-
-                    <div class="item">
-                        <span>Snow</span>
-                        <div class="title no-wrap">
-                            <div class="group" data-name="snow" style="display: flex; align-items: left;margin-right: 320px;">
-                                <label class="run">
-                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                </label>
-                                <div class="editor" style="display:none;"></div>
-                            </div>
+                    <div class="item" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+                        <span style="margin-right: 20px;">Snow</span>
+                        <div class="group" data-name="snow" style="display: flex; align-items: center;">
+                            <label class="run" style="margin: 0;">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </label>
+                            <div class="editor" style="display:none;"></div>
                         </div>
                     </div>
 
-
-                    <div class="item">
-                        <span>Continuous</span>
-                        <div class="title no-wrap">
-                            <div class="group" data-name="continuous" style="display: flex; align-items: left;margin-right: 280px;">
-                                <label class="run">
-                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                </label>
-                                <div class="editor" style="display:none;"></div>
-                            </div>
+                    <div class="item" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+                        <span style="margin-right: 20px;">Continuous</span>
+                        <div class="group" data-name="continuous" style="display: flex; align-items: center;">
+                            <label class="run" style="margin: 0;">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </label>
+                            <div class="editor" style="display:none;"></div>
                         </div>
                     </div>
 
-                    <div class="item">
-                        <span>Paths</span>
-                        <div class="title no-wrap">
-                            <div class="group" data-name="paths" style="display: flex; align-items: left;margin-right: 320px;">
-                                <label class="run">
-                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                </label>
-                                <div class="editor" style="display:none;"></div>
-                            </div>
+                    <div class="item" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+                        <span style="margin-right: 20px;">Paths</span>
+                        <div class="group" data-name="paths" style="display: flex; align-items: center;">
+                            <label class="run" style="margin: 0;">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </label>
+                            <div class="editor" style="display:none;"></div>
                         </div>
                     </div>
 
-
-                    <div class="item">
-                        <span>Emoji</span>
-                        <div class="title no-wrap">
-                            <div class="group" data-name="emoji" style="display: flex; align-items: left;margin-right: 320px;">
-                                <label class="run">
-                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                </label>
-                                <div class="editor" style="display:none;"></div>
-                            </div>
+                    <div class="item" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+                        <span style="margin-right: 20px;">Emoji</span>
+                        <div class="group" data-name="emoji" style="display: flex; align-items: center;">
+                            <label class="run" style="margin: 0;">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </label>
+                            <div class="editor" style="display:none;"></div>
                         </div>
                     </div>
 

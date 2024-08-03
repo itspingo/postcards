@@ -10,12 +10,14 @@ class music_categories_model extends Model
     use HasFactory;
 	
 	protected $fillable = [
-        'user_id','web_user_id','music_category','active',
+        'user_id','web_user_id','music_category','ticket_type_id','active',
     ];
 
-    public function music_files(){
-        return $this->hasMany(music_files_model::class, 'music_category_id','id');
-    }
 	
 	protected $table  = 'music_categories';
+
+    public function music_files()
+    {
+        return $this->hasMany(music_files_model::class, 'music_category_id');
+    }
 }

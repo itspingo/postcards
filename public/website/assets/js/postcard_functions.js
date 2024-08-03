@@ -390,15 +390,18 @@
 
 
 		
-
+		/*
 		function showmorecardmusic(musicfiles) {
 			// Parse the JSON input
 			var parsedMusicFiles = JSON.parse(musicfiles);
+			console.log(parsedMusicFiles);
 			var card_music_files = '';
 		
 			parsedMusicFiles.forEach(function(musicfile) {
 				// Construct the URL for the music file
-				var music_file = 'http://127.0.0.1:8001/storage/Ethan_Sturock_Summer_Time.mp3';  //website_storage.''; // + musicfile.replace('public/', '');
+				var vmuscfile = {{url()}} + musicfile.music_file;
+				var music_file = vmuscfile.replace('public/','');
+				// var music_file = '{{url("storage/".musicfile.music_file'; //'http://127.0.0.1:8001/storage/Ethan_Sturock_Summer_Time.mp3';  //website_storage.''; // + musicfile.replace('public/', '');
 				var recno = musicfile.id;
 				// Add HTML for each music file
 				card_music_files += '<div class="item"> \
@@ -413,19 +416,10 @@
 			// Insert the constructed HTML into the DOM
 			document.getElementById('more_cardmusic').innerHTML = card_music_files;
 			showhide('div_more_cardmusic', ['div_cardmusic']);
-		}
+		} 
+		*/
 
-		var currentAudio = null;
-		function playMusic(musicFileUrl,recno,musicFileTitle) {
-			alert(musicFileTitle);
-			currentAudio = new Audio(musicFileUrl);
-			// currentAudio = audio;
-			currentAudio.play();
-			
-			document.getElementById('span_current_file_title').innerHTML = musicFileTitle;
-			document.getElementById('span_play_icon'+recno).style.display = 'none';
-			document.getElementById('span_stop_icon'+recno).style.display = 'inline';
-		}
+		
 
 		function stopMusic(recno) {
 			// alert('stop button is pressed');

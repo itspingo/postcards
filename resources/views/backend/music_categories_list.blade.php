@@ -38,7 +38,7 @@
                                             <thead>                                                
                                             <tr class="bg-info text-white">    
                                                 
-                                                <th>ID</th><th>MUSIC CATEGORY</th><th>ACTIVE</th>
+                                                <th>ID</th><th>MUSIC CATEGORY</th><th>TICKET TYPE</th><th>ACTIVE</th>
                                            
                                                <th>Action</th>
                                             </tr>
@@ -48,7 +48,7 @@
                                             
                                             @foreach($rows as $row)
                                             <tr>
-                                                <td> {{ $row->id }}</td><td> {{ $row->music_category }}</td><td>{{getfieldval("$row->active","active_status","is_active")}}</td>
+                                                <td> {{ $row->id }}</td><td> {{ $row->music_category }}</td><td>{{getfieldval("$row->ticket_type_id","ticket_types","ticket_type")}}</td><td>{{getfieldval("$row->active","active_status","is_active")}}</td>
                                                 <td class="text-center"> 
                                                 <div class="btn-group">
                                                     <a href="{{url('backend/music_categories/'.id2str($row->id).'/edit')}}" class="btn btn-info" ><i class="fas fa-edit"></i></a>
