@@ -1,86 +1,86 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Backend\Baseline\HomeController;
+
 use Illuminate\Support\Facades\Storage;
 //use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\AuthController;
 
-use App\Http\Controllers\Backend\Baseline\Adminpanel;
-use App\Http\Controllers\Backend\Baseline\module;
-use App\Http\Controllers\Backend\Baseline\add;
-use App\Http\Controllers\Backend\Baseline\save;
-use App\Http\Controllers\Backend\Baseline\search;
-use App\Http\Controllers\Backend\Baseline\update;
-use App\Http\Controllers\Backend\Baseline\edit;
-use App\Http\Controllers\Backend\Baseline\delete;
-use App\Http\Controllers\Backend\Baseline\sendmail;
-use App\Http\Controllers\Backend\Baseline\designer;
-use App\Http\Controllers\Backend\Baseline\designer_add;
-use App\Http\Controllers\Backend\Baseline\designer_edit;
 
- use App\Http\Controllers\Backend\Backgrounds;
- use App\Http\Controllers\Backend\Users;
-  use App\Http\Controllers\Backend\Envelop_inside_images;
- use App\Http\Controllers\Backend\Sounds;
- use App\Http\Controllers\Backend\Effects;
- use App\Http\Controllers\Backend\Tags;
- use App\Http\Controllers\Backend\Blog_Categories;
- use App\Http\Controllers\Backend\Stamp_Designs;
- use App\Http\Controllers\Backend\Stamp_Images;
- use App\Http\Controllers\Backend\Custom_User_Images;
- use App\Http\Controllers\Backend\Custom_User_Voices;
- use App\Http\Controllers\Backend\Sound_Files;
- use App\Http\Controllers\Backend\Card_Categories;
- use App\Http\Controllers\Backend\Cards;
- use App\Http\Controllers\Backend\Card_Payments;
- use App\Http\Controllers\Backend\Card_Reviews;
- use App\Http\Controllers\Backend\Favourites;
- use App\Http\Controllers\Backend\Blog_Posts;
- use App\Http\Controllers\Backend\Post_Reviews;
+    use App\Http\Controllers\Backend\Baseline\Adminpanel;
+    use App\Http\Controllers\Backend\Baseline\module;
+    use App\Http\Controllers\Backend\Baseline\add;
+    use App\Http\Controllers\Backend\Baseline\save;
+    use App\Http\Controllers\Backend\Baseline\search;
+    use App\Http\Controllers\Backend\Baseline\update;
+    use App\Http\Controllers\Backend\Baseline\edit;
+    use App\Http\Controllers\Backend\Baseline\delete;
+    use App\Http\Controllers\Backend\Baseline\sendmail;
+    use App\Http\Controllers\Backend\Baseline\designer;
+    use App\Http\Controllers\Backend\Baseline\designer_add;
+    use App\Http\Controllers\Backend\Baseline\designer_edit;
 
- 
-use App\Http\Controllers\Frontend\Websiteauth;
-use App\Http\Controllers\Frontend\Categories;
-use App\Http\Controllers\Frontend\Website;
-use App\Http\Controllers\Frontend\Categorycards;
-use App\Http\Controllers\Frontend\Card;
-use App\Http\Controllers\Frontend\Blogs;
-use App\Http\Controllers\Frontend\Blog;
-use App\Http\Controllers\Frontend\Card_designer;
-use App\Http\Controllers\Frontend\Mycards;
-use App\Http\Controllers\Frontend\Play;
-use App\Http\Controllers\Frontend\Chargplan;
-use App\Http\Controllers\Frontend\TicketCheckoutController;
-use App\Http\Controllers\Frontend\CardCheckoutController;
-use App\Http\Controllers\Frontend\Transactions;
+    use App\Http\Controllers\Backend\HomeController;
+    use App\Http\Controllers\Backend\Backgrounds;
+    use App\Http\Controllers\Backend\Users;
+    use App\Http\Controllers\Backend\Envelop_inside_images;
+    use App\Http\Controllers\Backend\Sounds;
+    use App\Http\Controllers\Backend\Effects;
+    use App\Http\Controllers\Backend\Tags;
+    use App\Http\Controllers\Backend\Blog_Categories;
+    use App\Http\Controllers\Backend\Stamp_Designs;
+    use App\Http\Controllers\Backend\Stamp_Images;
+    use App\Http\Controllers\Backend\Custom_User_Images;
+    use App\Http\Controllers\Backend\Custom_User_Voices;
+    use App\Http\Controllers\Backend\Sound_Files;
+    use App\Http\Controllers\Backend\Card_Categories;
+    use App\Http\Controllers\Backend\Cards;
+    use App\Http\Controllers\Backend\Card_Payments;
+    use App\Http\Controllers\Backend\Card_Reviews;
+    use App\Http\Controllers\Backend\Favourites;
+    use App\Http\Controllers\Backend\Blog_Posts;
+    use App\Http\Controllers\Backend\Post_Reviews;
 
 
- use App\Http\Controllers\Backend\Stickers;
- use App\Http\Controllers\Backend\Seal_Designs;
- use App\Http\Controllers\Backend\Envelop_Designs;
- 
- use App\Http\Controllers\Backend\Envelop_Design_Parts;
- use App\Http\Controllers\Backend\Music_Categories;
- use App\Http\Controllers\Backend\Music_Files;
- use App\Http\Controllers\Backend\Attendance_Question;
- use App\Http\Controllers\Backend\cont_and_comm;
- use App\Http\Controllers\Backend\Countdown_Timer;
- use App\Http\Controllers\Backend\Link;
- use App\Http\Controllers\Backend\Optional_Question;
- use App\Http\Controllers\Backend\Text_Question;
- use App\Http\Controllers\Backend\Social_Network;
- use App\Http\Controllers\Backend\Memorial_Request;
- use App\Http\Controllers\Backend\USER_TEXT;
- use App\Http\Controllers\Backend\User_Images;
- use App\Http\Controllers\Backend\Card_Video;
- use App\Http\Controllers\Backend\Card_Recipients;
- 
- use App\Http\Controllers\Backend\Widgets_Ticket_Type;
- use App\Http\Controllers\Backend\Ticket_Types;
- 
- 
- /*[[useControllerLine]]*/                                                                                                                    
+    use App\Http\Controllers\Frontend\Websiteauth;
+    use App\Http\Controllers\Frontend\Categories;
+    use App\Http\Controllers\Frontend\Website;
+    use App\Http\Controllers\Frontend\Categorycards;
+    use App\Http\Controllers\Frontend\Card;
+    use App\Http\Controllers\Frontend\Blogs;
+    use App\Http\Controllers\Frontend\Blog;
+    use App\Http\Controllers\Frontend\Card_designer;
+    use App\Http\Controllers\Frontend\Mycards;
+    use App\Http\Controllers\Frontend\Play;
+    use App\Http\Controllers\Frontend\Chargplan;
+    use App\Http\Controllers\Frontend\TicketCheckoutController;
+    use App\Http\Controllers\Frontend\CardCheckoutController;
+    use App\Http\Controllers\Frontend\Transactions;
+    use App\Http\Controllers\Frontend\Exec;
 
+
+    use App\Http\Controllers\Backend\Stickers;
+    use App\Http\Controllers\Backend\Seal_Designs;
+    use App\Http\Controllers\Backend\Envelop_Designs;
+
+    use App\Http\Controllers\Backend\Envelop_Design_Parts;
+    use App\Http\Controllers\Backend\Music_Categories;
+    use App\Http\Controllers\Backend\Music_Files;
+    use App\Http\Controllers\Backend\Attendance_Question;
+    use App\Http\Controllers\Backend\cont_and_comm;
+    use App\Http\Controllers\Backend\Countdown_Timer;
+    use App\Http\Controllers\Backend\Link;
+    use App\Http\Controllers\Backend\Optional_Question;
+    use App\Http\Controllers\Backend\Text_Question;
+    use App\Http\Controllers\Backend\Social_Network;
+    use App\Http\Controllers\Backend\Memorial_Request;
+    use App\Http\Controllers\Backend\USER_TEXT;
+    use App\Http\Controllers\Backend\User_Images;
+    use App\Http\Controllers\Backend\Card_Video;
+    use App\Http\Controllers\Backend\Card_Recipients; 
+    use App\Http\Controllers\Backend\Widgets_Ticket_Type;
+    use App\Http\Controllers\Backend\Ticket_Types;
+
+ /*[[useControllerLine]]*/                                                                                                                     
 
  //Route::get('/', function () {
  //    return view('welcome');
@@ -96,7 +96,7 @@ use App\Http\Controllers\Frontend\Transactions;
     $shortcut = getcwd().'/storage';
     symlink($target, $shortcut);
  });
-
+ Route::get('exec', [Exec::class, 'index'])->name('exec');
 
  Route::get('backend/login', [AuthController::class, 'index'])->name('backend.login');
  Route::POST('backend/post-login', [AuthController::class, 'postLogin'])->name('backend.login.post'); 

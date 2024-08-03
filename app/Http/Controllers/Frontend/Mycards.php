@@ -28,7 +28,7 @@ class Mycards extends Controller
     }
 
  
-    public function index()
+    public function index() 
     {
         $data['mycards']=cards_model::where('web_user_id',auth()->user()->id)->get();
         $data['page_title']="My Cards";

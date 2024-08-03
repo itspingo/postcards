@@ -38,7 +38,7 @@
                                             <thead>                                                
                                             <tr class="bg-info text-white">    
                                                 
-                                                <th>ID</th><th>TICKET TYPE</th><th>TICKET PRICE</th><th>ACTIVE</th>
+                                                <th>ID</th><th>TICKET TYPE</th><th>TOKENS</th><th>ACTIVE</th>
                                            
                                                <th>Action</th>
                                             </tr>
@@ -48,7 +48,7 @@
                                             
                                             @foreach($rows as $row)
                                             <tr>
-                                                <td> {{ $row->id }}</td><td> {{ $row->ticket_type }}</td><td> {{ $row->ticket_price }}</td><td>{{getfieldval("$row->active","active_status","is_active")}}</td>
+                                                <td> {{ $row->id }}</td><td> {{ $row->ticket_type }}</td><td> {{ $row->tokens }}</td><td>{{getfieldval("$row->active","active_status","is_active")}}</td>
                                                 <td class="text-center"> 
                                                 <div class="btn-group">
                                                     <a href="{{url('backend/ticket_types/'.id2str($row->id).'/edit')}}" class="btn btn-info" ><i class="fas fa-edit"></i></a>

@@ -2,8 +2,8 @@
     <div class="envelope-background-gradiant"></div>
     <header class="jetp-header">
 
-        <button class="fl filled save animate__pulse" onclick="{{url('card_designer/store_card/'.session()->get('sess_card_id'))}}">
-            <span class="ml-5"><span wudooh="true" {{-- onclick="saveCard({{session()->get('sess_card_id')}})" --}} style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+        <button class="fl filled save animate__pulse" onclick="saveCard({{session()->get('sess_card_id')}})" >
+            <span class="ml-5"><span wudooh="true"   style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Store</font>
                     </font>

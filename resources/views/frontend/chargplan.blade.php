@@ -303,7 +303,7 @@
 
                     <input type="number" name="charge_amount"  id="charge_amount" value="10" min="10" max="1000"  onchange="check_charge_amount(this)" />
                     <input type="hidden" name="charge_stamp" id="charge_stamp"  value="" />
-                    <input type="text" name="charge_stamp_id" id="charge_stamp_id"  value="" />
+                    <input type="hidden" name="charge_stamp_id" id="charge_stamp_id"  value="" />
                     
 
                     <h3>

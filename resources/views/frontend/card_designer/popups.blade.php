@@ -143,7 +143,7 @@
                     </font>
                 </span></div>
             <div style="display: none;"></div>
-            <div class="jetp-close"><svg xmlns="http://www.w3.org/2000/svg" onclick="hide_div('div_add_text')" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
+            <div class="jetp-close"><svg xmlns="http://www.w3.org/2000/svg" onclick="hide_div('div_recipient_name')" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                     <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
                     </path>
                 </svg></div>
@@ -183,7 +183,7 @@
                     </font>
                 </span></div>
             <div style="display: none;"></div>
-            <div class="jetp-close"><svg xmlns="http://www.w3.org/2000/svg" onclick="hide_div('div_add_text')" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
+            <div class="jetp-close"><svg xmlns="http://www.w3.org/2000/svg" onclick="hide_div('div_sender_name')" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                     <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
                     </path>
                 </svg></div>
@@ -441,7 +441,7 @@
             <div class="jetp-title no-wrap pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">Backgrounds</div>
             <div style="display: none;"></div>
             <div class="jetp-close">
-                <svg xmlns="http://www.w3.org/2000/svg" onclick="hide_div('div_stickers')" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="hide_div('div_backgrounds')" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                     <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
                     </path>
                 </svg>
@@ -598,7 +598,8 @@
                         <div class="jetp-title no-wrap pr-20">
                             <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;"><span id="span_title_background"></span></span>
                         </div>
-                        <div class="jetp-back"><svg xmlns="http://www.w3.org/2000/svg" onclick="showhide('div_backgrounds',['div_more_backgrounds'])" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon localize">
+
+                        <div class="jetp-back"><svg xmlns="http://www.w3.org/2000/svg" onclick="showhide('div_inside_images',['div_more_inside_images'])" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon localize">
                                 <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
                                 </path>
                             </svg></div>
@@ -693,7 +694,7 @@
                         <div class="jetp-title no-wrap pr-20">
                             <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;"><span id="span_title_background"></span></span>
                         </div>
-                        <div class="jetp-back"><svg xmlns="http://www.w3.org/2000/svg" onclick="showhide('div_backgrounds',['div_more_backgrounds'])" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon localize">
+                        <div class="jetp-back"><svg xmlns="http://www.w3.org/2000/svg" onclick="showhide('div_stamp_images',['div_more_stamp_images'])" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon localize">
                                 <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
                                 </path>
                             </svg></div>
@@ -800,7 +801,7 @@
                         <div class="jetp-title no-wrap pr-20">
                             <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;"><span id="span_title_background"></span></span>
                         </div>
-                        <div class="jetp-back"><svg xmlns="http://www.w3.org/2000/svg" onclick="showhide('div_backgrounds',['div_more_backgrounds'])" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon localize">
+                        <div class="jetp-back"><svg xmlns="http://www.w3.org/2000/svg" onclick="showhide('div_stamp_designs',['div_more_stamp_designs'])" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon localize">
                                 <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
                                 </path>
                             </svg></div>

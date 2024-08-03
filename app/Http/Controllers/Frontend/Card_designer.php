@@ -899,6 +899,13 @@ public function saveCardObjects(Request $request)
     $card = cards_model::find($cardId);
 
     if ($card) {
+
+        $ticket_types = ticket_types_model::where(['active'=>'1'])->get();
+        $dbmodl = new DB_model();
+        $card_token_details = [];
+        $tot_tokens_reqd = 0;
+        $tokensAvailable = transactions_model::where('web_user_id',auth()->user()->id)->sum('tokens');
+
         //Log::info('Card found:', ['card' => $card]);
 
         // Update the card_objects column with JSON data
@@ -925,6 +932,170 @@ public function saveCardObjects(Request $request)
         // Save the card model with updated data
         $card->save();
         //Log::info('Card saved successfully');
+
+
+
+        $envelop_design_id = $card->envelop_design_id;
+        if($envelop_design_id != ''){        
+            $dbmodl->settable('envelop_designs');
+            $dbmodel_rec = $dbmodl->where(['id'=>$envelop_design_id])->first();
+            if($dbmodel_rec->ticket_type_id != ''){
+                $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
+                array_push($card_token_details, [
+                    'web_user_id'=>auth()->user()->id,
+                    'feature'=>'Envelop Design',
+                    'stamp_type'=>$stamp_rec->ticket_type,
+                    'tokens'=> -$stamp_rec->tokens
+                ]);
+                $tot_tokens_reqd += $stamp_rec->tokens;
+            }
+        }
+
+        $seal_design_id = $card->seal_design_id;
+        if($seal_design_id != ''){        
+            $dbmodl->settable('seal_designs');
+            $dbmodel_rec = $dbmodl->where(['id'=>$seal_design_id])->first();
+            if($dbmodel_rec->ticket_type_id != ''){
+                $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
+                array_push($card_token_details, [
+                    'web_user_id'=>auth()->user()->id,
+                    'feature'=>'Seal Design',
+                    'stamp_type'=>$stamp_rec->ticket_type,
+                    'tokens'=> -$stamp_rec->tokens
+                ]);
+                $tot_tokens_reqd += $stamp_rec->tokens;
+            }
+        }
+
+
+        $background_image_id = $card->background_image_id;
+        if($background_image_id != ''){        
+            $dbmodl->settable('backgrounds');
+            $dbmodel_rec = $dbmodl->where(['id'=>$background_image_id])->first();
+            if($dbmodel_rec->ticket_type_id != ''){
+                $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
+                array_push($card_token_details, [
+                    'web_user_id'=>auth()->user()->id,
+                    'feature'=>'Envelop Design',
+                    'stamp_type'=>$stamp_rec->ticket_type,
+                    'tokens'=> -$stamp_rec->tokens
+                ]);
+                $tot_tokens_reqd += $stamp_rec->tokens;
+            }
+        }
+
+
+        $envelop_inside_image_id = $card->envelop_inside_image_id;
+        if($envelop_inside_image_id != ''){        
+            $dbmodl->settable('envelop_inside_images');
+            $dbmodel_rec = $dbmodl->where(['id'=>$envelop_inside_image_id])->first();
+            if($dbmodel_rec->ticket_type_id != ''){
+                $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
+                array_push($card_token_details, [
+                    'web_user_id'=>auth()->user()->id,
+                    'feature'=>'Envelop Inside Image',
+                    'stamp_type'=>$stamp_rec->ticket_type,
+                    'tokens'=> -$stamp_rec->tokens
+                ]);
+                $tot_tokens_reqd += $stamp_rec->tokens;
+            }
+        }
+
+
+        // $canvas_image_id = $card->canvas_image_id;
+        // if($canvas_image_id != ''){        
+        //     $dbmodl->settable('envelop_designs');
+        //     $dbmodel_rec = $dbmodl->where(['id'=>$canvas_image_id])->first();
+        //     if($dbmodel_rec->ticket_type_id != ''){
+        //         $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
+        //         array_push($card_token_details, [
+        //             'feature'=>'Context Selection',
+        //             'stamp_type'=>$stamp_rec->ticket_type,
+        //             'tokens'=> -$stamp_rec->tokens
+        //         ]);
+        //         $tot_tokens_reqd += $stamp_rec->tokens;
+        //     }
+        // }
+
+
+        $stamp_image_id = $card->stamp_image_id;
+        if($stamp_image_id != ''){        
+            $dbmodl->settable('stamp_images');
+            $dbmodel_rec = $dbmodl->where(['id'=>$stamp_image_id])->first();
+            if($dbmodel_rec->ticket_type_id != ''){
+                $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
+                array_push($card_token_details, [
+                    'web_user_id'=>auth()->user()->id,
+                    'feature'=>'Stamp Image',
+                    'stamp_type'=>$stamp_rec->ticket_type,
+                    'tokens'=> -$stamp_rec->tokens
+                ]);
+                $tot_tokens_reqd += $stamp_rec->tokens;
+            }
+        }
+
+
+        $stamp_design_id = $card->stamp_design_id;
+        if($stamp_design_id != ''){        
+            $dbmodl->settable('stamp_designs');
+            $dbmodel_rec = $dbmodl->where(['id'=>$stamp_design_id])->first();
+            if($dbmodel_rec->ticket_type_id != ''){
+                $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
+                array_push($card_token_details, [
+                    'web_user_id'=>auth()->user()->id,
+                    'feature'=>'Stamp Design',
+                    'stamp_type'=>$stamp_rec->ticket_type,
+                    'tokens'=> -$stamp_rec->tokens
+                ]);
+                $tot_tokens_reqd += $stamp_rec->tokens;
+            }
+        }
+
+
+        // $card_image_id = $card->card_image_id;
+        // if($card_image_id != ''){        
+        //     $dbmodl->settable('envelop_designs');
+        //     $dbmodel_rec = $dbmodl->where(['id'=>$card_image_id])->first();
+        //     if($dbmodel_rec->ticket_type_id != ''){
+        //         $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
+        //         array_push($card_token_details, [
+        //             'feature'=>'Card Image',
+        //             'stamp_type'=>$stamp_rec->ticket_type,
+        //             'tokens'=> -$stamp_rec->tokens
+        //         ]);
+        //         $tot_tokens_reqd += $stamp_rec->tokens;
+        //     }
+        // }
+
+
+        $music_file_id = $card->music_file_id;
+        if($music_file_id != ''){        
+            $dbmodl->settable('music_files');
+            $dbmodel_rec = $dbmodl->where(['id'=>$music_file_id])->first();
+            if($dbmodel_rec->ticket_type_id != ''){
+                $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
+                array_push($card_token_details, [
+                    'web_user_id'=>auth()->user()->id,
+                    'feature'=>'Music Selection',
+                    'stamp_type'=>$stamp_rec->ticket_type,
+                    'tokens'=> -$stamp_rec->tokens
+                ]);
+                $tot_tokens_reqd += $stamp_rec->tokens;
+            }
+        }
+
+        // dd($card_token_details); 
+
+        // dd('tot_tokens_reqd: '.$tot_tokens_reqd.' , tokenavailable: '.$tokensAvailable);
+        // DB::enableQueryLog();
+        if($tot_tokens_reqd <= $tokensAvailable ){
+            foreach($card_token_details as $card_token_detail){
+                transactions_model::create($card_token_detail);
+            }
+
+        }
+
+
 
         // Fetch the canvas background image URL if exists
         $imageUrl = Storage::url($card->canvas_image);
@@ -953,6 +1124,8 @@ public function getCanvasImage($cardId)
     }
 }
 
+
+/*
 public function store_card($cardId){
     $card = cards_model::find($cardId);
     $ticket_types = ticket_types_model::where(['active'=>'1'])->get();
@@ -1126,6 +1299,7 @@ public function store_card($cardId){
     //  dd(DB::getQueryLog());
 
 }
+*/
 
     protected function get_stamp_rec($ticket_types, $stamp_id){
         // $retval=0;
