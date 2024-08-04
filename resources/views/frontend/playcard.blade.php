@@ -318,7 +318,7 @@
 
 <!-- ---------------------------------------------  start: event info popup--------------------------------- -->
   <div id="div_event_info"
-        style="background: rgba(0, 0, 0, 0.6); inset: 0px; cursor: pointer; transition: all 500ms ease 0s; position: fixed; padding: 10px; z-index: 10000; display: flex; justify-content: center; align-items: center; direction: rtl; visibility: visible; opacity: 1;">
+        style="background: rgba(0, 0, 0, 0.6); inset: 0px; cursor: pointer; transition: all 500ms ease 0s; position: fixed; padding: 10px; z-index: 10000; display: none; justify-content: center; align-items: center; direction: rtl; visibility: visible; opacity: 1;">
         
         
         

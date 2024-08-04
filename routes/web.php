@@ -77,19 +77,16 @@ use App\Http\Controllers\Auth\AuthController;
     use App\Http\Controllers\Backend\Card_Recipients; 
     use App\Http\Controllers\Backend\Widgets_Ticket_Type;
     use App\Http\Controllers\Backend\Ticket_Types;
-
- 
- 
- use App\Http\Controllers\Backend\Music_Files;
+    use App\Http\Controllers\Backend\Music_Files;
  /*[[useControllerLine]]*/                                                                                                                        
 
  //Route::get('/', function () {
  //    return view('welcome');
  //});
  
-// Route::get('/', function () {
-//     return view('frontend/home'); 
-// });
+Route::get('/', function () {
+    return view('frontend/home'); 
+});
 
 
  Route::get('/link', function () {  
@@ -112,6 +109,7 @@ use App\Http\Controllers\Auth\AuthController;
 
 
     Route::get('backend/home', [HomeController::class, 'index'])->middleware(['auth'])->name('backend.home');
+    
     // Route::get('/dashboard', function () {
     //     return view('dashboard');
     // })->middleware(['auth'])->name('dashboard');
