@@ -1,3 +1,4 @@
+
 card title input
 user text color
 apply checks while submitting widget answers
@@ -5,5 +6,92 @@ apply font and color on sender / receiver name at the time of view card.
 card sharing option
 
 front end of the website
+
+
+website url: https://snoobix.com/demo/postcards/
+login url: https://snoobix.com/demo/postcards/login
+user email: john@email.com
+user paswd: abc12345
+
+admin panel url: https://snoobix.com/demo/postcards/backend/login
+login email: admin@email.com
+paswd: abc12345
+
+
+years of experience 
+
+Are you still looking for a job of seniour web developer / team lead, please fill this form, if you are interested.
+https://docs.google.com/forms/d/e/1FAIpQLSeM30XGSuXNFSPp7chVT_7e1kMRFz0l8MHztMsuHTA7VhuMXg/viewform?usp=pp_url
+
+An experienced php programmer (min 5 years) is needed to work on profit share basis. Please fill this form, if you are interested.
+https://docs.google.com/forms/d/e/1FAIpQLSeM30XGSuXNFSPp7chVT_7e1kMRFz0l8MHztMsuHTA7VhuMXg/viewform?usp=pp_url
+
+
+Thank you for showing your interest in our job announcement.
+Please resubmit your response after mentioning the score against each one showing your expertise level. 
+for example 
+HTML : 9
+CSS : 8
+PHP : 9
+etc.
+
+this is the link you can use to resubmit the form:
+https://docs.google.com/forms/d/e/1FAIpQLSeM30XGSuXNFSPp7chVT_7e1kMRFz0l8MHztMsuHTA7VhuMXg/viewform?usp=pp_url
+
+
+
+
+Html : 8
+Css : 6
+JavaScript: 8
+jquery
+Core php : 9
+Codeigniter : 7
+Laravel : 8
+Livewire : 6
+Vue : 7
+React : 7
+Angular
+Flutter
+Node js
+
+Mysql :9
+Mongo:6
+
+
+
+Azure :7
+Aws: 5
+
+
+-------------------------
+skills assessment
+
+Thank you for showing your interest in our job post of Senior PHP Programmer / Team Lead.
+Your provided information is short listed for next step of skills assessment.
+Please let me know what time will suite you to take this online assessment that will take 1 to 1:30 hours.
+
+-------------------------------
+
+write down question with its 5 different answers and one correct answer to prepare google form quiz for candidates.
+
+the format should be like this:
+1. question should be on top of the table
+2. all different answers should be in first column
+3. the one correct answere should be in second column
+
+
+
+generate the quiz with 10 questions in each of Angular Flutter
+
+-------------------------------
+Shortlisted Result
+
+Thank you for showing your interest in our job post of Senior PHP Programmer / Team Lead.
+I am feeling sorry to say that you did not qualify this time.
+
+Reason: 
+
+I wish you best of luck in your job hunting.
 
 

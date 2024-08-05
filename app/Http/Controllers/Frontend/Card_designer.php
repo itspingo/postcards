@@ -934,7 +934,7 @@ public function saveCardObjects(Request $request)
         //Log::info('Card saved successfully');
 
 
-
+/*
         $envelop_design_id = $card->envelop_design_id;
         if($envelop_design_id != ''){        
             $dbmodl->settable('envelop_designs');
@@ -1094,7 +1094,7 @@ public function saveCardObjects(Request $request)
             }
 
         }
-
+*/
 
 
         // Fetch the canvas background image URL if exists

@@ -266,6 +266,7 @@ Route::get('get-canvas-image/{cardId}', [Card_designer::class, 'getCanvasImage']
 Route::get('mycards', [Mycards::class, 'index'])->middleware(['auth'])->name('mycards');
 Route::get('mycards/messages/{id}', [Mycards::class, 'card_messages'])->middleware(['auth'])->name('mycards.messages');
 Route::get('mycards/save_recipient', [Mycards::class, 'save_recipient'])->middleware(['auth'])->name('mycards.save_recipient');
+Route::get('mycards/card_copy/{id}', [Mycards::class, 'card_copy'])->middleware(['auth'])->name('mycards.card_copy');
 Route::get('chargplan', [Chargplan::class, 'index'])->middleware(['auth'])->name('chargplan');
 Route::get('charge_cacelled', [Chargplan::class, 'charge_cacelled'])->middleware(['auth'])->name('charge_cacelled');
 Route::get('charge_success', [Chargplan::class, 'charge_success'])->middleware(['auth'])->name('charge_success');

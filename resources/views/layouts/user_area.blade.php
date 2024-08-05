@@ -899,7 +899,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 		function playMusic(musicFileUrl,recno,musicFileTitle) {
 			var baseUrl = '{{ url("storage") }}';
 			var vmusicFileUrl = baseUrl + '/' + musicFileUrl;
-			alert(vmusicFileUrl);
+			// alert(vmusicFileUrl);
 			currentAudio = new Audio(vmusicFileUrl);
 			// currentAudio = audio;
 			currentAudio.play();
