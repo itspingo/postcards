@@ -8,7 +8,7 @@
 		// alert('hi...2');
 		// let website_url = 'https://snoobix.com/demo/postcards/';
 		// let website_storage = website_url+'storage/';
-		//let website_storage = 'http://127.0.0.1:8001/storage/';
+		let website_storage = 'http://127.0.0.1:8001/storage/';
 
 		// update_working_convas(fabcanvasfront);
 		// alert('hi...3');
