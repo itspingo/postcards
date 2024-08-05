@@ -41,10 +41,13 @@ class Mycards extends Controller
         return redirect()->route('mycards');
     }
 
-    public function card_copy($id=''){
-        $card=cards_model::where('id', $id)->first();
-        $card->id=null;
-        $card->save();
+    public function card_copy($id = '')
+    {
+        $card = cards_model::find($id); // Use find for simplicity
+        if ($card) {
+            $newCard = $card->replicate(); // Use replicate to create a copy
+            $newCard->save(); // Save the new card to create a new record
+        }
         return redirect()->route('mycards');
     }
 
