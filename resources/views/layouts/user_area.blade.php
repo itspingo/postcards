@@ -446,7 +446,7 @@
 
 
     <script>
-        //let website_storage = '{{url("storage")}}'+'/';
+        let website_storage = '{{url("storage")}}'+'/';
 
 document.getElementById('upload_bg_image').addEventListener("change", function (e) {
 			var file = e.target.files[0];
