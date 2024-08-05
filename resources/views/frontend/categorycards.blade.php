@@ -31,7 +31,7 @@
                 </span></p>
             <div class="text-regular breadcrumb">
                 <ol itemscope="" itemtype="https://schema.org/BreadcrumbList">
-                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://digipostal.ir/"><span itemprop="name"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://post.ddev.site//"><span itemprop="name"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">Home</font>
                                     </font>
@@ -125,7 +125,7 @@
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;">A birthday postcard can be </font>
                         </font>
-                    </span><a href="https://digipostal.ir/article/best-birthday-gift"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    </span><a href="https://post.ddev.site//article/best-birthday-gift"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">the best birthday gift</font>
                             </font>
@@ -162,7 +162,7 @@
                                 a different virtual birthday party and congratulate your friends using beautiful
                                 images and designs. You can even use </font>
                         </font>
-                    </span><a href="https://digipostal.ir/tag/birthday-photo-frame"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    </span><a href="https://post.ddev.site//tag/birthday-photo-frame"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">postcards with photo frames</font>
                             </font>
@@ -182,7 +182,7 @@
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;">Now that you know </font>
                         </font>
-                    </span><a href="https://digipostal.ir/article/how-to-make-digital-postcard"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    </span><a href="https://post.ddev.site//article/how-to-make-digital-postcard"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">how to make a digital birthday greeting card
                                 </font>

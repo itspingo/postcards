@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)https://digipostal.ir/app/account/signup -->
+<!-- saved from url=(0040)https://post.ddev.site//app/account/signup -->
 <html lang="en" class="translated-ltr">
 
 <head>
@@ -9,15 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
 
-    <link rel="shortcut icon" href="https://digipostal.ir/resources/images/fav-fa/favicon.ico">
+    <link rel="shortcut icon" href="https://post.ddev.site//resources/images/fav-fa/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180"
-        href="https://digipostal.ir/resources/images/fav-fa/apple-touch-icon.png">
+        href="https://post.ddev.site//resources/images/fav-fa/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
-        href="https://digipostal.ir/resources/images/fav-fa/favicon-32x32.png">
+        href="https://post.ddev.site//resources/images/fav-fa/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
-        href="https://digipostal.ir/resources/images/fav-fa/favicon-16x16.png">
-    <link rel="manifest" href="https://digipostal.ir/resources/images/fav-fa/site.webmanifest">
-    <link rel="mask-icon" href="https://digipostal.ir/resources/images/fav-fa/safari-pinned-tab.svg" color="#5bbad5">
+        href="https://post.ddev.site//resources/images/fav-fa/favicon-16x16.png">
+    <link rel="manifest" href="https://post.ddev.site//resources/images/fav-fa/site.webmanifest">
+    <link rel="mask-icon" href="https://post.ddev.site//resources/images/fav-fa/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#FFFFFF">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -38,7 +38,7 @@
                     </font>
                 </span></h1>
 
-               
+
                 @if(session('flash_success'))
                     <div id="flash_success" class="flash-message flash-success">{{session('flash_success')}}</div>
                 @endif
@@ -124,7 +124,7 @@
 
         </div>
     </div>
-    
+
     <link href="{{url('website/assets/css/register.css')}}" rel="stylesheet">
 
 

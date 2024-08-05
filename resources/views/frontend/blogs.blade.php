@@ -12,37 +12,37 @@
                         </span></span></div>
                 <div class="content">
                     <ul class="mr-20">
-                        <li class=""><a href="https://digipostal.ir/blog/sms"><span wudooh="true"
+                        <li class=""><a href="https://post.ddev.site//blog/sms"><span wudooh="true"
                                     style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">SMS</font>
                                     </font>
                                 </span></a></li>
-                        <li class=""><a href="https://digipostal.ir/blog/events"><span wudooh="true"
+                        <li class=""><a href="https://post.ddev.site//blog/events"><span wudooh="true"
                                     style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">Events</font>
                                     </font>
                                 </span></a></li>
-                        <li class=""><a href="https://digipostal.ir/blog/text-photo"><span wudooh="true"
+                        <li class=""><a href="https://post.ddev.site//blog/text-photo"><span wudooh="true"
                                     style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">The photo is written</font>
                                     </font>
                                 </span></a></li>
-                        <li class=""><a href="https://digipostal.ir/blog/music"><span wudooh="true"
+                        <li class=""><a href="https://post.ddev.site//blog/music"><span wudooh="true"
                                     style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">Music</font>
                                     </font>
                                 </span></a></li>
-                        <li class=""><a href="https://digipostal.ir/blog/ideas"><span wudooh="true"
+                        <li class=""><a href="https://post.ddev.site//blog/ideas"><span wudooh="true"
                                     style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">Creative ideas</font>
                                     </font>
                                 </span></a></li>
-                        <li class=""><a href="https://digipostal.ir/blog/help"><span wudooh="true"
+                        <li class=""><a href="https://post.ddev.site//blog/help"><span wudooh="true"
                                     style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">Guide</font>
@@ -70,7 +70,7 @@
                 <div class="breadcrumb text-regular">
                     <ol itemscope="" itemtype="https://schema.org/BreadcrumbList">
                         <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a
-                                itemprop="item" href="https://digipostal.ir/"><span itemprop="name"><span wudooh="true"
+                                itemprop="item" href="https://post.ddev.site//"><span itemprop="name"><span wudooh="true"
                                         style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Home</font>
@@ -93,14 +93,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/text-of-the-invitation-to-hajj">
+                <a href="https://post.ddev.site//article/text-of-the-invitation-to-hajj">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/hajj-evchw.jpg"
                         srcset="website/assets/images/hajj-evchw.jpg 1x,website/assets/images/hajj-evchw.jpg 2x"
                         alt="The text of the Hajj feast invitation along with the Hajj feast invitation card"
                         title="The text of the Hajj feast invitation along with the Hajj feast invitation card">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/text-of-the-invitation-to-hajj">
+                    <a href="https://post.ddev.site//article/text-of-the-invitation-to-hajj">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -109,7 +109,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -120,7 +120,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D9%85%D8%AA%D9%86-%D8%AF%D8%B9%D9%88%D8%AA-%D9%88%D9%84%DB%8C%D9%85%D9%87-%D8%AD%D8%AC"
+                            href="https://post.ddev.site//btag/%D9%85%D8%AA%D9%86-%D8%AF%D8%B9%D9%88%D8%AA-%D9%88%D9%84%DB%8C%D9%85%D9%87-%D8%AD%D8%AC"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -135,7 +135,7 @@
                                     invitation cards have been placed as examples.</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/text-of-the-invitation-to-hajj" class="more"><span
+                    <a href="https://post.ddev.site//article/text-of-the-invitation-to-hajj" class="more"><span
                             wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
@@ -146,14 +146,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/40-congratulatory-message-for-birthday-of-imam-reza">
+                <a href="https://post.ddev.site//article/40-congratulatory-message-for-birthday-of-imam-reza">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/11-u5kba.jpg"
                         srcset="website/assets/images/11-u5kba.jpg 1x,website/assets/images/11-u5kba.jpg 2x"
                         alt="40 congratulatory texts for the birthday of Imam Reza along with the birthday greeting card of Imam Reza (a.s.)"
                         title="40 congratulatory texts for the birthday of Imam Reza along with the birthday greeting card of Imam Reza (a.s.)">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/40-congratulatory-message-for-birthday-of-imam-reza">
+                    <a href="https://post.ddev.site//article/40-congratulatory-message-for-birthday-of-imam-reza">
                         <h3 class="title no-wrap text-regular">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">40 </font>
@@ -166,7 +166,7 @@
                             </span>
                         </h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -177,7 +177,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D9%88%D9%84%D8%A7%D8%AF%D8%AA-%D8%A7%D9%85%D8%A7%D9%85-%D8%B1%D8%B6%D8%A7"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D9%88%D9%84%D8%A7%D8%AF%D8%AA-%D8%A7%D9%85%D8%A7%D9%85-%D8%B1%D8%B6%D8%A7"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -193,7 +193,7 @@
                                     Reza (a.s.) in this article, and we hope that you will like it.</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/40-congratulatory-message-for-birthday-of-imam-reza"
+                    <a href="https://post.ddev.site//article/40-congratulatory-message-for-birthday-of-imam-reza"
                         class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
@@ -204,14 +204,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/45-happy-girls-day-texts">
+                <a href="https://post.ddev.site//article/45-happy-girls-day-texts">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/11-vz2ca.jpg"
                         srcset="website/assets/images/11-vz2ca.jpg 1x,website/assets/images/11-vz2ca.jpg 2x"
                         alt="45 girl&#39;s day greetings along with girl&#39;s day greeting card"
                         title="45 girl&#39;s day greetings along with girl&#39;s day greeting card">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/45-happy-girls-day-texts">
+                    <a href="https://post.ddev.site//article/45-happy-girls-day-texts">
                         <h3 class="title no-wrap text-regular">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">45 </font>
@@ -224,7 +224,7 @@
                             </span>
                         </h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -235,7 +235,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2-%D8%AF%D8%AE%D8%AA%D8%B1"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2-%D8%AF%D8%AE%D8%AA%D8%B1"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -251,7 +251,7 @@
                                     Day text and SMS along with Happy Girl's Day card.</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/45-happy-girls-day-texts" class="more"><span wudooh="true"
+                    <a href="https://post.ddev.site//article/45-happy-girls-day-texts" class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Read more…</font>
@@ -262,7 +262,7 @@
 
             <div class="article mb-40">
                 <a
-                    href="https://digipostal.ir/article/congratulations-message-for-teachers-day-appreciation-and-thanks">
+                    href="https://post.ddev.site//article/congratulations-message-for-teachers-day-appreciation-and-thanks">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/teachers-day-afoyi.jpg"
                         srcset="website/assets/images/teachers-day-afoyi.jpg 1x,website/assets/images/teachers-day-afoyi.jpg 2x"
                         alt="70 Teacher&#39;s Day greetings to appreciate and thank teachers and professors"
@@ -270,7 +270,7 @@
                 </a>
                 <div class="text pl-40 pr-20 fr">
                     <a
-                        href="https://digipostal.ir/article/congratulations-message-for-teachers-day-appreciation-and-thanks">
+                        href="https://post.ddev.site//article/congratulations-message-for-teachers-day-appreciation-and-thanks">
                         <h3 class="title no-wrap text-regular">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">70 </font>
@@ -283,7 +283,7 @@
                             </span>
                         </h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -294,7 +294,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2-%D9%85%D8%B9%D9%84%D9%85"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2-%D9%85%D8%B9%D9%84%D9%85"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -309,7 +309,7 @@
                                     Day greeting text from a student, Teacher's Day greeting</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/congratulations-message-for-teachers-day-appreciation-and-thanks"
+                    <a href="https://post.ddev.site//article/congratulations-message-for-teachers-day-appreciation-and-thanks"
                         class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
@@ -320,7 +320,7 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/congratulatory-text-for-psychologist-and-counselor-day">
+                <a href="https://post.ddev.site//article/congratulatory-text-for-psychologist-and-counselor-day">
                     <img class="fr color-1" width="350" height="233"
                         src="website/assets/images/psychologist-and-counselor-day-9bny9.jpg"
                         srcset="website/assets/images/psychologist-and-counselor-day-9bny9.jpg 1x,website/assets/images/psychologist-and-counselor-day-9bny9.jpg 2x"
@@ -328,7 +328,7 @@
                         title="25 congratulatory texts on the day of the psychologist and counselor along with beautiful and stylish greeting cards">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/congratulatory-text-for-psychologist-and-counselor-day">
+                    <a href="https://post.ddev.site//article/congratulatory-text-for-psychologist-and-counselor-day">
                         <h3 class="title no-wrap text-regular">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">25 </font>
@@ -342,7 +342,7 @@
                             </span>
                         </h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -353,7 +353,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2-%D8%B1%D9%88%D8%A7%D9%86%D8%B4%D9%86%D8%A7%D8%B3"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2-%D8%B1%D9%88%D8%A7%D9%86%D8%B4%D9%86%D8%A7%D8%B3"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -369,7 +369,7 @@
                                     work as counselors or psychologists.</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/congratulatory-text-for-psychologist-and-counselor-day"
+                    <a href="https://post.ddev.site//article/congratulatory-text-for-psychologist-and-counselor-day"
                         class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
@@ -380,14 +380,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/60-greetings-text-for-eid-fitr">
+                <a href="https://post.ddev.site//article/60-greetings-text-for-eid-fitr">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/11-fzaij.jpg"
                         srcset="website/assets/images/11-fzaij.jpg 1x,website/assets/images/11-fzaij.jpg 2x"
                         alt="60 Eid al-Fitr greeting texts + Eid al-Fitr greeting card"
                         title="60 Eid al-Fitr greeting texts + Eid al-Fitr greeting card">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/60-greetings-text-for-eid-fitr">
+                    <a href="https://post.ddev.site//article/60-greetings-text-for-eid-fitr">
                         <h3 class="title no-wrap text-regular">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">60 </font>
@@ -400,7 +400,7 @@
                             </span>
                         </h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -411,7 +411,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B9%DB%8C%D8%AF-%D9%81%D8%B7%D8%B1"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B9%DB%8C%D8%AF-%D9%81%D8%B7%D8%B1"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -426,7 +426,7 @@
                                     can give happiness and joy to your friends and family on this auspicious day.</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/60-greetings-text-for-eid-fitr" class="more"><span
+                    <a href="https://post.ddev.site//article/60-greetings-text-for-eid-fitr" class="more"><span
                             wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
@@ -437,14 +437,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/50-beautiful-texts-for-official-new-year-greetings">
+                <a href="https://post.ddev.site//article/50-beautiful-texts-for-official-new-year-greetings">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/nowruz-qpcv4.jpg"
                         srcset="website/assets/images/nowruz-qpcv4.jpg 1x,website/assets/images/nowruz-qpcv4.jpg 2x"
                         alt="50 beautiful texts for official New Year greetings"
                         title="50 beautiful texts for official New Year greetings">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/50-beautiful-texts-for-official-new-year-greetings">
+                    <a href="https://post.ddev.site//article/50-beautiful-texts-for-official-new-year-greetings">
                         <h3 class="title no-wrap text-regular">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">50 </font>
@@ -457,7 +457,7 @@
                             </span>
                         </h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -468,7 +468,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D9%85%D8%AA%D9%86-%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D9%86%D9%88%D8%B1%D9%88%D8%B2"
+                            href="https://post.ddev.site//btag/%D9%85%D8%AA%D9%86-%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D9%86%D9%88%D8%B1%D9%88%D8%B2"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -490,7 +490,7 @@
                             </font>
                         </span>
                     </p>
-                    <a href="https://digipostal.ir/article/50-beautiful-texts-for-official-new-year-greetings"
+                    <a href="https://post.ddev.site//article/50-beautiful-texts-for-official-new-year-greetings"
                         class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
@@ -501,14 +501,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/happy-engineers-day-message">
+                <a href="https://post.ddev.site//article/happy-engineers-day-message">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/11-mxsym.jpg"
                         srcset="website/assets/images/11-mxsym.jpg 1x,website/assets/images/11-mxsym.jpg 2x"
                         alt="Special text to congratulate Engineer&#39;s Day"
                         title="Special text to congratulate Engineer&#39;s Day">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/happy-engineers-day-message">
+                    <a href="https://post.ddev.site//article/happy-engineers-day-message">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -517,7 +517,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -528,7 +528,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D9%85%D8%AA%D9%86-%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2-%D9%85%D9%87%D9%86%D8%AF%D8%B3"
+                            href="https://post.ddev.site//btag/%D9%85%D8%AA%D9%86-%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2-%D9%85%D9%87%D9%86%D8%AF%D8%B3"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -545,7 +545,7 @@
                                     intelligence, passion and knowledge.</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/happy-engineers-day-message" class="more"><span wudooh="true"
+                    <a href="https://post.ddev.site//article/happy-engineers-day-message" class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Read more…</font>
@@ -556,14 +556,14 @@
 
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/good-morning">
+                <a href="https://post.ddev.site//article/good-morning">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/1-kt2yv.jpg"
                         srcset="website/assets/images/1-kt2yv.jpg 1x,website/assets/images/1-kt2yv.jpg 2x"
                         alt="Special good morning text and sentences with postcards"
                         title="Special good morning text and sentences with postcards">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/good-morning">
+                    <a href="https://post.ddev.site//article/good-morning">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -572,7 +572,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -583,7 +583,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%B5%D8%A8%D8%AD-%D8%A8%D8%AE%DB%8C%D8%B1-%D8%B2%DB%8C%D8%A8%D8%A7"
+                            href="https://post.ddev.site//btag/%D8%B5%D8%A8%D8%AD-%D8%A8%D8%AE%DB%8C%D8%B1-%D8%B2%DB%8C%D8%A8%D8%A7"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -594,7 +594,7 @@
                                 <font style="vertical-align: inherit;"> beautiful </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D9%BE%DB%8C%D8%A7%D9%85%DA%A9-%D8%B5%D8%A8%D8%AD-%D8%A8%D8%AE%DB%8C%D8%B1"
+                            href="https://post.ddev.site//btag/%D9%BE%DB%8C%D8%A7%D9%85%DA%A9-%D8%B5%D8%A8%D8%AD-%D8%A8%D8%AE%DB%8C%D8%B1"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -609,7 +609,7 @@
                                 </font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/good-morning" class="more"><span wudooh="true"
+                    <a href="https://post.ddev.site//article/good-morning" class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Read more…</font>
@@ -619,14 +619,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/happy-birthday-for-mordad">
+                <a href="https://post.ddev.site//article/happy-birthday-for-mordad">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/5-jjeem.jpg"
                         srcset="website/assets/images/5-jjeem.jpg 1x,website/assets/images/5-jjeem.jpg 2x"
                         alt="Text and postcards of August&#39;s birthday greetings"
                         title="Text and postcards of August&#39;s birthday greetings">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/happy-birthday-for-mordad">
+                    <a href="https://post.ddev.site//article/happy-birthday-for-mordad">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -635,7 +635,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -646,7 +646,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D8%AF%D8%AE%D8%AA%D8%B1"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D8%AF%D8%AE%D8%AA%D8%B1"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -657,7 +657,7 @@
                                 <font style="vertical-align: inherit;"> girl </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D8%B1%D9%81%DB%8C%D9%82"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D8%B1%D9%81%DB%8C%D9%82"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -668,7 +668,7 @@
                                 <font style="vertical-align: inherit;"> friend </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -683,7 +683,7 @@
                                     August birthday wishes for girls and boys</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/happy-birthday-for-mordad" class="more"><span wudooh="true"
+                    <a href="https://post.ddev.site//article/happy-birthday-for-mordad" class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Read more…</font>
@@ -693,14 +693,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/happy-wedding-message">
+                <a href="https://post.ddev.site//article/happy-wedding-message">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/29-sdm1k.jpg"
                         srcset="website/assets/images/29-sdm1k.jpg 1x,website/assets/images/29-sdm1k.jpg 2x"
                         alt="The best text for wedding greetings along with wedding greeting cards"
                         title="The best text for wedding greetings along with wedding greeting cards">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/happy-wedding-message">
+                    <a href="https://post.ddev.site//article/happy-wedding-message">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -709,7 +709,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -720,7 +720,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B9%D8%B1%D9%88%D8%B3%DB%8C-%D8%A8%D8%B1%D8%A7%D8%AF%D8%B1"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B9%D8%B1%D9%88%D8%B3%DB%8C-%D8%A8%D8%B1%D8%A7%D8%AF%D8%B1"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -731,7 +731,7 @@
                                 <font style="vertical-align: inherit;"> wedding </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B9%D8%B1%D9%88%D8%B3%DB%8C-%D8%AE%D9%88%D8%A7%D9%87%D8%B1"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B9%D8%B1%D9%88%D8%B3%DB%8C-%D8%AE%D9%88%D8%A7%D9%87%D8%B1"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -746,7 +746,7 @@
                                     Beautiful and romantic text to congratulate the marriage of your loved ones</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/happy-wedding-message" class="more"><span wudooh="true"
+                    <a href="https://post.ddev.site//article/happy-wedding-message" class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Read more…</font>
@@ -756,14 +756,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/how-to-enter-coupon-code-digipostal-app">
+                <a href="https://post.ddev.site//article/how-to-enter-coupon-code-digipostal-app">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/image1-f45qi.jpg"
                         srcset="website/assets/images/image1-f45qi.jpg 1x,website/assets/images/image1-f45qi.jpg 2x"
                         alt="How to enter Digipostal discount code in the application?"
                         title="How to enter Digipostal discount code in the application?">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/how-to-enter-coupon-code-digipostal-app">
+                    <a href="https://post.ddev.site//article/how-to-enter-coupon-code-digipostal-app">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -772,7 +772,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/help" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/help" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -783,7 +783,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%AE%D9%81%DB%8C%D9%81-%DA%A9%D8%A7%D8%B1%D8%AA-%D9%BE%D8%B3%D8%AA%D8%A7%D9%84-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%AE%D9%81%DB%8C%D9%81-%DA%A9%D8%A7%D8%B1%D8%AA-%D9%BE%D8%B3%D8%AA%D8%A7%D9%84-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -798,7 +798,7 @@
                                     learn how to use the Digipostal discount code.</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/how-to-enter-coupon-code-digipostal-app" class="more"><span
+                    <a href="https://post.ddev.site//article/how-to-enter-coupon-code-digipostal-app" class="more"><span
                             wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
@@ -809,14 +809,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/nime-shaban-massages">
+                <a href="https://post.ddev.site//article/nime-shaban-massages">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/-ولادت-امام-زمان-7jn6b.jpg"
                         srcset="website/assets/images/-ولادت-امام-زمان-7jn6b.jpg 1x,website/assets/images/-ولادت-امام-زمان-7jn6b.jpg 2x"
                         alt="The best short greetings of half-Sha&#39;ban"
                         title="The best short greetings of half-Sha&#39;ban">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/nime-shaban-massages">
+                    <a href="https://post.ddev.site//article/nime-shaban-massages">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -825,7 +825,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/events" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/events" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -836,7 +836,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D9%86%DB%8C%D9%85%D9%87-%D8%B4%D8%B9%D8%A8%D8%A7%D9%86-%D9%85%D8%A8%D8%A7%D8%B1%DA%A9"
+                            href="https://post.ddev.site//btag/%D9%86%DB%8C%D9%85%D9%87-%D8%B4%D8%B9%D8%A8%D8%A7%D9%86-%D9%85%D8%A8%D8%A7%D8%B1%DA%A9"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -852,7 +852,7 @@
                                     birthday of Imam Zaman. Short congratulatory sentences for half of Sha'ban</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/nime-shaban-massages" class="more"><span wudooh="true"
+                    <a href="https://post.ddev.site//article/nime-shaban-massages" class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Read more…</font>
@@ -862,14 +862,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/anniversary-message">
+                <a href="https://post.ddev.site//article/anniversary-message">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/untitled-3-r1v19.jpg"
                         srcset="website/assets/images/untitled-3-r1v19.jpg 1x,website/assets/images/untitled-3-r1v19.jpg 2x"
                         alt="The best way to congratulate the wedding anniversary  "
                         title="The best way to congratulate the wedding anniversary  ">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/anniversary-message">
+                    <a href="https://post.ddev.site//article/anniversary-message">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -878,7 +878,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -889,7 +889,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%B3%D8%A7%D9%84%DA%AF%D8%B1%D8%AF-%D8%A7%D8%B2%D8%AF%D9%88%D8%A7%D8%AC"
+                            href="https://post.ddev.site//btag/%D8%B3%D8%A7%D9%84%DA%AF%D8%B1%D8%AF-%D8%A7%D8%B2%D8%AF%D9%88%D8%A7%D8%AC"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -900,7 +900,7 @@
                                 <font style="vertical-align: inherit;"> | </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%B3%D8%A7%D9%84%DA%AF%D8%B1%D8%AF-%D8%A7%D8%B2%D8%AF%D9%88%D8%A7%D8%AC%D9%85%D9%88%D9%86-%D9%85%D8%A8%D8%A7%D8%B1%DA%A9"
+                            href="https://post.ddev.site//btag/%D8%B3%D8%A7%D9%84%DA%AF%D8%B1%D8%AF-%D8%A7%D8%B2%D8%AF%D9%88%D8%A7%D8%AC%D9%85%D9%88%D9%86-%D9%85%D8%A8%D8%A7%D8%B1%DA%A9"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -911,7 +911,7 @@
                                 <font style="vertical-align: inherit;"> anniversary </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%B3%D8%A7%D9%84%DA%AF%D8%B1%D8%AF-%D8%A7%D8%B2%D8%AF%D9%88%D8%A7%D8%AC%D9%85%D9%88%D9%86-%D9%85%D8%A8%D8%A7%D8%B1%DA%A9-%D8%B9%D8%B4%D9%82%D9%85"
+                            href="https://post.ddev.site//btag/%D8%B3%D8%A7%D9%84%DA%AF%D8%B1%D8%AF-%D8%A7%D8%B2%D8%AF%D9%88%D8%A7%D8%AC%D9%85%D9%88%D9%86-%D9%85%D8%A8%D8%A7%D8%B1%DA%A9-%D8%B9%D8%B4%D9%82%D9%85"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -926,7 +926,7 @@
                                     wedding anniversary with a postcard</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/anniversary-message" class="more"><span wudooh="true"
+                    <a href="https://post.ddev.site//article/anniversary-message" class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Read more…</font>
@@ -936,14 +936,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/happy-birthday-friend">
+                <a href="https://post.ddev.site//article/happy-birthday-friend">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/untitled-2-xw23q.jpg"
                         srcset="website/assets/images/untitled-2-xw23q.jpg 1x,website/assets/images/untitled-2-xw23q.jpg 2x"
                         alt="The best way to congratulate friends on their birthday"
                         title="The best way to congratulate friends on their birthday">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/happy-birthday-friend">
+                    <a href="https://post.ddev.site//article/happy-birthday-friend">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -952,7 +952,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -963,7 +963,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D8%B1%D8%B3%D9%85%DB%8C-%D8%A8%D9%87-%D8%AF%D9%88%D8%B3%D8%AA"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D8%B1%D8%B3%D9%85%DB%8C-%D8%A8%D9%87-%D8%AF%D9%88%D8%B3%D8%AA"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -974,7 +974,7 @@
                                 <font style="vertical-align: inherit;"> friend </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D8%AF%D9%88%D8%B3%D8%AA"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D8%AF%D9%88%D8%B3%D8%AA"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -985,7 +985,7 @@
                                 <font style="vertical-align: inherit;"> friend </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AF%D9%88%D8%B3%D8%AA-%D8%B9%D8%B2%DB%8C%D8%B2%D9%85-%D8%AA%D9%88%D9%84%D8%AF%D8%AA-%D9%85%D8%A8%D8%A7%D8%B1%DA%A9"
+                            href="https://post.ddev.site//btag/%D8%AF%D9%88%D8%B3%D8%AA-%D8%B9%D8%B2%DB%8C%D8%B2%D9%85-%D8%AA%D9%88%D9%84%D8%AF%D8%AA-%D9%85%D8%A8%D8%A7%D8%B1%DA%A9"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -1000,7 +1000,7 @@
                                     with a postcard.</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/happy-birthday-friend" class="more"><span wudooh="true"
+                    <a href="https://post.ddev.site//article/happy-birthday-friend" class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Read more…</font>
@@ -1010,14 +1010,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/birthday-father-message">
+                <a href="https://post.ddev.site//article/birthday-father-message">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/-مبارک-پدر-vukn6.jpg"
                         srcset="website/assets/images/-مبارک-پدر-vukn6.jpg 1x,website/assets/images/-مبارک-پدر-vukn6.jpg 2x"
                         alt="Father&#39;s birthday greetings along with father&#39;s birthday postcard"
                         title="Father&#39;s birthday greetings along with father&#39;s birthday postcard">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/birthday-father-message">
+                    <a href="https://post.ddev.site//article/birthday-father-message">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -1026,7 +1026,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -1037,7 +1037,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D9%BE%D8%AF%D8%B1"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D9%BE%D8%AF%D8%B1"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -1048,7 +1048,7 @@
                                 <font style="vertical-align: inherit;"> father </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D9%BE%D8%AF%D8%B1%D9%85"
+                            href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF-%D9%BE%D8%AF%D8%B1%D9%85"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -1059,7 +1059,7 @@
                                 <font style="vertical-align: inherit;"> father </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D9%BE%D8%AF%D8%B1-%D8%B9%D8%B2%DB%8C%D8%B2%D9%85-%D8%AA%D9%88%D9%84%D8%AF%D8%AA-%D9%85%D8%A8%D8%A7%D8%B1%DA%A9"
+                            href="https://post.ddev.site//btag/%D9%BE%D8%AF%D8%B1-%D8%B9%D8%B2%DB%8C%D8%B2%D9%85-%D8%AA%D9%88%D9%84%D8%AF%D8%AA-%D9%85%D8%A8%D8%A7%D8%B1%DA%A9"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -1075,7 +1075,7 @@
                                     and my good father.</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/birthday-father-message" class="more"><span wudooh="true"
+                    <a href="https://post.ddev.site//article/birthday-father-message" class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Read more…</font>
@@ -1085,14 +1085,14 @@
             </div>
 
             <div class="article mb-40">
-                <a href="https://digipostal.ir/article/message-birthday-cake">
+                <a href="https://post.ddev.site//article/message-birthday-cake">
                     <img class="fr color-1" width="350" height="233" src="website/assets/images/-برای-کیک-تولد-439bt.jpg"
                         srcset="website/assets/images/-برای-کیک-تولد-439bt.jpg 1x,website/assets/images/-برای-کیک-تولد-439bt.jpg 2x"
                         alt="Text for birthday cake along with short and special sentences to write on the cake"
                         title="Text for birthday cake along with short and special sentences to write on the cake">
                 </a>
                 <div class="text pl-40 pr-20 fr">
-                    <a href="https://digipostal.ir/article/message-birthday-cake">
+                    <a href="https://post.ddev.site//article/message-birthday-cake">
                         <h3 class="title no-wrap text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -1101,7 +1101,7 @@
                                 </font>
                             </span></h3>
                     </a>
-                    <div class="info mb-5"><a href="https://digipostal.ir/blog/sms" class="text-bold"><span
+                    <div class="info mb-5"><a href="https://post.ddev.site//blog/sms" class="text-bold"><span
                                 wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -1112,7 +1112,7 @@
                                 <font style="vertical-align: inherit;">​ </font>
                             </font>
                         </span><a
-                            href="https://digipostal.ir/btag/%D9%85%D8%AA%D9%86-%DA%A9%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF"
+                            href="https://post.ddev.site//btag/%D9%85%D8%AA%D9%86-%DA%A9%DB%8C%DA%A9-%D8%AA%D9%88%D9%84%D8%AF"
                             class="text-regular"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -1127,7 +1127,7 @@
                                     birthday postcards.</font>
                             </font>
                         </span></p>
-                    <a href="https://digipostal.ir/article/message-birthday-cake" class="more"><span wudooh="true"
+                    <a href="https://post.ddev.site//article/message-birthday-cake" class="more"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Read more…</font>
@@ -1137,28 +1137,28 @@
             </div>
 
             <ul class="pagination">
-                <li class="disabled"><a href="https://digipostal.ir/blog/#"><span wudooh="true"
+                <li class="disabled"><a href="https://post.ddev.site//blog/#"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Previous</font>
                             </font>
                         </span></a></li>
-                <li class="active"><a href="https://digipostal.ir/blog/#">
+                <li class="active"><a href="https://post.ddev.site//blog/#">
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;">1</font>
                         </font>
                     </a></li>
-                <li class=""><a href="https://digipostal.ir/blog/?page=2">
+                <li class=""><a href="https://post.ddev.site//blog/?page=2">
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;">2</font>
                         </font>
                     </a></li>
-                <li class=""><a href="https://digipostal.ir/blog/?page=3">
+                <li class=""><a href="https://post.ddev.site//blog/?page=3">
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;">3</font>
                         </font>
                     </a></li>
-                <li><a href="https://digipostal.ir/blog/?page=2"><span wudooh="true"
+                <li><a href="https://post.ddev.site//blog/?page=2"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">next one</font>

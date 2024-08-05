@@ -44,7 +44,7 @@
 <div id="div_more_stickers" class="jetp-dialog-overlay show" style="display: none;margin-top:20px;margin-left:30px;"> <!-- more sticker images -->
     <div class="jetp-dialog small">
         <div class="jetp-header">
-            <!-- <div class="jetp-back" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" 
+            <!-- <div class="jetp-back" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24"
                         height="24" viewBox="0 0 24 24" class="icon localize">
                         <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
@@ -335,7 +335,7 @@
         <div class="jetp-content nice-scrollbar align-items-center">
             <div class="jetp-picture-dialog">
                 <div class="jetp-crop-container">
-                    <!-- <img src="blob:https://digipostal.ir/b3ce3e13-ead5-41c8-a066-6f375455d8ae" class="cropper-hidden"> -->
+                    <!-- <img src="blob:https://post.ddev.site//b3ce3e13-ead5-41c8-a066-6f375455d8ae" class="cropper-hidden"> -->
                     <div class="cropper-container cropper-bg" touch-action="none" style="width: 1183px; height: 458px;">
                         <div class="cropper-wrap-box">
                             <div class="cropper-canvas" style="max-width: 100%; max-height: 100%;  display: flex; justify-content: center; align-items: center;">
@@ -395,7 +395,7 @@
         <div class="jetp-content nice-scrollbar align-items-center">
             <div class="jetp-picture-dialog">
                 <div class="jetp-crop-container">
-                    <!-- <img src="blob:https://digipostal.ir/b3ce3e13-ead5-41c8-a066-6f375455d8ae" class="cropper-hidden"> -->
+                    <!-- <img src="blob:https://post.ddev.site//b3ce3e13-ead5-41c8-a066-6f375455d8ae" class="cropper-hidden"> -->
                     <div class="cropper-container cropper-bg" touch-action="none" style="width: 1183px; height: 458px;">
                         <div class="cropper-wrap-box">
                             <div class="cropper-canvas" style="max-width: 100%; max-height: 100%;  display: flex; justify-content: center; align-items: center;">
@@ -1118,7 +1118,7 @@
                 <div class="jetp-category">
 
 
-                   
+
 
 
                     <div class="item" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">

@@ -11,11 +11,11 @@
   <link type="text/css" rel="stylesheet" charset="UTF-8" href="{{url('website/assets/css/m=el_main_css')}}">
 
 
-  <link rel="shortcut icon" href="https://digipostal.ir/resources/images/fav-fa/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://digipostal.ir/resources/images/fav-fa/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://digipostal.ir/resources/images/fav-fa/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://digipostal.ir/resources/images/fav-fa/favicon-16x16.png">
-  <link rel="canonical" href="https://digipostal.ir/card/zaer-hajj">
+  <link rel="shortcut icon" href="https://post.ddev.site//resources/images/fav-fa/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://post.ddev.site//resources/images/fav-fa/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://post.ddev.site//resources/images/fav-fa/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://post.ddev.site//resources/images/fav-fa/favicon-16x16.png">
+  <link rel="canonical" href="https://post.ddev.site//card/zaer-hajj">
   <script src="{{url('website/assets/js/macy@2.js')}}"></script>
   <script src="{{url('website/assets/js/cropper.min.js')}}"></script>
   <link rel="stylesheet" href="{{url('website/assets/css/cropper.min.css')}}">
@@ -274,7 +274,7 @@
 
 
           <!-- <div class="jetp-back-text" style="color: rgb(0, 0, 0); font-size: 18.81px; font-family: font_14;">
-                
+
             </div> -->
 
         </div>
@@ -319,9 +319,9 @@
 <!-- ---------------------------------------------  start: event info popup--------------------------------- -->
   <div id="div_event_info"
         style="background: rgba(0, 0, 0, 0.6); inset: 0px; cursor: pointer; transition: all 500ms ease 0s; position: fixed; padding: 10px; z-index: 10000; display: none; justify-content: center; align-items: center; direction: rtl; visibility: visible; opacity: 1;">
-        
-        
-        
+
+
+
         <div class="digipostal-lqec0t"
             style="overflow: hidden; cursor: default; transition: all 500ms ease-in-out 0s; border-radius: 10px; width: 450px; max-width: 100%; max-height: 100%; flex-direction: column; display: flex; transform-origin: 0px 100%; visibility: visible; opacity: 1; transform: scale(1);">
             <div style="display: flex; align-items: center;">
@@ -331,7 +331,7 @@
                         fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon ">
                         <path
                             d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
-                        </path> 
+                        </path>
                     </svg>
                 </div>
                 <div class="digipostal-eiaxmh"
@@ -343,7 +343,7 @@
                     </span></div>
             </div>
 
- 
+
 
             <div style="display: none;"></div>
             <div class="wscrollbar" style="flex: 1 1 0%; overflow-y: auto; padding: 0px 20px 20px;">
@@ -354,9 +354,9 @@
 
                     <input type="hidden" name="hcard_id" value="{{$card_info->id}}">
 
- 
+
             @foreach($sortedCollection as $wdgtRec)
-            
+
             @if ($wdgtRec instanceof \App\Models\widget_user_text_model)
               <!-- user text -->
                 <section class="digipostal-p2bmbg"
@@ -381,7 +381,7 @@
 
                 @elseif($wdgtRec instanceof \App\Models\widget_separator_model)
                 <!-- separator -->
-                 
+
                 <section class="digipostal-p2bmbg"
                     style="visibility: visible; display: block; opacity: 1; transform: translateY(0px); transition: all 0.5s ease 0s;">
                     {!!$wdgtRec->separator!!}
@@ -466,8 +466,8 @@
                     }
                 }, 1000);
             </script>
-               
-                
+
+
                 <!-- address / routing -->
                 <!-- <section class="digipostal-p2bmbg"
                     style="visibility: visible; display: block; opacity: 1; transform: translateY(0px); transition: all 0.5s ease 0s;">
@@ -483,8 +483,8 @@
 
                 @elseif($wdgtRec instanceof \App\Models\widget_text_question_model)
                 <!-- input name field -->
-                
-                <section class="jetp-ngl4yv"> 
+
+                <section class="jetp-ngl4yv">
                     <div class="jetp-feffm jetp-lxpam jetp-zs0p7"><svg
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor"
@@ -511,7 +511,7 @@
                         @elseif($wdgtRec->text_question_type == 'single_line')
                             <input type="text"  id="answer_text_question" name="answer_text_question[]"  maxlength="60" class="jetp-k9u3p">
                         @elseif($wdgtRec->text_question_type == 'multi_line')
-                            <textarea  id="answer_text_question" name="answer_text_question[]"  class="jetp-k9u3p"></textarea>               
+                            <textarea  id="answer_text_question" name="answer_text_question[]"  class="jetp-k9u3p"></textarea>
                         @endif
 
                     <div class="jetp-feffm jetp-qdqrai"
@@ -522,7 +522,7 @@
                 </section>
 
                 @elseif($wdgtRec instanceof \App\Models\widget_attend_quest_model)
-               
+
 
                 <section class="jetp-ngl4yv">
                     <div class="jetp-feffm jetp-lxpam jetp-zs0p7">
@@ -594,7 +594,7 @@
                             </iframe>
                         </section>
                     </div>
-                    
+
                     <div class="overlay" ></div>
                     <script>
                         function openInNewTab(url) {
@@ -613,7 +613,7 @@
                     </div>
                     <div
                         style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-                        
+
                         @if($wdgtRec->sn_instagram != '')
                             <a class="jetp-b6x308" href="{{$wdgtRec->sn_instagram}}"
                             target="_blank"
@@ -627,7 +627,7 @@
                                 </path>
                             </svg></a>
                         @endif
-                            
+
                         @if($wdgtRec->sn_telegram != '')
                             <a class="jetp-b6x308" href="{{$wdgtRec->sn_telegram}}"
                             target="_blank"
@@ -641,7 +641,7 @@
                                 </path>
                             </svg></a>
                             @endif
-                            
+
                             @if($wdgtRec->sn_whatsapp != '')
                             <a class="jetp-b6x308"
                             href="whatsapp://send?phone={{$wdgtRec->sn_whatsapp}}" target="_blank"
@@ -655,7 +655,7 @@
                                 </path>
                             </svg></a>
                             @endif
-                            
+
                             @if($wdgtRec->sn_twitter != '')
                             <a class="jetp-b6x308" href="{{$wdgtRec->sn_twitter}}"
                             target="_blank"
@@ -701,7 +701,7 @@
 
                     </div>
                 </section>
-                
+
                 @elseif($wdgtRec instanceof \App\Models\widget_link_model)
 
                 <section class="jetp-ngl4yv jetp-k9u3p">
@@ -721,7 +721,7 @@
                         </svg>
                     </a>
                 </section>
-               
+
                 @elseif($wdgtRec instanceof \App\Models\widget_optional_question_model)
 
                 <section class="jetp-ngl4yv">
@@ -747,7 +747,7 @@
                         }
 
                         @endphp
-                        
+
 
                         @if($wdgtRec->optnl_quest_type=='checkbox')
                         @foreach($aroptnl_quest_options as $optnl_quest_option)
@@ -780,7 +780,7 @@
 
                         @if($wdgtRec->optnl_quest_type=='dropdown')
                         <div class="jetp-cover-input m-20-10 mt-20">
-                            
+
                             <select id="optnl_quest_type" name="answer_optnl_quest[]">
                                 @foreach($aroptnl_quest_options as $optnl_quest_option)
                                 <option value="{{$optnl_quest_option}}"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
@@ -796,7 +796,7 @@
                         <input type="hidden" name="optnl_quest_id[]" value="{{$wdgtRec->id}}" >
                         <div class="jetp-tsi1" style="display: none;"></div>
                 </section>
-                
+
                 @endif
 
                 @endforeach
@@ -821,7 +821,7 @@
 
             <div style="position: absolute; inset: 0px; display: none;"></div>
         </div>
-        
+
     </div>
 
 
@@ -829,8 +829,8 @@
 <!-- ---------------------------------------------  end: event info popup--------------------------------- -->
 
 
-    
-  
+
+
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {

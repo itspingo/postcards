@@ -11,32 +11,32 @@
                     </span></span></div>
             <div class="content">
                 <ul class="mr-20">
-                    <li class=""><a href="https://digipostal.ir/blog/sms"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <li class=""><a href="https://post.ddev.site//blog/sms"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">SMS</font>
                                 </font>
                             </span></a></li>
-                    <li class=""><a href="https://digipostal.ir/blog/events"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <li class=""><a href="https://post.ddev.site//blog/events"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">Events</font>
                                 </font>
                             </span></a></li>
-                    <li class=""><a href="https://digipostal.ir/blog/text-photo"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <li class=""><a href="https://post.ddev.site//blog/text-photo"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">The photo is written</font>
                                 </font>
                             </span></a></li>
-                    <li class=""><a href="https://digipostal.ir/blog/music"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <li class=""><a href="https://post.ddev.site//blog/music"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">Music</font>
                                 </font>
                             </span></a></li>
-                    <li class=""><a href="https://digipostal.ir/blog/ideas"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <li class=""><a href="https://post.ddev.site//blog/ideas"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">Creative ideas</font>
                                 </font>
                             </span></a></li>
-                    <li class=""><a href="https://digipostal.ir/blog/help"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <li class=""><a href="https://post.ddev.site//blog/help"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">Guide</font>
                                 </font>
@@ -47,7 +47,7 @@
     </div>
 
     <div class="blog-content" itemscope="" itemtype="http://schema.org/NewsArticle">
-        <meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://DigiPostal.ir/article/45-happy-girls-day-texts">
+        <meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://post.ddev.site//article/45-happy-girls-day-texts">
 
         <div class="category-head-wrapper w-100">
             <h1 itemprop="headline" class="text-bold">
@@ -62,7 +62,7 @@
             </h1>
             <div class="info text-regular">
                 <div itemprop="articleSection" class="text-bold">
-                    <a href="https://digipostal.ir/blog/sms"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <a href="https://post.ddev.site//blog/sms"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">SMS</font>
                             </font>
@@ -78,7 +78,7 @@
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;">Author: </font>
                         </font>
-                    </span><span itemprop="name"><a class="text-bold" href="https://digipostal.ir/author/mortezagm"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    </span><span itemprop="name"><a class="text-bold" href="https://post.ddev.site//author/mortezagm"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">Morteza Golmohammadi</font>
                                 </font>
@@ -103,7 +103,7 @@
             </div>
             <div class="breadcrumb text-regular">
                 <ol itemscope="" itemtype="https://schema.org/BreadcrumbList">
-                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://digipostal.ir/"><span itemprop="name"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://post.ddev.site//"><span itemprop="name"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">Home</font>
                                     </font>
@@ -113,7 +113,7 @@
                         </svg>
                         <meta itemprop="position" content="1">
                     </li>
-                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://digipostal.ir/blog/"><span itemprop="name"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://post.ddev.site//blog/"><span itemprop="name"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">weblog</font>
                                     </font>
@@ -123,7 +123,7 @@
                         </svg>
                         <meta itemprop="position" content="2">
                     </li>
-                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://digipostal.ir/blog/sms"><span itemprop="name"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://post.ddev.site//blog/sms"><span itemprop="name"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">SMS</font>
                                     </font>
@@ -316,7 +316,7 @@
                             </font>
                         </span></strong></h2>
             </div>
-            <div class="nblock nblock-image"><a href="https://digipostal.ir/card/rdokhtar">
+            <div class="nblock nblock-image"><a href="https://post.ddev.site//card/rdokhtar">
                     <picture>
                         <source srcset="website/assets/images/rdokhtar.jpg 1x,website/assets/images/rdokhtar.jpg 2x" type="image/webp">
                         <img loading="lazy" width="660" height="660" src="website/assets/images/rdokhtar.jpg" srcset="website/assets/images/rdokhtar.jpg 1x,website/assets/images/rdokhtar.jpg 2x" alt="Musical girl&#39;s day">
@@ -523,7 +523,7 @@
                             </font>
                         </span></strong></h2>
             </div>
-            <div class="nblock nblock-image"><a href="https://digipostal.ir/card/mygirls">
+            <div class="nblock nblock-image"><a href="https://post.ddev.site//card/mygirls">
                     <picture>
                         <source srcset="website/assets/images/mygirls.jpg 1x,website/assets/images/mygirls.jpg 2x" type="image/webp">
                         <img loading="lazy" width="660" height="660" src="website/assets/images/mygirls.jpg" srcset="website/assets/images/mygirls.jpg 1x,website/assets/images/mygirls.jpg 2x" alt="Happy Girl&#39;s Day to my girls">
@@ -686,7 +686,7 @@
                             </font>
                         </span></strong></h2>
             </div>
-            <div class="nblock nblock-image"><a href="https://digipostal.ir/card/brotosis">
+            <div class="nblock nblock-image"><a href="https://post.ddev.site//card/brotosis">
                     <picture>
                         <source srcset="website/assets/images/brotosis.jpg 1x,website/assets/images/brotosis.jpg 2x" type="image/webp">
                         <img loading="lazy" width="660" height="660" src="website/assets/images/brotosis.jpg" srcset="website/assets/images/brotosis.jpg 1x,website/assets/images/brotosis.jpg 2x" alt="Happy girl&#39;s day from brother">
@@ -861,7 +861,7 @@
                             </font>
                         </span></strong></h2>
             </div>
-            <div class="nblock nblock-image"><a href="https://digipostal.ir/card/bestgirlworld">
+            <div class="nblock nblock-image"><a href="https://post.ddev.site//card/bestgirlworld">
                     <picture>
                         <source srcset="website/assets/images/bestgirlworld.jpg 1x,website/assets/images/bestgirlworld.jpg 2x" type="image/webp">
                         <img loading="lazy" width="660" height="660" src="website/assets/images/bestgirlworld.jpg" srcset="website/assets/images/bestgirlworld.jpg 1x,website/assets/images/bestgirlworld.jpg 2x" alt="the best girl in the world">
@@ -1031,7 +1031,7 @@
                             </font>
                         </span></strong></h2>
             </div>
-            <div class="nblock nblock-image"><a href="https://digipostal.ir/card/nabat2khtar">
+            <div class="nblock nblock-image"><a href="https://post.ddev.site//card/nabat2khtar">
                     <picture>
                         <source srcset="website/assets/images/nabat2khtar.jpg 1x,website/assets/images/nabat2khtar.jpg 2x" type="image/webp">
                         <img loading="lazy" width="660" height="660" src="website/assets/images/nabat2khtar.jpg" srcset="website/assets/images/nabat2khtar.jpg 1x,website/assets/images/nabat2khtar.jpg 2x" alt="Congratulations on the day of the modern girl">
@@ -1249,7 +1249,7 @@
                             </font>
                         </span></strong></h2>
             </div>
-            <div class="nblock nblock-image"><a href="https://digipostal.ir/card/rozdokhtr">
+            <div class="nblock nblock-image"><a href="https://post.ddev.site//card/rozdokhtr">
                     <picture>
                         <source srcset="website/assets/images/rozdokhtr.jpg 1x,website/assets/images/rozdokhtr.jpg 2x" type="image/webp">
                         <img loading="lazy" width="660" height="660" src="website/assets/images/rozdokhtr.jpg" srcset="website/assets/images/rozdokhtr.jpg 1x,website/assets/images/rozdokhtr.jpg 2x" alt="Daughter&#39;s day from mother">
@@ -1475,7 +1475,7 @@
                             </font>
                         </span></strong></h2>
             </div>
-            <div class="nblock nblock-image"><a href="https://digipostal.ir/card/pdokhtar">
+            <div class="nblock nblock-image"><a href="https://post.ddev.site//card/pdokhtar">
                     <picture>
                         <source srcset="website/assets/images/pdokhtar.jpg 1x,website/assets/images/pdokhtar.jpg 2x" type="image/webp">
                         <img loading="lazy" width="660" height="660" src="website/assets/images/pdokhtar.jpg" srcset="website/assets/images/pdokhtar.jpg 1x,website/assets/images/pdokhtar.jpg 2x" alt="Happy Girl&#39;s Day 3D">
@@ -1627,7 +1627,7 @@
                             </font>
                         </span></strong></h2>
             </div>
-            <div class="nblock nblock-image"><a href="https://digipostal.ir/card/tabrikdokhtar">
+            <div class="nblock nblock-image"><a href="https://post.ddev.site//card/tabrikdokhtar">
                     <picture>
                         <source srcset="website/assets/images/tabrikdokhtar.jpg 1x,website/assets/images/tabrikdokhtar.jpg 2x" type="image/webp">
                         <img loading="lazy" width="660" height="660" src="website/assets/images/tabrikdokhtar.jpg" srcset="website/assets/images/tabrikdokhtar.jpg 1x,website/assets/images/tabrikdokhtar.jpg 2x" alt="Girl&#39;s Day photo">
@@ -1815,7 +1815,7 @@
                             </font>
                         </span></strong></h2>
             </div>
-            <div class="nblock nblock-image"><a href="https://digipostal.ir/card/girlsdaay">
+            <div class="nblock nblock-image"><a href="https://post.ddev.site//card/girlsdaay">
                     <picture>
                         <source srcset="website/assets/images/girlsdaay.jpg 1x,website/assets/images/girlsdaay.jpg 2x" type="image/webp">
                         <img loading="lazy" width="660" height="660" src="website/assets/images/girlsdaay.jpg" srcset="website/assets/images/girlsdaay.jpg 1x,website/assets/images/girlsdaay.jpg 2x" alt="happy girl&#39;s day">
@@ -2013,7 +2013,7 @@
                             </font>
                         </span></strong></h2>
             </div>
-            <div class="nblock nblock-image"><a href="https://digipostal.ir/card/drozmon">
+            <div class="nblock nblock-image"><a href="https://post.ddev.site//card/drozmon">
                     <picture>
                         <source srcset="website/assets/images/drozmon.jpg 1x,website/assets/images/drozmon.jpg 2x" type="image/webp">
                         <img loading="lazy" width="660" height="660" src="website/assets/images/drozmon.jpg" srcset="website/assets/images/drozmon.jpg 1x,website/assets/images/drozmon.jpg 2x" alt="Happy day girls">
@@ -2185,18 +2185,18 @@
             </div>
         </div>
         <meta itemprop="keywords" content="پیامک, تبریک روز دختر, روز دختر">
-        <div class="tags"><span itemprop="articleSection"><a class="button gray ml-5 mb-5" href="https://digipostal.ir/btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2-%D8%AF%D8%AE%D8%AA%D8%B1"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+        <div class="tags"><span itemprop="articleSection"><a class="button gray ml-5 mb-5" href="https://post.ddev.site//btag/%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2-%D8%AF%D8%AE%D8%AA%D8%B1"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;">Happy girl's day</font>
                         </font>
-                    </span></a></span><span itemprop="articleSection"><a class="button gray ml-5 mb-5" href="https://digipostal.ir/tag/girl-day"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    </span></a></span><span itemprop="articleSection"><a class="button gray ml-5 mb-5" href="https://post.ddev.site//tag/girl-day"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;">girl's Day</font>
                         </font>
                     </span></a></span></div>
         <section class="card-container pt">
             <h2 class="section-title center mb-40">
-                <a href="https://digipostal.ir/category/religious-card"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                <a href="https://post.ddev.site//category/religious-card"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;">Postcards of religious holidays</font>
                         </font>
@@ -2204,7 +2204,7 @@
             </h2>
             <div class="swiper swiper-envelope swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-rtl">
                 <div class="swiper-wrapper" id="swiper-wrapper-f2fc27137499ef73" aria-live="polite">
-                    <a class="card swiper-slide swiper-slide-active" href="https://digipostal.ir/card/2khtar" role="group" aria-label="1/20">
+                    <a class="card swiper-slide swiper-slide-active" href="https://post.ddev.site//card/2khtar" role="group" aria-label="1/20">
                         <picture>
                             <source class="swiper-lazy swiper-lazy-loaded" type="image/webp" srcset="website/assets/images/2khtar.jpg 1x,website/assets/images/2khtar.jpg 2x,website/assets/images/2khtar.jpg 3x">
                             <img width="240" height="240" class="swiper-lazy swiper-lazy-loaded" alt="Happy girl&#39;s day" srcset="website/assets/images/2khtar.jpg 1x,website/assets/images/2khtar.jpg 2x,website/assets/images/2khtar.jpg 3x" src="website/assets/images/2khtar.jpg">
@@ -2215,7 +2215,7 @@
                                     <font style="vertical-align: inherit;">Happy girl's day</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide swiper-slide-next" href="https://digipostal.ir/card/girl-frame" role="group" aria-label="2/20">
+                    </a><a class="card swiper-slide swiper-slide-next" href="https://post.ddev.site//card/girl-frame" role="group" aria-label="2/20">
                         <picture>
                             <source class="swiper-lazy swiper-lazy-loaded" type="image/webp" srcset="website/assets/images/girl-frame.jpg 1x,website/assets/images/girl-frame.jpg 2x,website/assets/images/girl-frame.jpg 3x">
                             <img width="240" height="240" class="swiper-lazy swiper-lazy-loaded" alt="Girl&#39;s Day with a picture" srcset="website/assets/images/girl-frame.jpg 1x,website/assets/images/girl-frame.jpg 2x,website/assets/images/girl-frame.jpg 3x" src="website/assets/images/girl-frame.jpg">
@@ -2226,7 +2226,7 @@
                                     <font style="vertical-align: inherit;">Girl's Day with a picture</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/rozdkhtr" role="group" aria-label="3/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/rozdkhtr" role="group" aria-label="3/20">
                         <picture>
                             <source class="swiper-lazy swiper-lazy-loaded" type="image/webp" srcset="website/assets/images/rozdkhtr.jpg 1x,website/assets/images/rozdkhtr.jpg 2x,website/assets/images/rozdkhtr.jpg 3x">
                             <img width="240" height="240" class="swiper-lazy swiper-lazy-loaded" alt="for girl&#39;s day" srcset="website/assets/images/rozdkhtr.jpg 1x,website/assets/images/rozdkhtr.jpg 2x,website/assets/images/rozdkhtr.jpg 3x" src="website/assets/images/rozdkhtr.jpg">
@@ -2237,7 +2237,7 @@
                                     <font style="vertical-align: inherit;">for girl's day</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/bestgirlworld" role="group" aria-label="4/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/bestgirlworld" role="group" aria-label="4/20">
                         <picture>
                             <source class="swiper-lazy swiper-lazy-loaded" type="image/webp" srcset="website/assets/images/bestgirlworld.jpg 1x,website/assets/images/bestgirlworld.jpg 2x,website/assets/images/bestgirlworld.jpg 3x">
                             <img width="240" height="240" class="swiper-lazy swiper-lazy-loaded" alt="the best girl in the world" srcset="website/assets/images/bestgirlworld.jpg 1x,website/assets/images/bestgirlworld.jpg 2x,website/assets/images/bestgirlworld.jpg 3x" src="website/assets/images/bestgirlworld(1).jpg">
@@ -2248,7 +2248,7 @@
                                     <font style="vertical-align: inherit;">the best girl in the world</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/rdokhtar" role="group" aria-label="5/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/rdokhtar" role="group" aria-label="5/20">
                         <picture>
                             <source class="swiper-lazy swiper-lazy-loaded" type="image/webp" srcset="website/assets/images/rdokhtar.jpg 1x,website/assets/images/rdokhtar.jpg 2x,website/assets/images/rdokhtar.jpg 3x">
                             <img width="240" height="240" class="swiper-lazy swiper-lazy-loaded" alt="Musical girl&#39;s day" srcset="website/assets/images/rdokhtar.jpg 1x,website/assets/images/rdokhtar.jpg 2x,website/assets/images/rdokhtar.jpg 3x" src="website/assets/images/rdokhtar(1).jpg">
@@ -2259,7 +2259,7 @@
                                     <font style="vertical-align: inherit;">Musical girl's day</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/sam2khtar" role="group" aria-label="6/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/sam2khtar" role="group" aria-label="6/20">
                         <picture>
                             <source class="swiper-lazy swiper-lazy-loaded" type="image/webp" srcset="website/assets/images/sam2khtar.jpg 1x,website/assets/images/sam2khtar.jpg 2x,website/assets/images/sam2khtar.jpg 3x">
                             <img width="240" height="240" class="swiper-lazy swiper-lazy-loaded" alt="Happy girl&#39;s day to a close friend" srcset="website/assets/images/sam2khtar.jpg 1x,website/assets/images/sam2khtar.jpg 2x,website/assets/images/sam2khtar.jpg 3x" src="website/assets/images/sam2khtar.jpg">
@@ -2270,7 +2270,7 @@
                                     <font style="vertical-align: inherit;">Happy girl's day to a close friend</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/shahkar" role="group" aria-label="7/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/shahkar" role="group" aria-label="7/20">
                         <picture>
                             <source class="swiper-lazy swiper-lazy-loaded" type="image/webp" srcset="website/assets/images/shahkar.jpg 1x,website/assets/images/shahkar.jpg 2x,website/assets/images/shahkar.jpg 3x">
                             <img width="240" height="240" class="swiper-lazy swiper-lazy-loaded" alt="Animated girl&#39;s day" srcset="website/assets/images/shahkar.jpg 1x,website/assets/images/shahkar.jpg 2x,website/assets/images/shahkar.jpg 3x" src="website/assets/images/shahkar.jpg">
@@ -2281,7 +2281,7 @@
                                     <font style="vertical-align: inherit;">Animated girl's day</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/pdokhtar" role="group" aria-label="8/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/pdokhtar" role="group" aria-label="8/20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/pdokhtar.jpg 1x,website/assets/images/pdokhtar.jpg 2x,website/assets/images/pdokhtar.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/pdokhtar.jpg" data-srcset="website/assets/images/pdokhtar.jpg 1x,website/assets/images/pdokhtar.jpg 2x,website/assets/images/pdokhtar.jpg 3x" alt="Happy Girl&#39;s Day 3D">
@@ -2295,7 +2295,7 @@
                                     <font style="vertical-align: inherit;">Happy Girl's Day 3D</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/khashastan" role="group" aria-label="9/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/khashastan" role="group" aria-label="9/20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/khashastan.jpg 1x,website/assets/images/khashastan.jpg 2x,website/assets/images/khashastan.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/khashastan.jpg" data-srcset="website/assets/images/khashastan.jpg 1x,website/assets/images/khashastan.jpg 2x,website/assets/images/khashastan.jpg 3x" alt="Girls are all special">
@@ -2309,7 +2309,7 @@
                                     <font style="vertical-align: inherit;">Girls are all special</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/best-girl-in-world" role="group" aria-label="10/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/best-girl-in-world" role="group" aria-label="10/20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/best-girl-in-world.jpg 1x,website/assets/images/best-girl-in-world.jpg 2x,website/assets/images/best-girl-in-world.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/best-girl-in-world.jpg" data-srcset="website/assets/images/best-girl-in-world.jpg 1x,website/assets/images/best-girl-in-world.jpg 2x,website/assets/images/best-girl-in-world.jpg 3x" alt="The day of the best girl in the world">
@@ -2324,7 +2324,7 @@
                                     </font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/gjhytttr" role="group" aria-label="11/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/gjhytttr" role="group" aria-label="11/20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/gjhytttr.jpg 1x,website/assets/images/gjhytttr.jpg 2x,website/assets/images/gjhytttr.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/gjhytttr.jpg" data-srcset="website/assets/images/gjhytttr.jpg 1x,website/assets/images/gjhytttr.jpg 2x,website/assets/images/gjhytttr.jpg 3x" alt="virtual girl&#39;s day">
@@ -2338,7 +2338,7 @@
                                     <font style="vertical-align: inherit;">virtual girl's day</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/specialgirl" role="group" aria-label="12/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/specialgirl" role="group" aria-label="12/20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/specialgirl.jpg 1x,website/assets/images/specialgirl.jpg 2x,website/assets/images/specialgirl.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/specialgirl.jpg" data-srcset="website/assets/images/specialgirl.jpg 1x,website/assets/images/specialgirl.jpg 2x,website/assets/images/specialgirl.jpg 3x" alt="Happy special girl&#39;s day">
@@ -2352,7 +2352,7 @@
                                     <font style="vertical-align: inherit;">Happy special girl's day</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/girl-day" role="group" aria-label="13 / 20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/girl-day" role="group" aria-label="13 / 20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/girl-day.jpg 1x,website/assets/images/girl-day.jpg 2x,website/assets/images/girl-day.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/girl-day.jpg" data-srcset="website/assets/images/girl-day.jpg 1x,website/assets/images/girl-day.jpg 2x,website/assets/images/girl-day.jpg 3x" alt="Happy Girl&#39;s Day from mother">
@@ -2366,7 +2366,7 @@
                                     <font style="vertical-align: inherit;">Happy Girl's Day from mother</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/sprzdkh" role="group" aria-label="14/20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/sprzdkh" role="group" aria-label="14/20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/sprzdkh.jpg 1x,website/assets/images/sprzdkh.jpg 2x,website/assets/images/sprzdkh.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/sprzdkh.jpg" data-srcset="website/assets/images/sprzdkh.jpg 1x,website/assets/images/sprzdkh.jpg 2x,website/assets/images/sprzdkh.jpg 3x" alt="Dedicated girl&#39;s day">
@@ -2380,7 +2380,7 @@
                                     <font style="vertical-align: inherit;">Dedicated girl's day</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/girllove" role="group" aria-label="15 / 20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/girllove" role="group" aria-label="15 / 20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/girllove.jpg 1x,website/assets/images/girllove.jpg 2x,website/assets/images/girllove.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/girllove.jpg" data-srcset="website/assets/images/girllove.jpg 1x,website/assets/images/girllove.jpg 2x,website/assets/images/girllove.jpg 3x" alt="Happy girl&#39;s day to my love">
@@ -2394,7 +2394,7 @@
                                     <font style="vertical-align: inherit;">Happy girl's day to my love</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/dazmom" role="group" aria-label="16 / 20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/dazmom" role="group" aria-label="16 / 20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/dazmom.jpg 1x,website/assets/images/dazmom.jpg 2x,website/assets/images/dazmom.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/dazmom.jpg" data-srcset="website/assets/images/dazmom.jpg 1x,website/assets/images/dazmom.jpg 2x,website/assets/images/dazmom.jpg 3x" alt="Girl&#39;s day from the mother&#39;s tongue">
@@ -2409,7 +2409,7 @@
                                     </font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/love2kh" role="group" aria-label="17 / 20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/love2kh" role="group" aria-label="17 / 20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/love2kh.jpg 1x,website/assets/images/love2kh.jpg 2x,website/assets/images/love2kh.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/love2kh.jpg" data-srcset="website/assets/images/love2kh.jpg 1x,website/assets/images/love2kh.jpg 2x,website/assets/images/love2kh.jpg 3x" alt="Romantic girl&#39;s day">
@@ -2423,7 +2423,7 @@
                                     <font style="vertical-align: inherit;">Romantic girl's day</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/girldyfrnd" role="group" aria-label="18 / 20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/girldyfrnd" role="group" aria-label="18 / 20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/girldyfrnd.jpg 1x,website/assets/images/girldyfrnd.jpg 2x,website/assets/images/girldyfrnd.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/girldyfrnd.jpg" data-srcset="website/assets/images/girldyfrnd.jpg 1x,website/assets/images/girldyfrnd.jpg 2x,website/assets/images/girldyfrnd.jpg 3x" alt="Happy girl&#39;s day friend">
@@ -2437,7 +2437,7 @@
                                     <font style="vertical-align: inherit;">Happy girl's day friend</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/brotosis" role="group" aria-label="19 / 20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/brotosis" role="group" aria-label="19 / 20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/brotosis.jpg 1x,website/assets/images/brotosis.jpg 2x,website/assets/images/brotosis.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/brotosis.jpg" data-srcset="website/assets/images/brotosis.jpg 1x,website/assets/images/brotosis.jpg 2x,website/assets/images/brotosis.jpg 3x" alt="Happy girl&#39;s day from brother">
@@ -2451,7 +2451,7 @@
                                     <font style="vertical-align: inherit;">Happy girl's day from brother</font>
                                 </font>
                             </span></h3>
-                    </a><a class="card swiper-slide" href="https://digipostal.ir/card/pgirl" role="group" aria-label="20 / 20">
+                    </a><a class="card swiper-slide" href="https://post.ddev.site//card/pgirl" role="group" aria-label="20 / 20">
                         <picture>
                             <source class="swiper-lazy" data-srcset="website/assets/images/pgirl.jpg 1x,website/assets/images/pgirl.jpg 2x,website/assets/images/pgirl.jpg 3x" type="image/webp">
                             <img width="240" height="240" class="swiper-lazy" data-src="website/assets/images/pgirl.jpg" data-srcset="website/assets/images/pgirl.jpg 1x,website/assets/images/pgirl.jpg 2x,website/assets/images/pgirl.jpg 3x" alt="Happy girl&#39;s day in advance">
@@ -2471,7 +2471,7 @@
                 <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-f2fc27137499ef73" aria-disabled="false"></div>
                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
-            <a class="view-all" href="https://digipostal.ir/category/religious-card"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+            <a class="view-all" href="https://post.ddev.site//category/religious-card"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">All postcards of religious holidays</font>
                     </font>
@@ -2510,7 +2510,7 @@
         <meta itemprop="wordcount" content="57">
 
         <section class="comment-container pt min">
-            <form class="comment-wrapper form-group" role="form" action="https://digipostal.ir/article/45-happy-girls-day-texts" method="post">
+            <form class="comment-wrapper form-group" role="form" action="https://post.ddev.site//article/45-happy-girls-day-texts" method="post">
                 <script>
                     var lang = 'fa';
                     var commentResource = {

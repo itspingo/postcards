@@ -37,23 +37,23 @@
                     @else
                         <div class="background lazy entered loaded" data-bg="/data/assets/background_thumbnails/61624_tn_1x.webp" data-bg-hidpi="/data/assets/background_thumbnails/61624_tn_2x.webp" style="background-color: rgb(163, 108, 66); background-image: url(&quot;/data/assets/background_thumbnails/61624_tn_1x.webp&quot;);" data-ll-status="loaded"></div>
                     @endif
-                    
+
                     @if($mycard->back_image)
 
 
-                    
-                    <img class="envelope lazy entered loaded" src="{{$mycard->flap_image}}" style="width:150px; height:120px; transform: scaleY(-1); margin-bottom:98px;">    
-                    <img class="envelope lazy entered loaded" src="{{$mycard->envelop_inside_image}}" style="width:150px; height:200px; margin-bottom:20px;">                        
-                        
+
+                    <img class="envelope lazy entered loaded" src="{{$mycard->flap_image}}" style="width:150px; height:120px; transform: scaleY(-1); margin-bottom:98px;">
+                    <img class="envelope lazy entered loaded" src="{{$mycard->envelop_inside_image}}" style="width:150px; height:200px; margin-bottom:20px;">
+
                         <img class="envelope lazy entered loaded" data-src="{{$mycard->back_image}}" data-srcset="{{$mycard->back_image}}" data-ll-status="loaded" srcset="{{$mycard->back_image}}" src="{{$mycard->back_image}}" style="width:150px; height:100px">
-                        
-                        <img  class="envelope lazy entered loaded" src="{{url('website/assets/images/flap-shadow.png')}}" style="width:150px; height:200px; margin-bottom:98px;">        
+
+                        <img  class="envelope lazy entered loaded" src="{{url('website/assets/images/flap-shadow.png')}}" style="width:150px; height:200px; margin-bottom:98px;">
 
 
                     @else
                         <img class="envelope lazy entered loaded" width="200" height="269" data-src="{{url('website/assets/images/1002.webp')}}" data-srcset="{{url('website/assets/images/1002.webp')}}" data-ll-status="loaded" srcset="{{url('website/assets/images/1002.webp')}}" src="{{url('website/assets/images/1002.webp')}}">
                     @endif
-                    
+
                     @if($mycard->card_image)
                         <div class="inner">
                             <img class="card lazy front entered loaded" width="200" height="284" data-src="{{url('storage/'.str_replace('public/','',$mycard->card_image))}}" data-ll-status="loaded" src="{{url('storage/'.str_replace('public/','',$mycard->card_image))}}">
@@ -67,7 +67,7 @@
                     <div></div>
                 </div>
                 <div class="info">
-                    <div class="row mt-10 mb-10"> 
+                    <div class="row mt-10 mb-10">
                         <div class="stamp">
                             <div class="title"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
@@ -86,7 +86,7 @@
                                     </span></span>
                                 </div>
                         </div>
-                        
+
 
                         <a class="menu mr-a " href="{{url('play/'.$mycard->id)}}" target="_blank" title="View card"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                                 <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
@@ -130,7 +130,7 @@
                                 </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Card editing</font>
-                                        </font> 
+                                        </font>
                                     </span></span></a></div>
                             <div class="option"><a href="{{url('mycards/card_copy/'.$mycard->id)}}"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                                     <path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z">
@@ -169,9 +169,9 @@
                                         </font>
                                     </span></span></a></div>
 
-                                    
+
                             <div class="option" onclick="hide_mycard_options({{$mycard->id}})">
-                            <i class="fa-regular fa-circle-xmark" style="margin-left:20px; font-size:16;"></i>    
+                            <i class="fa-regular fa-circle-xmark" style="margin-left:20px; font-size:16;"></i>
                             <span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Close</font>
@@ -214,7 +214,7 @@
                                     </font>
                                 </span></div>
                         </div>
-                        @endif 
+                        @endif
 
                     </div>
                     <div class="row state mt-10 mb-5">
@@ -334,7 +334,7 @@
                             </font>
                         </span></b>
                     <div class="share-buttons mb-10" style="width: 238px;"><a class="share primary-color-bg"
-                            href="https://digipostal.ir/app/mycards" style="display: none;"><svg
+                            href="https://post.ddev.site//app/mycards" style="display: none;"><svg
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"
                                 class="icon">
@@ -575,7 +575,7 @@
 
     /* .jetp-header {
         background-color: #f5f5f5;
-        
+
         padding: 10px;
     } */
 
@@ -585,8 +585,8 @@
     }
 
     .jetp-mycard {
-        margin-top: 15px; 
-     } 
+        margin-top: 15px;
+     }
      /* #div_messages_box {
         background-color: #fff;
         padding: 20px;
@@ -609,7 +609,7 @@ function hide_mycard_options(cardId){
     // document.getElementById("div_mycard_options_"+cardId).classList.toggle("show");
     // document.getElementById("div_mycard_options").classList.toggle("show");
     document.getElementById("div_mycard_options"+cardId).style.display = "none";
-    
+
 }
 
 
@@ -618,7 +618,7 @@ function load_messages(cardId){
     $.ajax({
         url: "{{ url('mycards/messages') }}"+"/"+cardId,
         type: "get",
-        data: { 
+        data: {
             cardid: cardId,
             _token: "{{ csrf_token() }}"
         },
@@ -659,9 +659,9 @@ function save_nclose_recipient(){
     $.ajax({
         url: "{{ url('mycards/save_recipient') }}",
         type: "get",
-        data: { 
+        data: {
             cardid: cardId,
-            prefix: prefix, 
+            prefix: prefix,
             recipient_name: recipient_name,
             mobile_no: mobile_no,
             _token: "{{ csrf_token() }}"
@@ -689,9 +689,9 @@ function save_ncontinue_recipient(){
     $.ajax({
         url: "{{ url('mycards/save_recipient') }}",
         type: "get",
-        data: { 
+        data: {
             cardid: cardId,
-            prefix: prefix, 
+            prefix: prefix,
             recipient_name: recipient_name,
             mobile_no: mobile_no,
             _token: "{{ csrf_token() }}"
@@ -708,8 +708,7 @@ function save_ncontinue_recipient(){
         }
     });
 }
-    
+
 
 </script>
 @endsection
-
