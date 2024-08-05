@@ -1,4 +1,4 @@
-https://digipostal.ir/app/home
+https://post.ddev.site//app/home
 yanes81591@rencr.com
 abc12345
 
@@ -23,7 +23,7 @@ CREATE TABLE `users` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
   `full_name` varchar(255)  NOT NULL,
   `email` varchar(255)  NOT NULL,
   `email_verified_at` datetime NULL DEFAULT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT timestamp,
   `updated_at` timestamp NULL DEFAULT NULL,
   `active` varchar(5) NOT NULL DEFAULT '1',
-  
+
   `account_type` varchar(100) DEFAULT 'user',
   `country_id` varchar(10) DEFAULT NULL,
   `state` varchar(200) DEFAULT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE `users` (
   `phone` varchar(50) DEFAULT NULL,
   `agree_terms_condition` varchar(10) DEFAULT NULL,
   primary key (`id`)
-  
+
 );
 
 
@@ -53,11 +53,11 @@ CREATE TABLE `stickers` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
 	title varchar(200) DEFAULT NULL,
 	main_image varchar(200) DEFAULT NULL,
 	more_images text DEFAULT NULL,
-	
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -67,18 +67,18 @@ CREATE TABLE `stickers` (
   primary key (`id`)
 ) ;
 
-	
+
 DROP TABLE IF EXISTS `stamps`;
 CREATE TABLE `stamps` (
   `id` bigint UNSIGNED NOT NULL auto_increment,
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
 	title varchar(200) DEFAULT NULL,
 	main_image varchar(200) DEFAULT NULL,
 	more_images text DEFAULT NULL,
-	
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -88,18 +88,18 @@ CREATE TABLE `stamps` (
   primary key (`id`)
 ) ;
 
-	
+
 DROP TABLE IF EXISTS `seal_designs`;
 CREATE TABLE `seal_designs` (
   `id` bigint UNSIGNED NOT NULL auto_increment,
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
 	title varchar(200) DEFAULT NULL,
 	main_image varchar(200) DEFAULT NULL,
 	more_images text DEFAULT NULL,
-	
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -111,7 +111,7 @@ CREATE TABLE `seal_designs` (
 
 
 
-	
+
 
 DROP TABLE IF EXISTS `card_categories`;
 CREATE TABLE `card_categories` (
@@ -119,13 +119,13 @@ CREATE TABLE `card_categories` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
 	cat_image varchar(200) DEFAULT NULL,
 	title varchar(200) DEFAULT NULL,
 	short_descr varchar(500) DEFAULT NULL,
-	long_descr text DEFAULT NULL,	
+	long_descr text DEFAULT NULL,
 	sound_file_ids  varchar(500) DEFAULT NULL,
-	
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -135,7 +135,7 @@ CREATE TABLE `card_categories` (
   primary key (`id`)
 ) ;
 
-	
+
 
 DROP TABLE IF EXISTS `cards`;
 CREATE TABLE `cards` (
@@ -143,13 +143,13 @@ CREATE TABLE `cards` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
 	title varchar(200) DEFAULT NULL,
 	short_descr varchar(500) DEFAULT NULL,
 	tags varchar(200) DEFAULT NULL,
 	short_code varchar(100) DEFAULT NULL,
-	card_context varchar(200) DEFAULT NULL,	
-	card_objects text DEFAULT NULL,	
+	card_context varchar(200) DEFAULT NULL,
+	card_objects text DEFAULT NULL,
 	designed_by_user_id varchar(10) DEFAULT NULL,
 	sender_user_id varchar(10) DEFAULT NULL,
 	sender_name varchar(200) DEFAULT NULL,
@@ -168,10 +168,10 @@ CREATE TABLE `cards` (
 	front_image varchar(200) DEFAULT NULL,
 	back_image varchar(200) DEFAULT NULL,
 	flap_image varchar(200) DEFAULT NULL,
-	
+
 	card_credits_price float DEFAULT NULL,
 
-	
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -190,12 +190,12 @@ CREATE TABLE `card_payments` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
 	card_id varchar(10) DEFAULT NULL,
 	user_id varchar(10) DEFAULT NULL,
 	amount float DEFAULT NULL,
 	transaction_id varchar(10) DEFAULT NULL,
-	
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -206,7 +206,7 @@ CREATE TABLE `card_payments` (
 ) ;
 
 
-		
+
 
 DROP TABLE IF EXISTS `card_reviews`;
 CREATE TABLE `card_reviews` (
@@ -214,7 +214,7 @@ CREATE TABLE `card_reviews` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
 	card_id varchar(5) DEFAULT NULL,
 	score_rating varchar(5) DEFAULT NULL,
 	full_name varchar(200) DEFAULT NULL,
@@ -238,7 +238,7 @@ CREATE TABLE `favourites` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
 
-   card_id  varchar(5) NOT NULL,	
+   card_id  varchar(5) NOT NULL,
 
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
@@ -249,7 +249,7 @@ CREATE TABLE `favourites` (
   primary key (`id`)
 ) ;
 
-		
+
 
 DROP TABLE IF EXISTS `blog_posts`;
 CREATE TABLE `blog_posts` (
@@ -257,7 +257,7 @@ CREATE TABLE `blog_posts` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
 	blog_category_id varchar(10) DEFAULT NULL,
 	blog_title varchar(500) DEFAULT NULL,
 	blog_image varchar(200) DEFAULT NULL,
@@ -273,20 +273,20 @@ CREATE TABLE `blog_posts` (
 ) ;
 
 
-	
-	
+
+
 DROP TABLE IF EXISTS `post_reviews`;
 CREATE TABLE `post_reviews` (
   `id` bigint UNSIGNED NOT NULL auto_increment,
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
 	post_id varchar(10) DEFAULT NULL,
 	score_rating varchar(5) DEFAULT NULL,
-	full_name varchar(200) DEFAULT NULL,	
+	full_name varchar(200) DEFAULT NULL,
 	review text DEFAULT NULL,
-	
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -298,7 +298,7 @@ CREATE TABLE `post_reviews` (
 
 
 
-	
+
 ----------- lookups -----------
 
 
@@ -312,7 +312,7 @@ CREATE TABLE `backgrounds` (
   title  varchar(200) DEFAULT NULL,
   main_image varchar(200) DEFAULT NULL,
   more_images text DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -321,7 +321,7 @@ CREATE TABLE `backgrounds` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 DROP TABLE IF EXISTS `envelop_designs`;
 CREATE TABLE `envelop_designs` (
@@ -329,11 +329,11 @@ CREATE TABLE `envelop_designs` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
   title  varchar(200) DEFAULT NULL,
   short_desc varchar(500) DEFAULT NULL,
   main_image varchar(200) DEFAULT NULL,
-    
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -342,7 +342,7 @@ CREATE TABLE `envelop_designs` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 DROP TABLE IF EXISTS `envelop_design_parts`;
 CREATE TABLE `envelop_design_parts` (
@@ -350,14 +350,14 @@ CREATE TABLE `envelop_design_parts` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
   envelop_design_id  varchar(10) DEFAULT NULL,
   title  varchar(200) DEFAULT NULL,
   main_image varchar(200) DEFAULT NULL,
   front_image varchar(200) DEFAULT NULL,
   back_image varchar(200) DEFAULT NULL,
-  flap_image varchar(200) DEFAULT NULL,  
-    
+  flap_image varchar(200) DEFAULT NULL,
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -373,11 +373,11 @@ CREATE TABLE `envelop_inside_images` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
     title  varchar(200) DEFAULT NULL,
   main_image varchar(200) DEFAULT NULL,
-  more_images text DEFAULT NULL,  
-  
+  more_images text DEFAULT NULL,
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -386,7 +386,7 @@ CREATE TABLE `envelop_inside_images` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 DROP TABLE IF EXISTS `sound_files`;
 CREATE TABLE `sound_files` (
@@ -394,10 +394,10 @@ CREATE TABLE `sound_files` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
     title  varchar(200) DEFAULT NULL,
   sound_file varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -407,7 +407,7 @@ CREATE TABLE `sound_files` (
   primary key (`id`)
 ) ;
 
-  
+
 
 DROP TABLE IF EXISTS `effects`;
 CREATE TABLE `effects` (
@@ -415,10 +415,10 @@ CREATE TABLE `effects` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
     title  varchar(200) DEFAULT NULL,
   effects_file varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -428,7 +428,7 @@ CREATE TABLE `effects` (
   primary key (`id`)
 ) ;
 
-  
+
 
 DROP TABLE IF EXISTS `tags`;
 CREATE TABLE `tags` (
@@ -436,9 +436,9 @@ CREATE TABLE `tags` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
   tag varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -448,7 +448,7 @@ CREATE TABLE `tags` (
   primary key (`id`)
 ) ;
 
-  
+
 
 DROP TABLE IF EXISTS `blog_categories`;
 CREATE TABLE `blog_categories` (
@@ -456,9 +456,9 @@ CREATE TABLE `blog_categories` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
   blog_category varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -467,8 +467,8 @@ CREATE TABLE `blog_categories` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
-  
+
+
 
 DROP TABLE IF EXISTS `stamp_designs`;
 CREATE TABLE `stamp_designs` (
@@ -476,11 +476,11 @@ CREATE TABLE `stamp_designs` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
     title  varchar(200) DEFAULT NULL,
   main_image varchar(200) DEFAULT NULL,
-  more_images text DEFAULT NULL,  
-  
+  more_images text DEFAULT NULL,
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -491,7 +491,7 @@ CREATE TABLE `stamp_designs` (
 ) ;
 
 
-  
+
 
 DROP TABLE IF EXISTS `stamp_images`;
 CREATE TABLE `stamp_images` (
@@ -499,11 +499,11 @@ CREATE TABLE `stamp_images` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
     title  varchar(200) DEFAULT NULL,
   main_image varchar(200) DEFAULT NULL,
   more_images text DEFAULT NULL,
-    
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -512,8 +512,8 @@ CREATE TABLE `stamp_images` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
-  
+
+
 
 DROP TABLE IF EXISTS `custom_user_images`;
 CREATE TABLE `custom_user_images` (
@@ -521,10 +521,10 @@ CREATE TABLE `custom_user_images` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-    
+
     title  varchar(200) DEFAULT NULL,
   custom_user_image varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -535,7 +535,7 @@ CREATE TABLE `custom_user_images` (
 ) ;
 
 
-  
+
 
 DROP TABLE IF EXISTS `custom_user_voices`;
 CREATE TABLE `custom_user_voices` (
@@ -543,10 +543,10 @@ CREATE TABLE `custom_user_voices` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
     title  varchar(200) DEFAULT NULL,
   custom_user_voice varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -555,7 +555,7 @@ CREATE TABLE `custom_user_voices` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `music_categories`;
@@ -564,9 +564,9 @@ CREATE TABLE `music_categories` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
     music_category  varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -575,7 +575,7 @@ CREATE TABLE `music_categories` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `music_files`;
@@ -584,11 +584,11 @@ CREATE TABLE `music_files` (
   `client_id` varchar(10) DEFAULT NULL,
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
-  
+
     music_category_id  varchar(10) DEFAULT NULL,
     title  varchar(200) DEFAULT NULL,
     music_file varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -597,7 +597,7 @@ CREATE TABLE `music_files` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 ----------------------------------------------------------------------------------------
 
 DROP TABLE IF EXISTS `widget_link`;
@@ -607,10 +607,10 @@ CREATE TABLE `widget_link` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     link_text  varchar(200) DEFAULT NULL,
     link_url  varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -619,7 +619,7 @@ CREATE TABLE `widget_link` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `widget_separator`;
@@ -629,9 +629,9 @@ CREATE TABLE `widget_separator` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     `separator`  varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -640,7 +640,7 @@ CREATE TABLE `widget_separator` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `widget_social_network`;
@@ -650,7 +650,7 @@ CREATE TABLE `widget_social_network` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     sn_title  varchar(200) DEFAULT NULL,
     sn_facebook  varchar(200) DEFAULT NULL,
     sn_twitter  varchar(200) DEFAULT NULL,
@@ -658,7 +658,7 @@ CREATE TABLE `widget_social_network` (
     sn_telegram  varchar(200) DEFAULT NULL,
     sn_whatsapp  varchar(200) DEFAULT NULL,
     sn_pinterest  varchar(200) DEFAULT NULL,
-    
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -667,8 +667,8 @@ CREATE TABLE `widget_social_network` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
-  
+
+
 DROP TABLE IF EXISTS `widget_widget_video`;
 CREATE TABLE `widget_widget_video` (
   `id` bigint UNSIGNED NOT NULL auto_increment,
@@ -676,9 +676,9 @@ CREATE TABLE `widget_widget_video` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     `video_link`  varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -697,11 +697,11 @@ CREATE TABLE `widget_user_text` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     `user_text`  varchar(200) DEFAULT NULL,
     `user_text_alignment`  varchar(200) DEFAULT NULL,
     `user_text_font_size`  varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -710,7 +710,7 @@ CREATE TABLE `widget_user_text` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `widget_attend_quest`;
@@ -720,12 +720,12 @@ CREATE TABLE `widget_attend_quest` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     `attend_quest_title`  varchar(200) DEFAULT NULL,
     `attend_quest_yes_title`  varchar(200) DEFAULT NULL,
     `attend_quest_no_title`  varchar(200) DEFAULT NULL,
     `attend_quest_mandatory`  varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -734,7 +734,7 @@ CREATE TABLE `widget_attend_quest` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `widget_text_question`;
@@ -744,12 +744,12 @@ CREATE TABLE `widget_text_question` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     text_question_title  varchar(200) DEFAULT NULL,
     text_question_type  varchar(200) DEFAULT NULL,
     text_question_mandatory  varchar(200) DEFAULT NULL,
     text_question_foryesno  varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -758,7 +758,7 @@ CREATE TABLE `widget_text_question` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `widget_countdown`;
@@ -768,13 +768,13 @@ CREATE TABLE `widget_countdown` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     countdown_title  varchar(200) DEFAULT NULL,
     countdown_date  varchar(200) DEFAULT NULL,
     countdown_time  varchar(200) DEFAULT NULL,
-    js_date_format  varchar(200) DEFAULT NULL,    
-    
-  
+    js_date_format  varchar(200) DEFAULT NULL,
+
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -783,7 +783,7 @@ CREATE TABLE `widget_countdown` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `widget_optional_question`;
@@ -793,13 +793,13 @@ CREATE TABLE `widget_optional_question` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     optnl_quest_title  varchar(200) DEFAULT NULL,
     optnl_quest_type  varchar(200) DEFAULT NULL,
     optnl_quest_options  varchar(200) DEFAULT NULL,
     optnl_quest_mandatory  varchar(200) DEFAULT NULL,
     optnl_quest_foryesno  varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -808,7 +808,7 @@ CREATE TABLE `widget_optional_question` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `widget_contact_comm`;
@@ -818,7 +818,7 @@ CREATE TABLE `widget_contact_comm` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     comm_type  varchar(200) DEFAULT NULL,
     comm_title  varchar(200) DEFAULT NULL,
     comm_tel  varchar(200) DEFAULT NULL,
@@ -828,7 +828,7 @@ CREATE TABLE `widget_contact_comm` (
     comm_email  varchar(200) DEFAULT NULL,
     comm_whatsapp_no  varchar(200) DEFAULT NULL,
     comm_whatsapp_text  varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -837,7 +837,7 @@ CREATE TABLE `widget_contact_comm` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `widget_memorial`;
@@ -847,14 +847,14 @@ CREATE TABLE `widget_memorial` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     memorial_title  varchar(200) DEFAULT NULL,
     memorial_text  varchar(200) DEFAULT NULL,
     memorial_presence_yesno  varchar(200) DEFAULT NULL,
     display_oncard  varchar(200) DEFAULT NULL,
     memorial_answer_mandatory  varchar(200) DEFAULT NULL,
     memorial_presence_status  varchar(200) DEFAULT NULL,
-    
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -863,7 +863,7 @@ CREATE TABLE `widget_memorial` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
+
 
 
 DROP TABLE IF EXISTS `widget_image`;
@@ -873,9 +873,9 @@ CREATE TABLE `widget_image` (
   `user_id` varchar(10) DEFAULT NULL,
   `web_user_id` varchar(10) DEFAULT NULL,
   `card_id` varchar(10) DEFAULT NULL,
-  
+
     image_url  varchar(200) DEFAULT NULL,
-  
+
   `base_lang` varchar(5) NOT NULL DEFAULT 'en',
   `active` varchar(5) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -884,19 +884,18 @@ CREATE TABLE `widget_image` (
   `deleted_for` varchar(10) DEFAULT NULL,
   primary key (`id`)
 ) ;
-  
 
 
 
 
-	
+
+
 countries
 moudules
 module_fields
-	
+
 ----------- notes --------
 - multi language support
 - multi currency supprt
 - payment gateway: stripe
-- 
-	
+-

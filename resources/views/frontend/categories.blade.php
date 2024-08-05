@@ -15,7 +15,7 @@
 
         <div class="breadcrumb text-regular">
             <ol itemscope="" itemtype="https://schema.org/BreadcrumbList">
-                <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://digipostal.ir/"><span itemprop="name"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://post.ddev.site//"><span itemprop="name"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">Home</font>
                                 </font>
@@ -38,7 +38,7 @@
     <div class="category-wrapper">
 
         @foreach($rows as $row)
-        
+
         <a href="{{'category/'.str_replace(' ','-',$row->title)}}" class="category">
             <div class="cover" style="background-color: #1EBBA4; opacity: 0.7;"></div>
             <div class="cover">
@@ -59,7 +59,7 @@
 
 
 <!--
-        <a href="https://digipostal.ir/category/wedding-invitation" class="category">
+        <a href="https://post.ddev.site//category/wedding-invitation" class="category">
             <div class="cover" style="background-color: #E94FB1; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #E94FB1">
@@ -75,8 +75,8 @@
                     </span></div>
             </div>
         </a>
-        
-        <a href="https://digipostal.ir/category/birthday-invitation" class="category">
+
+        <a href="https://post.ddev.site//category/birthday-invitation" class="category">
             <div class="cover" style="background-color: #E66A3F; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #E66A3F">
@@ -92,8 +92,8 @@
                     </span></div>
             </div>
         </a>
-        
-        <a href="https://digipostal.ir/category/condolences-card" class="category">
+
+        <a href="https://post.ddev.site//category/condolences-card" class="category">
             <div class="cover" style="background-color: #7D4AE4; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #7D4AE4">
@@ -108,7 +108,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/business" class="category">
+        </a><a href="https://post.ddev.site//category/business" class="category">
             <div class="cover" style="background-color: #ff5722; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #ff5722">
@@ -123,7 +123,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/love-card" class="category">
+        </a><a href="https://post.ddev.site//category/love-card" class="category">
             <div class="cover" style="background-color: #3D80E9; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #3D80E9">
@@ -138,7 +138,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/school" class="category">
+        </a><a href="https://post.ddev.site//category/school" class="category">
             <div class="cover" style="background-color: #D3BB2D; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #D3BB2D">
@@ -153,7 +153,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/good-day-night-card" class="category">
+        </a><a href="https://post.ddev.site//category/good-day-night-card" class="category">
             <div class="cover" style="background-color: #55C549; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #55C549">
@@ -168,7 +168,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/wedding-card" class="category">
+        </a><a href="https://post.ddev.site//category/wedding-card" class="category">
             <div class="cover" style="background-color: #E94FB1; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #E94FB1">
@@ -183,7 +183,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/religious-card" class="category">
+        </a><a href="https://post.ddev.site//category/religious-card" class="category">
             <div class="cover" style="background-color: #7D4AE4; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #7D4AE4">
@@ -198,7 +198,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/miss-card" class="category">
+        </a><a href="https://post.ddev.site//category/miss-card" class="category">
             <div class="cover" style="background-color: #E66A3F; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #E66A3F">
@@ -213,7 +213,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/greeting-card" class="category">
+        </a><a href="https://post.ddev.site//category/greeting-card" class="category">
             <div class="cover" style="background-color: #1EBBA4; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #1EBBA4">
@@ -228,7 +228,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/anniversary-card" class="category">
+        </a><a href="https://post.ddev.site//category/anniversary-card" class="category">
             <div class="cover" style="background-color: #29A8C2; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #29A8C2">
@@ -243,7 +243,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/jobs-card" class="category">
+        </a><a href="https://post.ddev.site//category/jobs-card" class="category">
             <div class="cover" style="background-color: #1EBBA4; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #1EBBA4">
@@ -258,7 +258,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/father-day-card" class="category">
+        </a><a href="https://post.ddev.site//category/father-day-card" class="category">
             <div class="cover" style="background-color: #D3BB2D; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #D3BB2D">
@@ -273,7 +273,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/nowruz-card" class="category">
+        </a><a href="https://post.ddev.site//category/nowruz-card" class="category">
             <div class="cover" style="background-color: #29A8C2; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #29A8C2">
@@ -288,7 +288,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/mother-day-card" class="category">
+        </a><a href="https://post.ddev.site//category/mother-day-card" class="category">
             <div class="cover" style="background-color: #55C549; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #55C549">
@@ -303,7 +303,7 @@
                         </font>
                     </span></div>
             </div>
-        </a><a href="https://digipostal.ir/category/yalda-card" class="category">
+        </a><a href="https://post.ddev.site//category/yalda-card" class="category">
             <div class="cover" style="background-color: #E94FB1; opacity: 0.7;"></div>
             <div class="cover">
                 <div class="icon-cover" style="background-color: #E94FB1">

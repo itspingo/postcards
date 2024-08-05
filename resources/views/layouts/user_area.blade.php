@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0032)https://digipostal.ir/app/create -->
+<!-- saved from url=(0032)https://post.ddev.site//app/create -->
 <html lang="en" class="translated-ltr">
 
 <head>
@@ -9,16 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
 
-    <link rel="shortcut icon" href="https://digipostal.ir/resources/images/fav-fa/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://digipostal.ir/resources/images/fav-fa/apple-touch-icon.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://digipostal.ir/resources/images/fav-fa/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://digipostal.ir/resources/images/fav-fa/favicon-16x16.png')}}">
-    <link rel="manifest" href="https://digipostal.ir/resources/images/fav-fa/site.webmanifest">
-    <link rel="mask-icon" href="https://digipostal.ir/resources/images/fav-fa/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://post.ddev.site//resources/images/fav-fa/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://post.ddev.site//resources/images/fav-fa/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://post.ddev.site//resources/images/fav-fa/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://post.ddev.site//resources/images/fav-fa/favicon-16x16.png')}}">
+    <link rel="manifest" href="https://post.ddev.site//resources/images/fav-fa/site.webmanifest">
+    <link rel="mask-icon" href="https://post.ddev.site//resources/images/fav-fa/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#FFFFFF">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""> 
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="{{url('website/assets/css/css2')}}" rel="stylesheet">
     <!-- <link rel="stylesheet" href="{{url('website/assets/css/fonts.css')}}"> -->
     <style id="wudoohCustomFontsStyle"></style>
@@ -33,8 +33,8 @@
     <!-- Jcrop CSS and JS -->
     <link rel="stylesheet" href="{{url('website/assets/css/jquery.Jcrop.min.css')}}">
     <!-- <link href="{{url('website/assets/css/style-v21.1.css')}}" rel="stylesheet"> -->
-   
-    
+
+
     <script>
     // this page is a demo that is not built, so fudge the module.exports support
     // define a global `module` so that the actual source file can use it
@@ -42,7 +42,7 @@
   </script>
   <script src="{{url('website/assets/js/confetti.js')}}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.0/worker-javascript.js"></script>
-  
+
   <script>
     // define the `module.exports` as the `confetti` global, the way that the
     // cdn distributed file would
@@ -430,20 +430,20 @@
             <div id="content_area">
 
            @yield('content')
-            
+
             </div>
 
 
         </div>
-        
+
     </div>
 
 
 
-    
+
 
     <!-- -----------------------------------------------------------------------  -->
-       
+
 
     <script>
 
@@ -454,15 +454,15 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 				var data = f.target.result;
 				var img = new Image();
 				img.src = data;
-		
+
 				img.onload = function() {
 					var containerWidth = 1183;
 					var containerHeight = 458;
 					var imgWidth = img.width;
 					var imgHeight = img.height;
-		
+
 					var newWidth, newHeight;
-		
+
 					if (imgWidth / imgHeight > containerWidth / containerHeight) {
 						// Image is wider relative to the container
 						newWidth = containerWidth;
@@ -472,31 +472,31 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 						newHeight = containerHeight;
 						newWidth = (imgWidth / imgHeight) * containerHeight;
 					}
-		
+
 					// Create a canvas to draw the resized image
 					var canvas = document.createElement('canvas');
 					canvas.width = newWidth;
 					canvas.height = newHeight;
 					var ctx = canvas.getContext('2d');
 					ctx.drawImage(img, 0, 0, newWidth, newHeight);
-		
+
 					// Get the resized image as data URL
 					var resizedDataUrl = canvas.toDataURL();
-		
+
 					// Clear the previous image and initialize the new one
 					var imageToCrop = $('#image_to_crop_context');
 					imageToCrop.removeAttr('src').removeAttr('style').removeClass('jcrop-active');
 					if (imageToCrop.data('Jcrop')) {
 						imageToCrop.data('Jcrop').destroy(); // Ensure Jcrop is destroyed before re-initializing
 					}
-		
+
 					// Set the image dimensions to fit within the container while maintaining aspect ratio
 					imageToCrop.css({
 						width: newWidth + 'px',
 						height: newHeight + 'px'
 					}).attr('src', resizedDataUrl).on('load', function() {
 						showhide('div_crop_image_context', ['div_upload_bg_image']);
-		
+
 						// Initialize Jcrop with updated settings
 						imageToCrop.Jcrop({
 							allowSelect: true, // Allow cropper to be selected
@@ -508,8 +508,8 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 								size = {x: c.x, y: c.y, w: c.w, h: c.h};
 							}
 						});
-							
-						
+
+
 						// Get the cropped image data URL
 						var croppedDataUrl = canvas.toDataURL();
 						var croppedImage = new Image();
@@ -519,7 +519,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 						// Save the cropped image to storage
 						var formData = new FormData();
 						formData.append('image', croppedImage);
-					
+
 						// console.log(croppedDataUrl);
 
 						$.ajax({
@@ -555,12 +555,12 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 
 
 					});
-					
+
 				};
 			};
 			reader.readAsDataURL(file);
 		});
-		
+
 
         function setCanvasBackground(cardId) {
             $.ajax({
@@ -590,7 +590,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
                 }
             });
         }
-                      
+
 
         function addcBackgroundImage(recid, imageURL){
 			// alert(imageURL);
@@ -623,14 +623,14 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 
 
 	    function addcInsideImage(recid, imageURL){
-					
+
                     document.getElementById('img_envelop_inside').src = imageURL;
                     document.getElementById('img_envelop_inside3').src = imageURL;
                     hide_div('div_more_inside_images');
-                    
+
                     var updateImageUrl = '{{ route("card_designer.updateInsideImage") }}';
                     var csrfToken = '{{ csrf_token() }}';
-                    
+
                     // AJAX request to update the database using jQuery
                     $.ajax({
                         url: updateImageUrl,
@@ -647,19 +647,19 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
                             console.log('Failed to update background image');
                         }
                     });
-        
+
                 }
 
 
-        
+
 
 		function addcCanvasImage(imageURL){
 			// alert(imageURL);
 			// var imageURL2 = imageURL;
 
-			fabric.Image.fromURL(imageURL, function(img) {                   
+			fabric.Image.fromURL(imageURL, function(img) {
 				img.scaleToHeight(300);
-				img.scaleToWidth(300); 
+				img.scaleToWidth(300);
 				fabcanvas.centerObject(img);
 				fabcanvas.add(img);
 				fabcanvas.renderAll();
@@ -682,7 +682,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 			// 	}
 			// });
 		}
-		
+
 
 		function addStampImage(recid, imageURL){
 			// var imageURL2 = imageURL;
@@ -706,7 +706,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 				}
 			});
 		}
-		
+
 
 		function addstampdesign(recid, imageURL){
 			// var imageURL2 = imageURL;
@@ -754,7 +754,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 				}
 			});
 		}
-		
+
 		function addcardmusic(recid, musictitle,musicfile){
 			// var imageURL2 = imageURL;
 			alert(musictitle);
@@ -780,12 +780,12 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 		}
 
 
-		  
+
 		function add_recipient_name() {
 			// Get the HTML content from CKEditor
 			let usrtxt = document.getElementById('recipient_name').value;
 			document.getElementById('span_recipient_name').innerHTML = usrtxt;
-			
+
 			hide_div('div_recipient_name');
              // AJAX request to update the database using jQuery
 			 $.ajax({
@@ -809,7 +809,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 			// Get the HTML content from CKEditor
 			let usrtxt = document.getElementById('sender_name').value;
 			document.getElementById('span_sender_name').innerHTML = usrtxt;
-			
+
 			hide_div('div_sender_name');
              // AJAX request to update the database using jQuery
 			 $.ajax({
@@ -838,7 +838,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 			document.getElementById('img_back_image').src = backimage;
 			document.getElementById('img_flap_image').src = flapimage;
 
-			document.getElementById('img_front_image1').src = frontimage;			
+			document.getElementById('img_front_image1').src = frontimage;
 			document.getElementById('img_back_image2').src = backimage;
 			document.getElementById('img_flap_image2').src = flapimage;
 
@@ -873,7 +873,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 			var parsedMusicFiles = JSON.parse(musicfiles);
 			console.log(parsedMusicFiles);
 			var card_music_files = '';
-		
+
 			parsedMusicFiles.forEach(function(musicfile) {
 				// Construct the URL for the music file
 				var vmuscfile = musicfile.music_file;
@@ -889,7 +889,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 					</div> \
 				</div>';
 			});
-		
+
 			// Insert the constructed HTML into the DOM
 			document.getElementById('more_cardmusic').innerHTML = card_music_files;
 			showhide('div_more_cardmusic', ['div_cardmusic']);
@@ -903,7 +903,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 			currentAudio = new Audio(vmusicFileUrl);
 			// currentAudio = audio;
 			currentAudio.play();
-			
+
 			document.getElementById('span_current_file_title').innerHTML = musicFileTitle;
 			document.getElementById('span_play_icon'+recno).style.display = 'none';
 			document.getElementById('span_stop_icon'+recno).style.display = 'inline';
@@ -956,7 +956,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 
 
 
-    </script>	
+    </script>
 
 
 <script>
@@ -1461,20 +1461,20 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
         });
         };
 </script>
-            
 
-			 
-    
+
+
+
     <link href="{{url('website/assets/css/style-v19.25.css')}}" rel="stylesheet">
     <link href="{{url('website/assets/css/style-v20.2.css')}}" rel="stylesheet">
-    <script src="{{url('website/assets/js/fabric.min.js')}}"></script>  
+    <script src="{{url('website/assets/js/fabric.min.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
-    <script src="{{url('website/assets/js/canvas-toBlob.js')}}"></script>  
+    <script src="{{url('website/assets/js/canvas-toBlob.js')}}"></script>
     <script src="{{url('website/assets/js/jquery.Jcrop.min.js')}}"></script>
-    
+
 
     <script src="{{url('website/assets/js/postcard_functions.js')}}"></script>
-   
+
 
 </body>
 

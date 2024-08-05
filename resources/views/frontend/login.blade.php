@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0039)https://digipostal.ir/app/account/login -->
+<!-- saved from url=(0039)https://post.ddev.site//app/account/login -->
 <html lang="en" class="translated-ltr">
 
 <head>
@@ -9,15 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
 
-    <link rel="shortcut icon" href="https://digipostal.ir/resources/images/fav-fa/favicon.ico">
+    <link rel="shortcut icon" href="https://post.ddev.site//resources/images/fav-fa/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180"
-        href="https://digipostal.ir/resources/images/fav-fa/apple-touch-icon.png">
+        href="https://post.ddev.site//resources/images/fav-fa/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
-        href="https://digipostal.ir/resources/images/fav-fa/favicon-32x32.png">
+        href="https://post.ddev.site//resources/images/fav-fa/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
-        href="https://digipostal.ir/resources/images/fav-fa/favicon-16x16.png">
-    <link rel="manifest" href="https://digipostal.ir/resources/images/fav-fa/site.webmanifest">
-    <link rel="mask-icon" href="https://digipostal.ir/resources/images/fav-fa/safari-pinned-tab.svg" color="#5bbad5">
+        href="https://post.ddev.site//resources/images/fav-fa/favicon-16x16.png">
+    <link rel="manifest" href="https://post.ddev.site//resources/images/fav-fa/site.webmanifest">
+    <link rel="mask-icon" href="https://post.ddev.site//resources/images/fav-fa/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#FFFFFF">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -33,7 +33,7 @@
     @csrf
     <div id="app">
         <div class="jetp-login-page">
-        
+
             <header class="jetp-header fixed" style="position: fixed; left: 0px; right: 0px;">
                 <a href="{{url('home')}}"
                     class="fr icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -42,7 +42,7 @@
                         <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
                     </svg></a>
                 </header>
-                
+
                     <h1 class="mb-20"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
@@ -89,7 +89,7 @@
                                     <font style="vertical-align: inherit;">Forgot your password?</font>
                                 </font>
                             </span></span></a>
-                            
+
                             <button type="submit" class="fill mb-40"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
@@ -106,12 +106,12 @@
                                     <font style="vertical-align: inherit;">Register</font>
                                 </font>
                             </span></b></a>
-      
+
         </div>
     </div>
     </form>
     <link href="{{url('website/assets/css/login.css')}}" rel="stylesheet">
- 
+
 
     <style>
         .flash-message {

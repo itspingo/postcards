@@ -11,11 +11,11 @@
   <link type="text/css" rel="stylesheet" charset="UTF-8" href="{{url('website/assets/css/m=el_main_css')}}">
 
 
-  <link rel="shortcut icon" href="https://digipostal.ir/resources/images/fav-fa/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://digipostal.ir/resources/images/fav-fa/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://digipostal.ir/resources/images/fav-fa/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://digipostal.ir/resources/images/fav-fa/favicon-16x16.png">
-  <link rel="canonical" href="https://digipostal.ir/card/zaer-hajj">
+  <link rel="shortcut icon" href="https://post.ddev.site//resources/images/fav-fa/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://post.ddev.site//resources/images/fav-fa/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://post.ddev.site//resources/images/fav-fa/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://post.ddev.site//resources/images/fav-fa/favicon-16x16.png">
+  <link rel="canonical" href="https://post.ddev.site//card/zaer-hajj">
   <script src="{{url('website/assets/js/macy@2.js')}}"></script>
   <script src="{{url('website/assets/js/cropper.min.js')}}"></script>
   <link rel="stylesheet" href="{{url('website/assets/css/cropper.min.css')}}">
