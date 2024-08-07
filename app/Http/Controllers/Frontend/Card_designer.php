@@ -680,12 +680,7 @@ class Card_designer extends Controller
 
     public function updateBackgroundImage(Request $request)
     {
-        // Validate the request
-        // $request->validate([
-        //     'imageURL' => 'required|url',
-        // ]);
-
-        
+       
         $cardId = session()->get('sess_card_id');
         $card = cards_model::find($cardId);
 
@@ -934,7 +929,7 @@ public function saveCardObjects(Request $request)
         //Log::info('Card saved successfully');
 
 
-/*
+
         $envelop_design_id = $card->envelop_design_id;
         if($envelop_design_id != ''){        
             $dbmodl->settable('envelop_designs');
@@ -1002,21 +997,6 @@ public function saveCardObjects(Request $request)
         }
 
 
-        // $canvas_image_id = $card->canvas_image_id;
-        // if($canvas_image_id != ''){        
-        //     $dbmodl->settable('envelop_designs');
-        //     $dbmodel_rec = $dbmodl->where(['id'=>$canvas_image_id])->first();
-        //     if($dbmodel_rec->ticket_type_id != ''){
-        //         $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
-        //         array_push($card_token_details, [
-        //             'feature'=>'Context Selection',
-        //             'stamp_type'=>$stamp_rec->ticket_type,
-        //             'tokens'=> -$stamp_rec->tokens
-        //         ]);
-        //         $tot_tokens_reqd += $stamp_rec->tokens;
-        //     }
-        // }
-
 
         $stamp_image_id = $card->stamp_image_id;
         if($stamp_image_id != ''){        
@@ -1052,21 +1032,6 @@ public function saveCardObjects(Request $request)
         }
 
 
-        // $card_image_id = $card->card_image_id;
-        // if($card_image_id != ''){        
-        //     $dbmodl->settable('envelop_designs');
-        //     $dbmodel_rec = $dbmodl->where(['id'=>$card_image_id])->first();
-        //     if($dbmodel_rec->ticket_type_id != ''){
-        //         $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
-        //         array_push($card_token_details, [
-        //             'feature'=>'Card Image',
-        //             'stamp_type'=>$stamp_rec->ticket_type,
-        //             'tokens'=> -$stamp_rec->tokens
-        //         ]);
-        //         $tot_tokens_reqd += $stamp_rec->tokens;
-        //     }
-        // }
-
 
         $music_file_id = $card->music_file_id;
         if($music_file_id != ''){        
@@ -1094,7 +1059,7 @@ public function saveCardObjects(Request $request)
             }
 
         }
-*/
+
 
 
         // Fetch the canvas background image URL if exists
@@ -1126,6 +1091,7 @@ public function getCanvasImage($cardId)
 
 
 /*
+//this part is under development
 public function store_card($cardId){
     $card = cards_model::find($cardId);
     $ticket_types = ticket_types_model::where(['active'=>'1'])->get();

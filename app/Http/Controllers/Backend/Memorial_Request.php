@@ -42,15 +42,7 @@ class Memorial_Request extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Memorial Request';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = memorial_request_model::create($record); */
-
+        
         $record = $request->all();
         
         

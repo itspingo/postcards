@@ -42,14 +42,7 @@ class User_Images extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'User Images';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = user_images_model::create($record); */
+        
 
         $record = $request->all();
         if ($request->hasFile('image_url')) {

@@ -42,14 +42,7 @@ class Envelop_Design_Parts extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Envelop Design Parts';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = envelop_design_parts_model::create($record); */
+       
 
         $record = $request->all();
         if ($request->hasFile('thumbnail')) {

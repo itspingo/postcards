@@ -139,22 +139,7 @@
                             </span></div>
                     </div>
                 </div>
-                <!-- <div class="widget-cover">
-                        <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24"
-                                height="24" viewBox="0 0 24 24" class="icon primary-color">
-                                <path
-                                    d="M12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5M12,2A7,7 0 0,1 19,9C19,14.25 12,22 12,22C12,22 5,14.25 5,9A7,7 0 0,1 12,2M12,4A5,5 0 0,0 7,9C7,10 7,12 12,18.71C17,12 17,10 17,9A5,5 0 0,0 12,4Z">
-                                </path>
-                            </svg>
-                            <div><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Map and navigation</font>
-                                    </font>
-                                </span></div>
-                        </div>
-                    </div> -->
+             
                 <div class="widget-cover" onclick = "showhide('div_widgets_question',['div_widgets_list','div_widgets_timer','div_widgets_link','div_widgets_memorial',
                         'div_widgets_optional_question','div_widgets_text_question','div_widgets_text_description','div_widgets_comm_landline',
                         'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
@@ -383,14 +368,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_question_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+               
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -504,14 +482,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_timer_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+               
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -580,17 +551,7 @@
             </button>
 
             <div id="div_btn_widget_link_delete" >
-            <!-- <button id="btn_widget_link_delete" class="linear-warning w-120px mr-a" style="display: none;" >
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span>
-                    
-            </button> -->
+          
             </div>
                 
             </div>
@@ -680,14 +641,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_memorial_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+               
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -870,18 +824,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_optional_question_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+              
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -1019,18 +962,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_text_question_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+               
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -1144,12 +1076,7 @@
                                         <font style="vertical-align: inherit;">Center</font>
                                     </font>
                                 </span></option>
-                            <!-- <option value="justify"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">China level</font>
-                                    </font>
-                                </span></option> -->
+                           
                         </select>
                     </div>
                 </div>
@@ -1164,18 +1091,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_text_description_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+              
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -1216,12 +1132,7 @@
                                 <font style="vertical-align: inherit;">Choosing a communication method</font>
                             </font>
                         </span></div><select id="comm_type" name="comm_type" onchange="change_comm_method(this.value)">
-                        <!-- <option value=""><span wudooh="true"
-                                style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Select</font>
-                                </font>
-                            </span></option> -->
+                       
                         <option value="tel"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -1419,18 +1330,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_contact_comm_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+               
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -1543,18 +1443,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_comm_phoneno_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+               
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -1684,18 +1573,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_comm_sms_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+               
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -1812,18 +1690,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_comm_email_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+              
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -1952,18 +1819,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_comm_whatsapp_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+               
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -2203,18 +2059,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_social_network_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+               
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -2276,18 +2121,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_image_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+              
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -2349,18 +2183,7 @@
                     </font>
                 </span></button>
                 <div id="div_btn_widget_video_delete" >
-                <!-- <button class="linear-warning w-120px mr-a" style="display: none;"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+               
                 </div>
                 </div>
         <div class="jetp-loading-wrapper" style="display: none;">
@@ -2582,22 +2405,11 @@
             </div>
             <input type="text" name="recid_widget_separator" id="recid_widget_separator" value="">
         </div>
-        <!-- <div class="jetp-footer p-20-10" style="display: none;"> -->
+        
         <div id="div_btn_widget_separator_delete" >
-        <!-- <button class="linear-warning w-120px mr-a"><svg
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path
-                        d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Delete</font>
-                        </font>
-                    </span></span></button> -->
+       
         </div>
-                <!-- </div> -->
+                
         <div class="jetp-loading-wrapper" style="display: none;">
             <div class="spinner large"></div>
         </div>

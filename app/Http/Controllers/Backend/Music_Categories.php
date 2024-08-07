@@ -42,15 +42,7 @@ class Music_Categories extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Music Categories';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = music_categories_model::create($record); */
-
+       
         $record = $request->all();
         
         

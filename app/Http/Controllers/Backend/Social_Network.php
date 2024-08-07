@@ -42,14 +42,7 @@ class Social_Network extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Social Network';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = social_network_model::create($record); */
+       
 
         $record = $request->all();
         

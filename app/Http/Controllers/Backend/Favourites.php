@@ -42,15 +42,7 @@ class Favourites extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Favourites';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = favourites_model::create($record); */
-
+        
         $record = $request->all();
         
         

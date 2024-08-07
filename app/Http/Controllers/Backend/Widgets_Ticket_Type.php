@@ -42,14 +42,7 @@ class Widgets_Ticket_Type extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Widgets Ticket Type';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = widgets_ticket_type_model::create($record); */
+       
 
         $record = $request->all();
         

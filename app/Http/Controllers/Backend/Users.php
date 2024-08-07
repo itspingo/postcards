@@ -42,14 +42,7 @@ class Users extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Users';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = users_model::create($record); */
+       
 
         $record = $request->all();
         if ($request->hasFile('photo')) {$imgFile = $request->file('photo')->store('public');$record['photo'] = $imgFile;}

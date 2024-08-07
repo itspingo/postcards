@@ -42,14 +42,7 @@ class Card_Recipients extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Card Recipients';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = card_recipients_model::create($record); */
+        
 
         $record = $request->all();
         

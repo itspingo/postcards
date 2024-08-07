@@ -42,15 +42,7 @@ class Music_Files extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Music Files';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = music_files_model::create($record); */
-
+        
         $record = $request->all();
         
         

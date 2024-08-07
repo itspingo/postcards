@@ -8,15 +8,7 @@
                     <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
                     </path>
                 </svg></button>
-                <!-- <button class="fl icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                    <path d="M17.65,6.35C16.2,4.9 14.21,4 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20C15.73,20 18.84,17.45 19.73,14H17.65C16.83,16.33 14.61,18 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6C13.66,6 15.14,6.69 16.22,7.78L13,11H20V4L17.65,6.35Z">
-                    </path>
-                </svg></button> -->
-                <!-- <button class="fl outline gray ml-5" style="display: none; min-width: 72px;"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Dedicated cards</font>
-                    </font>
-                </span></button> -->
+               
             <div class="title"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">my cards</font>
@@ -75,10 +67,7 @@
                                     </font>
                                 </span></div>
                             <div class="detail">
-                                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon ml-5" style="color: rgb(205, 127, 50);">
-                                    <path d="M2,2V5.5C3.1,5.5 4,6.62 4,8C4,9.38 3.1,10.5 2,10.5V13.5C3.1,13.5 4,14.62 4,16C4,17.38 3.1,18.5 2,18.5V22H5.5C5.5,20.9 6.62,20 8,20C9.38,20 10.5,20.9 10.5,22H13.5C13.5,20.9 14.62,20 16,20C17.38,20 18.5,20.9 18.5,22H22V18.5C20.9,18.5 20,17.38 20,16V16C20,14.62 20.9,13.5 22,13.5V10.5C20.9,10.5 20,9.38 20,8V8C20,6.62 20.9,5.5 22,5.5V2H18.5C18.5,3.1 17.38,4 16,4C14.62,4 13.5,3.1 13.5,2H10.5C10.5,3.1 9.38,4 8,4C6.62,4 5.5,3.1 5.5,2H2M6,6H18V18H6V6M9,7A2,2 0 0,0 7,9A2,2 0 0,0 9,11A2,2 0 0,0 11,9A2,2 0 0,0 9,7M17,10L14,13L12,12L7,17H17V10Z">
-                                    </path>
-                                </svg> -->
+                             
                                 <span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">{{$mycard->title}}</font>
@@ -151,14 +140,6 @@
                                     </span></span></a></div>
                             <div class="line"></div>
 
-                            <!-- <div class="option"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                                    <path d="M3,11H5V13H3V11M11,5H13V9H11V5M9,11H13V15H11V13H9V11M15,11H17V13H19V11H21V13H19V15H21V19H19V21H17V19H13V21H11V17H15V15H17V13H15V11M19,19V15H17V19H19M15,3H21V9H15V3M17,5V7H19V5H17M3,3H9V9H3V3M5,5V7H7V5H5M3,15H9V21H3V15M5,17V19H7V17H5Z">
-                                    </path>
-                                </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                        <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;">Receive a Digipostal label</font>
-                                        </font>
-                                    </span></span></div> -->
 
                             <div class="option"><a href="{{url('mycards/card_delete/'.$mycard->id)}}"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                                     <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
@@ -218,18 +199,7 @@
 
                     </div>
                     <div class="row state mt-10 mb-5">
-                        <!-- <div class="col cursor">
-                            <div class="title"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">viewers' statistics
-                                        </font>
-                                    </font>
-                                </span></div>
-                            <div class="detail"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon" style="width: 20px; height: 20px;">
-                                    <path d="M12,17C10.89,17 10,16.1 10,15C10,13.89 10.89,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z">
-                                    </path>
-                                </svg></div>
-                        </div> -->
+                        
                         <div class="col cursor">
                             <div class="title"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
@@ -480,12 +450,7 @@
                                         <font style="vertical-align: inherit;">Lady</font>
                                     </font>
                                 </span></option>
-                            <!-- <option value="4"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Mr</font>
-                                    </font>
-                                </span></option> -->
+                           
                             <option value="Dedicated to"><span wudooh="true"
                                     style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
@@ -573,12 +538,7 @@
         padding: 15px;
     }
 
-    /* .jetp-header {
-        background-color: #f5f5f5;
-
-        padding: 10px;
-    } */
-
+  
     .title {
         font-weight: bold;
         text-align: left;
@@ -587,27 +547,18 @@
     .jetp-mycard {
         margin-top: 15px;
      }
-     /* #div_messages_box {
-        background-color: #fff;
-        padding: 20px;
-        border: 1px solid #ddd;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    } */
+   
 </style>
 
 <script>
 
 function show_mycard_options(cardId){
-    // alert('card id: '+cardId);
-    // document.getElementById("div_mycard_options_"+cardId).classList.toggle("show");
-    // document.getElementById("div_mycard_options").classList.toggle("show");
+  
     document.getElementById("div_mycard_options"+cardId).style.display = "block";
 }
 
 function hide_mycard_options(cardId){
-    // alert('card id: '+cardId);
-    // document.getElementById("div_mycard_options_"+cardId).classList.toggle("show");
-    // document.getElementById("div_mycard_options").classList.toggle("show");
+  
     document.getElementById("div_mycard_options"+cardId).style.display = "none";
 
 }
@@ -636,9 +587,7 @@ function load_messages(cardId){
 
 
 function show_card_share_popup(cardid){
-    // alert('card id: '+cardId);
-    // document.getElementById("div_mycard_options_"+cardId).classList.toggle("show");
-    // document.getElementById("div_mycard_options").classList.toggle("show");
+    
     document.getElementById("div_card_share").style.display = "flex";
 }
 

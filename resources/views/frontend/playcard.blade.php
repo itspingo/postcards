@@ -233,11 +233,6 @@
           <!-- image of person that shows after open the letter -->
           <img src="{{url('storage/'.str_replace('public/','',$card_info->card_image))}}" alt="Avatar" class="innerPicture" id="innerPicture" style="display: none;" />
 
-          <!-- Start -->
-          <!-- these two images are the same and also in the same position, that bottom part of the front side
-                  first image is always shown and second is hide after letter open and innerPicture goes upside,
-                  the purpose of using the method is innerPicture index high that it shows immediately onclick
-                  that why using second image to hide immediate effect  -->
           <img src="@if(isset($card_info->back_image)) {{url($card_info->back_image)}} @else {{url('website/assets/images/2001_back.webp')}} @endif" alt="Avatar" class="imageFront1" />
 
           <img src="@if(isset($card_info->back_image)) {{url($card_info->back_image)}} @else {{url('website/assets/images/2001_back.webp')}} @endif" alt="Avatar" class="duplicateImage" id="duplicateImage" />
@@ -291,29 +286,6 @@
 
 
   </div>
-
-  <!-- Popup Modal -->
-  <!-- <div id="popupModal" class="popup-modal">
-    <div class="popup-content">
-      <span class="close">&times;</span>
-      <h2>Options</h2>
-      <label for="option1">Option 1:</label>
-      <input type="text" id="option1" name="option1"><br><br>
-      <label for="option2">Option 2:</label>
-      <input type="text" id="option2" name="option2"><br><br>
-
-      <div class="item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="100" height="10" viewBox="0 0 100 10" class="divider p-10 primary-hover" style="width:100%;height:auto;">
-          <path d="M96.46 3.7c-.61 0-1.1.43-1.24 1H52.08a2.05 2.05 0 0 0-2.03-1.76c-1.03 0-1.88.77-2.03 1.76H4.78c-.14-.57-.63-1-1.24-1-.71 0-1.3.58-1.3 1.3 0 .71.58 1.3 1.3 1.3.61 0 1.1-.43 1.24-1h43.24c.14.99.99 1.76 2.03 1.76 1.03 0 1.88-.77 2.03-1.76h43.14c.14.57.63 1 1.24 1 .71 0 1.3-.58 1.3-1.3-.01-.71-.59-1.3-1.3-1.3zM3.54 5.71c-.39 0-.71-.32-.71-.71 0-.39.32-.71.71-.71.39 0 .71.32.71.71 0 .39-.31.71-.71.71zm46.51.76c-.81 0-1.47-.66-1.47-1.47 0-.81.66-1.47 1.47-1.47.81 0 1.47.66 1.47 1.47 0 .81-.66 1.47-1.47 1.47zm46.41-.76a.7.7 0 0 1-.69-.6c.02-.04.04-.07.04-.11 0-.04-.03-.07-.04-.11a.7.7 0 0 1 .69-.6c.39 0 .71.32.71.71 0 .39-.32.71-.71.71z">
-          </path>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color-bg" style="display: none;">
-          <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path>
-        </svg>
-      </div>
-
-      <button id="saveOptions">Save</button>
-    </div>
-  </div> -->
 
 
 <!-- ---------------------------------------------  start: event info popup--------------------------------- -->
@@ -466,20 +438,6 @@
                     }
                 }, 1000);
             </script>
-
-
-                <!-- address / routing -->
-                <!-- <section class="digipostal-p2bmbg"
-                    style="visibility: visible; display: block; opacity: 1; transform: translateY(0px); transition: all 0.5s ease 0s;">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                        fill="currentColor" width="100" height="10" viewBox="0 0 100 10"
-                        class="divider digipostal-wo3fe" style="width:100%;height:auto;">
-                        <path
-                            d="M40.98 4.71H5.03c-.14-.57-.62-1-1.23-1-.71 0-1.29.58-1.29 1.29 0 .71.58 1.29 1.29 1.29.61 0 1.1-.43 1.23-1h35.94c.16 0 .29-.13.29-.29s-.12-.29-.28-.29zm-37.18 1c-.39 0-.71-.32-.71-.71 0-.39.32-.71.71-.71.39 0 .71.32.71.71 0 .39-.32.71-.71.71zM56.93 3.16c-1.01 0-1.84.82-1.84 1.84 0 1.01.82 1.84 1.84 1.84 1.01 0 1.84-.82 1.84-1.84 0-1.01-.83-1.84-1.84-1.84zm0 3.1a1.261 1.261 0 0 1 0-2.52c.69 0 1.26.56 1.26 1.26 0 .69-.57 1.26-1.26 1.26zM43.46 3.16c-1.01 0-1.84.82-1.84 1.84 0 1.01.82 1.84 1.84 1.84 1.01 0 1.84-.82 1.84-1.84 0-1.01-.82-1.84-1.84-1.84zm0 3.1a1.261 1.261 0 0 1 0-2.52 1.261 1.261 0 0 1 0 2.52zM50.2 2c-1.66 0-3 1.35-3 3 0 1.66 1.35 3 3 3 1.66 0 3-1.35 3-3 0-1.66-1.35-3-3-3zm0 5.42c-1.34 0-2.42-1.09-2.42-2.42 0-1.34 1.09-2.42 2.42-2.42 1.34 0 2.42 1.09 2.42 2.42 0 1.34-1.09 2.42-2.42 2.42zM96.2 3.71c-.61 0-1.1.43-1.23 1H59.62a.29.29 0 0 0 0 .58h35.35c.14.57.62 1 1.23 1 .71 0 1.29-.58 1.29-1.29 0-.71-.58-1.29-1.29-1.29zm0 2c-.39 0-.71-.32-.71-.71 0-.39.32-.71.71-.71.39 0 .71.32.71.71 0 .39-.32.71-.71.71z">
-                        </path>
-                    </svg>
-                </section> -->
-
 
                 @elseif($wdgtRec instanceof \App\Models\widget_text_question_model)
                 <!-- input name field -->
@@ -909,12 +867,6 @@
 
       document.getElementById("imageFront3").addEventListener('click', !style && changeStyle);
 
-      // Fullscreen
-      // document.getElementById("fullScreenButton").addEventListener('click', () => {
-      //   const balloonContainer = document.getElementById("balloon-container");
-      //   balloonContainer.classList.toggle('fullscreen');
-      // });
-
       // Popup Modal
       const popupModal = document.getElementById("div_event_info");
       const popupButton = document.getElementById("popupButton");
@@ -923,10 +875,6 @@
       popupButton.onclick = () => {
         popupModal.style.display = "flex";
       }
-
-      // closeButton.onclick = () => {
-      //   popupModal.style.display = "none";
-      // }
 
       window.onclick = (event) => {
         if (event.target == popupModal) {

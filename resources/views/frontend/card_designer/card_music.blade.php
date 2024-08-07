@@ -86,30 +86,10 @@
                     </font>
                 </div>
 
-                <!-- <div class="btn disable" style="float: right; margin-left: 6px;"><svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                                                fill="currentColor" width="24" height="24" viewBox="0 0 24 24"
-                                                class="icon">
-                                                <path
-                                                    d="M19,3H15V5H19V9H21V5C21,3.89 20.1,3 19,3M19,19H15V21H19A2,2 0 0,0 21,19V15H19M5,15H3V19A2,2 0 0,0 5,21H9V19H5M3,5V9H5V5H9V3H5A2,2 0 0,0 3,5Z">
-                                                </path>
-                                            </svg></div> -->
-                                            
+            
             </div>
         </div>
-        <!-- <div class="effect-title" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor"
-                                        width="24" height="24" viewBox="0 0 24 24" class="icon ml-5">
-                                        <path
-                                            d="M7.5,5.6L5,7L6.4,4.5L5,2L7.5,3.4L10,2L8.6,4.5L10,7L7.5,5.6M19.5,15.4L22,14L20.6,16.5L22,19L19.5,17.6L17,19L18.4,16.5L17,14L19.5,15.4M22,2L20.6,4.5L22,7L19.5,5.6L17,7L18.4,4.5L17,2L19.5,3.4L22,2M13.34,12.78L15.78,10.34L13.66,8.22L11.22,10.66L13.34,12.78M14.37,7.29L16.71,9.63C17.1,10 17.1,10.65 16.71,11.04L5.04,22.71C4.65,23.1 4,23.1 3.63,22.71L1.29,20.37C0.9,20 0.9,19.35 1.29,18.96L12.96,7.29C13.35,6.9 14,6.9 14.37,7.29Z">
-                                        </path>
-                                    </svg><span><span wudooh="true"
-                                            style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                            <font style="vertical-align: inherit;">
-                                                <font style="vertical-align: inherit;">heavy rain</font>
-                                            </font>
-                                        </span></span></div> -->
+        
     </div>
     <div class="jetp-toolbar justify-center h-l"><button class="circle ml-5" onclick="showhide('div_effects',['div_widgets','div_cardmusic'])">
             <div class="icon-cover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
@@ -133,20 +113,7 @@
                     </font>
                 </span></span>
         </button>
-        <!-- <button class="circle ml-5">
-                                    <div class="icon-cover"><svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor"
-                                            width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
-                                            <path
-                                                d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z">
-                                            </path>
-                                        </svg></div><span><span wudooh="true"
-                                            style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                            <font style="vertical-align: inherit;">
-                                                <font style="vertical-align: inherit;">voice recording</font>
-                                            </font>
-                                        </span></span>
-                                </button> -->
+       
         <button class="circle ml-5" onclick="showhide('div_widgets',['div_cardmusic','div_effects'])">
             <div class="icon-cover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                     <path d="M16.7 4.5L19.5 7.3L16.7 10.1L13.9 7.3L16.7 4.5M9 5V9H5V5H9M19 15V19H15V15H19M16.7 1.7L11 7.3L16.7 13H13V21H21V13H16.7L22.3 7.3L16.7 1.7M11 3H3V11H11V3M9 15V19H5V15H9M11 13H3V21H11V13Z">

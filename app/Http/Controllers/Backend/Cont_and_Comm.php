@@ -42,15 +42,7 @@ class cont_and_comm extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Cont & Comm';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = cont_and_comm_model::create($record); */
-
+        
         $record = $request->all();
         
         

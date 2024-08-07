@@ -42,14 +42,7 @@ class Card_Reviews extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Card Reviews';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = card_reviews_model::create($record); */
+      
 
         $record = $request->all();
         

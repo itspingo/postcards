@@ -42,14 +42,7 @@ class Seal_Designs extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Seal Designs';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = seal_designs_model::create($record); */
+       
 
         $record = $request->all();
         if ($request->hasFile('main_image')) {$imgFile = $request->file('main_image')->store('public');$record['main_image'] = $imgFile;}

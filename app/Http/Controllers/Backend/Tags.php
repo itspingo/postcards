@@ -42,14 +42,7 @@ class Tags extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Tags';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = tags_model::create($record); */
+      
 
         $record = $request->all();
         

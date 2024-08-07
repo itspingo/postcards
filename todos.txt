@@ -2,8 +2,8 @@
 card title input
 user text color
 apply checks while submitting widget answers
-apply font and color on sender / receiver name at the time of view card.
 card sharing option
+edit text
 
 front end of the website
 
@@ -17,7 +17,7 @@ admin panel url: https://snoobix.com/demo/postcards/backend/login
 login email: admin@email.com
 paswd: abc12345
 
-
+---------------------------------------------------------------------------------------
 years of experience 
 
 Are you still looking for a job of seniour web developer / team lead, please fill this form, if you are interested.
@@ -108,5 +108,29 @@ Email Address
 
 mahnoor.engineer@gmail.com,fawadgul311@gmail.com,imtiazork@gmail.com,talhahanif001@gmail.com,sheheryarahmad@uetpeshawar.edu.pk,omamawaseem805@gmail.com,hariskh5512@gmail.com,kawish.killer@gmail.com,haseeb279@gmail.com,balimalik041@gmail.com,rizvimuhammad6@gmail.com,usamayousufmughal@gmail.com,waleedk085@gmail.com,fahadmaqsood405@gmail.com,ounmuhammad901952@gmail.com,nextebiz.com@gmail.com,qazikashif745@gmail.com,msayubi76@gmail.com,raanawaleed@gmail.com,shehrozasmat005@gmail.com,mammaraltaf@gmail.com,ashiqafridi786@gmail.com,haroon.mahmood4276@gmail.com,idrees20021@gmail.com,mzahid705@gmail.com,salmankhanuet99@gmail.com,adeelcap15@gmail.com,prof.rizwan015@gmail.com,abdullah.qasim6927@gmail.com,farzam1216@gmail.com,maqsood.sherazi23@gmail.com,hamza.qau1088@gmail.com,kamran.webmaster@gmail.com,fdharsi@gmail.com,umarawan7734@gmail.com
 
+---------------------------------------------------------
+
+Assessment result
+
+Thank you for taking assessment test. 
+Your score is 660 / 750 which is good.
+
+We can proceed to next step of one-to-one discussion on google meet.
+Let me know about the time slot when you are available for this purpose.
+
+
+--------------------------
+one-to-one meeting
+
+
+Lets have some discussion on google meet with following details
+
+Sorry for conflicting your meeting time with another one. 
+Your meeting is rescheduled with following details.
+
+meeting date and time: Aug 7, 2024 10:50 pm
+google meet link: https://meet.google.com/utr-wpdu-dgp
+
+Please confirm your availability
 
 

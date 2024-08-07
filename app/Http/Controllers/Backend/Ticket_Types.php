@@ -42,14 +42,7 @@ class Ticket_Types extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Ticket Types';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = ticket_types_model::create($record); */
+      
 
         $record = $request->all();
         if ($request->hasFile('ticket_image')) {

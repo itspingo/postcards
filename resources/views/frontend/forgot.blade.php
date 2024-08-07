@@ -71,31 +71,6 @@
                 </span></button>
 
 
-            <!-- <div class="mb-20 mt-10" style="display: none; text-align: center;"><span wudooh="true"
-                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">The user account reset procedure has been sent to you.
-                        </font>
-                    </font>
-                </span><br><span wudooh="true"
-                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Open your email and follow the instructions.</font>
-                    </font>
-                </span></div>
-
-                <button class="with-icon" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24"
-                    viewBox="0 0 24 24" class="icon ml-10" style="color: rgb(223, 81, 59);">
-                    <path
-                        d="M20,18H18V9.25L12,13L6,9.25V18H4V6H5.2L12,10.25L18.8,6H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">View email inbox</font>
-                        </font>
-                    </span></span></button> -->
         </div>
     </div>
     <link href="{{url('website/assets/css/forgot.css')}}" rel="stylesheet">

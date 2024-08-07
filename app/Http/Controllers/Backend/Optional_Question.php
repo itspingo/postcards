@@ -42,14 +42,7 @@ class Optional_Question extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Optional Question';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = optional_question_model::create($record); */
+        
 
         $record = $request->all();
         

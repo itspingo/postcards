@@ -42,15 +42,7 @@ class Sound_Files extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Sound Files';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = sound_files_model::create($record); */
-
+        
         $record = $request->all();
         
         

@@ -42,15 +42,7 @@ class Text_Question extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Text Question';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = text_question_model::create($record); */
-
+       
         $record = $request->all();
         
         

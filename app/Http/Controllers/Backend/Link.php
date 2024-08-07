@@ -42,14 +42,7 @@ class Link extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Link';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = link_model::create($record); */
+       
 
         $record = $request->all();
         
@@ -93,7 +86,7 @@ class Link extends Controller
          $record = $request->all();
          
         
-        $isaved = $vlink_model->fill($record)->save();  //this will save record with all fillable items
+        $isaved = $vlink_model->fill($record)->save();  
 
         if($isaved){
 			//return view("backend/link_addedit")->with('flash_success', "Record is updated successfuly");

@@ -88,39 +88,6 @@
                     </span></b></a>
 
 
-            <!-- <div class="or mb-40 mt-10">
-                <div><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Or</font>
-                        </font>
-                    </span></div>
-            </div>
-            <button class="with-icon mb-10"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="210"
-                    height="210" viewBox="0 0 210 210" class="icon ml-10"
-                    style="color: rgb(223, 81, 59); padding: 2px;">
-                    <path
-                        d="M0,105C0,47.103,47.103,0,105,0c23.383,0,45.515,7.523,64.004,21.756l-24.4,31.696C133.172,44.652,119.477,40,105,40c-35.841,0-65,29.159-65,65s29.159,65,65,65c28.867,0,53.398-18.913,61.852-45H105V85h105v20c0,57.897-47.103,105-105,105S0,162.897,0,105z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Login with Google account</font>
-                        </font>
-                    </span></span></button>
-            <button class="with-icon mb-40"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24"
-                    viewBox="0 0 24 24" class="icon ml-10" style="color: rgb(25, 111, 226);">
-                    <path
-                        d="M20,20H7A2,2 0 0,1 5,18V8.94L2.23,5.64C2.09,5.47 2,5.24 2,5A1,1 0 0,1 3,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20M8.5,7A0.5,0.5 0 0,0 8,7.5V8.5A0.5,0.5 0 0,0 8.5,9H18.5A0.5,0.5 0 0,0 19,8.5V7.5A0.5,0.5 0 0,0 18.5,7H8.5M8.5,11A0.5,0.5 0 0,0 8,11.5V12.5A0.5,0.5 0 0,0 8.5,13H18.5A0.5,0.5 0 0,0 19,12.5V11.5A0.5,0.5 0 0,0 18.5,11H8.5M8.5,15A0.5,0.5 0 0,0 8,15.5V16.5A0.5,0.5 0 0,0 8.5,17H13.5A0.5,0.5 0 0,0 14,16.5V15.5A0.5,0.5 0 0,0 13.5,15H8.5Z">
-                    </path>
-                </svg><span><span wudooh="true"
-                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Login with mobile number</font>
-                        </font>
-                    </span></span></button> -->
-
 
         </div>
     </div>

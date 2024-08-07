@@ -42,14 +42,7 @@ class Stamp_Images extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Stamp Images';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = stamp_images_model::create($record); */
+       
 
         $record = $request->all();
         

@@ -42,15 +42,7 @@ class Countdown_Timer extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Countdown Timer';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = countdown_timer_model::create($record); */
-
+        
         $record = $request->all();
         
         

@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="{{url('website/assets/css/css2')}}" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="{{url('website/assets/css/fonts.css')}}"> -->
+    
     <style id="wudoohCustomFontsStyle"></style>
     <meta id="wudoohMetaElement" wudooh="true">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="{{url('website/assets/css/m=el_main_css')}}">
@@ -32,20 +32,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Jcrop CSS and JS -->
     <link rel="stylesheet" href="{{url('website/assets/css/jquery.Jcrop.min.css')}}">
-    <!-- <link href="{{url('website/assets/css/style-v21.1.css')}}" rel="stylesheet"> -->
+   
 
 
     <script>
-    // this page is a demo that is not built, so fudge the module.exports support
-    // define a global `module` so that the actual source file can use it
+    
     window.module = {};
   </script>
   <script src="{{url('website/assets/js/confetti.js')}}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.0/worker-javascript.js"></script>
 
   <script>
-    // define the `module.exports` as the `confetti` global, the way that the
-    // cdn distributed file would
+   
     window.confetti = module.exports;
   </script>
 
@@ -538,21 +536,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 							}
 						});
 
-						// Save the file name in the 'canvas_image' table column
-						// $.ajax({
-						// 	url: '{{ route("card_designer.updateCanvasImage") }}', // Adjust the URL if necessary
-						// 	type: 'POST',
-						// 	data: {
-						// 		_token: '{{ csrf_token() }}',
-						// 		imageURL: croppedDataUrl
-						// 	},
-						// 	success: function(response) {
-						// 		console.log('Background image updated successfully');
-						// 	},
-						// 	error: function(xhr, status, error) {
-						// 		console.log('Failed to update background image');
-						// 	}
-						// });
+						
 
 
 					});
@@ -594,9 +578,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 
 
         function addcBackgroundImage(recid, imageURL){
-			// alert(imageURL);
-			// var imageURL2 = imageURL;
-
+			
 			document.getElementById('div_envelop_front').style.backgroundImage = 'url(' + imageURL + ')';
 			document.getElementById('div_envelop_seal').style.backgroundImage = 'url(' + imageURL + ')';
 			document.getElementById('div_envelop_back').style.backgroundImage = 'url(' + imageURL + ')';
@@ -667,21 +649,6 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 			});
 			hide_div('div_more_stickers');
 
-             // AJAX request to update the database using jQuery
-			//  $.ajax({
-			// 	url: '{{ route("card_designer.updateCanvasImage") }}', // Adjust the URL if necessary
-			// 	type: 'POST',
-            //     data: {
-            //             _token: '{{ csrf_token() }}',
-            //             imageURL: imageURL
-            //             },
-			// 	success: function(response) {
-			// 		console.log('Background image updated successfully');
-			// 	},
-			// 	error: function(xhr, status, error) {
-			// 		console.log('Failed to update background image');
-			// 	}
-			// });
 		}
 
 
@@ -924,8 +891,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
                     resolve(blob);
                 }, 'image/jpeg', 0.8); // You can adjust the quality here
             }).then(function(blob) {
-                // console.log(canvasJson);
-                // console.log('Converted Fabric canvas to Blob');
+                
 
                 var formData = new FormData();
                 formData.append('card_objects', canvasJson);
@@ -985,9 +951,6 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
 
         document.body.setAttribute('data-theme', activeTheme);
 
-        // editors.forEach(function(editor) {
-        //   editor.setTheme(themes[activeTheme]);
-        // });
         };
 
         var updateTheme = function (step) {
@@ -1289,8 +1252,6 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
         custom: function() {
             var canvas = document.getElementById('my-canvas');
 
-            // you should  only initialize a canvas once, so save this function
-            // we'll save it to the canvas itself for the purpose of this demo
             canvas.confetti = canvas.confetti || confetti.create(canvas, { resize: true });
 
             canvas.confetti({
@@ -1299,11 +1260,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
             });
         },
         paths: function() {
-            // note: you CAN only use a path for confetti.shapeFrompath(), but for
-            // performance reasons it is best to use it once in development and save
-            // the result to avoid the performance penalty at runtime
-
-            // pumpkin shape from https://thenounproject.com/icon/pumpkin-5253388/
+           
             var pumpkin = confetti.shapeFromPath({
             path: 'M449.4 142c-5 0-10 .3-15 1a183 183 0 0 0-66.9-19.1V87.5a17.5 17.5 0 1 0-35 0v36.4a183 183 0 0 0-67 19c-4.9-.6-9.9-1-14.8-1C170.3 142 105 219.6 105 315s65.3 173 145.7 173c5 0 10-.3 14.8-1a184.7 184.7 0 0 0 169 0c4.9.7 9.9 1 14.9 1 80.3 0 145.6-77.6 145.6-173s-65.3-173-145.7-173zm-220 138 27.4-40.4a11.6 11.6 0 0 1 16.4-2.7l54.7 40.3a11.3 11.3 0 0 1-7 20.3H239a11.3 11.3 0 0 1-9.6-17.5zM444 383.8l-43.7 17.5a17.7 17.7 0 0 1-13 0l-37.3-15-37.2 15a17.8 17.8 0 0 1-13 0L256 383.8a17.5 17.5 0 0 1 13-32.6l37.3 15 37.2-15c4.2-1.6 8.8-1.6 13 0l37.3 15 37.2-15a17.5 17.5 0 0 1 13 32.6zm17-86.3h-82a11.3 11.3 0 0 1-6.9-20.4l54.7-40.3a11.6 11.6 0 0 1 16.4 2.8l27.4 40.4a11.3 11.3 0 0 1-9.6 17.5z',
             matrix: [0.020491803278688523, 0, 0, 0.020491803278688523, -7.172131147540983, -5.9016393442622945]
@@ -1447,8 +1404,7 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
             codeElem.style.height = (count) + 'rem';
 
             button.onclick = function (ev) {
-            // stop mobile browsers from zooming when clicking
-            // buttons repeatedly really fast
+            
             ev.preventDefault();
 
             try {

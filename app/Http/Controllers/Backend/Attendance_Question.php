@@ -42,21 +42,14 @@ class Attendance_Question extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Attendance Question';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = attendance_question_model::create($record); */
+        
 
         $record = $request->all();
         
         
         $savedid = attendance_question_model::create($record)->id;
 		if($savedid){
-			 //return view("backend/attendance_question_addedit")->with('flash_success', "Record is saved successfuly");
+			 
              return redirect('backend/attendance_question/create')->with('flash_success', "Record is saved successfuly");
 		}else{
 			$data['row'] = $request->all();
@@ -96,7 +89,7 @@ class Attendance_Question extends Controller
         $isaved = $vattendance_question_model->fill($record)->save();  //this will save record with all fillable items
 
         if($isaved){
-			//return view("backend/attendance_question_addedit")->with('flash_success', "Record is updated successfuly");
+			
             return redirect('backend/attendance_question')->with('flash_success', "Record is updated successfuly");
 		}else{
 

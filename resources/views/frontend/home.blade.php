@@ -1477,49 +1477,6 @@
     </section>
 
 
-    <!-- <section class="download-container mt" id="download">
-        <div class="download-wrapper">
-            <h2 class="text-bold"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">دانلود اپلیکیشن کارت پستال موزیکال</span></h2>
-            <h3 class="mt-5">
-                <span wudooh="true" style="font-size:1.05em;line-height:1.1em;">اپلیکیشن کارت پستال موزیکال را رایگان دانلود کنید</span><br><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">کارت پستال طراحی کنید و مناسبت‌ها را متفاوت تبریک بگویید </span>
-            </h3>
-
-            <a class="market-button apk mt-40 mr-10 ml-10" href="/download">
-                <span class="icon fl"></span>
-                <div>
-                    <span class="from pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">دانلود</span></span>
-                    <span class="market text-bold pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">فایل نصبی</span></span>
-                </div>
-            </a>
-            <a class="market-button bazaar mt-40 mr-10 ml-10" rel="nofollow" href="https://cafebazaar.ir/app/com.neno.digipostal">
-                <span class="icon fl"></span>
-                <div>
-                    <span class="from pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">دانلود از</span></span>
-                    <span class="market text-bold pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">بازار</span></span>
-                </div>
-            </a>
-            <a class="market-button myket mt-40 mr-10 ml-10" rel="nofollow" href="https://myket.ir/app/com.neno.digipostal?utm_source=search-ads-gift&amp;utm_medium=cpc">
-                <span class="icon fl"></span>
-                <div>
-                    <span class="from pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">دانلود از</span></span>
-                    <span class="market text-bold pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">مایکت</span></span>
-                </div>
-            </a>
-            <a class="market-button google-play mt-40 mr-10 ml-10" rel="nofollow" href="https://play.google.com/store/apps/details?id=com.neno.digipostal&amp;hl=fa">
-                <span class="icon fl"></span>
-                <div>
-                    <span class="from pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">دانلود از</span></span>
-                    <span class="market text-bold pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">گوگل پلی</span></span>
-                </div>
-            </a> <a class="market-button webapp mt-40 mr-10 ml-10" href="/app">
-                <span class="icon fl"></span>
-                <div>
-                    <span class="from pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">پیشنهاد برای کاربران </span>IOS</span>
-                    <span class="market text-bold pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;">وب اپلیکیشن</span></span>
-                </div>
-            </a>
-        </div>
-    </section> -->
 
     <section class="card-container pt">
         <h2 class="section-title center mb-40">

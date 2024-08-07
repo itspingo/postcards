@@ -141,21 +141,7 @@
             </div>
             <div class="jetp-content nice-scrollbar">
                 <div class="jetp-font-dialog">
-                    <!-- <div class="font-category p-20-10">
-                        <select>
-                            <option value="4429"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Farsi</font>
-                                    </font>
-                                </span></option>
-                            <option value="4430" selected="true"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">English</font>
-                                    </font>
-                                </span></option>
-                        </select></div> -->
+                   
 
                     <div class="fonts nice-scrollbar p-20-10" >
                         <div class="item font" onclick="selectFont('Mea Culpa')"><img class="lazy entered loaded"
@@ -285,16 +271,7 @@
                         <div class="item font" onclick="selectFont('Snowburst')"><img class="lazy entered loaded"
                                 data-src="{{ url('website/assets/images/107.webp')}}" width="380" height="100"
                                 data-ll-status="loaded" src="{{ url('website/assets/images/107.webp')}}"></div>
-                        <!-- <div class="item font" onclick="selectFont('xxxxxxxxx')"><img class="lazy entered loaded"
-                                data-src="{{ url('website/assets/images/108.webp')}}" width="380" height="100"
-                                data-ll-status="loaded" src="{{ url('website/assets/images/108.webp')}}"><svg
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"
-                                class="icon ml-a">
-                                <path
-                                    d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z">
-                                </path>
-                            </svg></div> -->
+                       
                         <div class="item font" onclick="selectFont('Miltonian tattoo')"><img class="lazy entered loaded"
                                 data-src="{{ url('website/assets/images/109.webp')}}" width="380" height="100"
                                 data-ll-status="loaded" src="{{ url('website/assets/images/109.webp')}}"></div>
@@ -418,8 +395,7 @@
     function applyColorToText() {
         selectedColor  = document.getElementById('font_color').value;
         updateTextareaStyles();
-        // textarea.style.fontFamily = selectedFont;
-        // textarea.style.color = selectedColor;
+      
     }
 
     function toggleTextAlignment() {
@@ -427,10 +403,7 @@
 			const alignmentButton = document.querySelector('.alignment-button');
 			// const icons = ['icon_right_align','icon_center_align','icon_left_align']; //alignmentButton.querySelectorAll('svg');
             const icons = alignmentButton.querySelectorAll('svg');
-            // alignmentState = document.getElementById('card_text_alignment').value;
-			// Cycle through alignments: right -> center -> left -> right
-		
-
+           
             if (alignmentState === 'right') {
                 alignmentState = 'center';
                 textarea.style.textAlign = 'center';

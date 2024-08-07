@@ -42,14 +42,7 @@ class Cards extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Cards';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = cards_model::create($record); */
+       
 
         $record = $request->all();
         if ($request->hasFile('card_image')) {$imgFile = $request->file('card_image')->store('public');$record['card_image'] = $imgFile;}

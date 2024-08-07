@@ -42,14 +42,7 @@ class USER_TEXT extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'USER TEXT';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = user_text_model::create($record); */
+       
 
         $record = $request->all();
         

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
+
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
@@ -15,28 +16,27 @@ use App\Models\team_members_model;
 use App\Models\cards_model;
 use App\Models\card_recipients_model;
 
-
 // use Carbon\Carbon;
 
 class Mycards extends Controller
 {
-   
+
     public function __construct()
     {
         //$this->middleware('auth');
-       
+
     }
 
- 
-    public function index() 
+    public function index()
     {
-        $data['mycards']=cards_model::where('web_user_id',auth()->user()->id)->get();
-        $data['page_title']="My Cards";
-       
-        return view('frontend/my_cards',$data);
+        $data['mycards'] = cards_model::where('web_user_id', auth()->user()->id)->get();
+        $data['page_title'] = "My Cards";
+
+        return view('frontend/my_cards', $data);
     }
 
-    public function card_delete($id=''){
+    public function card_delete($id = '')
+    {
         cards_model::where('id', $id)->delete();
         return redirect()->route('mycards');
     }
@@ -51,7 +51,8 @@ class Mycards extends Controller
         return redirect()->route('mycards');
     }
 
-    public function card_messages($id){        
+    public function card_messages($id)
+    {
 
         $cardInfo = cards_model::with([
             'widgetAttendQuest',
@@ -67,63 +68,13 @@ class Mycards extends Controller
         $widgetOptionalQuestions = $cardInfo->widgetOptionalQuestion;
         $widgetTextQuestions = $cardInfo->widgetTextQuestion;
 
-        $mergedCollection = $widgetAttendQuests            
+        $mergedCollection = $widgetAttendQuests
             ->merge($widgetMemorials)
-            ->merge($widgetOptionalQuestions)            
-            ->merge($widgetTextQuestions)
-        ;
+            ->merge($widgetOptionalQuestions)
+            ->merge($widgetTextQuestions);
 
         $data['mergedQuestions'] = $mergedCollection;
         // dd($data['mergedQuestions']);
-
-//------------------------------------------------------------------------//
-
-
-        // Assuming $id is provided and is the ID of the card you want to fetch
-        // $card_answers = cards_model::with([
-        //     'answerMemorial' => function ($query) {
-        //         $query->whereColumn('card_id', 'cards_model.card_id')
-        //             ->whereColumn('ip_address', 'cards_model.ip_address');
-        //     },
-        //     'answerAttendQuest' => function ($query) {
-        //         $query->whereColumn('card_id', 'cards_model.card_id')
-        //             ->whereColumn('ip_address', 'cards_model.ip_address');
-        //     },
-        //     'answerTextQuest' => function ($query) {
-        //         $query->whereColumn('card_id', 'cards_model.card_id')
-        //             ->whereColumn('ip_address', 'cards_model.ip_address');
-        //     },
-        //     'answerOptnQuest' => function ($query) {
-        //         $query->whereColumn('card_id', 'cards_model.card_id')
-        //             ->whereColumn('ip_address', 'cards_model.ip_address');
-        //     }
-        // ])->where('id', $id)->get();
-
-        // $data['card_answers'] = $card_answers;
-
-        // // Initialize collections
-        // $answerAttendQuests = collect();
-        // $answerMemorials = collect();
-        // $answerOptnQuests = collect();
-        // $answerTextQuests = collect();
-
-        // // Iterate through each card answer to merge related answers
-        // foreach ($card_answers as $card_answer) {
-        //     $answerAttendQuests = $answerAttendQuests->merge($card_answer->answerAttendQuest);
-        //     $answerMemorials = $answerMemorials->merge($card_answer->answerMemorial);
-        //     $answerOptnQuests = $answerOptnQuests->merge($card_answer->answerOptnQuest);
-        //     $answerTextQuests = $answerTextQuests->merge($card_answer->answerTextQuest);
-        // }
-
-        // // Merge all answers into a single collection
-        // $mergedAnswers = $answerAttendQuests
-        //     ->merge($answerMemorials)
-        //     ->merge($answerOptnQuests)
-        //     ->merge($answerTextQuests);
-
-        // $data['mergedAnswers'] = $mergedAnswers;
-
-        // dd($mergedAnswers);
 
         $answers = DB::table('answers_attend_quest')
             ->leftJoin('answers_memorial', function ($join) {
@@ -148,31 +99,16 @@ class Mycards extends Controller
             )
             ->get();
 
-    
-
         // dd($answers);
 
         $data['answers'] = $answers;
         $data['cardId'] = $id;
 
-
-  
-
-        return view('frontend/card_messages',$data);
-
+        return view('frontend/card_messages', $data);
     }
-
 
     public function save_recipient(Request $request)
     {
-        // Validate the incoming request data
-        // $request->validate([
-        //     'cardid' => 'required|string|max:5',
-        //     'prefix' => 'nullable|string|max:100',
-        //     'recipient_name' => 'required|string|max:200',
-        //     'mobile_no' => 'required|string|max:200',
-        // ]);
-
         try {
             // Create a new card recipient record
             $recipient = new card_recipients_model();
@@ -189,6 +125,4 @@ class Mycards extends Controller
             return response()->json(['success' => false, 'message' => 'Error saving recipient: ' . $e->getMessage()]);
         }
     }
-    
-   
 }

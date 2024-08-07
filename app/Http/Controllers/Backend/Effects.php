@@ -42,14 +42,7 @@ class Effects extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Effects';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = effects_model::create($record); */
+       
 
         $record = $request->all();
         

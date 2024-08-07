@@ -42,15 +42,7 @@ class Sounds extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Sounds';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = sounds_model::create($record); */
-
+       
         $record = $request->all();
         
         

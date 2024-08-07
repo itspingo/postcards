@@ -42,14 +42,7 @@ class Card_Video extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Card Video';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = card_video_model::create($record); */
+       
 
         $record = $request->all();
         

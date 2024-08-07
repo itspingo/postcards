@@ -21,14 +21,12 @@ class Websiteauth extends Controller
         
     }
 
-
     public function index()
     {
       
         return view('frontend.login');
     }  
       
-   
     public function postLogin(Request $request)
     {
         // dd($request->post());
@@ -51,8 +49,6 @@ class Websiteauth extends Controller
         return redirect(route("login"))->with('flash_failure','You have entered invalid credentials');
     }
 
-
-      
     public function forgot()
     {
         return view('frontend.forgot');
@@ -94,17 +90,11 @@ class Websiteauth extends Controller
             $mesg = 'Email could not be sent';
         }
 
-        
         // Return a success response
         return redirect("login")->with(['flash_success' => 'New password has been sent to your email address'], 200);
 
-        
     }
     
-
-
-
-
     public function register()
     {
       
@@ -113,12 +103,7 @@ class Websiteauth extends Controller
 
     public function postRegister(Request $request)
     {  
-        // $vsettings=settings::first();
-        // if($vsettings->enable_maintenance_mode=='Y'){
-        //     return redirect(url('under_maintenance'));
-        // }
-        // session()->put('sess_settings', $vsettings);
-
+      
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
@@ -130,42 +115,15 @@ class Websiteauth extends Controller
         //  DB::enableQueryLog();
         // $check = User::create($data)->id;
 
-
-
         $upperCaseRegex = '/[A-Z]/';
         $specialCharRegex = '/[^a-zA-Z0-9]/'; // Matches any character that is not alphanumeric
         $numberRegex = '/[0-9]/';
         $lengthRegex = '/^.{7,}$/'; // Matches strings of at least 7 characters
         $pasword_errors=[];
 
-        // if(null != session('sess_settings') && session()->get('sess_settings')->password_min_length != ''){
-        //     if(!preg_match($lengthRegex, $data['password'])){
-        //         $pasword_errors[] = "Password must be at least ".session()->get('sess_settings')->password_min_length." characters";    
-        //     }        
-        // }
-        // if(null != session('sess_settings') && session()->get('sess_settings')->required_uppercase == 'Y'){
-        //     if(!preg_match($upperCaseRegex, $data['password'])){
-        //         $pasword_errors[] = "Password must have at least one upper case character";
-        //     }
-        // }
-
-        // if(null != session('sess_settings') && session()->get('sess_settings')->required_digit == 'Y'){
-        //     if(!preg_match($numberRegex, $data['password'])){
-        //         $pasword_errors[] = "Password must have at least one digit";
-        //     }
-        // }
-
-        // if(null != session('sess_settings') && session()->get('sess_settings')->required_special_char == 'Y'){
-        //     if(!preg_match($specialCharRegex, $data['password'])){
-        //         $pasword_errors[] = "Password must have at least one special character";
-        //     }
-        // }
-
         if(!empty($pasword_errors)){
             return redirect()->back()->with('flash_failure',$pasword_errors);
         }
-
-
 
         $validation_code = randomWord(10); 
         $usrData = array(
@@ -184,7 +142,6 @@ class Websiteauth extends Controller
 
         // dd($usrData);
 
-    
         $usrId =  User::create($usrData)->id;
         if($usrId){
             generate_invoice('signup', $usrId);
@@ -212,7 +169,6 @@ class Websiteauth extends Controller
         
     }
     
-    
     public function validate_user($validation_code)
     {
       $user = User::where('validation_code', $validation_code)->first();
@@ -226,15 +182,9 @@ class Websiteauth extends Controller
         }
     }
 
-
     public function dashboard()
     {
-        // $vsettings=settings::first();
-        // if($vsettings->enable_maintenance_mode=='Y'){
-        //     return redirect(url('under_maintenance'));
-        // }
-        // session()->put('sess_settings', $vsettings);
-
+       
         if(Auth::check()){
             return view('dashboard');
         }
@@ -242,7 +192,6 @@ class Websiteauth extends Controller
         return redirect("login")->withSuccess('Opps! You do not have access');
     }
     
-   
     public function logout() {
        
         User::where('id',auth()->user()->id)->update([

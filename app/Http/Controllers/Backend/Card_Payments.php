@@ -42,14 +42,7 @@ class Card_Payments extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Card Payments';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = card_payments_model::create($record); */
+       
 
         $record = $request->all();
         

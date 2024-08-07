@@ -42,14 +42,7 @@ class Envelop_inside_images extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Envelop inside images';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = envelop_inside_images_model::create($record); */
+       
 
         $record = $request->all();
         if ($request->hasFile('main_image')) {$imgFile = $request->file('main_image')->store('public');$record['main_image'] = $imgFile;}

@@ -42,14 +42,7 @@ class Card_Categories extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Card Categories';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = card_categories_model::create($record); */
+        
 
         $record = $request->all();
         if ($request->hasFile('cat_image')) {$imgFile = $request->file('cat_image')->store('public');$record['cat_image'] = $imgFile;}

@@ -42,14 +42,7 @@ class Custom_User_Images extends Controller
     public function store(Request $request)
     {
          $data['module_title'] = 'Custom User Images';
-        /* $request->validate([
-            [[validateFieldsArray]]
-        ]); */
-
-        /* $record = [
-			[[fieldsArray]]
-		];
-		$iscreated = custom_user_images_model::create($record); */
+       
 
         $record = $request->all();
         

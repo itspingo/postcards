@@ -9,9 +9,6 @@ use App\Models\ticket_types_model;
 use App\Models\transactions_model;
 
 
-
-// use Carbon\Carbon;
-
 class Chargplan extends Controller
 {
    
@@ -35,11 +32,8 @@ class Chargplan extends Controller
         $data['page_title'] = "Charge plan";
         $data['payment_status'] = 'Payment process completed';
     
-        // Check if session_id is set
-        // if (isset($_GET['session_id'])) {
-            // Retrieve session data
-            $session_data = session()->get('sess_lineItems');
-    
+       
+            $session_data = session()->get('sess_lineItems');    
             
             // Ensure session data exists
             if ($session_data) {
@@ -60,12 +54,7 @@ class Chargplan extends Controller
                 // Handle missing session data
                 $data['payment_status'] = 'Payment process completed, but session data not found.';
             }
-        // } else {
-        //     // Handle missing session_id
-        //     $data['payment_status'] = 'Payment process completed, but session ID not found.';
-        // }
-    
-        // Return view with data
+      
         return view('frontend/chargplan', $data);
     }
     

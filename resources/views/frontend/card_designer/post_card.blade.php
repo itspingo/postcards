@@ -58,12 +58,7 @@ background-image: url('/data/assets/background/61624_tn.webp'); display: flex;
                                 @if(isset($card_info))
                                     // window.cardObjects = {!! json_encode($card_info->card_objects) !!};
                                     window.cardInfo = {!! json_encode($card_info) !!};
-                                //    console.log(window.cardInfo.sender_name);
-                                // alert(window.cardInfo.sender_name);
-                                // alert(document.getElementById('span_sender_name').innerHTML); // = 'Nadeem'; //window.cardInfo.sender_name;
-
-
-
+                               
                                 @else
                                     window.cardInfo = null;
                                 @endif
@@ -165,18 +160,6 @@ background-image: url('/data/assets/background/61624_tn.webp'); display: flex;
                                         </path>
                                     </svg></button>
 
-                                <!-- <button id="replaceBtn" onclick="replace_ojbect()" class="linear ml-10"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon ml-10">
-                                        <path d="M14,3L12,1H4A2,2 0 0,0 2,3V15A2,2 0 0,0 4,17H11V19L15,16L11,13V15H4V3H14M21,10V21A2,2 0 0,1 19,23H8A2,2 0 0,1 6,21V19H8V21H19V12H14V7H8V13H6V7A2,2 0 0,1 8,5H16L21,10Z">
-                                        </path>
-                                    </svg><span class="ml-10"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                            <font style="vertical-align: inherit;">
-                                                <font style="vertical-align: inherit;">to replace</font>
-                                            </font>
-                                        </span></span></button> -->
-
-                                <!-- <button onclick="bring_tofront()" class="linear ml-10 icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                                        <path d="M2,2H16V16H2V2M22,8V22H8V18H10V20H20V10H18V8H22Z"></path>
-                                    </svg></button> -->
                                 <button onclick="object_duplicate()" class="linear ml-10 icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                                         <path d="M2,2H16V16H2V2M22,8V22H8V18H10V20H20V10H18V8H22Z"></path>
                                     </svg></button>
