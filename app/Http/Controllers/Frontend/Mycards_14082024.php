@@ -29,7 +29,7 @@ class Mycards extends Controller
 
     public function index()
     {
-        $data['mycards'] = cards_model::where('web_user_id', auth()->user()->id)->with('card_recipients')->get();
+        $data['mycards'] = cards_model::where('web_user_id', auth()->user()->id)->get();
         $data['page_title'] = "My Cards";
 
         return view('frontend/my_cards', $data);
@@ -125,30 +125,10 @@ class Mycards extends Controller
             return response()->json(['success' => false, 'message' => 'Error saving recipient: ' . $e->getMessage()]);
         }
     }
-    public function save_multiple_recipient(Request $request)
-    {
-        try {
-            $recipient_names_multiple = preg_split("/\r\n|\n|\r/", $request->input('name_multiple'));
-            foreach ($recipient_names_multiple as $recipient_name) {
-                if (trim($recipient_name) != '') { // Create a new card recipient record
-                    $recipient = new card_recipients_model();
-                    $recipient->web_user_id = auth()->user()->id;
-                    $recipient->card_id = $request->input('cardid');
-                    $recipient->recipient_name = $recipient_name;
-                    $recipient->save();
-                }
-            }
 
-            return response()->json(['success' => true, 'message' => 'Recipients saved successfully.']);
-        } catch (\Exception $e) {
-            // Handle any errors
-            return response()->json(['success' => false, 'message' => 'Error saving recipient: ' . $e->getMessage()]);
-        }
-    }
-
-    public function receivers($id)
-    {
-        $data['recipients'] = card_recipients_model::where('card_id', $id)->with('card')->get();
+    
+    public function receivers($id){
+        $data['recipients'] = card_recipients_model::where('card_id', $id)->get();
         $data['page_title'] = "Receivers";
 
         return view('frontend/receivers', $data);

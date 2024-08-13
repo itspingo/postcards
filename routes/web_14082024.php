@@ -6,150 +6,149 @@ use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Auth\AuthController;
 
 
-use App\Http\Controllers\Backend\Baseline\Adminpanel;
-use App\Http\Controllers\Backend\Baseline\module;
-use App\Http\Controllers\Backend\Baseline\add;
-use App\Http\Controllers\Backend\Baseline\save;
-use App\Http\Controllers\Backend\Baseline\search;
-use App\Http\Controllers\Backend\Baseline\update;
-use App\Http\Controllers\Backend\Baseline\edit;
-use App\Http\Controllers\Backend\Baseline\delete;
-use App\Http\Controllers\Backend\Baseline\sendmail;
-use App\Http\Controllers\Backend\Baseline\designer;
-use App\Http\Controllers\Backend\Baseline\designer_add;
-use App\Http\Controllers\Backend\Baseline\designer_edit;
+    use App\Http\Controllers\Backend\Baseline\Adminpanel;
+    use App\Http\Controllers\Backend\Baseline\module;
+    use App\Http\Controllers\Backend\Baseline\add;
+    use App\Http\Controllers\Backend\Baseline\save;
+    use App\Http\Controllers\Backend\Baseline\search;
+    use App\Http\Controllers\Backend\Baseline\update;
+    use App\Http\Controllers\Backend\Baseline\edit;
+    use App\Http\Controllers\Backend\Baseline\delete;
+    use App\Http\Controllers\Backend\Baseline\sendmail;
+    use App\Http\Controllers\Backend\Baseline\designer;
+    use App\Http\Controllers\Backend\Baseline\designer_add;
+    use App\Http\Controllers\Backend\Baseline\designer_edit;
 
-use App\Http\Controllers\Backend\HomeController;
-use App\Http\Controllers\Backend\Backgrounds;
-use App\Http\Controllers\Backend\Users;
-use App\Http\Controllers\Backend\Envelop_inside_images;
-use App\Http\Controllers\Backend\Sounds;
-use App\Http\Controllers\Backend\Effects;
-use App\Http\Controllers\Backend\Tags;
-use App\Http\Controllers\Backend\Blog_Categories;
-use App\Http\Controllers\Backend\Stamp_Designs;
-use App\Http\Controllers\Backend\Stamp_Images;
-use App\Http\Controllers\Backend\Custom_User_Images;
-use App\Http\Controllers\Backend\Custom_User_Voices;
-
-use App\Http\Controllers\Backend\Card_Categories;
-use App\Http\Controllers\Backend\Cards;
-use App\Http\Controllers\Backend\Card_Payments;
-use App\Http\Controllers\Backend\Card_Reviews;
-use App\Http\Controllers\Backend\Favourites;
-use App\Http\Controllers\Backend\Blog_Posts;
-use App\Http\Controllers\Backend\Post_Reviews;
-
-
-use App\Http\Controllers\Frontend\Websiteauth;
-use App\Http\Controllers\Frontend\Categories;
-use App\Http\Controllers\Frontend\Website;
-use App\Http\Controllers\Frontend\Categorycards;
-use App\Http\Controllers\Frontend\Card;
-use App\Http\Controllers\Frontend\Blogs;
-use App\Http\Controllers\Frontend\Blog;
-use App\Http\Controllers\Frontend\Card_designer;
-use App\Http\Controllers\Frontend\Mycards;
-use App\Http\Controllers\Frontend\Play;
-use App\Http\Controllers\Frontend\Chargplan;
-use App\Http\Controllers\Frontend\TicketCheckoutController;
-use App\Http\Controllers\Frontend\CardCheckoutController;
-use App\Http\Controllers\Frontend\Transactions;
-use App\Http\Controllers\Frontend\Receivers;
+    use App\Http\Controllers\Backend\HomeController;
+    use App\Http\Controllers\Backend\Backgrounds;
+    use App\Http\Controllers\Backend\Users;
+    use App\Http\Controllers\Backend\Envelop_inside_images;
+    use App\Http\Controllers\Backend\Sounds;
+    use App\Http\Controllers\Backend\Effects;
+    use App\Http\Controllers\Backend\Tags;
+    use App\Http\Controllers\Backend\Blog_Categories;
+    use App\Http\Controllers\Backend\Stamp_Designs;
+    use App\Http\Controllers\Backend\Stamp_Images;
+    use App\Http\Controllers\Backend\Custom_User_Images;
+    use App\Http\Controllers\Backend\Custom_User_Voices;
+    
+    use App\Http\Controllers\Backend\Card_Categories;
+    use App\Http\Controllers\Backend\Cards;
+    use App\Http\Controllers\Backend\Card_Payments;
+    use App\Http\Controllers\Backend\Card_Reviews;
+    use App\Http\Controllers\Backend\Favourites;
+    use App\Http\Controllers\Backend\Blog_Posts;
+    use App\Http\Controllers\Backend\Post_Reviews;
 
 
-use App\Http\Controllers\Backend\Stickers;
-use App\Http\Controllers\Backend\Seal_Designs;
-use App\Http\Controllers\Backend\Envelop_Designs;
-use App\Http\Controllers\Backend\Envelop_Design_Parts;
-use App\Http\Controllers\Backend\Music_Categories;
-use App\Http\Controllers\Backend\Attendance_Question;
-use App\Http\Controllers\Backend\cont_and_comm;
-use App\Http\Controllers\Backend\Countdown_Timer;
-use App\Http\Controllers\Backend\Link;
-use App\Http\Controllers\Backend\Optional_Question;
-use App\Http\Controllers\Backend\Text_Question;
-use App\Http\Controllers\Backend\Social_Network;
-use App\Http\Controllers\Backend\Memorial_Request;
-use App\Http\Controllers\Backend\USER_TEXT;
-use App\Http\Controllers\Backend\User_Images;
-use App\Http\Controllers\Backend\Card_Video;
-use App\Http\Controllers\Backend\Card_Recipients;
-use App\Http\Controllers\Backend\Widgets_Ticket_Type;
-use App\Http\Controllers\Backend\Ticket_Types;
-use App\Http\Controllers\Backend\Music_Files;
+    use App\Http\Controllers\Frontend\Websiteauth;
+    use App\Http\Controllers\Frontend\Categories;
+    use App\Http\Controllers\Frontend\Website;
+    use App\Http\Controllers\Frontend\Categorycards;
+    use App\Http\Controllers\Frontend\Card;
+    use App\Http\Controllers\Frontend\Blogs;
+    use App\Http\Controllers\Frontend\Blog;
+    use App\Http\Controllers\Frontend\Card_designer;
+    use App\Http\Controllers\Frontend\Mycards;
+    use App\Http\Controllers\Frontend\Play;
+    use App\Http\Controllers\Frontend\Chargplan;
+    use App\Http\Controllers\Frontend\TicketCheckoutController;
+    use App\Http\Controllers\Frontend\CardCheckoutController;
+    use App\Http\Controllers\Frontend\Transactions;
+    use App\Http\Controllers\Frontend\Receivers;
 
-/*[[useControllerLine]]*/
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+    use App\Http\Controllers\Backend\Stickers;
+    use App\Http\Controllers\Backend\Seal_Designs;
+    use App\Http\Controllers\Backend\Envelop_Designs;
+    use App\Http\Controllers\Backend\Envelop_Design_Parts;
+    use App\Http\Controllers\Backend\Music_Categories;
+    use App\Http\Controllers\Backend\Attendance_Question;
+    use App\Http\Controllers\Backend\cont_and_comm;
+    use App\Http\Controllers\Backend\Countdown_Timer;
+    use App\Http\Controllers\Backend\Link;
+    use App\Http\Controllers\Backend\Optional_Question;
+    use App\Http\Controllers\Backend\Text_Question;
+    use App\Http\Controllers\Backend\Social_Network;
+    use App\Http\Controllers\Backend\Memorial_Request;
+    use App\Http\Controllers\Backend\USER_TEXT;
+    use App\Http\Controllers\Backend\User_Images;
+    use App\Http\Controllers\Backend\Card_Video;
+    use App\Http\Controllers\Backend\Card_Recipients; 
+    use App\Http\Controllers\Backend\Widgets_Ticket_Type;
+    use App\Http\Controllers\Backend\Ticket_Types;
+    use App\Http\Controllers\Backend\Music_Files;
+ /*[[useControllerLine]]*/                                                                                                                        
 
+ //Route::get('/', function () {
+ //    return view('welcome');
+ //});
+ 
 Route::get('/', function () {
-    return view('frontend/home');
+    return view('frontend/home'); 
 });
 
 
-Route::get('/link', function () {
-    $target = getcwd() . '/laravel/storage/app/public';
-    $shortcut = getcwd() . '/storage';
+ Route::get('/link', function () {  
+    $target =   getcwd().'/laravel/storage/app/public';
+    $shortcut = getcwd().'/storage';
     symlink($target, $shortcut);
-});
-Route::get('exec', [Exec::class, 'index'])->name('exec');
+ });
+ Route::get('exec', [Exec::class, 'index'])->name('exec');
 
-Route::get('backend/login', [AuthController::class, 'index'])->name('backend.login');
-Route::POST('backend/post-login', [AuthController::class, 'postLogin'])->name('backend.login.post');
-Route::get('backend/registration', [AuthController::class, 'registration'])->name('backend.register');
-Route::post('backend/post-registration', [AuthController::class, 'postRegistration'])->name('backend.register.post');
+ Route::get('backend/login', [AuthController::class, 'index'])->name('backend.login');
+ Route::POST('backend/post-login', [AuthController::class, 'postLogin'])->name('backend.login.post'); 
+ Route::get('backend/registration', [AuthController::class, 'registration'])->name('backend.register');
+ Route::post('backend/post-registration', [AuthController::class, 'postRegistration'])->name('backend.register.post'); 
 
 
 //  Route::middleware(['auth', CheckUserSide::class . ':backend'])->group(function () {
-
-Route::get('backend/dashboard', [AuthController::class, 'backend.dashboard']);
-Route::get('backend/logout', [AuthController::class, 'logout'])->name('backend.logout');
-
-
-Route::get('backend/home', [HomeController::class, 'index'])->middleware(['auth'])->name('backend.home');
-
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth'])->name('dashboard');
+  
+    Route::get('backend/dashboard', [AuthController::class, 'backend.dashboard']); 
+    Route::get('backend/logout', [AuthController::class, 'logout'])->name('backend.logout');
 
 
-Route::get('backend/adminpanel', [Adminpanel::class, 'index'])->middleware(['auth'])->name('backend.adminpanel');
-Route::get('backend/module', [module::class, 'index'])->middleware(['auth']);
-Route::get('backend/add', [add::class, 'index'])->middleware(['auth']);
-Route::post('backend/save', [save::class, 'index'])->middleware(['auth']);
-Route::any('backend/update', [update::class, 'index'])->middleware(['auth']);
-Route::post('backend/search', [search::class, 'index'])->middleware(['auth']);
-Route::get('backend/edit', [edit::class, 'index'])->middleware(['auth']);
-Route::get('backend/delete', [delete::class, 'index'])->middleware(['auth']);
-// Route::get('/show_img' , [show_img::class,'index']);
+    Route::get('backend/home', [HomeController::class, 'index'])->middleware(['auth'])->name('backend.home');
+    
+    // Route::get('/dashboard', function () {
+    //     return view('dashboard');
+    // })->middleware(['auth'])->name('dashboard');
+    
+    
+    Route::get('backend/adminpanel' , [Adminpanel::class,'index'])->middleware(['auth'])->name('backend.adminpanel');
+    Route::get('backend/module' , [module::class,'index'])->middleware(['auth']);
+    Route::get('backend/add' , [add::class,'index'])->middleware(['auth']);
+    Route::post('backend/save' , [save::class,'index'])->middleware(['auth']);
+    Route::any('backend/update' , [update::class,'index'])->middleware(['auth']);
+    Route::post('backend/search' , [search::class,'index'])->middleware(['auth']);
+    Route::get('backend/edit' , [edit::class,'index'])->middleware(['auth']);
+    Route::get('backend/delete' , [delete::class,'index'])->middleware(['auth']);
+    // Route::get('/show_img' , [show_img::class,'index']);
 
-Route::get('backend/designer', [designer::class, 'index'])->middleware(['auth']);
-Route::get('backend/designer_add', [designer_add::class, 'index'])->middleware(['auth'])->name('backend.designer_add');
-Route::post('backend/designer_add/save', [designer_add::class, 'save']);
-Route::post('backend/designer_add/generate', [designer_add::class, 'generate']);
-Route::get('backend/designer_add/ajax_module_fields', [designer_add::class, 'ajax_module_fields']);
-//ajax_module_fields
+    Route::get('backend/designer', [designer::class,'index'])->middleware(['auth']);
+    Route::get('backend/designer_add' , [designer_add::class,'index'])->middleware(['auth'])->name('backend.designer_add');
+    Route::post('backend/designer_add/save' , [designer_add::class,'save']);
+    Route::post('backend/designer_add/generate' , [designer_add::class,'generate']);
+    Route::get('backend/designer_add/ajax_module_fields' , [designer_add::class,'ajax_module_fields']);
+    //ajax_module_fields
+    
+    Route::get('backend/show_sidepanel' , [designer_add::class,'show_sidepanel']);
+    Route::get('backend/ajax_item_properties' , [designer_add::class,'ajax_item_properties']);
+    Route::get('backend/designer_add/ajax_table_fields' , [designer_add::class,'ajax_table_fields']);
+    Route::get('backend/dznr_delete' , [designer_add::class,'dznr_delete']);
+    Route::get('backend/designer_edit' , [designer_edit::class,'index'])->middleware(['auth']);
+    Route::post('backend/designer_edit' , [designer_edit::class,'update']);
 
-Route::get('backend/show_sidepanel', [designer_add::class, 'show_sidepanel']);
-Route::get('backend/ajax_item_properties', [designer_add::class, 'ajax_item_properties']);
-Route::get('backend/designer_add/ajax_table_fields', [designer_add::class, 'ajax_table_fields']);
-Route::get('backend/dznr_delete', [designer_add::class, 'dznr_delete']);
-Route::get('backend/designer_edit', [designer_edit::class, 'index'])->middleware(['auth']);
-Route::post('backend/designer_edit', [designer_edit::class, 'update']);
-
-Route::get('backend/sendmail', [sendmail::class, 'index']);
-Route::get('backend/send-mail', function () {
-    $details = [
-        'title' => $_GET['title'],
-        'body' => $_GET['email']
-    ];
-
-    \Mail::to($_GET['toemail'])->send(new \App\Mail\MyTestMail($details));
-    dd("Email is Sent.");
-});
+    Route::get('backend/sendmail' , [sendmail::class,'index']);
+    Route::get('backend/send-mail', function () {
+        $details = [
+            'title' => $_GET['title'],
+            'body' => $_GET['email']
+        ];
+        
+        \Mail::to($_GET['toemail'])->send(new \App\Mail\MyTestMail($details));
+        dd("Email is Sent.");
+    });
 
 // });
 
@@ -170,7 +169,7 @@ Route::get('home', [Website::class, 'index'])->name('home');
 Route::get('logout', [Websiteauth::class, 'logout'])->name('logout');
 
 Route::get('login', [Websiteauth::class, 'index'])->name('login');
-Route::get('login/validate/{code}', [Websiteauth::class, 'validate_user']);
+Route::get('login/validate/{code}', [Websiteauth::class, 'validate_user']); 
 Route::post('postLogin', [Websiteauth::class, 'postLogin'])->name('login.post');
 Route::get('register', [Websiteauth::class, 'register'])->name('register');
 Route::post('postRegister', [Websiteauth::class, 'postRegister'])->name('register.post');
@@ -267,7 +266,6 @@ Route::get('get-canvas-image/{cardId}', [Card_designer::class, 'getCanvasImage']
 Route::get('mycards', [Mycards::class, 'index'])->middleware(['auth'])->name('mycards');
 Route::get('mycards/messages/{id}', [Mycards::class, 'card_messages'])->middleware(['auth'])->name('mycards.messages');
 Route::get('mycards/save_recipient', [Mycards::class, 'save_recipient'])->middleware(['auth'])->name('mycards.save_recipient');
-Route::post('mycards/save_multiple_recipient', [Mycards::class, 'save_multiple_recipient'])->middleware(['auth'])->name('mycards.save_multiple_recipient');
 Route::get('mycards/card_copy/{id}', [Mycards::class, 'card_copy'])->middleware(['auth'])->name('mycards.card_copy');
 Route::get('mycards/card_delete/{id}', [Mycards::class, 'card_delete'])->middleware(['auth'])->name('mycards.card_delete');
 Route::get('mycards/receivers/{id}', [Mycards::class, 'receivers'])->middleware(['auth'])->name('mycards.receivers');
@@ -289,7 +287,7 @@ Route::post('play/save_answers', [Play::class, 'save_answers'])->name('play.save
 // Route::get('/stripe/checkout/{orderid}', [StripeController::class, 'checkout'])->name('frontend.stripe.checkout');
 // Route::get('/stripe/success', [StripeController::class, 'success'])->name('frontend.stripe.success');
 // Route::get('/stripe/cancel', [StripeController::class, 'cancel'])->name('frontend.stripe.cancel');
-
+ 
 
 Route::post('/create-checkout-session', [TicketCheckoutController::class, 'createCheckoutSession']);
 // Route::post('/create-checkout-session', [CardCheckoutController::class, 'createCheckoutSession']);
@@ -299,11 +297,11 @@ Route::post('/create-checkout-session', [TicketCheckoutController::class, 'creat
 // });
 
 // Route::get('/payment_canceled', [Payment_canceled::class, 'index']);
-
+    
 // Route::middleware(['auth', CheckUserSide::class . ':frontend'])->group(function () {   
 
-//shop registration 
-//item input under shop
+    //shop registration 
+    //item input under shop
 
 
 // });

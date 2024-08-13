@@ -110,7 +110,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_link',['div_widgets_list','div_widgets_question','div_widgets_timer','div_widgets_memorial',
                                 'div_widgets_optional_question','div_widgets_text_question','div_widgets_text_description','div_widgets_comm_landline',
                                 'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                                'div_widgets_image','div_widgets_video','div_widgets_separator']); clear_widget_variable('div_widgets_link');"
+                                'div_widgets_image','div_widgets_video','div_widgets_separator'])"
                                 >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z">
@@ -126,7 +126,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_timer',['div_widgets_list','div_widgets_question','div_widgets_link','div_widgets_memorial',
                             'div_widgets_optional_question','div_widgets_text_question','div_widgets_text_description','div_widgets_comm_landline',
                             'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                            'div_widgets_image','div_widgets_video','div_widgets_separator']); clear_widget_variable('div_widgets_timer');"
+                            'div_widgets_image','div_widgets_video','div_widgets_separator'])"
                             >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4M4,6V18H11V6H4M20,18V6H18.76C19,6.54 18.95,7.07 18.95,7.13C18.88,7.8 18.41,8.5 18.24,8.75L15.91,11.3L19.23,11.28L19.24,12.5L14.04,12.47L14,11.47C14,11.47 17.05,8.24 17.2,7.95C17.34,7.67 17.91,6 16.5,6C15.27,6.05 15.41,7.3 15.41,7.3L13.87,7.31C13.87,7.31 13.88,6.65 14.25,6H13V18H15.58L15.57,17.14L16.54,17.13C16.54,17.13 17.45,16.97 17.46,16.08C17.5,15.08 16.65,15.08 16.5,15.08C16.37,15.08 15.43,15.13 15.43,15.95H13.91C13.91,15.95 13.95,13.89 16.5,13.89C19.1,13.89 18.96,15.91 18.96,15.91C18.96,15.91 19,17.16 17.85,17.63L18.37,18H20M8.92,16H7.42V10.2L5.62,10.76V9.53L8.76,8.41H8.92V16Z">
@@ -143,7 +143,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_question',['div_widgets_list','div_widgets_timer','div_widgets_link','div_widgets_memorial',
                         'div_widgets_optional_question','div_widgets_text_question','div_widgets_text_description','div_widgets_comm_landline',
                         'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                        'div_widgets_image','div_widgets_video','div_widgets_separator']); clear_widget_variable('div_widgets_question');"
+                        'div_widgets_image','div_widgets_video','div_widgets_separator'])"
                         >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M11.7,8.1h11.1v2.2H11.7V8.1 M11.7,15.9h11.1v2.2H11.7V15.9 M5.1,11.3L1.2,7.4l1.6-1.6l2.3,2.3L10.2,3l1.6,1.6L5.1,11.3z M5.1,15.5l2.4-2.4L9,14.7L6.7,17L9,19.4L7.5,21l-2.4-2.4L2.7,21l-1.6-1.6L3.5,17l-2.4-2.4l1.6-1.6L5.1,15.5z">
@@ -159,7 +159,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_text_question',['div_widgets_list','div_widgets_question','div_widgets_timer','div_widgets_link','div_widgets_memorial',
                         'div_widgets_optional_question','div_widgets_text_description','div_widgets_comm_landline',
                         'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                        'div_widgets_image','div_widgets_video','div_widgets_separator']); clear_widget_variable('div_widgets_text_question');"
+                        'div_widgets_image','div_widgets_video','div_widgets_separator'])"
                         >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M17,7H22V17H17V19A1,1 0 0,0 18,20H20V22H17.5C16.95,22 16,21.55 16,21C16,21.55 15.05,22 14.5,22H12V20H14A1,1 0 0,0 15,19V5A1,1 0 0,0 14,4H12V2H14.5C15.05,2 16,2.45 16,3C16,2.45 16.95,2 17.5,2H20V4H18A1,1 0 0,0 17,5V7M2,7H13V9H4V15H13V17H2V7M20,15V9H17V15H20Z">
@@ -175,7 +175,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_optional_question',['div_widgets_list','div_widgets_question','div_widgets_timer','div_widgets_link','div_widgets_memorial',
                             'div_widgets_text_question','div_widgets_text_description','div_widgets_comm_landline',
                             'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                            'div_widgets_image','div_widgets_video','div_widgets_separator']); clear_widget_variable('div_widgets_optional_question');"
+                            'div_widgets_image','div_widgets_video','div_widgets_separator'])"
                             >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M4 13C2.89 13 2 13.89 2 15V19C2 20.11 2.89 21 4 21H8C9.11 21 10 20.11 10 19V15C10 13.89 9.11 13 8 13M8.2 14.5L9.26 15.55L5.27 19.5L2.74 16.95L3.81 15.9L5.28 17.39M4 3C2.89 3 2 3.89 2 5V9C2 10.11 2.89 11 4 11H8C9.11 11 10 10.11 10 9V5C10 3.89 9.11 3 8 3M4 5H8V9H4M12 5H22V7H12M12 19V17H22V19M12 11H22V13H12Z">
@@ -191,7 +191,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_memorial',['div_widgets_list','div_widgets_question','div_widgets_timer','div_widgets_link',
                             'div_widgets_optional_question','div_widgets_text_question','div_widgets_text_description','div_widgets_comm_landline',
                             'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                            'div_widgets_image','div_widgets_video','div_widgets_separator']); clear_widget_variable('div_widgets_memorial');"
+                            'div_widgets_image','div_widgets_video','div_widgets_separator'])"
                             >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M18.5 2H5.5C3.6 2 2 3.6 2 5.5V18.5C2 20.4 3.6 22 5.5 22H16L22 16V5.5C22 3.6 20.4 2 18.5 2M20.1 15H18.6C16.7 15 15.1 16.6 15.1 18.5V20H5.8C4.8 20 4 19.2 4 18.2V5.8C4 4.8 4.8 4 5.8 4H18.3C19.3 4 20.1 4.8 20.1 5.8V15M7 7H17V9H7V7M7 11H17V13H7V11M7 15H13V17H7V15Z">
@@ -207,7 +207,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_social_network',['div_widgets_list','div_widgets_question','div_widgets_timer','div_widgets_link','div_widgets_memorial',
                             'div_widgets_optional_question','div_widgets_text_question','div_widgets_text_description','div_widgets_comm_landline',
                             'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp',
-                            'div_widgets_image','div_widgets_video','div_widgets_separator']); clear_widget_variable('div_widgets_social_network');"
+                            'div_widgets_image','div_widgets_video','div_widgets_separator'])"
                             >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z">
@@ -223,7 +223,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_comm_landline',['div_widgets_list','div_widgets_question','div_widgets_timer','div_widgets_link','div_widgets_memorial',
                             'div_widgets_optional_question','div_widgets_text_question','div_widgets_text_description',
                             'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                            'div_widgets_image','div_widgets_video','div_widgets_separator']); clear_widget_variable('div_widgets_comm_landline');"
+                            'div_widgets_image','div_widgets_video','div_widgets_separator'])"
                             >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M22,3H2A2,2 0 0,0 0,5V19A2,2 0 0,0 2,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M22,19H2V5H22V19M19,18L21,16L19.5,14H17.85C17.63,13.37 17.5,12.7 17.5,12C17.5,11.3 17.63,10.63 17.85,10H19.5L21,8L19,6C17.7,7 16.73,8.38 16.28,10C16.1,10.64 16,11.31 16,12C16,12.69 16.1,13.36 16.28,14C16.73,15.61 17.7,17 19,18M9,12A3,3 0 0,0 12,9A3,3 0 0,0 9,6A3,3 0 0,0 6,9A3,3 0 0,0 9,12M9,8A1,1 0 0,1 10,9A1,1 0 0,1 9,10A1,1 0 0,1 8,9A1,1 0 0,1 9,8M15,16.59C15,14.09 11.03,13 9,13C6.97,13 3,14.09 3,16.59V18H15V16.59M5.5,16C6.22,15.5 7.7,15 9,15C10.3,15 11.77,15.5 12.5,16H5.5Z">
@@ -239,7 +239,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_text_description',['div_widgets_list','div_widgets_question','div_widgets_timer','div_widgets_link','div_widgets_memorial',
                         'div_widgets_optional_question','div_widgets_text_question','div_widgets_comm_landline',
                         'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                        'div_widgets_image','div_widgets_video','div_widgets_separator']); clear_widget_variable('div_widgets_text_description');"
+                        'div_widgets_image','div_widgets_video','div_widgets_separator'])"
                         >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M3,3H21V5H3V3M9,7H21V9H9V7M3,11H21V13H3V11M9,15H21V17H9V15M3,19H21V21H3V19Z">
@@ -255,7 +255,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_separator',['div_widgets_list','div_widgets_question','div_widgets_timer','div_widgets_link','div_widgets_memorial',
                     'div_widgets_optional_question','div_widgets_text_question','div_widgets_text_description','div_widgets_comm_landline',
                     'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                    'div_widgets_image','div_widgets_video']); clear_widget_variable('div_widgets_separator');"
+                    'div_widgets_image','div_widgets_video'])"
                     >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M8,18H11V15H2V13H22V15H13V18H16L12,22L8,18M12,2L8,6H11V9H2V11H22V9H13V6H16L12,2Z">
@@ -271,7 +271,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_video',['div_widgets_list','div_widgets_question','div_widgets_timer','div_widgets_link','div_widgets_memorial',
                         'div_widgets_optional_question','div_widgets_text_question','div_widgets_text_description','div_widgets_comm_landline',
                         'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                        'div_widgets_image','div_widgets_separator']);clear_widget_variable('div_widgets_video');"
+                        'div_widgets_image','div_widgets_separator'])"
                         >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M10,8V16L15,12L10,8Z">
@@ -287,7 +287,7 @@
                 <div class="widget-cover" onclick = "showhide('div_widgets_image',['div_widgets_list','div_widgets_question','div_widgets_timer','div_widgets_link','div_widgets_memorial',
                         'div_widgets_optional_question','div_widgets_text_question','div_widgets_text_description','div_widgets_comm_landline',
                         'div_widgets_comm_phoneno','div_widgets_comm_sms','div_widgets_comm_email','div_widgets_comm_whatsapp','div_widgets_social_network',
-                        'div_widgets_video','div_widgets_separator']); clear_widget_variable('div_widgets_image');"
+                        'div_widgets_video','div_widgets_separator'])"
                         >
                     <div class="widget primary-hover"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon primary-color">
                             <path d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M13.96,12.29L11.21,15.83L9.25,13.47L6.5,17H17.5L13.96,12.29Z">
@@ -357,7 +357,7 @@
                                 </font>
                             </span></span></label></div>
                             
-                            <input type="hidden" name="recid_widget_attend_quest" id="recid_widget_attend_quest" value="" >
+                            <input type="text" name="recid_widget_attend_quest" id="recid_widget_attend_quest" value="" >
             </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;">
@@ -473,7 +473,7 @@
                 </div>
             </div>
         </div>
-        <input type="hidden" name="recid_widget_countdown" id="recid_widget_countdown" value="">
+        <input type="text" name="recid_widget_countdown" id="recid_widget_countdown" value="">
         <div class="jetp-footer p-20-10" style="display: flex;">
             <button class="success w-120px" onclick="add_widget_countdown()">
                 <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
@@ -538,7 +538,7 @@
                         </font>
                     </small>
                 </div>
-                <input type="hidden" name="recid_widget_link" id="recid_widget_link" value="">
+                <input type="text" name="recid_widget_link" id="recid_widget_link" value="">
             </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;">
@@ -629,7 +629,7 @@
                                     </span></span></label></div>
                     </div>
                 </div>
-                <input type="hidden" name="recid_widget_memorial" id="recid_widget_memorial" value="">
+                <input type="text" name="recid_widget_memorial" id="recid_widget_memorial" value="">
             </div>
         </div>
         
@@ -774,7 +774,7 @@
                                 </span></span></label></div>
                     </div>
                 </div>
-                <input type="hidden" name="recid_widget_optional_question" id="recid_widget_optional_question" value="">
+                <input type="text" name="recid_widget_optional_question" id="recid_widget_optional_question" value="">
             </div>
         </div>
 
@@ -951,7 +951,7 @@
                                     </span></span></label></div>
                     </div>
                 </div>
-                <input type="hidden" name="recid_widget_text_question" id="recid_widget_text_question" value="">
+                <input type="text" name="recid_widget_text_question" id="recid_widget_text_question" value="">
             </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;">
@@ -1080,7 +1080,7 @@
                         </select>
                     </div>
                 </div>
-                <input type="hidden" name="recid_widget_user_text" id="recid_widget_user_text" value="">
+                <input type="text" name="recid_widget_user_text" id="recid_widget_user_text" value="">
             </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;">
@@ -1315,7 +1315,7 @@
                                     </font>
                                 </span></small>
                         </div>
-                        <input type="hidden" name="recid_widget_contact_comm" id="recid_widget_contact_comm" value="">
+                        <input type="text" name="recid_widget_contact_comm" id="recid_widget_contact_comm" value="">
                     </div>
                     
                 </div>
@@ -1433,7 +1433,7 @@
                             </span></small>
                     </div>
                 </div>
-                <input type="hidden" name="recid_widget_comm_phoneno" id="recid_widget_comm_phoneno" value="">
+                <input type="text" name="recid_widget_comm_phoneno" id="recid_widget_comm_phoneno" value="">
             </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;"><button class="success w-120px"><span wudooh="true"
@@ -1563,7 +1563,7 @@
                             </span></small>
                     </div>
                 </div>
-                <input type="hidden" name="recid_widget_comm_sms" id="recid_widget_comm_sms" value="">
+                <input type="text" name="recid_widget_comm_sms" id="recid_widget_comm_sms" value="">
             </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;"><button class="success w-120px"><span wudooh="true"
@@ -1680,7 +1680,7 @@
                         </small>
                     </div>
                 </div>
-                <input type="hidden" name="recid_widget_comm_email" id="recid_widget_comm_email" value="">
+                <input type="text" name="recid_widget_comm_email" id="recid_widget_comm_email" value="">
             </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;"><button class="success w-120px"><span wudooh="true"
@@ -1809,7 +1809,7 @@
                             </span></small>
                     </div>
                 </div>
-                <input type="hidden" name="recid_widget_comm_whatsapp" id="recid_widget_comm_whatsapp" value="">
+                <input type="text" name="recid_widget_comm_whatsapp" id="recid_widget_comm_whatsapp" value="">
             </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;"><button class="success w-120px"><span wudooh="true"
@@ -2110,7 +2110,7 @@
                                 </font>
                             </span></span></div>
                 </div>
-                <input type="hidden" name="recid_widget_image" id="recid_widget_image" value="">
+                <input type="text" name="recid_widget_image" id="recid_widget_image" value="">
             </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;"><button class="success w-120px"
@@ -2172,7 +2172,7 @@
                         </font>
                     </small>
                 </div>
-                <input type="hidden" name="recid_widget_video" id="recid_widget_video" value="">
+                <input type="text" name="recid_widget_video" id="recid_widget_video" value="">
             </div>
         </div>
         <div class="jetp-footer p-20-10" style="display: flex;">
@@ -2403,7 +2403,7 @@
                         <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path>
                     </svg></div>
             </div>
-            <input type="hidden" name="recid_widget_separator" id="recid_widget_separator" value="">
+            <input type="text" name="recid_widget_separator" id="recid_widget_separator" value="">
         </div>
         
         <div id="div_btn_widget_separator_delete" >
@@ -4070,76 +4070,6 @@ function delete_widget_image(recid) {
             }
         });
     }
-}
-
-
-function clear_widget_variable(widget_name) {
-    switch(widget_name) {
-        case 'div_widgets_link':
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_link_delete');
-            break;
-        case 'div_widgets_timer' :
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_timer_delete');
-            break;
-        case 'div_widgets_question' :
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_image_delete');
-            
-            break;
-        case 'div_widgets_text_question':
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_text_question_delete');
-            break;
-        case 'div_widgets_optional_question':
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_optional_question_delete');
-            break;
-        case 'div_widgets_memorial':
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_memorial_delete');
-            break;
-        case 'div_widgets_social_network':
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_social_network_delete');
-            break;
-        case 'div_widgets_comm_landline':
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_contact_comm_delete');
-            break;
-        case 'div_widgets_text_description':
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_text_description_delete');
-            break;
-        case 'div_widgets_separator':
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_separator_delete');
-            break;
-            
-        case 'div_widgets_video':
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_video_delete');
-            break;
-        case 'div_widgets_image':
-            clear_input_in_container(widget_name);
-            clear_div('div_btn_widget_image_delete');
-            break;
-            
-    }
-
-}
-
-function clear_input_in_container(div_id) {
-    var myDiv =  document.getElementById(div_id);
-    var inputs = myDiv.querySelectorAll('input, select, textarea');
-    inputs.forEach(function(input) {
-        input.value = '';
-    });
-}
-
-function clear_div(div_id_to_reset) {
-    document.getElementById(div_id_to_reset).innerHTML = '';
 }
 
 // ------------------------------------------------------ //

@@ -1417,6 +1417,19 @@ document.getElementById('upload_bg_image').addEventListener("change", function (
             editors.push(editor);
         });
         };
+
+
+show_hide_opts(){
+    // var vopts_popup = document.getElementById('receivers_list_options').style.display;
+    // alert(vopts_popup);
+    // if(vopts_popup == 'block'){
+    //     document.getElementById('receivers_list_options').style.display='block';
+    // }else{
+    //     document.getElementById('receivers_list_options').style.display='none';
+    // }
+alert('you are here .. 11');
+}
+
 </script>
 
 

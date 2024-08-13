@@ -751,6 +751,10 @@
             document.getElementById(divname).style.display = "flex";
         }
 
+		function show_div_block(divname) {
+            document.getElementById(divname).style.display = "block";
+        }
+
         function showhide(divshow, ardivshide) {
             document.getElementById(divshow).style.display = 'flex';
             ardivshide.forEach(function(divhide) {
