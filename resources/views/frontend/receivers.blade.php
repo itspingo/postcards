@@ -17,10 +17,10 @@
                 </button>
 
                 <!-- <button class="fl outline gray ml-10 elemid_xoga9" style="min-width: 72px;"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                                                                                                                                                                                    <font style="vertical-align: inherit;">
-                                                                                                                                                                                                        <font style="vertical-align: inherit;">view</font>
-                                                                                                                                                                                                    </font>
-                                                                                                                                                                                                </span></button> -->
+                                                                                                                                                                                                                                                                                                                                                                                                <font style="vertical-align: inherit;">
+                                                                                                                                                                                                                                                                                                                                                                                                    <font style="vertical-align: inherit;">view</font>
+                                                                                                                                                                                                                                                                                                                                                                                                </font>
+                                                                                                                                                                                                                                                                                                                                                                                            </span></button> -->
 
                 <div class="title"><span wudooh="true"
                         style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
@@ -44,7 +44,7 @@
             <div class="jetp-receiver-wrraper detail">
 
                 @foreach ($recipients as $recipient)
-                    <div class="receiver-row m-20-10 mb-20">
+                    <div id="div_recipient_{{ $recipient->id }}" class="receiver-row m-20-10 mb-20">
                         <div class="row head">
                             <div class="full-name"><select>
                                     <option value="0" {{ $recipient->prefix == 'No prefix' ? ' selected' : '' }}><span
@@ -152,30 +152,32 @@
                                 </div>
                             </div>
                             <div class="spinner" style="margin: 0px 15px; display: none;"></div>
-                            <div class="menu mr-a elemid_afvyzh"><svg xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor"
-                                    width="24" height="24" viewBox="0 0 24 24" class="icon">
+                            <div class="menu mr-a elemid_afvyzh"
+                                onclick="open_recipient_option(event, '{{ $recipient->id }}');"><svg
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" fill="currentColor" width="24" height="24"
+                                    viewBox="0 0 24 24" class="icon">
                                     <path
                                         d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z">
                                     </path>
                                 </svg></div>
                         </div>
                         <!-- <div class="row cats" style="display: flex;">
-                                                                                                                                                                                                            <div class="cat mb-5 ml-5" style="background-color: rgb(123, 160, 1);"><span
-                                                                                                                                                                                                                    wudooh="true"
-                                                                                                                                                                                                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                                                                                                                                                                                                    <font style="vertical-align: inherit;">
-                                                                                                                                                                                                                        <font style="vertical-align: inherit;">bride's family</font>
-                                                                                                                                                                                                                    </font>
-                                                                                                                                                                                                                </span></div>
-                                                                                                                                                                                                            <div class="cat mb-5 ml-5" style="background-color: rgb(210, 58, 2);"><span
-                                                                                                                                                                                                                    wudooh="true"
-                                                                                                                                                                                                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                                                                                                                                                                                                    <font style="vertical-align: inherit;">
-                                                                                                                                                                                                                        <font style="vertical-align: inherit;">groom's family</font>
-                                                                                                                                                                                                                    </font>
-                                                                                                                                                                                                                </span></div>
-                                                                                                                                                                                                        </div> -->
+                                                                                                                                                                                                                                                                                                                                                                                                        <div class="cat mb-5 ml-5" style="background-color: rgb(123, 160, 1);"><span
+                                                                                                                                                                                                                                                                                                                                                                                                                wudooh="true"
+                                                                                                                                                                                                                                                                                                                                                                                                                style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                                                                                                                                                                                                                                                                                                                                                                                                <font style="vertical-align: inherit;">
+                                                                                                                                                                                                                                                                                                                                                                                                                    <font style="vertical-align: inherit;">bride's family</font>
+                                                                                                                                                                                                                                                                                                                                                                                                                </font>
+                                                                                                                                                                                                                                                                                                                                                                                                            </span></div>
+                                                                                                                                                                                                                                                                                                                                                                                                        <div class="cat mb-5 ml-5" style="background-color: rgb(210, 58, 2);"><span
+                                                                                                                                                                                                                                                                                                                                                                                                                wudooh="true"
+                                                                                                                                                                                                                                                                                                                                                                                                                style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                                                                                                                                                                                                                                                                                                                                                                                                <font style="vertical-align: inherit;">
+                                                                                                                                                                                                                                                                                                                                                                                                                    <font style="vertical-align: inherit;">groom's family</font>
+                                                                                                                                                                                                                                                                                                                                                                                                                </font>
+                                                                                                                                                                                                                                                                                                                                                                                                            </span></div>
+                                                                                                                                                                                                                                                                                                                                                                                                    </div> -->
                         <div class="row info">
                             <div class="col">
                                 <div class="pic"><svg xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +272,7 @@
 
     <div id="receivers_list_options" class="jetp-menu open id_gw2t8a" style="right: 20px; top: 50px;display:none;">
         <div class="option">
-            <a href="{{ url('mycards/receivers/' . $recipient->card->id) }}">
+            <a href="{{ url('mycards/receivers/' . $cardId) }}">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                     fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                     <path
@@ -295,13 +297,13 @@
                     </font>
                 </span></span></div>
         <!-- <div class="option"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                                                                                                                                                                                            <path d="M22,3H2C0.91,3.04 0.04,3.91 0,5V19C0.04,20.09 0.91,20.96 2,21H22C23.09,20.96 23.96,20.09 24,19V5C23.96,3.91 23.09,3.04 22,3M22,19H2V5H22V19M14,17V15.75C14,14.09 10.66,13.25 9,13.25C7.34,13.25 4,14.09 4,15.75V17H14M9,7A2.5,2.5 0 0,0 6.5,9.5A2.5,2.5 0 0,0 9,12A2.5,2.5 0 0,0 11.5,9.5A2.5,2.5 0 0,0 9,7M14,7V8H20V7H14M14,9V10H20V9H14M14,11V12H18V11H14">
-                                                                                                                                                                                            </path>
-                                                                                                                                                                                        </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                                                                                                                                                                                <font style="vertical-align: inherit;">
-                                                                                                                                                                                                    <font style="vertical-align: inherit;">Add from contacts</font>
-                                                                                                                                                                                                </font>
-                                                                                                                                                                                            </span></span></div> -->
+                                                                                                                                                                                                                                                                                                                                                                                        <path d="M22,3H2C0.91,3.04 0.04,3.91 0,5V19C0.04,20.09 0.91,20.96 2,21H22C23.09,20.96 23.96,20.09 24,19V5C23.96,3.91 23.09,3.04 22,3M22,19H2V5H22V19M14,17V15.75C14,14.09 10.66,13.25 9,13.25C7.34,13.25 4,14.09 4,15.75V17H14M9,7A2.5,2.5 0 0,0 6.5,9.5A2.5,2.5 0 0,0 9,12A2.5,2.5 0 0,0 11.5,9.5A2.5,2.5 0 0,0 9,7M14,7V8H20V7H14M14,9V10H20V9H14M14,11V12H18V11H14">
+                                                                                                                                                                                                                                                                                                                                                                                        </path>
+                                                                                                                                                                                                                                                                                                                                                                                    </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                                                                                                                                                                                                                                                                                                                                                                            <font style="vertical-align: inherit;">
+                                                                                                                                                                                                                                                                                                                                                                                                <font style="vertical-align: inherit;">Add from contacts</font>
+                                                                                                                                                                                                                                                                                                                                                                                            </font>
+                                                                                                                                                                                                                                                                                                                                                                                        </span></span></div> -->
         <div class="option" onclick="showhide('div_multiple_receiver_info',['receivers_list_options'])"><svg
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                 fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
@@ -340,13 +342,13 @@
                     </font>
                 </span></span></div>
         <!-- <div class="option"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                                                                                                                                                                                            <path d="M5.5,9A1.5,1.5 0 0,0 7,7.5A1.5,1.5 0 0,0 5.5,6A1.5,1.5 0 0,0 4,7.5A1.5,1.5 0 0,0 5.5,9M17.41,11.58C17.77,11.94 18,12.44 18,13C18,13.55 17.78,14.05 17.41,14.41L12.41,19.41C12.05,19.77 11.55,20 11,20C10.45,20 9.95,19.78 9.58,19.41L2.59,12.42C2.22,12.05 2,11.55 2,11V6C2,4.89 2.89,4 4,4H9C9.55,4 10.05,4.22 10.41,4.58L17.41,11.58M13.54,5.71L14.54,4.71L21.41,11.58C21.78,11.94 22,12.45 22,13C22,13.55 21.78,14.05 21.42,14.41L16.04,19.79L15.04,18.79L20.75,13L13.54,5.71Z">
-                                                                                                                                                                                            </path>
-                                                                                                                                                                                        </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                                                                                                                                                                                <font style="vertical-align: inherit;">
-                                                                                                                                                                                                    <font style="vertical-align: inherit;">Manage tags</font>
-                                                                                                                                                                                                </font>
-                                                                                                                                                                                            </span></span></div> -->
+                                                                                                                                                                                                                                                                                                                                                                                        <path d="M5.5,9A1.5,1.5 0 0,0 7,7.5A1.5,1.5 0 0,0 5.5,6A1.5,1.5 0 0,0 4,7.5A1.5,1.5 0 0,0 5.5,9M17.41,11.58C17.77,11.94 18,12.44 18,13C18,13.55 17.78,14.05 17.41,14.41L12.41,19.41C12.05,19.77 11.55,20 11,20C10.45,20 9.95,19.78 9.58,19.41L2.59,12.42C2.22,12.05 2,11.55 2,11V6C2,4.89 2.89,4 4,4H9C9.55,4 10.05,4.22 10.41,4.58L17.41,11.58M13.54,5.71L14.54,4.71L21.41,11.58C21.78,11.94 22,12.45 22,13C22,13.55 21.78,14.05 21.42,14.41L16.04,19.79L15.04,18.79L20.75,13L13.54,5.71Z">
+                                                                                                                                                                                                                                                                                                                                                                                        </path>
+                                                                                                                                                                                                                                                                                                                                                                                    </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                                                                                                                                                                                                                                                                                                                                                                            <font style="vertical-align: inherit;">
+                                                                                                                                                                                                                                                                                                                                                                                                <font style="vertical-align: inherit;">Manage tags</font>
+                                                                                                                                                                                                                                                                                                                                                                                            </font>
+                                                                                                                                                                                                                                                                                                                                                                                        </span></span></div> -->
     </div>
 
     <div id="div_receiver_info" class="jetp-dialog-overlay show" style="display: none;">
@@ -468,7 +470,8 @@
                                 </font>
                             </span></div><input type="tel" name="mobile" id="mobile_no" maxlength="11"
                             value="">
-                        <input type="hidden" name="cardid" id="recipient_cardid" value="{{ $recipient->card->id }}">
+                        <input type="hidden" name="cardid" id="recipient_cardid" value="{{ $cardId }}">
+                        <input type="hidden" name="cardid" id="rec_recipient_id" value="">
                     </div>
 
                 </div>
@@ -812,7 +815,8 @@
 
 
 
-    <div class="jetp-menu open id_sf7rm" style="display:none; left: 31px; top: 216.797px;">
+    <div id="div_recipient_options" onclick="edit_recipient()" class="jetp-menu open id_sf7rm"
+        style="position: absolute;display:none; left: 31px; top: 216.797px;">
         <div class="option"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
                 <path
@@ -847,8 +851,9 @@
                     </font>
                 </span></span></div>
         <div class="line"></div>
-        <div class="option"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
+        <div class="option" onclick="remove_card_recipient()"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24"
+                height="24" viewBox="0 0 24 24" class="icon">
                 <path
                     d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z">
                 </path>
@@ -858,6 +863,7 @@
                         <font style="vertical-align: inherit;">remove</font>
                     </font>
                 </span></span></div>
+        <input type="hidden" id="current_selected_recipient_id" />
     </div>
 
     <div class="jetp-menu open id_8gxz8" style="display:none; left: 20px; top: 54px;">
@@ -991,11 +997,15 @@
                             </font>
                         </font>
                     </div>
-                    <textarea rows="6"></textarea>
+                    <textarea id="textarea_user_text_input" rows="6">
+@if ($text_format)
+{{ $text_format->text_format }}
+@endif
+</textarea>
                 </div>
             </div>
             <div class="jetp-footer p-20-10" style="display: flex;"><button class="success"
-                    onclick="alert('Work in porgress');hide_div('div_text_options')">
+                    onclick="save_nclose_text_format();hide_div('div_text_options')">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">confirmation</font>
                     </font>
@@ -1187,10 +1197,120 @@
         </div>
     </div>
     <script>
+        function open_recipient_option(event, recipient_id) {
+            var div = document.getElementById('div_recipient_options');
+            div.style.display = 'block';
+            //Track current selected recipient 
+            document.getElementById("current_selected_recipient_id").value = recipient_id;
+            positionDiv(event, div, {
+                leftOffset: -250,
+                topOffset: 30
+            });
+            addClickOutsideListener(div, event.target);
+        }
+
+        //TODO: move to generic helper file
+        function positionDiv(event, div, options) {
+            // Get the dimensions of the viewport
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+
+            // Get the dimensions of the div
+            const divWidth = div.offsetWidth;
+            const divHeight = div.offsetHeight;
+
+            // Calculate initial position based on the event coordinates and scroll position
+            let left = event.pageX;
+            let top = event.pageY;
+
+            // Adjust if the div is going out of the viewport on the right
+            if (left + divWidth > viewportWidth + window.scrollX) {
+                left = viewportWidth + window.scrollX - divWidth;
+            }
+
+            // Adjust if the div is going out of the viewport at the bottom
+            if (top + divHeight > viewportHeight + window.scrollY) {
+                top = viewportHeight + window.scrollY - divHeight;
+            }
+
+            // Apply the calculated positions
+            div.style.left = left + 'px';
+            div.style.top = top + 'px';
+        }
+
+        //TODO: move to generic helper file
+        function addClickOutsideListener(div, triggerElement) {
+            function hideDiv(e) {
+                if (!div.contains(e.target) && e.target !== triggerElement) {
+                    div.style.display = 'none';
+                    document.removeEventListener('click', hideDiv);
+                }
+            }
+
+            document.addEventListener('click', hideDiv);
+        }
+
+        function hide_menu(div, className) {
+            var classNameToHide = className || '.jetp-menu';
+            var closestMenu = div.closest(classNameToHide);
+            if (closestMenu) {
+                closestMenu.style.display = 'none';
+            }
+        }
+
+        function remove_card_recipient() {
+            var div = document.getElementById('div_recipient_options');
+            var cardId = document.getElementById("recipient_cardid").value;
+            var current_selected_recipient_id = document.getElementById("current_selected_recipient_id").value;
+            hide_menu(div);
+
+            $.ajax({
+                url: "{{ url('mycards/remove_card_recipient') }}",
+                type: "post",
+                data: {
+                    card_id: cardId,
+                    recipient_id: current_selected_recipient_id,
+                    _token: "{{ csrf_token() }}"
+                },
+                success: function(result) {
+                    // alert('Link added successfully');
+                    document.getElementById('div_recipient_' + current_selected_recipient_id).style.display =
+                        "none";
+                },
+                error: function(xhr, status, error) {
+                    // Handle the error
+                    console.log('Error: ' + error);
+                }
+            });
+
+        }
+
+        function save_nclose_text_format() {
+            var text_format_value = document.getElementById("textarea_user_text_input").value;
+            $.ajax({
+                url: "{{ url('mycards/save_text_format') }}",
+                type: "post",
+                data: {
+                    text_format: text_format_value,
+                    _token: "{{ csrf_token() }}"
+                },
+                success: function(result) {
+                    // alert('Link added successfully');
+                    document.getElementById('div_text_options').style.display = "none";
+                },
+                error: function(xhr, status, error) {
+                    // Handle the error
+                    console.log('Error: ' + error);
+                }
+            });
+
+
+        }
+
+
         function save_nclose_multiple_recipient() {
             var cardId = document.getElementById("recipient_cardid").value;
             var name_multiple = document.getElementById("name_multiple").value;
-            console.log(cardId, name_multiple)
             $.ajax({
                 url: "{{ url('mycards/save_multiple_recipient') }}",
                 type: "post",
@@ -1205,6 +1325,7 @@
                     // Difference is of id div**rec**info with my_cards.blade.php
                     // document.getElementById('div_recipient_info').style.display = "none";
                     document.getElementById('div_multiple_receiver_info').style.display = "none";
+                    location.reload();
                 },
                 error: function(xhr, status, error) {
                     // Handle the error
@@ -1219,7 +1340,8 @@
             var prefix = document.getElementById("prefix").value;
             var recipient_name = document.getElementById("recipient_name").value;
             var mobile_no = document.getElementById("mobile_no").value;
-
+            var recipient_id = document.getElementById("rec_recipient_id").value;
+            
             $.ajax({
                 url: "{{ url('mycards/save_recipient') }}",
                 type: "get",
@@ -1228,6 +1350,7 @@
                     prefix: prefix,
                     recipient_name: recipient_name,
                     mobile_no: mobile_no,
+                    recipient_id: recipient_id,
                     _token: "{{ csrf_token() }}"
                 },
                 success: function(result) {
@@ -1235,9 +1358,11 @@
                     document.getElementById('prefix').value = '';
                     document.getElementById('recipient_name').value = '';
                     document.getElementById('mobile_no').value = '';
+                    document.getElementById('rec_recipient_id').value = '';
                     // Difference is of id div**rec**info with my_cards.blade.php
                     // document.getElementById('div_recipient_info').style.display = "none";
                     document.getElementById('div_receiver_info').style.display = "none";
+                    location.reload();
                 },
                 error: function(xhr, status, error) {
                     // Handle the error
@@ -1251,6 +1376,7 @@
             var prefix = document.getElementById("prefix").value;
             var recipient_name = document.getElementById("recipient_name").value;
             var mobile_no = document.getElementById("mobile_no").value;
+            var recipient_id = document.getElementById("rec_recipient_id").value;
 
             $.ajax({
                 url: "{{ url('mycards/save_recipient') }}",
@@ -1260,6 +1386,7 @@
                     prefix: prefix,
                     recipient_name: recipient_name,
                     mobile_no: mobile_no,
+                    recipient_id: recipient_id,
                     _token: "{{ csrf_token() }}"
                 },
                 success: function(result) {
@@ -1267,12 +1394,41 @@
                     document.getElementById('prefix').value = '';
                     document.getElementById('recipient_name').value = '';
                     document.getElementById('mobile_no').value = '';
+                    document.getElementById('rec_recipient_id').value = '';
                 },
                 error: function(xhr, status, error) {
                     // Handle the error
                     console.log('Error: ' + error);
                 }
             });
+        }
+
+        function edit_recipient() {
+            var current_selected_recipient_id = document.getElementById("current_selected_recipient_id").value;
+            var cardId = document.getElementById("recipient_cardid").value;
+            // var div = document.getElementById('div_recipient_' + current_selected_recipient_id)
+            showhide('div_receiver_info', ['receivers_list_options']);
+            $.ajax({
+                url: "{{ url('mycards/recipient_detail') }}" + "/" + current_selected_recipient_id,
+                type: "get",
+                data: {
+                    card_id: cardId,
+                    // recipient_id: current_selected_recipient_id,
+                    _token: "{{ csrf_token() }}"
+                },
+                success: function(result) {
+                    // alert('Link added successfully');
+                    document.getElementById('prefix').value = result.prefix;
+                    document.getElementById('recipient_name').value = result.recipient_name;
+                    document.getElementById('mobile_no').value = result.mobile_no;
+                    document.getElementById('rec_recipient_id').value = result.id;
+                },
+                error: function(xhr, status, error) {
+                    // Handle the error
+                    console.log('Error: ' + error);
+                }
+            });
+
         }
     </script>
 @endsection

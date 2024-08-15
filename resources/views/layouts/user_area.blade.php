@@ -972,18 +972,18 @@
                 var recno = musicfile.id;
                 // Add HTML for each music file
                 card_music_files += '<div class="item"> \
-                					<div class="title no-wrap"> \
-                						<span id="span_play_icon' + recno +
+                    					<div class="title no-wrap"> \
+                    						<span id="span_play_icon' + recno +
                     '" ><i class="fas fa-play" style="margin-right: 8px; cursor: pointer;" onclick="playMusic(\'' +
                     music_file + '\',\'' + recno + '\',\'' + musicfile.title + '\')"></i> </span>\
-                						<span id="span_stop_icon' + recno +
+                    						<span id="span_stop_icon' + recno +
                     '" style="display:none;" ><i class="fas fa-stop" style="margin-right: 8px; cursor: pointer;" onclick="stopMusic(\'' +
                     recno + '\')"></i> </span>\
-                						<span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:\'Sahl Naskh\';">' +
+                    						<span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:\'Sahl Naskh\';">' +
                     musicfile
                     .title + '</span> \
-                					</div> \
-                				</div>';
+                    					</div> \
+                    				</div>';
             });
 
             // Insert the constructed HTML into the DOM
@@ -1595,7 +1595,7 @@
         function show_hide_opts() {
             var vopts_popup = document.getElementById('receivers_list_options').style.display;
             if (vopts_popup == 'none') {
-                document.getElementById('receivers_list_options').style.display = 'flex';
+                document.getElementById('receivers_list_options').style.display = 'block';
             } else {
                 document.getElementById('receivers_list_options').style.display = 'none';
             }

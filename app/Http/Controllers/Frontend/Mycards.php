@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 
+use App\Models\UserTextFormat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\settings;
@@ -106,25 +107,36 @@ class Mycards extends Controller
 
         return view('frontend/card_messages', $data);
     }
-
     public function save_recipient(Request $request)
     {
         try {
-            // Create a new card recipient record
-            $recipient = new card_recipients_model();
-            $recipient->web_user_id = auth()->user()->id;
-            $recipient->card_id = $request->input('cardid');
-            $recipient->prefix = $request->input('prefix');
-            $recipient->recipient_name = $request->input('recipient_name');
-            $recipient->mobile_no = $request->input('mobile_no');
-            $recipient->save();
+            if ($request->input('recipient_id') && !empty($request->input('recipient_id'))) {
+                //Update record
+                $recipient = card_recipients_model::where([['id', '=', $request->input('recipient_id')], ['web_user_id', '=', auth()->user()->id]])->first();
+                $recipient->prefix = $request->input('prefix');
+                $recipient->recipient_name = $request->input('recipient_name');
+                $recipient->mobile_no = $request->input('mobile_no');
+                $recipient->save();
 
-            return response()->json(['success' => true, 'message' => 'Recipient saved successfully.']);
+                return response()->json(['success' => true, 'message' => 'Recipient saved successfully.']);
+            } else {
+                // Create a new card recipient record
+                $recipient = new card_recipients_model();
+                $recipient->web_user_id = auth()->user()->id;
+                $recipient->card_id = $request->input('cardid');
+                $recipient->prefix = $request->input('prefix');
+                $recipient->recipient_name = $request->input('recipient_name');
+                $recipient->mobile_no = $request->input('mobile_no');
+                $recipient->save();
+
+                return response()->json(['success' => true, 'message' => 'Recipient saved successfully.']);
+            }
         } catch (\Exception $e) {
             // Handle any errors
             return response()->json(['success' => false, 'message' => 'Error saving recipient: ' . $e->getMessage()]);
         }
     }
+
     public function save_multiple_recipient(Request $request)
     {
         try {
@@ -146,9 +158,76 @@ class Mycards extends Controller
         }
     }
 
+    public function save_text_format(Request $request)
+    {
+        try {
+            $current_user_id = auth()->user()->id;
+            $userTextFormat = UserTextFormat::where('web_user_id', $current_user_id)->first();
+            if ($userTextFormat) {
+                $userTextFormat->text_format = $request->input('text_format');
+                $userTextFormat->save();
+            } else {
+                $userTextFormat = new UserTextFormat();
+                $userTextFormat->text_format = $request->input('text_format');
+                $userTextFormat->web_user_id = $current_user_id;
+                $userTextFormat->save();
+            }
+
+        } catch (\Exception $e) {
+            // Handle any errors
+            return response()->json(['success' => false, 'message' => 'Error saving text format: ' . $e->getMessage()]);
+        }
+
+    }
+
+    public function remove_card_recipient(Request $request)
+    {
+        try {
+            $current_user_id = auth()->user()->id;
+            $recipient = card_recipients_model::where([
+                ['web_user_id', '=', $current_user_id],
+                ['id', '=', $request->input('recipient_id')],
+                ['card_id', '=', $request->input('card_id')],
+            ])->first();
+            if ($recipient) {
+                $recipient->delete();
+            } else {
+                return response()->json(['success' => false, 'message' => 'Unknown option']);
+            }
+
+        } catch (\Exception $e) {
+            // Handle any errors
+            return response()->json(['success' => false, 'message' => 'Error removing card recipient ' . $e->getMessage()]);
+        }
+    }
+
+    public function recipient_detail(Request $request, $id)
+    {
+        try {
+            $current_user_id = auth()->user()->id;
+            $recipient = card_recipients_model::where([
+                ['web_user_id', '=', $current_user_id],
+                ['id', '=', $id],
+                ['card_id', '=', $request->input('card_id')],
+            ])->first();
+            if ($recipient) {
+                return $recipient;
+            } else {
+                return response()->json(['success' => false, 'message' => 'Unknown option']);
+            }
+
+        } catch (\Exception $e) {
+            // Handle any errors
+            return response()->json(['success' => false, 'message' => 'Error removing card recipient ' . $e->getMessage()]);
+        }
+
+    }
     public function receivers($id)
     {
+        $current_user_id = auth()->user()->id;
         $data['recipients'] = card_recipients_model::where('card_id', $id)->with('card')->get();
+        $data['text_format'] = UserTextFormat::where('user_id', $current_user_id)->first();
+        $data['cardId'] = $id;
         $data['page_title'] = "Receivers";
 
         return view('frontend/receivers', $data);
