@@ -1406,3 +1406,8 @@ function get_prefix_items()
 
     return $prefixes;
 }
+
+function unique_id($l = 8)
+{
+    return substr(md5(uniqid(mt_rand(), true)), 0, $l);
+}

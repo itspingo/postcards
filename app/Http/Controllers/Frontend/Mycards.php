@@ -127,6 +127,8 @@ class Mycards extends Controller
                 $recipient->prefix = $request->input('prefix');
                 $recipient->recipient_name = $request->input('recipient_name');
                 $recipient->mobile_no = $request->input('mobile_no');
+                //Save only on create. Should not be called while updating.
+                $recipient->url = unique_id();
                 $recipient->save();
 
                 return response()->json(['success' => true, 'message' => 'Recipient saved successfully.']);
@@ -147,6 +149,7 @@ class Mycards extends Controller
                     $recipient->web_user_id = auth()->user()->id;
                     $recipient->card_id = $request->input('cardid');
                     $recipient->recipient_name = $recipient_name;
+                    $recipient->url = unique_id();
                     $recipient->save();
                 }
             }
