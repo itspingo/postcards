@@ -284,7 +284,7 @@ Route::get('transactions', [Transactions::class, 'index'])->middleware(['auth'])
 
 
 
-Route::get('play/{id}', [Play::class, 'index'])->name('play');
+Route::get('play/{id}/{recipient_url?}', [Play::class, 'index'])->name('play');
 Route::post('play/save_answers', [Play::class, 'save_answers'])->name('play.save_answers');
 
 // Route::get('shop_items', [Shop::class, 'index'])->name('shop');
