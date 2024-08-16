@@ -222,11 +222,34 @@ class Mycards extends Controller
         }
 
     }
+    public function save_recipient_prefix(Request $request, $id)
+    {
+        try {
+            $current_user_id = auth()->user()->id;
+            $recipient = card_recipients_model::where([
+                ['web_user_id', '=', $current_user_id],
+                ['id', '=', $id],
+                ['card_id', '=', $request->input('card_id')],
+            ])->first();
+            if ($recipient) {
+                $recipient->prefix = $request->input('prefix');
+                $recipient->save();
+            } else {
+                return response()->json(['success' => false, 'message' => 'Unknown option']);
+            }
+
+        } catch (\Exception $e) {
+            // Handle any errors
+            return response()->json(['success' => false, 'message' => 'Error removing card recipient ' . $e->getMessage()]);
+        }
+
+    }
     public function receivers($id)
     {
         $current_user_id = auth()->user()->id;
         $data['recipients'] = card_recipients_model::where('card_id', $id)->with('card')->get();
         $data['text_format'] = UserTextFormat::where('user_id', $current_user_id)->first();
+        $data['prefix_options'] = get_prefix_items();
         $data['cardId'] = $id;
         $data['page_title'] = "Receivers";
 

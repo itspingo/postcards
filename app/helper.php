@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
- 
-use PHPMailer\PHPMailer\PHPMailer;  
+
+use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Lang;
@@ -41,7 +41,8 @@ if (!function_exists('randomWord')) {
 }
 
 if (!function_exists('id2str')) {
-    function id2str($idval){
+    function id2str($idval)
+    {
         $characters = 'hdjfkplmaw';
         $randomstr = '';
         $idstr = strval($idval);
@@ -51,13 +52,14 @@ if (!function_exists('id2str')) {
             $randomstr .= $characters[$index];
         }
 
-        $randomstr = randomWord(3).$randomstr.randomWord(3);
+        $randomstr = randomWord(3) . $randomstr . randomWord(3);
         return $randomstr;
     }
 }
 
 if (!function_exists('str2id')) {
-    function str2id($strval){
+    function str2id($strval)
+    {
         $characters = 'hdjfkplmaw';
         $idval = '';
         $strval = substr($strval, 3, -3);
@@ -85,34 +87,9 @@ if (!function_exists('show_theme_menu')) {
             ->where('parent_category', $prntid)
             ->get();
 
-            if(null != session('sess_settings') && session()->get('sess_settings')->hide_empty_categories == 'Y'){
-                /* foreach ($themeMenulist as $thmnue) {
-                    if (countItemsInCategory($thmnue->id) > 0) {
-                        $them_mnu_chldrn = has_theme_menu_child($thmnue->id);
-                        if ($them_mnu_chldrn != false) {
-                            $theme_menu .= '<li> <a href="' . url('category/' . $thmnue->id) . '">' . $thmnue->category_title ; 
-                            // if(null != session('sess_settings') && session()->get('sess_settings')->category_counters == 'Y'){
-                            //     $theme_menu .= '('.countItemsInCategory($thmnue->id).')';
-                            // }
-                            $theme_menu .= '</a><ul>';
-
-                            $theme_menu .= show_theme_menu($thmnue->id);
-
-                            $theme_menu .= '</ul>';
-                        } else {
-
-                            $theme_menu .= '<li> <a href="' . url('category/' . $thmnue->id) . '">' . $thmnue->category_title;
-                            // if(null != session('sess_settings') && session()->get('sess_settings')->category_counters == 'Y'){
-                            //     $theme_menu .= '('.countItemsInCategory($thmnue->id).')';
-                            // }
-                            $theme_menu .= '</a><li>';
-                        }
-                        $theme_menu .= '</li>';
-                    }
-                } */
-            }else{
-                foreach ($themeMenulist as $thmnue) {
-                
+        if (null != session('sess_settings') && session()->get('sess_settings')->hide_empty_categories == 'Y') {
+            /* foreach ($themeMenulist as $thmnue) {
+                if (countItemsInCategory($thmnue->id) > 0) {
                     $them_mnu_chldrn = has_theme_menu_child($thmnue->id);
                     if ($them_mnu_chldrn != false) {
                         $theme_menu .= '<li> <a href="' . url('category/' . $thmnue->id) . '">' . $thmnue->category_title ; 
@@ -133,9 +110,34 @@ if (!function_exists('show_theme_menu')) {
                         $theme_menu .= '</a><li>';
                     }
                     $theme_menu .= '</li>';
-                    
                 }
+            } */
+        } else {
+            foreach ($themeMenulist as $thmnue) {
+
+                $them_mnu_chldrn = has_theme_menu_child($thmnue->id);
+                if ($them_mnu_chldrn != false) {
+                    $theme_menu .= '<li> <a href="' . url('category/' . $thmnue->id) . '">' . $thmnue->category_title;
+                    // if(null != session('sess_settings') && session()->get('sess_settings')->category_counters == 'Y'){
+                    //     $theme_menu .= '('.countItemsInCategory($thmnue->id).')';
+                    // }
+                    $theme_menu .= '</a><ul>';
+
+                    $theme_menu .= show_theme_menu($thmnue->id);
+
+                    $theme_menu .= '</ul>';
+                } else {
+
+                    $theme_menu .= '<li> <a href="' . url('category/' . $thmnue->id) . '">' . $thmnue->category_title;
+                    // if(null != session('sess_settings') && session()->get('sess_settings')->category_counters == 'Y'){
+                    //     $theme_menu .= '('.countItemsInCategory($thmnue->id).')';
+                    // }
+                    $theme_menu .= '</a><li>';
+                }
+                $theme_menu .= '</li>';
+
             }
+        }
 
         return $theme_menu;
     }
@@ -239,7 +241,7 @@ if (!function_exists('display_menu')) {
         foreach ($mainMenulist as $vmainmenu) {
 
             if (hasChildren($vmainmenu->id)) {
-                $str_menu .=    '<li>
+                $str_menu .= '<li>
                                         <a href="javascript: void(0);" class="has-arrow">
                                             <i class="fas fa-indent"></i>
                                             ' . $vmainmenu->module_name . ' 
@@ -248,18 +250,18 @@ if (!function_exists('display_menu')) {
 
                 $str_menu .= sub_menus($vmainmenu->id);
 
-                $str_menu .=    '</ul></li>';
+                $str_menu .= '</ul></li>';
             } else {
 
                 if ($vmainmenu->controller_file != '') {
-                    $str_menu .=    '<li>
+                    $str_menu .= '<li>
                                             <a href="' . route($vmainmenu->controller_file) . '" class="waves-effect">
                                                 <i class="' . str_replace('_', ' ', $vmainmenu->module_icon) . '"></i>
                                                 <span>' . $vmainmenu->module_name . '</span>
                                             </a>
                                         </li>';
                 } else {
-                    $str_menu .=    '<li>
+                    $str_menu .= '<li>
                                             <a href="#" class="waves-effect">
                                                 <i class="' . str_replace('_', ' ', $vmainmenu->module_icon) . '"></i>
                                                 <span>' . $vmainmenu->module_name . '</span>
@@ -270,7 +272,7 @@ if (!function_exists('display_menu')) {
         }
 
         // $str_menu .= noapp_menus();
-        return  $str_menu;
+        return $str_menu;
     }
 }
 
@@ -279,7 +281,7 @@ if (!function_exists('display_menu')) {
 function item_score_ratings($itemId, $rating_type = 'star')
 {
     //rating_type: star, both
-    if(null != session('sess_settings') && session()->get('sess_settings')->enable_reputation == 'Y'){
+    if (null != session('sess_settings') && session()->get('sess_settings')->enable_reputation == 'Y') {
         $itmrevs = DB::table('item_reviews')
             ->where('active', '=', '1')
             ->where('item_id', $itemId)
@@ -290,7 +292,7 @@ function item_score_ratings($itemId, $rating_type = 'star')
             foreach ($itmrevs as $itmrev) {
                 $score += $itmrev->score_rating;
             }
-            $avgscor = ceil($score /  $nrevs);
+            $avgscor = ceil($score / $nrevs);
 
             if ($avgscor == 0) {
 
@@ -363,7 +365,7 @@ function item_score_ratings($itemId, $rating_type = 'star')
                 <i class="fa fa-star" style="color:lightgray;"></i>
             </div>';
         }
-    }else{
+    } else {
         return '';
     }
 
@@ -376,67 +378,67 @@ if (!function_exists('score_to_stars')) {
     function score_to_stars($score)
     {
 
-        if(null != session('sess_settings') && session()->get('sess_settings')->enable_reputation == 'Y'){
-        if ($score == 0) {
+        if (null != session('sess_settings') && session()->get('sess_settings')->enable_reputation == 'Y') {
+            if ($score == 0) {
 
-            $retval = '<div class="rating">
+                $retval = '<div class="rating">
                             <i class="fa fa-star" style="color:lightgray;"></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i>
                             <i class="fa fa-star" style="color:lightgray;"></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i>
                         </div>';
-        } else if ($score == 1) {
+            } else if ($score == 1) {
 
-            $retval = '<div class="rating">
+                $retval = '<div class="rating">
                             <i class="fa fa-star" ></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i>
                             <i class="fa fa-star" style="color:lightgray;"></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i>
                         </div>';
-        } else if ($score == 2) {
+            } else if ($score == 2) {
 
-            $retval = '<div class="rating">
+                $retval = '<div class="rating">
                             <i class="fa fa-star" ></i> 
                             <i class="fa fa-star" ></i>
                             <i class="fa fa-star" style="color:lightgray;"></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i>
                         </div>';
-        } else if ($score == 3) { 
+            } else if ($score == 3) {
 
-            $retval = '<div class="rating">
+                $retval = '<div class="rating">
                             <i class="fa fa-star" ></i> 
                             <i class="fa fa-star" ></i>
                             <i class="fa fa-star" ></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i>
                         </div>';
-        } else if ($score == 4) {
+            } else if ($score == 4) {
 
-            $retval = '<div class="rating">
+                $retval = '<div class="rating">
                             <i class="fa fa-star" ></i> 
                             <i class="fa fa-star" ></i>
                             <i class="fa fa-star" ></i> 
                             <i class="fa fa-star" ></i> 
                             <i class="fa fa-star" style="color:lightgray;"></i>
                         </div>';
-        } else if ($score == 5) {
+            } else if ($score == 5) {
 
-            $retval = '<div class="rating">
+                $retval = '<div class="rating">
                             <i class="fa fa-star" ></i> 
                             <i class="fa fa-star" ></i>
                             <i class="fa fa-star" ></i> 
                             <i class="fa fa-star" ></i> 
                             <i class="fa fa-star" ></i>
                         </div>';
+            }
+
+            return $retval;
+        } else {
+            return '';
         }
-
-        return $retval;
-    }else{
-        return '';
-    }
     }
 }
 
@@ -486,12 +488,12 @@ if (!function_exists('sub_menus')) {
             //  if($module_user_permissions == 'Y'){
             if ($smenu->controller_file != '') {
                 // if($smenu->table_name == 'users'){
-                $str_sub_menu .=    '<li>
+                $str_sub_menu .= '<li>
                                                 <a href="' . $smenu->controller_file . '" class="waves-effect">
                                                     <i class="' . str_replace('_', ' ', $smenu->module_icon) . '"></i>
                                                     <span>' . $smenu->module_name . '</span>
                                                 </a>';
-                $str_sub_menu .=    '</li>';
+                $str_sub_menu .= '</li>';
                 // }else{
                 //     $str_sub_menu .=    '<li>
                 //                             <a href="/'.$applic->abbrv.'/'.$smenu->controller_file.'" class="waves-effect">
@@ -501,14 +503,14 @@ if (!function_exists('sub_menus')) {
                 //     $str_sub_menu .=    '</li>';
                 // }
             } elseif (isset($_GET['mid']) and $_GET['mid'] == $smenu->id) {
-                $str_sub_menu .=    '<li>
+                $str_sub_menu .= '<li>
                                             <a href="' . 'module?mid=' . $smenu->id . '" class="waves-effect">
                                                 <i class="' . str_replace('_', ' ', $smenu->module_icon) . '"></i>
                                                 <span>' . $smenu->module_name . '</span>
                                             </a>
                                         </li>';
             } else {
-                $str_sub_menu .=    '<li>
+                $str_sub_menu .= '<li>
                                             <a href="' . 'module?mid=' . $smenu->id . '" class="waves-effect">
                                                 <i class="' . str_replace('_', ' ', $smenu->module_icon) . '"></i>
                                                 <span>' . $smenu->module_name . '</span>
@@ -519,7 +521,7 @@ if (!function_exists('sub_menus')) {
 
         }
 
-        return  $str_sub_menu;
+        return $str_sub_menu;
     }
 }
 
@@ -752,11 +754,11 @@ if (!function_exists('sendEmail')) {
                 
                 <p>Best regards,</br>
                 Web Master</p>';
-        }elseif($emailEvent == 'contactus'){
+        } elseif ($emailEvent == 'contactus') {
             $subject = 'Contact US';
             $user_name = session()->get('sess_settings')->admin_email_name;
             $user_email = session()->get('sess_settings')->mail_address;
-            
+
 
             $message = '<p>Dear ' . $user_name . ',</p>
                 <p>A contact us form is submitted with following details.</br><br>
@@ -770,26 +772,26 @@ if (!function_exists('sendEmail')) {
                 
                 <p>Best regards,</br>
                 Web Master</p>';
-        }elseif($emailEvent == 'newsletter_subscr'){ 
+        } elseif ($emailEvent == 'newsletter_subscr') {
             $subject = 'Newsletter Subscription';
-            $user_email = $emailData['user_email'];            
+            $user_email = $emailData['user_email'];
 
             $message = '<p>Hi there,</p>
-                <p>A contact us form is submitted with following details.</br><br>'.
-                $emailData['email_message'].'<br>'.
-                $emailData['confirm_link'].
+                <p>A contact us form is submitted with following details.</br><br>' .
+                $emailData['email_message'] . '<br>' .
+                $emailData['confirm_link'] .
                 '</p>
                 
                 <p>Best regards,</br>
                 Web Master</p>';
         }
 
-        
-        if(null != session('sess_settings') && session()->get('sess_settings')->choose_mailer == 'SMTP'){
+
+        if (null != session('sess_settings') && session()->get('sess_settings')->choose_mailer == 'SMTP') {
             $mail = new PHPMailer(true);     // Passing `true` enables exceptions
-    
+
             try {
-    
+
                 // Email server settings
                 $mail->SMTPDebug = 0;
                 $mail->isSMTP();
@@ -799,43 +801,41 @@ if (!function_exists('sendEmail')) {
                 $mail->Password = session()->get('sess_settings')->smtp_password;       // sender password
                 $mail->SMTPSecure = session()->get('sess_settings')->smtp_protocol;                  // encryption - ssl/tls
                 $mail->Port = session()->get('sess_settings')->smtp_port;                          // port - 587/465
-    
+
                 $mail->setFrom(session()->get('sess_settings')->mail_address, session()->get('sess_settings')->admin_email_name);
                 $mail->addAddress($emailData['user_email']);
                 // $mail->addCC($request->emailCc);
 
-                if(session()->get('sess_settings')->enable_bcc_email_to_admin == 'Y'){
+                if (session()->get('sess_settings')->enable_bcc_email_to_admin == 'Y') {
                     $mail->addBCC(session()->get('sess_settings')->mail_address);
                 }
-    
+
                 //$mail->addReplyTo('sender@example.com', 'SenderReplyName');
-    
+
                 // if(isset($_FILES['emailAttachments'])) {
                 //     for ($i=0; $i < count($_FILES['emailAttachments']['tmp_name']); $i++) {
                 //         $mail->addAttachment($_FILES['emailAttachments']['tmp_name'][$i], $_FILES['emailAttachments']['name'][$i]);
                 //     }
                 // }
-        
+
                 $mail->isHTML(true);                // Set email content format to HTML
-    
+
                 $mail->Subject = $subject;
-                $mail->Body    = $message;
-    
+                $mail->Body = $message;
+
                 // $mail->AltBody = plain text version of email body;
-    
-                if( !$mail->send() ) {
-                    return "Email not sent.".$mail->ErrorInfo;
-                }
-                
-                else {
+
+                if (!$mail->send()) {
+                    return "Email not sent." . $mail->ErrorInfo;
+                } else {
                     return true;
                 }
-    
+
             } catch (Exception $e) {
                 return 'Message could not be sent.';
             }
 
-        }else{
+        } else {
             if (mail($user_email, $subject, $message, $headers)) {
                 return true;
             } else {
@@ -855,7 +855,7 @@ function get_updated_currency_rates()
         ->where('conversion_date', $today_date)
         ->first();
     if ($tblist) {
-        return (array)$tblist;
+        return (array) $tblist;
     } else {
 
         $curl = curl_init();
@@ -878,10 +878,10 @@ function get_updated_currency_rates()
         $response = curl_exec($curl);
 
         curl_close($curl);
-        $arResponse =  json_decode($response);
+        $arResponse = json_decode($response);
         // dd($arResponse->rates);
         if ($arResponse->success) {
-            $new_convs =  (array)$arResponse->rates;
+            $new_convs = (array) $arResponse->rates;
             $new_convs['conversion_date'] = date('Y-m-d');
             $new_convs['USD'] = 1.00;
             $new_rec_id = DB::table('currency_conversions')->insertGetId($new_convs);
@@ -918,8 +918,7 @@ if (!function_exists('currency_convert')) {
 
 
 function set_country_info()
-{ 
-    {
+{ {
         if (NULL == session('sess_country_info')) {
             // Get the client IP address from the request header
             $clientIP = getenv("REMOTE_ADDR");
@@ -930,14 +929,14 @@ function set_country_info()
             $countryName = $arresponse->country_name;
 
             $country_rec = DB::table('countries')
-                            ->where('country_name', $countryName)
-                            ->where('active','1')
-                            ->first();
-            if( $country_rec){
-                $arresponse->currency_code=$country_rec->currency_code;
-                $arresponse->language=$country_rec->language;
-                $arresponse->lang_direction=$country_rec->lang_direction;
-            }else{
+                ->where('country_name', $countryName)
+                ->where('active', '1')
+                ->first();
+            if ($country_rec) {
+                $arresponse->currency_code = $country_rec->currency_code;
+                $arresponse->language = $country_rec->language;
+                $arresponse->lang_direction = $country_rec->lang_direction;
+            } else {
                 $arresponse->currency_code = session()->get('sess_settings')->default_currency ?? 'USD';
                 $arresponse->language = session()->get('sess_settings')->default_language ?? 'English';
                 $arresponse->lang_direction = 'LTR';
@@ -953,7 +952,7 @@ function set_country_info()
                 session()->put('sess_cur_currency_code', $arresponse->currency_code);
             } else {
 
-               
+
                 // session()->put('sess_country_info', $arresponse);
 
                 // If the request fails, log the error or handle it accordingly
@@ -964,19 +963,20 @@ function set_country_info()
 }
 
 
-function send_event_email($event, $data = []){
+function send_event_email($event, $data = [])
+{
     // dd($event); 
-    $emailData=[];
-    if($event=='Admin/contact'){
+    $emailData = [];
+    if ($event == 'Admin/contact') {
         $email_template_wdata = sendEmailTemplated($event, $data);
-        if($email_template_wdata){
+        if ($email_template_wdata) {
             $emailData['email_address'] = session()->get('sess_settings')->admin_email;
             $emailData['email_body'] = $email_template_wdata['email_template'];
             $emailData['email_subj'] = 'contact form submitted';
         }
-    }else if($event=='Admin/listing-approval'){
+    } else if ($event == 'Admin/listing-approval') {
         $email_template_wdata = sendEmailTemplated($event, $data);
-        if($email_template_wdata){
+        if ($email_template_wdata) {
             $emailData['email_address'] = session()->get('sess_settings')->admin_email;
             $emailData['email_body'] = $email_template_wdata['email_template'];
             $emailData['email_subj'] = 'contact form submitted';
@@ -991,7 +991,7 @@ function send_event_email($event, $data = []){
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= 'From: Web Master <nadeem@snoobix.com>' . "\r\n";
 
-    if(null != session('sess_settings') && session()->get('sess_settings')->choose_mailer == 'SMTP'){
+    if (null != session('sess_settings') && session()->get('sess_settings')->choose_mailer == 'SMTP') {
         $mail = new PHPMailer(true);     // Passing `true` enables exceptions
 
         try {
@@ -1010,7 +1010,7 @@ function send_event_email($event, $data = []){
             $mail->addAddress($emailData['email_address']);
             // $mail->addCC($request->emailCc);
 
-            if(session()->get('sess_settings')->enable_bcc_email_to_admin == 'Y'){
+            if (session()->get('sess_settings')->enable_bcc_email_to_admin == 'Y') {
                 $mail->addBCC(session()->get('sess_settings')->mail_address);
             }
 
@@ -1021,19 +1021,17 @@ function send_event_email($event, $data = []){
             //         $mail->addAttachment($_FILES['emailAttachments']['tmp_name'][$i], $_FILES['emailAttachments']['name'][$i]);
             //     }
             // }
-    
+
             $mail->isHTML(true);                // Set email content format to HTML
 
-            $mail->Subject =  $emailData['email_subj'];
-            $mail->Body    = $emailData['email_body'];
+            $mail->Subject = $emailData['email_subj'];
+            $mail->Body = $emailData['email_body'];
 
             // $mail->AltBody = plain text version of email body;
 
-            if( !$mail->send() ) {
-                return "Email not sent.".$mail->ErrorInfo;
-            }
-            
-            else {
+            if (!$mail->send()) {
+                return "Email not sent." . $mail->ErrorInfo;
+            } else {
                 return true;
             }
 
@@ -1041,7 +1039,7 @@ function send_event_email($event, $data = []){
             return 'Message could not be sent.';
         }
 
-    }else{
+    } else {
         if (mail($emailData['email_address'], $emailData['email_subj'], $emailData['email_body'], $headers)) {
             return true;
         } else {
@@ -1053,226 +1051,239 @@ function send_event_email($event, $data = []){
 }
 
 function sendEmailTemplated($event, $data = [])
-    {
-        // Fetch email template based on the sending event
-        $template = DB::table('email_templates')->where('sending_event', $event)->first();
+{
+    // Fetch email template based on the sending event
+    $template = DB::table('email_templates')->where('sending_event', $event)->first();
 
-        if ($template) {
-            // Compile the Blade template
-            $compiledTemplate = Blade::compileString(htmlspecialchars_decode($template->email_template));
+    if ($template) {
+        // Compile the Blade template
+        $compiledTemplate = Blade::compileString(htmlspecialchars_decode($template->email_template));
 
-            // Render the compiled template with provided data
-            $renderedTemplate = '';
-            eval('?>' . $compiledTemplate);
-            
-            // Return the rendered email template
-            return $renderedTemplate;
-        }
+        // Render the compiled template with provided data
+        $renderedTemplate = '';
+        eval ('?>' . $compiledTemplate);
 
-        return '';
+        // Return the rendered email template
+        return $renderedTemplate;
     }
 
-
-
-    function generate_invoice($fee_type, $rec_id){
-
-        if($fee_type == 'listing_setup'){
-            $rec_info = DB::table('shop_items')
-                        ->where('id',$rec_id)
-                        ->first();
-            $amount = $rec_info->price;
-
-            $invoice_id = DB::table('invoices')
-                            ->insertGetId([
-                                'web_user_id' => auth()->user()->id,
-                                'table_name' => 'shop_items',
-                                'rec_id' => $rec_id,
-                                'invoice_descr' => $fee_type.' #'. $rec_id
-                            ]);
-
-            if($rec_info){
-                $gen_fees = DB::table('general_fees')
-                            ->whereIn('setting_title', [
-                                'Classified Setup Fee',  //todo
-                                'Home Page Featuring Fee',
-                                'Category Pages Featuring Fee',
-                                'Highlighted Listing Fee',
-                                'Media Upload Fee',
-                                'Buy Out Fee',
-                                'Reserve Price Fee',
-                                'Listing Images Fee',  //todo
-                                'Short Description Fee',
-                                'Long Description Fee',
-                                'Make Offer Fee',
-
-                            ])
-                            ->where('active','1')
-                            ->get();
-
-                if($gen_fees && count($gen_fees)>0){
-                    foreach($gen_fees as $gen_fee){
-                        $invoice_details_rec = array(
-                            'web_user_id' => auth()->user()->id,
-                            'invoice_id' => $invoice_id,
-                            'item' => $gen_fee->setting_title,
-                            'qty' => 1,
-                            'currency' => $rec_info->currency,
-                            'unit_price' => $gen_fee->item_fee
-                        );
-
-                        if( $rec_info->enable_buy_out == 'Y' && 
-                            $gen_fee->setting_title == 'Buy Out Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                    ->insertGetId($invoice_details_rec);
-                        }elseif( $rec_info->short_descr != '' && 
-                            $gen_fee->setting_title == 'Short Description Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                ->insertGetId($invoice_details_rec);
-                        }elseif( $rec_info->long_descr != '' && 
-                            $gen_fee->setting_title == 'Long Description Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                ->insertGetId($invoice_details_rec);
-                        }elseif( $rec_info->enable_reserve_price == 'Y' && 
-                            $gen_fee->setting_title == 'Reserve Price Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                ->insertGetId($invoice_details_rec);
-                        }elseif( $rec_info->accept_offer == 'Y' && 
-                            $gen_fee->setting_title == 'Make Offer Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                ->insertGetId($invoice_details_rec);
-                        }elseif( $rec_info->media != '' && 
-                            $gen_fee->setting_title == 'Media Upload Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                ->insertGetId($invoice_details_rec);
-                        }elseif( $rec_info->highlight_listing != '' && 
-                            $gen_fee->setting_title == 'Highlighted Listing Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                ->insertGetId($invoice_details_rec);
-                        }elseif( $rec_info->feature_home_page != '' && 
-                            $gen_fee->setting_title == 'Home Page Featuring Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                ->insertGetId($invoice_details_rec);
-                        }elseif( $rec_info->feature_category_page != '' && 
-                            $gen_fee->setting_title == 'Category Pages Featuring Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                ->insertGetId($invoice_details_rec);
-                        }
-
-                    }
-                }
-            }
-        }elseif($fee_type == 'signup'){
-            $rec_info = DB::table('users')
-                        ->where('id',$rec_id)
-                        ->first();
-            
-
-            $invoice_id = DB::table('invoices')
-                            ->insertGetId([
-                                'web_user_id' => auth()->user()->id,
-                                'table_name' => 'users',
-                                'rec_id' => $rec_id,
-                                'invoice_descr' => $fee_type.' #'. $rec_id
-                            ]);
-
-            if($rec_info){
-                $gen_fees = DB::table('general_fees')
-                            ->whereIn('setting_title', [
-                                'Signup Fee', 
-                            ])
-                            ->where('active','1')
-                            ->get();
-
-                if($gen_fees && count($gen_fees)>0){
-                    foreach($gen_fees as $gen_fee){
-                        $invoice_details_rec = array(
-                            'web_user_id' => auth()->user()->id,
-                            'invoice_id' => $invoice_id,
-                            'item' => $gen_fee->setting_title,
-                            'qty' => 1,
-                            'currency' => $rec_info->currency,
-                            'unit_price' => $gen_fee->item_fee
-                        );
-
-                        if( $gen_fee->setting_title == 'Signup Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                    ->insertGetId($invoice_details_rec);
-                        }
-
-                    }
-                }
-            }
-        } elseif($fee_type == 'additional_category'){
-            $rec_info = DB::table('list_categories')
-                        ->where('id',$rec_id)
-                        ->first();
-            
-
-            $invoice_id = DB::table('invoices')
-                            ->insertGetId([
-                                'web_user_id' => auth()->user()->id,
-                                'table_name' => 'shop_items',
-                                'rec_id' => $rec_id,
-                                'invoice_descr' => $fee_type.' #'. $rec_id
-                            ]);
-
-            if($rec_info){
-                $gen_fees = DB::table('list_categories')
-                            ->whereIn('setting_title', [
-                                'Additional Category Listing Fee', 
-                            ])
-                            ->where('active','1')
-                            ->get();
-
-                if($gen_fees && count($gen_fees)>0){
-                    foreach($gen_fees as $gen_fee){
-                        $invoice_details_rec = array(
-                            'web_user_id' => auth()->user()->id,
-                            'invoice_id' => $invoice_id,
-                            'item' => $gen_fee->setting_title,
-                            'qty' => 1,
-                            'currency' => $rec_info->currency,
-                            'unit_price' => $gen_fee->item_fee
-                        );
-
-                        if( $gen_fee->setting_title == 'Additional Category Listing Fee' &&
-                            $gen_fee->item_fee > 0
-                        ){
-                            $invoice_detail_id = DB::table('invoice_details')
-                                                    ->insertGetId($invoice_details_rec);
-                        }
-
-                    }
-                }
-            }
-        } 
+    return '';
 }
 
 
-function invoice_total($invid){
+
+function generate_invoice($fee_type, $rec_id)
+{
+
+    if ($fee_type == 'listing_setup') {
+        $rec_info = DB::table('shop_items')
+            ->where('id', $rec_id)
+            ->first();
+        $amount = $rec_info->price;
+
+        $invoice_id = DB::table('invoices')
+            ->insertGetId([
+                'web_user_id' => auth()->user()->id,
+                'table_name' => 'shop_items',
+                'rec_id' => $rec_id,
+                'invoice_descr' => $fee_type . ' #' . $rec_id
+            ]);
+
+        if ($rec_info) {
+            $gen_fees = DB::table('general_fees')
+                ->whereIn('setting_title', [
+                    'Classified Setup Fee',  //todo
+                    'Home Page Featuring Fee',
+                    'Category Pages Featuring Fee',
+                    'Highlighted Listing Fee',
+                    'Media Upload Fee',
+                    'Buy Out Fee',
+                    'Reserve Price Fee',
+                    'Listing Images Fee',  //todo
+                    'Short Description Fee',
+                    'Long Description Fee',
+                    'Make Offer Fee',
+
+                ])
+                ->where('active', '1')
+                ->get();
+
+            if ($gen_fees && count($gen_fees) > 0) {
+                foreach ($gen_fees as $gen_fee) {
+                    $invoice_details_rec = array(
+                        'web_user_id' => auth()->user()->id,
+                        'invoice_id' => $invoice_id,
+                        'item' => $gen_fee->setting_title,
+                        'qty' => 1,
+                        'currency' => $rec_info->currency,
+                        'unit_price' => $gen_fee->item_fee
+                    );
+
+                    if (
+                        $rec_info->enable_buy_out == 'Y' &&
+                        $gen_fee->setting_title == 'Buy Out Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    } elseif (
+                        $rec_info->short_descr != '' &&
+                        $gen_fee->setting_title == 'Short Description Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    } elseif (
+                        $rec_info->long_descr != '' &&
+                        $gen_fee->setting_title == 'Long Description Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    } elseif (
+                        $rec_info->enable_reserve_price == 'Y' &&
+                        $gen_fee->setting_title == 'Reserve Price Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    } elseif (
+                        $rec_info->accept_offer == 'Y' &&
+                        $gen_fee->setting_title == 'Make Offer Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    } elseif (
+                        $rec_info->media != '' &&
+                        $gen_fee->setting_title == 'Media Upload Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    } elseif (
+                        $rec_info->highlight_listing != '' &&
+                        $gen_fee->setting_title == 'Highlighted Listing Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    } elseif (
+                        $rec_info->feature_home_page != '' &&
+                        $gen_fee->setting_title == 'Home Page Featuring Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    } elseif (
+                        $rec_info->feature_category_page != '' &&
+                        $gen_fee->setting_title == 'Category Pages Featuring Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    }
+
+                }
+            }
+        }
+    } elseif ($fee_type == 'signup') {
+        $rec_info = DB::table('users')
+            ->where('id', $rec_id)
+            ->first();
+
+
+        $invoice_id = DB::table('invoices')
+            ->insertGetId([
+                'web_user_id' => auth()->user()->id,
+                'table_name' => 'users',
+                'rec_id' => $rec_id,
+                'invoice_descr' => $fee_type . ' #' . $rec_id
+            ]);
+
+        if ($rec_info) {
+            $gen_fees = DB::table('general_fees')
+                ->whereIn('setting_title', [
+                    'Signup Fee',
+                ])
+                ->where('active', '1')
+                ->get();
+
+            if ($gen_fees && count($gen_fees) > 0) {
+                foreach ($gen_fees as $gen_fee) {
+                    $invoice_details_rec = array(
+                        'web_user_id' => auth()->user()->id,
+                        'invoice_id' => $invoice_id,
+                        'item' => $gen_fee->setting_title,
+                        'qty' => 1,
+                        'currency' => $rec_info->currency,
+                        'unit_price' => $gen_fee->item_fee
+                    );
+
+                    if (
+                        $gen_fee->setting_title == 'Signup Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    }
+
+                }
+            }
+        }
+    } elseif ($fee_type == 'additional_category') {
+        $rec_info = DB::table('list_categories')
+            ->where('id', $rec_id)
+            ->first();
+
+
+        $invoice_id = DB::table('invoices')
+            ->insertGetId([
+                'web_user_id' => auth()->user()->id,
+                'table_name' => 'shop_items',
+                'rec_id' => $rec_id,
+                'invoice_descr' => $fee_type . ' #' . $rec_id
+            ]);
+
+        if ($rec_info) {
+            $gen_fees = DB::table('list_categories')
+                ->whereIn('setting_title', [
+                    'Additional Category Listing Fee',
+                ])
+                ->where('active', '1')
+                ->get();
+
+            if ($gen_fees && count($gen_fees) > 0) {
+                foreach ($gen_fees as $gen_fee) {
+                    $invoice_details_rec = array(
+                        'web_user_id' => auth()->user()->id,
+                        'invoice_id' => $invoice_id,
+                        'item' => $gen_fee->setting_title,
+                        'qty' => 1,
+                        'currency' => $rec_info->currency,
+                        'unit_price' => $gen_fee->item_fee
+                    );
+
+                    if (
+                        $gen_fee->setting_title == 'Additional Category Listing Fee' &&
+                        $gen_fee->item_fee > 0
+                    ) {
+                        $invoice_detail_id = DB::table('invoice_details')
+                            ->insertGetId($invoice_details_rec);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+function invoice_total($invid)
+{
     $rec_info = DB::table('invoice_details')
-    ->where('invoice_id',$invid)
-    ->get();
+        ->where('invoice_id', $invid)
+        ->get();
 
     $total = 10;
 
@@ -1281,8 +1292,9 @@ function invoice_total($invid){
 
 
 
-function encrypt_str($plaintext) {
-    $key=env('ENCR_KEY');
+function encrypt_str($plaintext)
+{
+    $key = env('ENCR_KEY');
     $cipher = 'aes-256-cbc'; // AES encryption with 256-bit key in CBC mode
     $iv_length = openssl_cipher_iv_length($cipher);
     $iv = openssl_random_pseudo_bytes($iv_length); // Generate random IV (initialization vector)
@@ -1291,8 +1303,9 @@ function encrypt_str($plaintext) {
 }
 
 // // Decryption function
-function decrypt_str($ciphertext) {
-    $key=env('ENCR_KEY');
+function decrypt_str($ciphertext)
+{
+    $key = env('ENCR_KEY');
     $cipher = 'aes-256-cbc';
     $ciphertext = base64_decode($ciphertext); // Decode Base64
     $iv_length = openssl_cipher_iv_length($cipher);
@@ -1303,70 +1316,93 @@ function decrypt_str($ciphertext) {
 }
 
 
-function sess_var($varname){
-    if(null != session('sess_settings') && isset(session()->get('sess_settings')->$varname)){
+function sess_var($varname)
+{
+    if (null != session('sess_settings') && isset(session()->get('sess_settings')->$varname)) {
         return session()->get('sess_settings')->$varname;
-    }else{
+    } else {
         return '';
     }
 }
 
-if(!function_exists('table_data')){
-    function table_data($vtable_name,$cond=[]){
+if (!function_exists('table_data')) {
+    function table_data($vtable_name, $cond = [])
+    {
         //echo 'vtable_name: '.$vtable_name.' , vfield_name: '.$vfield_name;
         $vlstvals = array();
         //DB::enableQueryLog();
         $tblist = DB::table($vtable_name)
-                    ->selectRaw('*')
-                    ->where('active', '=', '1')
-                    //->orderBy('menu_seq')
-                    ->get();
+            ->selectRaw('*')
+            ->where('active', '=', '1')
+            //->orderBy('menu_seq')
+            ->get();
         //dd(DB::getQueryLog());
-       
+
         return $tblist;
     }
 }
 
 
-function display_answers($card_id, $maxIndex, $arqustids, $aranswrTables, $arqstcolnames, $aransclmnames) {
+function display_answers($card_id, $maxIndex, $arqustids, $aranswrTables, $arqstcolnames, $aransclmnames)
+{
     // dd($arqustids);
-    
+
     for ($i = 0; $i <= $maxIndex; $i++) {
-        
+
         $varanswrTables[] = " {$aranswrTables[$i]} as table{$i}";
         $varansclmnames[] = " table{$i}.{$aransclmnames[$i]} as colname{$i}";
-        $varcondCol[] = " table{$i}.card_id = ".$card_id." and table{$i}.".$arqstcolnames[$i]." = ".$arqustids[$i];
+        $varcondCol[] = " table{$i}.card_id = " . $card_id . " and table{$i}." . $arqstcolnames[$i] . " = " . $arqustids[$i];
 
         $answrTables = implode(', ', $varanswrTables);
         $ansclmnames = implode(', ', $varansclmnames);
         $condCol = implode(' and ', $varcondCol);
-        
+
     }
-    $ipCond="";
+    $ipCond = "";
     for ($i = 0; $i < $maxIndex; $i++) {
-        $j=$i+1;
+        $j = $i + 1;
         $ipCond .= "  and table$i.ip_address = table$j.ip_address ";
     }
 
 
     // dd($ansclmnames);
 
-    $dbquery = "select ".$ansclmnames ." from ".$answrTables." where ".$condCol.$ipCond;
+    $dbquery = "select " . $ansclmnames . " from " . $answrTables . " where " . $condCol . $ipCond;
     // dd($dbquery);
     $results = DB::select(DB::raw($dbquery));
-    
 
-    $datatable=""; $colno=-1;
+
+    $datatable = "";
+    $colno = -1;
     foreach ($results as $row) {
         $colno++;
-            $datatable .= "<tr>";
-            for ($i = 0; $i <= $maxIndex; $i++) {
-                $columnName = "colname{$i}";
-                $datatable .= "<td>" . ($row->$columnName ?? 'N/A') . "</td>";
-            }
-            $datatable .= "</tr>";
+        $datatable .= "<tr>";
+        for ($i = 0; $i <= $maxIndex; $i++) {
+            $columnName = "colname{$i}";
+            $datatable .= "<td>" . ($row->$columnName ?? 'N/A') . "</td>";
         }
+        $datatable .= "</tr>";
+    }
 
     echo ($datatable);
 
-   }
+}
+
+function get_prefix_items()
+{
+    $prefixes = [
+        ['id' => 0, 'value' => 'No prefix'],
+        ['id' => 1, 'value' => 'MS'],
+        ['id' => 2, 'value' => 'Mr'],
+        ['id' => 3, 'value' => 'Lady'],
+        ['id' => 4, 'value' => 'Dedicated to'],
+        ['id' => 5, 'value' => 'I am a good student'],
+        ['id' => 6, 'value' => 'At your service, Mrs'],
+        ['id' => 7, 'value' => 'Honorable presence of Mr'],
+        ['id' => 8, 'value' => 'The honorable presence of Sarkar against'],
+        ['id' => 9, 'value' => 'Dear Mr'],
+        ['id' => 10, 'value' => 'At your service, Mrs']
+    ];
+
+    return $prefixes;
+}
