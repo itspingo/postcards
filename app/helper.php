@@ -1,5 +1,9 @@
 <?php
 
+use App\Models\answer_attend_quest_model;
+use App\Models\answer_memorial_model;
+use App\Models\answer_optional_question_model;
+use App\Models\answer_text_question_model;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -1410,4 +1414,17 @@ function get_prefix_items()
 function unique_id($l = 8)
 {
     return substr(md5(uniqid(mt_rand(), true)), 0, $l);
+}
+
+function get_recipient_messages_count($cardId, $recipient_id)
+{
+    $opt_ques_count = answer_optional_question_model::where([['card_id', '=', $cardId], ['recipient_id', '=', $recipient_id]])->count();
+    $text_ques_count = answer_text_question_model::where([['card_id', '=', $cardId], ['recipient_id', '=', $recipient_id]])->count();
+    $attend_ques_count = answer_attend_quest_model::where([['card_id', '=', $cardId], ['recipient_id', '=', $recipient_id]])->count();
+    $answer_memorial_ques_count = answer_memorial_model::where([['card_id', '=', $cardId], ['recipient_id', '=', $recipient_id]])->count();
+    Log::info("Opt que count = " . $opt_ques_count);
+    Log::info("text que count = " . $text_ques_count);
+    Log::info("att que count = " . $attend_ques_count);
+    Log::info("memorial que count = " . $answer_memorial_ques_count);
+    return $opt_ques_count + $text_ques_count + $attend_ques_count + $answer_memorial_ques_count;
 }

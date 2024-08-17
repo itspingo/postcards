@@ -339,6 +339,9 @@
                         @csrf
 
                         <input type="hidden" name="hcard_id" value="{{ $card_info->id }}">
+                        @if (isset($card_recipient) && $card_recipient != null)
+                            <input type="hidden" name="hrecipient_url" value="{{ $card_recipient->url }}">
+                        @endif
 
 
                         @foreach ($sortedCollection as $wdgtRec)

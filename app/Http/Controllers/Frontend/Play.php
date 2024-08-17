@@ -99,6 +99,11 @@ class Play extends Controller
     {
         //save data in tables of widgets
         $vcardid = $request->post('hcard_id');
+        $recipient_url = $request->post('hrecipient_url', null);
+        if ($recipient_url != null) {
+            $recipient = $this->load_recipient_information($vcardid, $recipient_url);
+        }
+
         $all_answers = $request->post();
         // dd($all_answers);
 
@@ -111,6 +116,10 @@ class Play extends Controller
                     'optnl_quest_id' => $all_answers['optnl_quest_id'][$i],
                     'answer_optnl_quest' => $all_answers['answer_optnl_quest'][$i],
                 );
+
+                if (isset($recipient) && $recipient != null) {
+                    $answer_optnl_quest_data['recipient_id'] = $recipient->id;
+                }
                 DB::table('answers_optional_question')->insert($answer_optnl_quest_data);
             }
         } else {
@@ -121,6 +130,9 @@ class Play extends Controller
                 'optnl_quest_id' => null,
                 'answer_optnl_quest' => null,
             );
+            if (isset($recipient) && $recipient != null) {
+                $answer_optnl_quest_data['recipient_id'] = $recipient->id;
+            }
             DB::table('answers_optional_question')->insert($answer_optnl_quest_data);
         }
 
@@ -134,6 +146,9 @@ class Play extends Controller
                     'text_question_id' => $all_answers['text_question_id'][$i],
                     'answer_text_question' => $all_answers['answer_text_question'][$i],
                 );
+                if (isset($recipient) && $recipient != null) {
+                    $answer_text_question_data['recipient_id'] = $recipient->id;
+                }
                 DB::table('answers_text_question')->insert($answer_text_question_data);
             }
         } else {
@@ -144,6 +159,9 @@ class Play extends Controller
                 'text_question_id' => null,
                 'answer_text_question' => null,
             );
+            if (isset($recipient) && $recipient != null) {
+                $answer_text_question_data['recipient_id'] = $recipient->id;
+            }
             DB::table('answers_text_question')->insert($answer_text_question_data);
         }
 
@@ -157,6 +175,9 @@ class Play extends Controller
                     'attend_quest_id' => $all_answers['attend_quest_id'][$i],
                     'answer_attend_quest' => $all_answers['answer_attend_quest'][$i],
                 );
+                if (isset($recipient) && $recipient != null) {
+                    $answer_attend_quest_data['recipient_id'] = $recipient->id;
+                }
                 DB::table('answers_attend_quest')->insert($answer_attend_quest_data);
             }
         } else {
@@ -167,6 +188,9 @@ class Play extends Controller
                 'attend_quest_id' => null,
                 'answer_attend_quest' => null,
             );
+            if (isset($recipient) && $recipient != null) {
+                $answer_attend_quest_data['recipient_id'] = $recipient->id;
+            }
             DB::table('answers_attend_quest')->insert($answer_attend_quest_data);
         }
 
@@ -180,6 +204,9 @@ class Play extends Controller
                     'memorial_id' => $all_answers['memorial_id'][$i],
                     'answer_memorial' => $all_answers['answer_memorial'][$i],
                 );
+                if (isset($recipient) && $recipient != null) {
+                    $answer_memorial_data['recipient_id'] = $recipient->id;
+                }
                 DB::table('answers_memorial')->insert($answer_memorial_data);
             }
         } else {
@@ -190,6 +217,9 @@ class Play extends Controller
                 'memorial_id' => null,
                 'answer_memorial' => null,
             );
+            if (isset($recipient) && $recipient != null) {
+                $answer_memorial_data['recipient_id'] = $recipient->id;
+            }
             DB::table('answers_memorial')->insert($answer_memorial_data);
         }
 
@@ -197,7 +227,9 @@ class Play extends Controller
         // $widget_id = $request->post('widget_id');
         // $widget_type = $request->post('widget_type');
 
-        return redirect('play/' . $vcardid);
+        // return redirect('play/' . $vcardid);
+        return redirect()->back();
+
     }
 
 }
