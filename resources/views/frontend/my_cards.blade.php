@@ -359,9 +359,6 @@
 
     </div>
 
-
-
-    <?php /* ?> ?> ?> ?> ?>
     <div id="div_card_share" class="jetp-dialog-overlay show" style="display: none;">
         <div class="jetp-dialog modal auto-size small">
             <div class="jetp-header">
@@ -377,7 +374,7 @@
                         </font>
                     </span></div>
                 <div style="display: none;"></div>
-                <div class="jetp-close"><svg xmlns="http://www.w3.org/2000/svg" onclick="hide_div('div_card_share')"
+                <div class="jetp-close" onclick="hide_div('div_card_share')"><svg xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24"
                         height="24" viewBox="0 0 24 24" class="icon">
                         <path
@@ -386,61 +383,62 @@
                     </svg></div>
             </div>
             <div class="jetp-content nice-scrollbar">
-                <div class="jetp-share-dialog link-mode"><b class="share-title mt-10"><span wudooh="true"
+                <div class="jetp-share-dialog"><b class="share-title mt-10"><span wudooh="true"
                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Posting on social networks</font>
                             </font>
                         </span></b>
                     <div class="share-buttons mb-10" style="width: 238px;"><a class="share primary-color-bg"
-                            href="https://post.ddev.site//app/mycards" style="display: none;"><svg
+                            href="https://digipostal.ir/app/receiver/cnwb2qq" style="display: none;"><svg
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"
                                 class="icon">
                                 <path
                                     d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z">
                                 </path>
-                            </svg></a><a class="message" href="sms://;?&amp;body={{ url('play/' . $mycard->id) }}"><svg
+                            </svg></a><a id="link_share_message" class="message"
+                            href="sms://+989123244645/?body=%D8%AA%D9%82%D8%AF%DB%8C%D9%85%20%D8%A8%D9%87%20NADEEM%20IQBAL%20%D8%B9%D8%B2%DB%8C%D8%B2%0D%0A%D8%A7%DB%8C%D9%86%20%DA%A9%D8%A7%D8%B1%D8%AA%20%D9%BE%D8%B3%D8%AA%D8%A7%D9%84%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%B4%D9%85%D8%A7%20%D8%B3%D8%A7%D8%AE%D8%AA%D9%87%20%D8%B4%D8%AF%D9%87%20%D8%A7%D8%B3%D8%AA.%0D%0A%D8%A8%D8%B1%D8%A7%DB%8C%20%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87%20%D8%B1%D9%88%DB%8C%20%D9%84%DB%8C%D9%86%DA%A9%20%D8%B2%DB%8C%D8%B1%20%D8%A8%D8%B2%D9%86%DB%8C%D8%AF%0D%0Ahttps://DigiPostal.ir/x6z2vfy"><svg
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"
                                 class="icon">
                                 <path
                                     d="M20,20H7A2,2 0 0,1 5,18V8.94L2.23,5.64C2.09,5.47 2,5.24 2,5A1,1 0 0,1 3,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20M8.5,7A0.5,0.5 0 0,0 8,7.5V8.5A0.5,0.5 0 0,0 8.5,9H18.5A0.5,0.5 0 0,0 19,8.5V7.5A0.5,0.5 0 0,0 18.5,7H8.5M8.5,11A0.5,0.5 0 0,0 8,11.5V12.5A0.5,0.5 0 0,0 8.5,13H18.5A0.5,0.5 0 0,0 19,12.5V11.5A0.5,0.5 0 0,0 18.5,11H8.5M8.5,15A0.5,0.5 0 0,0 8,15.5V16.5A0.5,0.5 0 0,0 8.5,17H13.5A0.5,0.5 0 0,0 14,16.5V15.5A0.5,0.5 0 0,0 13.5,15H8.5Z">
                                 </path>
-                            </svg></a><a class="whatsapp"
-                            href="whatsapp://send?text={{ url('play/' . $mycard->id) }}"><svg
+                            </svg></a><a id="link_share_whatsapp" class="whatsapp"
+                            href="whatsapp://send?text=%D8%AA%D9%82%D8%AF%DB%8C%D9%85%20%D8%A8%D9%87%20NADEEM%20IQBAL%20%D8%B9%D8%B2%DB%8C%D8%B2%0D%0A%D8%A7%DB%8C%D9%86%20%DA%A9%D8%A7%D8%B1%D8%AA%20%D9%BE%D8%B3%D8%AA%D8%A7%D9%84%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%B4%D9%85%D8%A7%20%D8%B3%D8%A7%D8%AE%D8%AA%D9%87%20%D8%B4%D8%AF%D9%87%20%D8%A7%D8%B3%D8%AA.%0D%0A%D8%A8%D8%B1%D8%A7%DB%8C%20%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87%20%D8%B1%D9%88%DB%8C%20%D9%84%DB%8C%D9%86%DA%A9%20%D8%B2%DB%8C%D8%B1%20%D8%A8%D8%B2%D9%86%DB%8C%D8%AF%0D%0Ahttps://DigiPostal.ir/x6z2vfy&amp;phone=+989123244645"><svg
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" fill="currentColor" width="48" height="48" viewBox="0 0 48 48"
                                 class="icon">
                                 <path
                                     d="M34.7507 13.2115C32.1777 10.5628 28.621 9.125 24.9885 9.125C17.2696 9.125 11.0642 15.4061 11.1399 23.0493C11.1399 25.4709 11.821 27.8169 12.9561 29.9358L10.9885 37.125L18.3291 35.2331C20.3723 36.3682 22.6426 36.898 24.9128 36.898C32.5561 36.898 38.7615 30.6169 38.7615 22.9736C38.7615 19.2655 37.3237 15.7845 34.7507 13.2115ZM24.9885 34.552C22.9453 34.552 20.902 34.0223 19.1615 32.9628L18.7074 32.7358L14.3183 33.8709L15.4534 29.5574L15.1507 29.1034C11.821 23.7304 13.4101 16.6169 18.8588 13.2872C24.3074 9.95743 31.3453 11.5466 34.675 16.9953C38.0047 22.4439 36.4156 29.4818 30.9669 32.8115C29.2264 33.9466 27.1074 34.552 24.9885 34.552ZM31.648 26.152L30.8156 25.7736C30.8156 25.7736 29.6047 25.2439 28.848 24.8655C28.7723 24.8655 28.6966 24.7899 28.621 24.7899C28.3939 24.7899 28.2426 24.8655 28.0912 24.9412C28.0912 24.9412 28.0156 25.0169 26.9561 26.2277C26.8804 26.3791 26.7291 26.4547 26.5777 26.4547H26.502C26.4264 26.4547 26.275 26.3791 26.1993 26.3034L25.821 26.152C24.9885 25.7736 24.2318 25.3196 23.6264 24.7142C23.475 24.5628 23.248 24.4115 23.0966 24.2601C22.5669 23.7304 22.0372 23.125 21.6588 22.4439L21.5831 22.2926C21.5074 22.2169 21.5074 22.1412 21.4318 21.9899C21.4318 21.8385 21.4318 21.6872 21.5074 21.6115C21.5074 21.6115 21.8101 21.2331 22.0372 21.0061C22.1885 20.8547 22.2642 20.6277 22.4156 20.4764C22.5669 20.2493 22.6426 19.9466 22.5669 19.7196C22.4912 19.3412 21.5831 17.298 21.3561 16.8439C21.2047 16.6169 21.0534 16.5412 20.8264 16.4655H20.5993C20.448 16.4655 20.221 16.4655 19.9939 16.4655C19.8426 16.4655 19.6912 16.5412 19.5399 16.5412L19.4642 16.6169C19.3128 16.6926 19.1615 16.8439 19.0101 16.9196C18.8588 17.0709 18.7831 17.2223 18.6318 17.3736C18.102 18.0547 17.7993 18.8872 17.7993 19.7196C17.7993 20.325 17.9507 20.9304 18.1777 21.4601L18.2534 21.6872C18.9345 23.125 19.8426 24.4115 21.0534 25.5466L21.3561 25.8493C21.5831 26.0764 21.8101 26.2277 21.9615 26.4547C23.5507 27.8169 25.3669 28.8007 27.4101 29.3304C27.6372 29.4061 27.9399 29.4061 28.1669 29.4818C28.3939 29.4818 28.6966 29.4818 28.9237 29.4818C29.302 29.4818 29.7561 29.3304 30.0588 29.1791C30.2858 29.0277 30.4372 29.0277 30.5885 28.8764L30.7399 28.725C30.8912 28.5736 31.0426 28.498 31.1939 28.3466C31.3453 28.1953 31.4966 28.0439 31.5723 27.8926C31.7237 27.5899 31.7993 27.2115 31.875 26.8331C31.875 26.6818 31.875 26.4547 31.875 26.3034C31.875 26.3034 31.7993 26.2277 31.648 26.152Z">
                                 </path>
-                            </svg></a><a class="telegram"
-                            href="https://t.me/share/url?text={{ url('play/' . $mycard->id) }}&amp;url={{ url('play/' . $mycard->id) }}"
+                            </svg></a><a id="link_share_telegram" class="telegram"
+                            href="https://t.me/share/url?text=%D8%AA%D9%82%D8%AF%DB%8C%D9%85%20%D8%A8%D9%87%20NADEEM%20IQBAL%20%D8%B9%D8%B2%DB%8C%D8%B2%0D%0A%D8%A7%DB%8C%D9%86%20%DA%A9%D8%A7%D8%B1%D8%AA%20%D9%BE%D8%B3%D8%AA%D8%A7%D9%84%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%B4%D9%85%D8%A7%20%D8%B3%D8%A7%D8%AE%D8%AA%D9%87%20%D8%B4%D8%AF%D9%87%20%D8%A7%D8%B3%D8%AA.%0D%0A%D8%A8%D8%B1%D8%A7%DB%8C%20%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87%20%D8%B1%D9%88%DB%8C%20%D9%84%DB%8C%D9%86%DA%A9%20%D8%B2%DB%8C%D8%B1%20%D8%A8%D8%B2%D9%86%DB%8C%D8%AF%0D%0Ahttps://DigiPostal.ir/x6z2vfy&amp;url=https://DigiPostal.ir/x6z2vfy"
                             target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor"
                                 width="48" height="48" viewBox="0 0 48 48" class="icon">
                                 <path
                                     d="M10.7874 23.4709C17.7667 20.3663 22.4206 18.3195 24.7493 17.3305C31.3979 14.507 32.7795 14.0165 33.68 14.0002C33.878 13.9968 34.3208 14.0469 34.6077 14.2845C34.8499 14.4852 34.9165 14.7563 34.9484 14.9465C34.9803 15.1368 35.02 15.5702 34.9884 15.9088C34.6281 19.774 33.0692 29.1539 32.276 33.483C31.9404 35.3148 31.2796 35.929 30.6399 35.9891C29.2496 36.1197 28.1938 35.051 26.8473 34.1497C24.7401 32.7395 23.5498 31.8615 21.5044 30.4854C19.1407 28.895 20.673 28.0209 22.0201 26.5923C22.3726 26.2185 28.4983 20.5295 28.6169 20.0135C28.6317 19.9489 28.6455 19.7083 28.5055 19.5813C28.3655 19.4543 28.1589 19.4977 28.0098 19.5322C27.7985 19.5812 24.4323 21.8529 17.9113 26.3473C16.9558 27.0172 16.0904 27.3435 15.315 27.3264C14.4602 27.3076 12.8159 26.833 11.5935 26.4273C10.0942 25.9296 8.90254 25.6666 9.0063 24.8215C9.06035 24.3813 9.65403 23.9311 10.7874 23.4709Z">
                                 </path>
-                            </svg></a><a class="facebook"
-                            href="https://facebook.com/sharer/sharer.php?description={{ url('play/' . $mycard->id) }}&amp;u={{ url('play/' . $mycard->id) }}"
+                            </svg></a><a id="link_share_facebook" class="facebook"
+                            href="https://facebook.com/sharer/sharer.php?description=%D8%AA%D9%82%D8%AF%DB%8C%D9%85%20%D8%A8%D9%87%20NADEEM%20IQBAL%20%D8%B9%D8%B2%DB%8C%D8%B2%0D%0A%D8%A7%DB%8C%D9%86%20%DA%A9%D8%A7%D8%B1%D8%AA%20%D9%BE%D8%B3%D8%AA%D8%A7%D9%84%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%B4%D9%85%D8%A7%20%D8%B3%D8%A7%D8%AE%D8%AA%D9%87%20%D8%B4%D8%AF%D9%87%20%D8%A7%D8%B3%D8%AA.%0D%0A%D8%A8%D8%B1%D8%A7%DB%8C%20%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87%20%D8%B1%D9%88%DB%8C%20%D9%84%DB%8C%D9%86%DA%A9%20%D8%B2%DB%8C%D8%B1%20%D8%A8%D8%B2%D9%86%DB%8C%D8%AF%0D%0Ahttps://DigiPostal.ir/x6z2vfy&amp;u=https://DigiPostal.ir/x6z2vfy"
                             target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor"
                                 width="32" height="32" viewBox="0 0 32 32" class="icon">
                                 <path
                                     d="M13.69 24.903h3.679v-8.904h2.454l.325-3.068h-2.779l.004-1.536c0-.8.076-1.229 1.224-1.229h1.534V7.097h-2.455c-2.949 0-3.986 1.489-3.986 3.992v1.842h-1.838V16h1.838v8.903z">
                                 </path>
-                            </svg></a><a class="twitter"
-                            href="https://twitter.com/intent/tweet/?text={{ url('play/' . $mycard->id) }}&amp;url={{ url('play/' . $mycard->id) }}"
+                            </svg></a><a id="link_share_twitter" class="twitter"
+                            href="https://twitter.com/intent/tweet/?text=%D8%AA%D9%82%D8%AF%DB%8C%D9%85%20%D8%A8%D9%87%20NADEEM%20IQBAL%20%D8%B9%D8%B2%DB%8C%D8%B2%0D%0A%D8%A7%DB%8C%D9%86%20%DA%A9%D8%A7%D8%B1%D8%AA%20%D9%BE%D8%B3%D8%AA%D8%A7%D9%84%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%B4%D9%85%D8%A7%20%D8%B3%D8%A7%D8%AE%D8%AA%D9%87%20%D8%B4%D8%AF%D9%87%20%D8%A7%D8%B3%D8%AA.%0D%0A%D8%A8%D8%B1%D8%A7%DB%8C%20%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87%20%D8%B1%D9%88%DB%8C%20%D9%84%DB%8C%D9%86%DA%A9%20%D8%B2%DB%8C%D8%B1%20%D8%A8%D8%B2%D9%86%DB%8C%D8%AF%0D%0Ahttps://DigiPostal.ir/x6z2vfy&amp;url=https://DigiPostal.ir/x6z2vfy"
                             target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor"
                                 width="24" height="24" viewBox="0 0 24 24" class="icon">
                                 <path
                                     d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z">
                                 </path>
-                            </svg></a><a class="eitaa"
-                            href="https://eitaa.com/share/url?url={{ url('play/' . $mycard->id) }}" target="_blank"><svg
+                            </svg></a><a id="link_share_eitaa" class="eitaa"
+                            href="https://eitaa.com/share/url?url=https://DigiPostal.ir/x6z2vfy" target="_blank"><svg
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" fill="currentColor" width="100" height="100" viewBox="0 0 100 100"
                                 class="icon">
@@ -453,16 +451,14 @@
                                 <font style="vertical-align: inherit;">Copy the text below</font>
                             </font>
                         </span></b>
-
-
                     <div class="copytext-box">
-                        <textarea readonly="readOnly" rows="4">{{ url('play/' . $mycard->id) }}</textarea>
-                        <div class="btn"><span><span wudooh="true"
+                        <textarea readonly="readOnly" rows="4" id="textbox_share"></textarea>
+                        <div class="btn" onclick="copy_from_textbox()"><span><span wudooh="true"
                                     style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">to copy</font>
                                     </font>
-                                </span></span></div><a class="btn view" href="{{ url('play/' . $mycard->id) }}"
+                                </span></span></div><a id="link_view_card_share" class="btn view" href=""
                             target="_blank"><span wudooh="true"
                                 style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
                                 <font style="vertical-align: inherit;">
@@ -470,8 +466,6 @@
                                 </font>
                             </span></a>
                     </div>
-
-
                 </div>
             </div>
             <div class="jetp-footer p-20-10" style="display: none;"></div>
@@ -480,10 +474,6 @@
             </div>
         </div>
     </div>
-    <?php */ ?>
-
-
-
 
     <div id="div_recipient_info" class="jetp-dialog-overlay show" style="display: none;">
         <div class="jetp-dialog auto-size small">
@@ -680,8 +670,51 @@
 
         function show_card_share_popup(cardid) {
 
+            //Generate url
+
+            var url = "{{ url('play/') }}";
+            var recipient_url = url + "/" + cardid;
+
+            document.getElementById("textbox_share").value = recipient_url;
+            document.getElementById("link_view_card_share").href = recipient_url;
+
+            //update widgets url
+            var eitaa_link_url = "https://eitaa.com/share/url?url=" + encodeURIComponent(recipient_url);
+            document.getElementById('link_share_eitaa').href = eitaa_link_url;
+
+            var facebook_link_url = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(recipient_url);
+            document.getElementById('link_share_facebook').href = facebook_link_url;
+
+            var twitter_link_url = "https://twitter.com/share?text=" + encodeURIComponent(recipient_url) + "&url=" +
+                encodeURIComponent(recipient_url);
+            document.getElementById('link_share_twitter').href = twitter_link_url;
+
+
+            var telegram_link_url = "https://telegram.me/share/url?text=" + encodeURIComponent(recipient_url) + "&url=" +
+                encodeURIComponent(recipient_url);
+            document.getElementById('link_share_telegram').href = telegram_link_url;
+
+            var whatsapp_link_url = "whatsapp://send?text=" + encodeURIComponent(recipient_url);
+            document.getElementById('link_share_whatsapp').href = whatsapp_link_url;
+
+            var message_link_url = "sms://+123&body=" + encodeURIComponent(recipient_url);
+            document.getElementById('link_share_message').href = message_link_url;
+
             document.getElementById("div_card_share").style.display = "flex";
         }
+
+        function copy_from_textbox() {
+            var copyText = document.getElementById("textbox_share");
+
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+
+            navigator.clipboard.writeText(copyText.value);
+
+            // Alert the copied text
+            alert("Copied the text: " + copyText.value);
+        }
+
 
         function show_recipient_info(cardid) {
             // alert('cardid: '+cardid);
