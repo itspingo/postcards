@@ -3,10 +3,15 @@
 namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 
+use App\Models\answer_attend_quest_model;
+use App\Models\answer_memorial_model;
+use App\Models\answer_optional_question_model;
+use App\Models\answer_text_question_model;
 use App\Models\card_recipients_model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\cards_model;
+use Log;
 // use App\Models\widget_optional_question_model;
 // use Carbon\Carbon;
 
@@ -113,28 +118,36 @@ class Play extends Controller
                     'ip_address' => getenv("REMOTE_ADDR"),
                     'web_user_id' => auth()->user()->id,
                     'card_id' => $vcardid,
-                    'optnl_quest_id' => $all_answers['optnl_quest_id'][$i],
+                    //Question id array length is one while answers may have more than one
+                    'optnl_quest_id' => $all_answers['optnl_quest_id'][0],
                     'answer_optnl_quest' => $all_answers['answer_optnl_quest'][$i],
                 );
 
                 if (isset($recipient) && $recipient != null) {
                     $answer_optnl_quest_data['recipient_id'] = $recipient->id;
                 }
+                if (isset($recipient) && $recipient != null) {
+                    $existing_answers = answer_optional_question_model::where([['card_id', '=', $vcardid], ['recipient_id', '=', $recipient->id], ['optnl_quest_id', '=', $all_answers['optnl_quest_id'][$i]]])->get();
+                    foreach ($existing_answers as $answer) {
+                        $answer->delete();
+                    }
+                }
                 DB::table('answers_optional_question')->insert($answer_optnl_quest_data);
             }
-        } else {
-            $answer_optnl_quest_data = array(
-                'ip_address' => getenv("REMOTE_ADDR"),
-                'web_user_id' => auth()->user()->id,
-                'card_id' => $vcardid,
-                'optnl_quest_id' => null,
-                'answer_optnl_quest' => null,
-            );
-            if (isset($recipient) && $recipient != null) {
-                $answer_optnl_quest_data['recipient_id'] = $recipient->id;
-            }
-            DB::table('answers_optional_question')->insert($answer_optnl_quest_data);
         }
+        // else {
+        //     $answer_optnl_quest_data = array(
+        //         'ip_address' => getenv("REMOTE_ADDR"),
+        //         'web_user_id' => auth()->user()->id,
+        //         'card_id' => $vcardid,
+        //         'optnl_quest_id' => null,
+        //         'answer_optnl_quest' => null,
+        //     );
+        //     if (isset($recipient) && $recipient != null) {
+        //         $answer_optnl_quest_data['recipient_id'] = $recipient->id;
+        //     }
+        //     DB::table('answers_optional_question')->insert($answer_optnl_quest_data);
+        // }
 
 
         if (isset($all_answers['answer_text_question']) && count($all_answers['answer_text_question']) > 0) {
@@ -149,21 +162,29 @@ class Play extends Controller
                 if (isset($recipient) && $recipient != null) {
                     $answer_text_question_data['recipient_id'] = $recipient->id;
                 }
+                if (isset($recipient) && $recipient != null) {
+                    $existing_answers = answer_text_question_model::where([['card_id', '=', $vcardid], ['recipient_id', '=', $recipient->id], ['text_question_id', '=', $all_answers['text_question_id'][$i]]])->get();
+                    foreach ($existing_answers as $answer) {
+                        $answer->delete();
+                    }
+                }
                 DB::table('answers_text_question')->insert($answer_text_question_data);
             }
-        } else {
-            $answer_text_question_data = array(
-                'ip_address' => getenv("REMOTE_ADDR"),
-                'web_user_id' => auth()->user()->id,
-                'card_id' => $vcardid,
-                'text_question_id' => null,
-                'answer_text_question' => null,
-            );
-            if (isset($recipient) && $recipient != null) {
-                $answer_text_question_data['recipient_id'] = $recipient->id;
-            }
-            DB::table('answers_text_question')->insert($answer_text_question_data);
         }
+        // else 
+        // {
+        //     $answer_text_question_data = array(
+        //         'ip_address' => getenv("REMOTE_ADDR"),
+        //         'web_user_id' => auth()->user()->id,
+        //         'card_id' => $vcardid,
+        //         'text_question_id' => null,
+        //         'answer_text_question' => null,
+        //     );
+        //     if (isset($recipient) && $recipient != null) {
+        //         $answer_text_question_data['recipient_id'] = $recipient->id;
+        //     }
+        //     DB::table('answers_text_question')->insert($answer_text_question_data);
+        // }
 
 
         if (isset($all_answers['answer_attend_quest']) && count($all_answers['answer_attend_quest']) > 0) {
@@ -178,21 +199,28 @@ class Play extends Controller
                 if (isset($recipient) && $recipient != null) {
                     $answer_attend_quest_data['recipient_id'] = $recipient->id;
                 }
+                if (isset($recipient) && $recipient != null) {
+                    $existing_answers = answer_attend_quest_model::where([['card_id', '=', $vcardid], ['recipient_id', '=', $recipient->id], ['attend_quest_id', '=', $all_answers['attend_quest_id'][$i]]])->get();
+                    foreach ($existing_answers as $answer) {
+                        $answer->delete();
+                    }
+                }
                 DB::table('answers_attend_quest')->insert($answer_attend_quest_data);
             }
-        } else {
-            $answer_attend_quest_data = array(
-                'ip_address' => getenv("REMOTE_ADDR"),
-                'web_user_id' => auth()->user()->id,
-                'card_id' => $vcardid,
-                'attend_quest_id' => null,
-                'answer_attend_quest' => null,
-            );
-            if (isset($recipient) && $recipient != null) {
-                $answer_attend_quest_data['recipient_id'] = $recipient->id;
-            }
-            DB::table('answers_attend_quest')->insert($answer_attend_quest_data);
         }
+        // else {
+        //     $answer_attend_quest_data = array(
+        //         'ip_address' => getenv("REMOTE_ADDR"),
+        //         'web_user_id' => auth()->user()->id,
+        //         'card_id' => $vcardid,
+        //         'attend_quest_id' => null,
+        //         'answer_attend_quest' => null,
+        //     );
+        //     if (isset($recipient) && $recipient != null) {
+        //         $answer_attend_quest_data['recipient_id'] = $recipient->id;
+        //     }
+        //     DB::table('answers_attend_quest')->insert($answer_attend_quest_data);
+        // }
 
 
         if (isset($all_answers['answer_memorial']) && count($all_answers['answer_memorial']) > 0) {
@@ -207,21 +235,29 @@ class Play extends Controller
                 if (isset($recipient) && $recipient != null) {
                     $answer_memorial_data['recipient_id'] = $recipient->id;
                 }
+
+                if (isset($recipient) && $recipient != null) {
+                    $existing_answers = answer_memorial_model::where([['card_id', '=', $vcardid], ['recipient_id', '=', $recipient->id], ['memorial_id', '=', $all_answers['memorial_id'][$i]]])->get();
+                    foreach ($existing_answers as $answer) {
+                        $answer->delete();
+                    }
+                }
                 DB::table('answers_memorial')->insert($answer_memorial_data);
             }
-        } else {
-            $answer_memorial_data = array(
-                'ip_address' => getenv("REMOTE_ADDR"),
-                'web_user_id' => auth()->user()->id,
-                'card_id' => $vcardid,
-                'memorial_id' => null,
-                'answer_memorial' => null,
-            );
-            if (isset($recipient) && $recipient != null) {
-                $answer_memorial_data['recipient_id'] = $recipient->id;
-            }
-            DB::table('answers_memorial')->insert($answer_memorial_data);
         }
+        // else {
+        //     $answer_memorial_data = array(
+        //         'ip_address' => getenv("REMOTE_ADDR"),
+        //         'web_user_id' => auth()->user()->id,
+        //         'card_id' => $vcardid,
+        //         'memorial_id' => null,
+        //         'answer_memorial' => null,
+        //     );
+        //     if (isset($recipient) && $recipient != null) {
+        //         $answer_memorial_data['recipient_id'] = $recipient->id;
+        //     }
+        //     DB::table('answers_memorial')->insert($answer_memorial_data);
+        // }
 
 
         // $widget_id = $request->post('widget_id');
