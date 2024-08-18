@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 
+use App\Mail\SendCardToRecipient;
 use App\Models\UserTextFormat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -16,6 +17,7 @@ use App\Models\testimonials_model;
 use App\Models\team_members_model;
 use App\Models\cards_model;
 use App\Models\card_recipients_model;
+use Mail;
 
 // use Carbon\Carbon;
 
@@ -116,6 +118,7 @@ class Mycards extends Controller
                 $recipient->prefix = $request->input('prefix');
                 $recipient->recipient_name = $request->input('recipient_name');
                 $recipient->mobile_no = $request->input('mobile_no');
+                $recipient->email = $request->input('email');
                 $recipient->save();
 
                 return response()->json(['success' => true, 'message' => 'Recipient saved successfully.']);
@@ -127,6 +130,7 @@ class Mycards extends Controller
                 $recipient->prefix = $request->input('prefix');
                 $recipient->recipient_name = $request->input('recipient_name');
                 $recipient->mobile_no = $request->input('mobile_no');
+                $recipient->email = $request->input('email');
                 //Save only on create. Should not be called while updating.
                 $recipient->url = unique_id();
                 $recipient->save();
@@ -245,7 +249,6 @@ class Mycards extends Controller
             // Handle any errors
             return response()->json(['success' => false, 'message' => 'Error removing card recipient ' . $e->getMessage()]);
         }
-
     }
     public function receivers($id)
     {
@@ -257,5 +260,38 @@ class Mycards extends Controller
         $data['page_title'] = "Receivers";
 
         return view('frontend/receivers', $data);
+    }
+
+    function send_email_to_recipients(Request $request)
+    {
+        $current_user_id = auth()->user()->id;
+        $card_id = $request->input('card_id');
+        $card_recipients = card_recipients_model::where('card_id', $card_id)->with('card')->get();
+
+        $userTextFormat = UserTextFormat::where('web_user_id', $current_user_id)->first();
+        $text_format = "";//Default
+        if ($userTextFormat) {
+            $text_format = $userTextFormat->text_format;
+
+        }
+        foreach ($card_recipients as $recipient) {
+            if (isset($recipient->email) && !empty($recipient->email)) {
+                // send
+                $data = [];
+                $link = route('play', ['id' => $recipient->card_id, 'recipient_url' => $recipient->url]);
+
+                $data['name'] = $recipient->recipient_name;
+                $text_format_recipient = str_replace(
+                    ['[link]', '[recipient]'],
+                    [$link, $recipient->recipient_name],
+                    $text_format
+                );
+                $data['text_format'] = $text_format_recipient;
+                $data['card_link'] = $link;
+
+                Mail::to($recipient->email)->send(new SendCardToRecipient($data));
+            }
+        }
+        return response()->json(['success' => true, 'message' => 'Email sent']);
     }
 }

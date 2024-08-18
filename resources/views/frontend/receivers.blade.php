@@ -17,10 +17,10 @@
                 </button>
 
                 <!-- <button class="fl outline gray ml-10 elemid_xoga9" style="min-width: 72px;"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <font style="vertical-align: inherit;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <font style="vertical-align: inherit;">view</font>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </font>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </span></button> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <font style="vertical-align: inherit;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <font style="vertical-align: inherit;">view</font>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </font>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </span></button> -->
 
                 <div class="title"><span wudooh="true"
                         style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
@@ -87,21 +87,21 @@
                                 </svg></div>
                         </div>
                         <!-- <div class="row cats" style="display: flex;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="cat mb-5 ml-5" style="background-color: rgb(123, 160, 1);"><span
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    wudooh="true"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <font style="vertical-align: inherit;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <font style="vertical-align: inherit;">bride's family</font>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </font>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </span></div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="cat mb-5 ml-5" style="background-color: rgb(210, 58, 2);"><span
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    wudooh="true"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <font style="vertical-align: inherit;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <font style="vertical-align: inherit;">groom's family</font>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </font>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </span></div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="cat mb-5 ml-5" style="background-color: rgb(123, 160, 1);"><span
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        wudooh="true"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <font style="vertical-align: inherit;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <font style="vertical-align: inherit;">bride's family</font>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </font>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </span></div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="cat mb-5 ml-5" style="background-color: rgb(210, 58, 2);"><span
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        wudooh="true"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <font style="vertical-align: inherit;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <font style="vertical-align: inherit;">groom's family</font>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </font>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </span></div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div> -->
                         <div class="row info">
                             <div class="col">
                                 <div class="pic"><svg xmlns="http://www.w3.org/2000/svg"
@@ -224,13 +224,13 @@
                 </span></span>
         </div>
         <!-- <div class="option"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <path d="M22,3H2C0.91,3.04 0.04,3.91 0,5V19C0.04,20.09 0.91,20.96 2,21H22C23.09,20.96 23.96,20.09 24,19V5C23.96,3.91 23.09,3.04 22,3M22,19H2V5H22V19M14,17V15.75C14,14.09 10.66,13.25 9,13.25C7.34,13.25 4,14.09 4,15.75V17H14M9,7A2.5,2.5 0 0,0 6.5,9.5A2.5,2.5 0 0,0 9,12A2.5,2.5 0 0,0 11.5,9.5A2.5,2.5 0 0,0 9,7M14,7V8H20V7H14M14,9V10H20V9H14M14,11V12H18V11H14">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </path>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <font style="vertical-align: inherit;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <font style="vertical-align: inherit;">Add from contacts</font>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </font>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </span></span></div> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <path d="M22,3H2C0.91,3.04 0.04,3.91 0,5V19C0.04,20.09 0.91,20.96 2,21H22C23.09,20.96 23.96,20.09 24,19V5C23.96,3.91 23.09,3.04 22,3M22,19H2V5H22V19M14,17V15.75C14,14.09 10.66,13.25 9,13.25C7.34,13.25 4,14.09 4,15.75V17H14M9,7A2.5,2.5 0 0,0 6.5,9.5A2.5,2.5 0 0,0 9,12A2.5,2.5 0 0,0 11.5,9.5A2.5,2.5 0 0,0 9,7M14,7V8H20V7H14M14,9V10H20V9H14M14,11V12H18V11H14">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </path>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <font style="vertical-align: inherit;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <font style="vertical-align: inherit;">Add from contacts</font>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </font>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </span></span></div> -->
         <div class="option" onclick="showhide('div_multiple_receiver_info',['receivers_list_options'])"><svg
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                 fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
@@ -268,14 +268,28 @@
                         <font style="vertical-align: inherit;">Text format</font>
                     </font>
                 </span></span></div>
+        <div class="option" onclick="hide_div('receivers_list_options');send_email_to_recipients();">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"
+                viewBox="0 0 512 512" class="icon">
+                <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+            </svg>
+
+            <span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Send email to recipient</font>
+                    </font>
+                </span></span>
+        </div>
         <!-- <div class="option"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <path d="M5.5,9A1.5,1.5 0 0,0 7,7.5A1.5,1.5 0 0,0 5.5,6A1.5,1.5 0 0,0 4,7.5A1.5,1.5 0 0,0 5.5,9M17.41,11.58C17.77,11.94 18,12.44 18,13C18,13.55 17.78,14.05 17.41,14.41L12.41,19.41C12.05,19.77 11.55,20 11,20C10.45,20 9.95,19.78 9.58,19.41L2.59,12.42C2.22,12.05 2,11.55 2,11V6C2,4.89 2.89,4 4,4H9C9.55,4 10.05,4.22 10.41,4.58L17.41,11.58M13.54,5.71L14.54,4.71L21.41,11.58C21.78,11.94 22,12.45 22,13C22,13.55 21.78,14.05 21.42,14.41L16.04,19.79L15.04,18.79L20.75,13L13.54,5.71Z">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </path>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <font style="vertical-align: inherit;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <font style="vertical-align: inherit;">Manage tags</font>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </font>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </span></span></div> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <path d="M5.5,9A1.5,1.5 0 0,0 7,7.5A1.5,1.5 0 0,0 5.5,6A1.5,1.5 0 0,0 4,7.5A1.5,1.5 0 0,0 5.5,9M17.41,11.58C17.77,11.94 18,12.44 18,13C18,13.55 17.78,14.05 17.41,14.41L12.41,19.41C12.05,19.77 11.55,20 11,20C10.45,20 9.95,19.78 9.58,19.41L2.59,12.42C2.22,12.05 2,11.55 2,11V6C2,4.89 2.89,4 4,4H9C9.55,4 10.05,4.22 10.41,4.58L17.41,11.58M13.54,5.71L14.54,4.71L21.41,11.58C21.78,11.94 22,12.45 22,13C22,13.55 21.78,14.05 21.42,14.41L16.04,19.79L15.04,18.79L20.75,13L13.54,5.71Z">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </path>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </svg><span><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <font style="vertical-align: inherit;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <font style="vertical-align: inherit;">Manage tags</font>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </font>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </span></span></div> -->
     </div>
 
     <div id="div_receiver_info" class="jetp-dialog-overlay show" style="display: none;">
@@ -310,74 +324,18 @@
                                     <font style="vertical-align: inherit;">Prefix</font>
                                 </font>
                             </span></div><select id="prefix">
-                            <option value=""><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">No prefix</font>
-                                    </font>
-                                </span></option>
-                            <option value="MS"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">MS</font>
-                                    </font>
-                                </span></option>
-                            <option value="Mr"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Mr</font>
-                                    </font>
-                                </span></option>
-                            <option value="Lady"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Lady</font>
-                                    </font>
-                                </span></option>
 
-                            <option value="Dedicated to"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Dedicated to</font>
-                                    </font>
-                                </span></option>
-                            <option value="I am a good student"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">I am a good student</font>
-                                    </font>
-                                </span></option>
-                            <option value="Dear family"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Dear family</font>
-                                    </font>
-                                </span></option>
-                            <option value="Honorable presence of Mr"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Honorable presence of Mr</font>
-                                    </font>
-                                </span></option>
-                            <option value="The honorable presence of Sarkar against"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">The honorable presence of Sarkar against
+                            @foreach ($prefix_options as $prefix)
+                                <option value="{{ $prefix['value'] }}"
+                                    {{ Str::lower($recipient->prefix) == Str::lower($prefix['value']) ? ' selected' : '' }}>
+                                    <span wudooh="true"
+                                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">{{ $prefix['value'] }}</font>
                                         </font>
-                                    </font>
-                                </span></option>
-                            <option value="Dear Mr"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Dear Mr</font>
-                                    </font>
-                                </span></option>
-                            <option value="At your service, Mrs"><span wudooh="true"
-                                    style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">At your service, Mrs</font>
-                                    </font>
-                                </span></option>
+                                    </span>
+                                </option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="jetp-cover-input m-20-10 mt-20">
@@ -400,7 +358,15 @@
                         <input type="hidden" name="cardid" id="recipient_cardid" value="{{ $cardId }}">
                         <input type="hidden" name="cardid" id="rec_recipient_id" value="">
                     </div>
-
+                    <div class="jetp-cover-input m-20-10 mt-20">
+                        <div class="label"><span wudooh="true"
+                                style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Email: (optional)</font>
+                                </font>
+                            </span></div><input type="email" name="recipient_email" id="recipient_email"
+                            maxlength="50" value="">
+                    </div>
                 </div>
             </div>
             <div class="jetp-footer p-20-10" style="display: flex;"><button class="success ml-10"
@@ -980,16 +946,16 @@
                     <div class="share-buttons mb-10" style="width: 238px;"><a class="share primary-color-bg"
                             href="https://digipostal.ir/app/receiver/cnwb2qq" style="display: none;"><svg
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1" fill="currentColor" width="24" height="24"
-                                viewBox="0 0 24 24" class="icon">
+                                version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"
+                                class="icon">
                                 <path
                                     d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z">
                                 </path>
                             </svg></a><a id="link_share_message" class="message"
                             href="sms://+989123244645/?body=%D8%AA%D9%82%D8%AF%DB%8C%D9%85%20%D8%A8%D9%87%20NADEEM%20IQBAL%20%D8%B9%D8%B2%DB%8C%D8%B2%0D%0A%D8%A7%DB%8C%D9%86%20%DA%A9%D8%A7%D8%B1%D8%AA%20%D9%BE%D8%B3%D8%AA%D8%A7%D9%84%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%B4%D9%85%D8%A7%20%D8%B3%D8%A7%D8%AE%D8%AA%D9%87%20%D8%B4%D8%AF%D9%87%20%D8%A7%D8%B3%D8%AA.%0D%0A%D8%A8%D8%B1%D8%A7%DB%8C%20%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87%20%D8%B1%D9%88%DB%8C%20%D9%84%DB%8C%D9%86%DA%A9%20%D8%B2%DB%8C%D8%B1%20%D8%A8%D8%B2%D9%86%DB%8C%D8%AF%0D%0Ahttps://DigiPostal.ir/x6z2vfy"><svg
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1" fill="currentColor" width="24" height="24"
-                                viewBox="0 0 24 24" class="icon">
+                                version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"
+                                class="icon">
                                 <path
                                     d="M20,20H7A2,2 0 0,1 5,18V8.94L2.23,5.64C2.09,5.47 2,5.24 2,5A1,1 0 0,1 3,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20M8.5,7A0.5,0.5 0 0,0 8,7.5V8.5A0.5,0.5 0 0,0 8.5,9H18.5A0.5,0.5 0 0,0 19,8.5V7.5A0.5,0.5 0 0,0 18.5,7H8.5M8.5,11A0.5,0.5 0 0,0 8,11.5V12.5A0.5,0.5 0 0,0 8.5,13H18.5A0.5,0.5 0 0,0 19,12.5V11.5A0.5,0.5 0 0,0 18.5,11H8.5M8.5,15A0.5,0.5 0 0,0 8,15.5V16.5A0.5,0.5 0 0,0 8.5,17H13.5A0.5,0.5 0 0,0 14,16.5V15.5A0.5,0.5 0 0,0 13.5,15H8.5Z">
                                 </path>
@@ -1271,7 +1237,13 @@
             var prefix = document.getElementById("prefix").value;
             var recipient_name = document.getElementById("recipient_name").value;
             var mobile_no = document.getElementById("mobile_no").value;
+            var email = document.getElementById("recipient_email").value;
             var recipient_id = document.getElementById("rec_recipient_id").value;
+
+            if (email != '' && email.length > 0 && validateEmail(email) == false) {
+                alert("Please enter valid email address.");
+                return;
+            }
 
             $.ajax({
                 url: "{{ url('mycards/save_recipient') }}",
@@ -1281,6 +1253,7 @@
                     prefix: prefix,
                     recipient_name: recipient_name,
                     mobile_no: mobile_no,
+                    email: email,
                     recipient_id: recipient_id,
                     _token: "{{ csrf_token() }}"
                 },
@@ -1289,6 +1262,7 @@
                     document.getElementById('prefix').value = '';
                     document.getElementById('recipient_name').value = '';
                     document.getElementById('mobile_no').value = '';
+                    document.getElementById("recipient_email").value = '';
                     document.getElementById('rec_recipient_id').value = '';
                     // Difference is of id div**rec**info with my_cards.blade.php
                     // document.getElementById('div_recipient_info').style.display = "none";
@@ -1307,7 +1281,13 @@
             var prefix = document.getElementById("prefix").value;
             var recipient_name = document.getElementById("recipient_name").value;
             var mobile_no = document.getElementById("mobile_no").value;
+            var email = document.getElementById("recipient_email").value;
             var recipient_id = document.getElementById("rec_recipient_id").value;
+
+            if (email != '' && email.length > 0 && validateEmail(email) == false) {
+                alert("Please enter valid email address.");
+                return;
+            }
 
             $.ajax({
                 url: "{{ url('mycards/save_recipient') }}",
@@ -1317,6 +1297,7 @@
                     prefix: prefix,
                     recipient_name: recipient_name,
                     mobile_no: mobile_no,
+                    email: email,
                     recipient_id: recipient_id,
                     _token: "{{ csrf_token() }}"
                 },
@@ -1326,6 +1307,7 @@
                     document.getElementById('recipient_name').value = '';
                     document.getElementById('mobile_no').value = '';
                     document.getElementById('rec_recipient_id').value = '';
+                    document.getElementById("recipient_email").value = '';
                 },
                 error: function(xhr, status, error) {
                     // Handle the error
@@ -1356,6 +1338,7 @@
                     document.getElementById('prefix').value = result.prefix;
                     document.getElementById('recipient_name').value = result.recipient_name;
                     document.getElementById('mobile_no').value = result.mobile_no;
+                    document.getElementById("recipient_email").value = result.email;
                     document.getElementById('rec_recipient_id').value = result.id;
                 },
                 error: function(xhr, status, error) {
@@ -1370,6 +1353,7 @@
             document.getElementById('prefix').value = '';
             document.getElementById('recipient_name').value = '';
             document.getElementById('mobile_no').value = '';
+            document.getElementById("recipient_email").value = '';
             document.getElementById('rec_recipient_id').value = '';
             document.getElementById('btn_recinfo_confirm_continue').style.display = 'block';
         }
@@ -1449,6 +1433,34 @@
             alert("Copied the text: " + copyText.value);
 
 
+        }
+
+        function send_email_to_recipients() {
+
+            var cardId = document.getElementById("recipient_cardid").value;
+            $.ajax({
+                url: "{{ url('mycards/send_email_to_recipients') }}",
+                type: "post",
+                data: {
+                    card_id: cardId,
+                    // recipient_id: current_selected_recipient_id,
+                    _token: "{{ csrf_token() }}"
+                },
+                success: function(result) {
+                    alert("Email sent to recipients");
+                },
+                error: function(xhr, status, error) {
+                    // Handle the error
+                    console.log('Error: ' + error);
+                }
+            });
+        }
+
+        //TODO: add in shared js
+        function validateEmail(email) {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            return emailPattern.test(email);
         }
     </script>
 @endsection

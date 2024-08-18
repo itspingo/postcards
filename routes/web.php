@@ -275,6 +275,7 @@ Route::get('mycards/receivers/{id}', [Mycards::class, 'receivers'])->middleware(
 Route::post('mycards/save_text_format', [Mycards::class, 'save_text_format'])->middleware(['auth'])->name('mycards.save_text_format');
 Route::get('mycards/recipient_detail/{id}', [Mycards::class, 'recipient_detail'])->middleware(['auth'])->name('mycards.recipient');
 Route::post('mycards/save_recipient_prefix/{id}', [Mycards::class, 'save_recipient_prefix'])->middleware(['auth'])->name('mycards.save_recipient_prefix');
+Route::post('mycards/send_email_to_recipients', [Mycards::class, 'send_email_to_recipients'])->middleware(['auth'])->name('mycards.send_email_to_recipients');
 
 Route::get('chargplan', [Chargplan::class, 'index'])->middleware(['auth'])->name('chargplan');
 Route::get('charge_cacelled', [Chargplan::class, 'charge_cacelled'])->middleware(['auth'])->name('charge_cacelled');
