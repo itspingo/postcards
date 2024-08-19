@@ -18,7 +18,42 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'client_id', 'user_id','web_user_id', 'name', 'email', 'email_verified_at', 'password', 'remember_token', 'created_at', 'updated_at', 'active', 'account_type', 'webside', 'username', 'country', 'state', 'city', 'street_address', 'zip_post_code', 'phone', 'bank_details', 'paypal_email_id', 'worldpay_id', 'nochex_email_id', '2checkout_account_number', 'skrill_email_address', 'skrill_seceret_word', 'paymate_username', 'sales_invoice_contents', 'subscribe_newsletter', 'agree_terms_condition','validation_code','browser_agent','login_date_time','login_ip'
+        'client_id',
+        'user_id',
+        'web_user_id',
+        'name',
+        'email',
+        'google_id',
+        'email_verified_at',
+        'password',
+        'remember_token',
+        'created_at',
+        'updated_at',
+        'active',
+        'account_type',
+        'webside',
+        'username',
+        'country',
+        'state',
+        'city',
+        'street_address',
+        'zip_post_code',
+        'phone',
+        'bank_details',
+        'paypal_email_id',
+        'worldpay_id',
+        'nochex_email_id',
+        '2checkout_account_number',
+        'skrill_email_address',
+        'skrill_seceret_word',
+        'paymate_username',
+        'sales_invoice_contents',
+        'subscribe_newsletter',
+        'agree_terms_condition',
+        'validation_code',
+        'browser_agent',
+        'login_date_time',
+        'login_ip'
     ];
 
     /**

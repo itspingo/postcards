@@ -78,6 +78,7 @@ use App\Http\Controllers\Backend\Card_Recipients;
 use App\Http\Controllers\Backend\Widgets_Ticket_Type;
 use App\Http\Controllers\Backend\Ticket_Types;
 use App\Http\Controllers\Backend\Music_Files;
+use Laravel\Socialite\Facades\Socialite;
 
 /*[[useControllerLine]]*/
 
@@ -176,6 +177,9 @@ Route::get('register', [Websiteauth::class, 'register'])->name('register');
 Route::post('postRegister', [Websiteauth::class, 'postRegister'])->name('register.post');
 Route::get('forgot', [Websiteauth::class, 'forgot'])->name('forgot');
 Route::post('postForgot', [Websiteauth::class, 'postForgot'])->name('forgot.post');
+Route::get('google/redirect', [Websiteauth::class, 'redirectToGoogle'])->name('google.redirect');
+Route::get('google/callback', [Websiteauth::class, 'handleGoogleCallback'])->name('google.callback');
+
 
 
 Route::get('categories', [Categories::class, 'index'])->name('categories');
