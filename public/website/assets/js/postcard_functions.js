@@ -421,7 +421,10 @@
 
 
 
-		function stopMusic(recno) {
+		function stopMusic(event, recno) {
+
+            if (typeof event != 'undefined' && event != null)
+                event.stopPropagation();
 			// alert('stop button is pressed');
 			// if (currentAudio) {
 				// var audio = currentAudio;
@@ -578,7 +581,7 @@
 			let alignmentState = document.getElementById('card_text_alignment').value;
 
 			// Create a Fabric text object
-			let fabricText = new fabric.Text(usrtxt, {
+			let fabricText = new fabric.IText(usrtxt, {
 				left: 100, // Adjust these values as needed
 				top: 100,  // Adjust these values as needed
 				fontFamily: selectedFont,
@@ -600,7 +603,7 @@
 			let vsamplename = document.getElementById('sample_name').value;
 			let vsamplenumber = document.getElementById('sample_number').value;
 
-			var textname = new fabric.Text(vsamplename, {
+			var textname = new fabric.IText(vsamplename, {
 			  left: 10,
 			  top: 10,
 			  //originX: 'center',
@@ -609,7 +612,7 @@
 			fabcanvas.add(textname);
 
 
-			var textnumber = new fabric.Text(vsamplenumber, {
+			var textnumber = new fabric.IText(vsamplenumber, {
 			  left: 10,
 			  top: 50,
 			  fontSize: 150,
@@ -622,6 +625,10 @@
 
 		}
 
+		function object_edit() {
+			fabcanvas.add(fabcanvas.getActiveObject());
+
+		}
 
 		function object_delete(){
 			var delit = confirm('Are you sure?');

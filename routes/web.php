@@ -264,6 +264,7 @@ Route::post('card_designer/updateRecipientName', [Card_designer::class, 'updateR
 Route::post('card_designer/updateSenderName', [Card_designer::class, 'updateSenderName'])->middleware(['auth'])->name('card_designer.updateSenderName');
 Route::post('card_designer/updateEnvelopDesign', [Card_designer::class, 'updateEnvelopDesign'])->middleware(['auth'])->name('card_designer.updateEnvelopDesign');
 Route::post('card_designer/updateEffects', [Card_designer::class, 'updateEffects'])->middleware(['auth'])->name('card_designer.updateEffects');
+Route::post('card_designer/updateMusic', [Card_designer::class, 'updateMusic'])->middleware(['auth'])->name('card_designer.updateMusic');
 Route::post('card_designer/saveCardObjects', [Card_designer::class, 'saveCardObjects'])->middleware(['auth'])->name('card_designer.saveCardObjects');
 Route::get('card_designer/store_card/{id}', [Card_designer::class, 'store_card'])->middleware(['auth'])->name('card_designer.store_card');
 Route::get('get-canvas-image/{cardId}', [Card_designer::class, 'getCanvasImage'])->name('getCanvasImage');

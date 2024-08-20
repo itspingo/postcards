@@ -610,7 +610,7 @@
                         // Initialize Jcrop with updated settings
                         imageToCrop.Jcrop({
                             allowSelect: true, // Allow cropper to be selected
-                            setSelect: [50, 50, 200, 200], // Default selection
+                            setSelect: [50, 50, 200, newHeight - 20], // Default selection
                             onSelect: function(c) {
                                 size = {
                                     x: c.x,
@@ -763,8 +763,8 @@
             // var imageURL2 = imageURL;
 
             fabric.Image.fromURL(imageURL, function(img) {
-                img.scaleToHeight(300);
-                img.scaleToWidth(300);
+                img.scaleToHeight(100);
+                img.scaleToWidth(100);
                 fabcanvas.centerObject(img);
                 fabcanvas.add(img);
                 fabcanvas.renderAll();
@@ -971,19 +971,27 @@
                 //  //'http://127.0.0.1:8001/storage/Ethan_Sturock_Summer_Time.mp3';  //website_storage.''; // + musicfile.replace('public/', '');
                 var recno = musicfile.id;
                 // Add HTML for each music file
-                card_music_files += '<div class="item"> \
-                    					<div class="title no-wrap"> \
-                    						<span id="span_play_icon' + recno +
-                    '" ><i class="fas fa-play" style="margin-right: 8px; cursor: pointer;" onclick="playMusic(\'' +
-                    music_file + '\',\'' + recno + '\',\'' + musicfile.title + '\')"></i> </span>\
-                    						<span id="span_stop_icon' + recno +
-                    '" style="display:none;" ><i class="fas fa-stop" style="margin-right: 8px; cursor: pointer;" onclick="stopMusic(\'' +
-                    recno + '\')"></i> </span>\
-                    						<span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:\'Sahl Naskh\';">' +
+                card_music_files += '<div class="item" onclick="saveMusic(\'' + music_file + '\',\'' + musicfile
+                    .title +
+                    '\',' + recno +
+                    ')"> \
+                                                                                                                                                                        					<div class="title no-wrap"> \
+                                                                                                                                                                        						<span id="span_play_icon' +
+                    recno +
+                    '" ><i class="fas fa-play" style="margin-right: 8px; cursor: pointer;" onclick="playMusic(event,\'' +
+                    music_file + '\',\'' + recno + '\',\'' + musicfile.title +
+                    '\')"></i> </span>\
+                                                                                                                                                                        						<span id="span_stop_icon' +
+                    recno +
+                    '" style="display:none;" ><i class="fas fa-stop" style="margin-right: 8px; cursor: pointer;" onclick="stopMusic(event, \'' +
+                    recno +
+                    '\')"></i> </span>\
+                                                                                                                                                                        						<span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:\'Sahl Naskh\';">' +
                     musicfile
-                    .title + '</span> \
-                    					</div> \
-                    				</div>';
+                    .title +
+                    '</span> \
+                                                                                                                                                                        					</div> \
+                                                                                                                                                                        				</div>';
             });
 
             // Insert the constructed HTML into the DOM
@@ -993,7 +1001,9 @@
 
         var currentAudio = null;
 
-        function playMusic(musicFileUrl, recno, musicFileTitle) {
+        function playMusic(event, musicFileUrl, recno, musicFileTitle) {
+            if (typeof event != 'undefined' && event != null)
+                event.stopPropagation();
             var baseUrl = '{{ url('storage') }}';
             var vmusicFileUrl = baseUrl + '/' + musicFileUrl;
             // alert(vmusicFileUrl);
@@ -1004,6 +1014,28 @@
             document.getElementById('span_current_file_title').innerHTML = musicFileTitle;
             document.getElementById('span_play_icon' + recno).style.display = 'none';
             document.getElementById('span_stop_icon' + recno).style.display = 'inline';
+        }
+
+        function saveMusic(music_file, title, recno) {
+            hide_div('div_more_cardmusic');
+            $.ajax({
+                url: '{{ route('card_designer.updateMusic') }}', // Adjust the URL if necessary
+                type: 'POST',
+                data: {
+                    _token: '{{ csrf_token() }}',
+                    music_file: music_file,
+                    music_title: title,
+                    music_file_id: recno
+                },
+                success: function(response) {
+                    document.getElementById('span_current_file_title').innerHTML = title;
+                    console.log('Music updated successfully');
+                },
+                error: function(xhr, status, error) {
+                    console.log('Failed to update Music');
+                }
+            });
+
         }
 
         function saveCard() {
@@ -1572,16 +1604,18 @@
 
                 var count = editor.session.getLength();
 
-                // set height so that all code is visible
+                // set height so that all code is visible 
                 codeElem.style.minHeight = (14 * count) + 1 + 'px';
                 codeElem.style.height = (count) + 'rem';
 
-                button.onclick = function(ev) {
+                var itemDiv = group.closest(".item");
+                itemDiv.onclick = function(ev) {
 
                     ev.preventDefault();
 
                     try {
                         eval(editor.getValue());
+                        itemDiv.closest(".jetp-dialog-overlay").style.display = 'none';
                     } catch (e) {
                         console.error(e);
                     }

@@ -379,6 +379,7 @@ window.onload = function () {
 
       try {
         eval(editor.getValue());
+        console.log("effects")
       } catch (e) {
         console.error(e);
       }
