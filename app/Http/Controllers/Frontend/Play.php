@@ -87,6 +87,9 @@ class Play extends Controller
 
             // dD($data['sortedCollection']);
         }
+        if (request()->query('mode') == "old") {
+            return view('frontend/playcard_old', $data);
+        }
 
         return view('frontend/playcard', $data);
     }
