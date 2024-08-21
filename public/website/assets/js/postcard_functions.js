@@ -4,6 +4,28 @@
 		// let fabcanvas = new fabric.Canvas();
 		let fabcanvas = new fabric.Canvas('upper_canvas');
 
+		initCenteringGuidelines(fabcanvas);
+		initAligningGuidelines(fabcanvas);
+		var rect = new fabric.Rect({
+		width: 100,
+		height: 100,
+		fill: 'green',
+		originX:'center',
+		originY:'center',
+		left:fabcanvas.width/2,
+		top:fabcanvas.height/2,
+		});
+		var rect2 = new fabric.Rect({
+		width: 100,
+		height: 100,
+		fill: 'green',
+		originX:'center',
+		originY:'center',
+		left:fabcanvas.width/2,
+		top:fabcanvas.height/2,
+		});
+		fabcanvas.add(rect,rect2);
+
 		// let fabcanvasback = new fabric.Canvas('lower_canvas');
 		// alert('hi...2');
 		// let website_url = 'https://snoobix.com/demo/postcards/';
