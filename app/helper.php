@@ -1411,6 +1411,19 @@ function get_prefix_items()
     return $prefixes;
 }
 
+function get_card_recipient_card_status($val)
+{
+    switch ($val) {
+        case 1:
+            return "Not viewed";
+        case 2:
+            return "viewed";
+        default:
+            return "-";
+    }
+
+}
+
 function unique_id($l = 8)
 {
     return substr(md5(uniqid(mt_rand(), true)), 0, $l);

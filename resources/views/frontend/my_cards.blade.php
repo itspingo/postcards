@@ -310,6 +310,22 @@
                                                 </font>
                                             </span></span></div>
                                 </div>
+                                <div class="col cursor" onclick="show_card_stats({{ $mycard->id }});">
+                                    <div class="title">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Visit statistics</font>
+                                        </font>
+                                    </div>
+                                    <div class="detail"><svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor"
+                                            width="24" height="24" viewBox="0 0 24 24" class="icon"
+                                            style="width: 20px; height: 20px;">
+                                            <path
+                                                d="M12,17C10.89,17 10,16.1 10,15C10,13.89 10.89,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z">
+                                            </path>
+                                        </svg></div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -617,170 +633,266 @@
         </div>
     </div>
 
-    <style>
-        #div_messages {
-            padding: 15px;
-        }
+    <!-- CARD STATISTICS -->
+    <div id="div_card_stats_info" class="jetp-dialog-overlay show" style="display:none">
+        <div class="jetp-dialog auto-size small">
+            <div class="jetp-header">
+                <div class="jetp-back" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24"
+                        height="24" viewBox="0 0 24 24" class="icon localize">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                    </svg></div>
+                <div class="jetp-title no-wrap pr-20"><span wudooh="true"
+                        style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Card statistics</font>
+                        </font>
+                    </span></div>
+                <div style="display: none;"></div>
+                <div class="jetp-close"><svg xmlns="http://www.w3.org/2000/svg" onclick="hide_div('div_card_stats_info')"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24"
+                        height="24" viewBox="0 0 24 24" class="icon">
+                        <path
+                            d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+                        </path>
+                    </svg></div>
+            </div>
+            <div class="jetp-content nice-scrollbar">
+                <div class="jetp-receiver-dialog w-100" style="width: 615px;max-width:615px;">
+                    <div id="chart_stats"></div>
+                    <div class="jetp-cover-input m-20-10 mt-20">
+                    </div>
+                    <div class="jetp-cover-input m-20-10 mt-20">
+
+                    </div>
+                    <div class="jetp-cover-input m-20-10 mt-20">
+                    </div>
+
+                </div>
+            </div>
+            <div class="jetp-footer p-20-10" style="display: none;"></div>
+            <div class="jetp-loading-wrapper" style="display: none;">
+                <div class="spinner large"></div>
+            </div>
+
+        </div>
+        <style>
+            #div_messages {
+                padding: 15px;
+            }
 
 
-        .title {
-            font-weight: bold;
-            text-align: left;
-        }
+            .title {
+                font-weight: bold;
+                text-align: left;
+            }
 
-        .jetp-mycard {
-            margin-top: 15px;
-        }
-    </style>
+            .jetp-mycard {
+                margin-top: 15px;
+            }
+        </style>
 
-    <script>
-        function show_mycard_options(cardId) {
+        <script>
+            function show_mycard_options(cardId) {
 
-            document.getElementById("div_mycard_options" + cardId).style.display = "block";
-        }
+                document.getElementById("div_mycard_options" + cardId).style.display = "block";
+            }
 
-        function hide_mycard_options(cardId) {
+            function hide_mycard_options(cardId) {
 
-            document.getElementById("div_mycard_options" + cardId).style.display = "none";
+                document.getElementById("div_mycard_options" + cardId).style.display = "none";
 
-        }
+            }
 
 
-        function load_messages(cardId) {
-            // alert('card id: '+cardId);
-            $.ajax({
-                url: "{{ url('mycards/messages') }}" + "/" + cardId,
-                type: "get",
-                data: {
-                    cardid: cardId,
-                    _token: "{{ csrf_token() }}"
-                },
-                success: function(result) {
-                    // alert('Link added successfully');
-                    document.getElementById('div_messages_box').innerHTML = result;
-                    showhide('div_messages', ['div_cards']);
-                },
-                error: function(xhr, status, error) {
-                    // Handle the error
-                    console.log('Error: ' + error);
+            function load_messages(cardId) {
+                // alert('card id: '+cardId);
+                $.ajax({
+                    url: "{{ url('mycards/messages') }}" + "/" + cardId,
+                    type: "get",
+                    data: {
+                        cardid: cardId,
+                        _token: "{{ csrf_token() }}"
+                    },
+                    success: function(result) {
+                        // alert('Link added successfully');
+                        document.getElementById('div_messages_box').innerHTML = result;
+                        showhide('div_messages', ['div_cards']);
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle the error
+                        console.log('Error: ' + error);
+                    }
+                });
+            }
+
+
+            function show_card_share_popup(cardid) {
+
+                //Generate url
+
+                var url = "{{ url('play/') }}";
+                var recipient_url = url + "/" + cardid;
+
+                document.getElementById("textbox_share").value = recipient_url;
+                document.getElementById("link_view_card_share").href = recipient_url;
+
+                //update widgets url
+                var eitaa_link_url = "https://eitaa.com/share/url?url=" + encodeURIComponent(recipient_url);
+                document.getElementById('link_share_eitaa').href = eitaa_link_url;
+
+                var facebook_link_url = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(recipient_url);
+                document.getElementById('link_share_facebook').href = facebook_link_url;
+
+                var twitter_link_url = "https://twitter.com/share?text=" + encodeURIComponent(recipient_url) + "&url=" +
+                    encodeURIComponent(recipient_url);
+                document.getElementById('link_share_twitter').href = twitter_link_url;
+
+
+                var telegram_link_url = "https://telegram.me/share/url?text=" + encodeURIComponent(recipient_url) + "&url=" +
+                    encodeURIComponent(recipient_url);
+                document.getElementById('link_share_telegram').href = telegram_link_url;
+
+                var whatsapp_link_url = "whatsapp://send?text=" + encodeURIComponent(recipient_url);
+                document.getElementById('link_share_whatsapp').href = whatsapp_link_url;
+
+                var message_link_url = "sms://+123&body=" + encodeURIComponent(recipient_url);
+                document.getElementById('link_share_message').href = message_link_url;
+
+                document.getElementById("div_card_share").style.display = "flex";
+            }
+
+            function copy_from_textbox() {
+                var copyText = document.getElementById("textbox_share");
+
+                copyText.select();
+                copyText.setSelectionRange(0, 99999);
+
+                navigator.clipboard.writeText(copyText.value);
+
+                // Alert the copied text
+                alert("Copied the text: " + copyText.value);
+            }
+
+
+            function show_recipient_info(cardid) {
+                // alert('cardid: '+cardid);
+                document.getElementById("div_recipient_info").style.display = "flex";
+                document.getElementById("div_mycard_options" + cardid).style.display = "none";
+                document.getElementById("recipient_cardid").value = cardid;
+            }
+
+
+            function save_nclose_recipient() {
+                var cardId = document.getElementById("recipient_cardid").value;
+                var prefix = document.getElementById("prefix").value;
+                var recipient_name = document.getElementById("recipient_name").value;
+                var mobile_no = document.getElementById("mobile_no").value;
+
+                $.ajax({
+                    url: "{{ url('mycards/save_recipient') }}",
+                    type: "get",
+                    data: {
+                        cardid: cardId,
+                        prefix: prefix,
+                        recipient_name: recipient_name,
+                        mobile_no: mobile_no,
+                        _token: "{{ csrf_token() }}"
+                    },
+                    success: function(result) {
+                        // alert('Link added successfully');
+                        document.getElementById('prefix').value = '';
+                        document.getElementById('recipient_name').value = '';
+                        document.getElementById('mobile_no').value = '';
+                        document.getElementById('div_recipient_info').style.display = "none";
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle the error
+                        console.log('Error: ' + error);
+                    }
+                });
+            }
+
+            function save_ncontinue_recipient() {
+                var cardId = document.getElementById("recipient_cardid").value;
+                var prefix = document.getElementById("prefix").value;
+                var recipient_name = document.getElementById("recipient_name").value;
+                var mobile_no = document.getElementById("mobile_no").value;
+
+                $.ajax({
+                    url: "{{ url('mycards/save_recipient') }}",
+                    type: "get",
+                    data: {
+                        cardid: cardId,
+                        prefix: prefix,
+                        recipient_name: recipient_name,
+                        mobile_no: mobile_no,
+                        _token: "{{ csrf_token() }}"
+                    },
+                    success: function(result) {
+                        // alert('Link added successfully');
+                        document.getElementById('prefix').value = '';
+                        document.getElementById('recipient_name').value = '';
+                        document.getElementById('mobile_no').value = '';
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle the error
+                        console.log('Error: ' + error);
+                    }
+                });
+            }
+
+            function show_card_stats(selectedCardId) {
+                $.ajax({
+                    url: "{{ url('mycards/card_stats') }}",
+                    type: "post",
+                    data: {
+                        card_id: selectedCardId,
+                        _token: "{{ csrf_token() }}"
+                    },
+                    success: function(result) {
+                        render_chart(result);
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle the error
+                        console.log('Error: ' + error);
+                    }
+                });
+
+                function render_chart(data) {
+
+                    var options = {
+                        chart: {
+                            type: 'bar'
+                        },
+                        series: [{
+                            name: 'Count',
+                            data: [
+                                data.card_view_count,
+                                data.total_recipients,
+                                data.total_recipients_card_viewed
+                            ]
+                        }],
+                        xaxis: {
+                            categories: ['Card View Count', 'Total Recipients', 'Recipients Card Viewed']
+                        },
+                        title: {
+                            text: 'Card View and Recipients Data',
+                            align: 'center'
+                        }
+                    };
+
+
+                    var chart = new ApexCharts(document.querySelector("#chart_stats"), options);
+
+                    chart.render();
+
+                    document.getElementById("div_card_stats_info").style.display = "flex";
+
+
                 }
-            });
-        }
 
 
-        function show_card_share_popup(cardid) {
-
-            //Generate url
-
-            var url = "{{ url('play/') }}";
-            var recipient_url = url + "/" + cardid;
-
-            document.getElementById("textbox_share").value = recipient_url;
-            document.getElementById("link_view_card_share").href = recipient_url;
-
-            //update widgets url
-            var eitaa_link_url = "https://eitaa.com/share/url?url=" + encodeURIComponent(recipient_url);
-            document.getElementById('link_share_eitaa').href = eitaa_link_url;
-
-            var facebook_link_url = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(recipient_url);
-            document.getElementById('link_share_facebook').href = facebook_link_url;
-
-            var twitter_link_url = "https://twitter.com/share?text=" + encodeURIComponent(recipient_url) + "&url=" +
-                encodeURIComponent(recipient_url);
-            document.getElementById('link_share_twitter').href = twitter_link_url;
-
-
-            var telegram_link_url = "https://telegram.me/share/url?text=" + encodeURIComponent(recipient_url) + "&url=" +
-                encodeURIComponent(recipient_url);
-            document.getElementById('link_share_telegram').href = telegram_link_url;
-
-            var whatsapp_link_url = "whatsapp://send?text=" + encodeURIComponent(recipient_url);
-            document.getElementById('link_share_whatsapp').href = whatsapp_link_url;
-
-            var message_link_url = "sms://+123&body=" + encodeURIComponent(recipient_url);
-            document.getElementById('link_share_message').href = message_link_url;
-
-            document.getElementById("div_card_share").style.display = "flex";
-        }
-
-        function copy_from_textbox() {
-            var copyText = document.getElementById("textbox_share");
-
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-
-            navigator.clipboard.writeText(copyText.value);
-
-            // Alert the copied text
-            alert("Copied the text: " + copyText.value);
-        }
-
-
-        function show_recipient_info(cardid) {
-            // alert('cardid: '+cardid);
-            document.getElementById("div_recipient_info").style.display = "flex";
-            document.getElementById("div_mycard_options" + cardid).style.display = "none";
-            document.getElementById("recipient_cardid").value = cardid;
-        }
-
-
-        function save_nclose_recipient() {
-            var cardId = document.getElementById("recipient_cardid").value;
-            var prefix = document.getElementById("prefix").value;
-            var recipient_name = document.getElementById("recipient_name").value;
-            var mobile_no = document.getElementById("mobile_no").value;
-
-            $.ajax({
-                url: "{{ url('mycards/save_recipient') }}",
-                type: "get",
-                data: {
-                    cardid: cardId,
-                    prefix: prefix,
-                    recipient_name: recipient_name,
-                    mobile_no: mobile_no,
-                    _token: "{{ csrf_token() }}"
-                },
-                success: function(result) {
-                    // alert('Link added successfully');
-                    document.getElementById('prefix').value = '';
-                    document.getElementById('recipient_name').value = '';
-                    document.getElementById('mobile_no').value = '';
-                    document.getElementById('div_recipient_info').style.display = "none";
-                },
-                error: function(xhr, status, error) {
-                    // Handle the error
-                    console.log('Error: ' + error);
-                }
-            });
-        }
-
-        function save_ncontinue_recipient() {
-            var cardId = document.getElementById("recipient_cardid").value;
-            var prefix = document.getElementById("prefix").value;
-            var recipient_name = document.getElementById("recipient_name").value;
-            var mobile_no = document.getElementById("mobile_no").value;
-
-            $.ajax({
-                url: "{{ url('mycards/save_recipient') }}",
-                type: "get",
-                data: {
-                    cardid: cardId,
-                    prefix: prefix,
-                    recipient_name: recipient_name,
-                    mobile_no: mobile_no,
-                    _token: "{{ csrf_token() }}"
-                },
-                success: function(result) {
-                    // alert('Link added successfully');
-                    document.getElementById('prefix').value = '';
-                    document.getElementById('recipient_name').value = '';
-                    document.getElementById('mobile_no').value = '';
-                },
-                error: function(xhr, status, error) {
-                    // Handle the error
-                    console.log('Error: ' + error);
-                }
-            });
-        }
-    </script>
-@endsection
+            }
+        </script>
+    @endsection

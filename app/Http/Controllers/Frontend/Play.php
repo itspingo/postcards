@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
+use App\Events\CardWasViewed;
 use App\Http\Controllers\Controller;
 
 use App\Models\answer_attend_quest_model;
@@ -67,7 +68,18 @@ class Play extends Controller
                 $cardInfo->recepient_name = $recipient->recipient_name;
                 //Also pass recipient object
                 $data['card_recipient'] = $recipient;
+                // set card_status to be viewed if anyone who see other than user created. 
+                if (isset(auth()->user()->id) && auth()->user()->id == $cardInfo->web_user_id) {
+                } else {
+                    if ($recipient->card_status != 2) {
+                        $recipient->card_status = 2; //1=not viewed, 2=viewed
+                        $recipient->save();
+                    }
+                }
             }
+
+            //Update view count of card
+            CardWasViewed::dispatch($cardInfo);
 
             $mergedCollection = $widgetSeparators
                 ->merge($widgetLinks)

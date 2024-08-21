@@ -1647,6 +1647,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
     <script src="{{ url('website/assets/js/canvas-toBlob.js') }}"></script>
     <script src="{{ url('website/assets/js/jquery.Jcrop.min.js') }}"></script>
+    <script src="{{ url('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
+
 
 
     <script src="{{ url('website/assets/js/postcard_functions.js') }}"></script>

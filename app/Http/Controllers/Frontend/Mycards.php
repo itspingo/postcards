@@ -294,4 +294,24 @@ class Mycards extends Controller
         }
         return response()->json(['success' => true, 'message' => 'Email sent']);
     }
+
+    function card_stats(Request $request)
+    {
+        $current_user_id = auth()->user()->id;
+        $card_id = $request->input('card_id');
+        $card_recipients = card_recipients_model::where('card_id', $card_id)->with('card')->get();
+        $card_view_count = DB::table('views')->where([
+            ['view_type', '=', 'App\card_model'],
+            ['view_id', '=', $card_id]
+        ])->count();
+        $total_recipients_of_card = $card_recipients->count();
+        $total_recipients_viewed = DB::table("card_recipients")->where([
+            ['card_id', '=', $card_id],
+            ['card_status', '=', 2]
+        ])->count();
+
+        $data = ['card_view_count' => $card_view_count, 'total_recipients' => $total_recipients_of_card, 'total_recipients_card_viewed' => $total_recipients_viewed];
+
+        return response()->json($data);
+    }
 }
