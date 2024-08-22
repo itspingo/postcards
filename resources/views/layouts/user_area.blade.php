@@ -975,23 +975,23 @@
                     .title +
                     '\',' + recno +
                     ')"> \
-                                                                                                                                                                                        					<div class="title no-wrap"> \
-                                                                                                                                                                                        						<span id="span_play_icon' +
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            					<div class="title no-wrap"> \
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            						<span id="span_play_icon' +
                     recno +
                     '" ><i class="fas fa-play" style="margin-right: 8px; cursor: pointer;" onclick="playMusic(event,\'' +
                     music_file + '\',\'' + recno + '\',\'' + musicfile.title +
                     '\')"></i> </span>\
-                                                                                                                                                                                        						<span id="span_stop_icon' +
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            						<span id="span_stop_icon' +
                     recno +
                     '" style="display:none;" ><i class="fas fa-stop" style="margin-right: 8px; cursor: pointer;" onclick="stopMusic(event, \'' +
                     recno +
                     '\')"></i> </span>\
-                                                                                                                                                                                        						<span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:\'Sahl Naskh\';">' +
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            						<span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:\'Sahl Naskh\';">' +
                     musicfile
                     .title +
                     '</span> \
-                                                                                                                                                                                        					</div> \
-                                                                                                                                                                                        				</div>';
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            					</div> \
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            				</div>';
             });
 
             // Insert the constructed HTML into the DOM
@@ -1040,19 +1040,20 @@
 
         function saveCard() {
             // Set the canvas background to transparent
-            fabcanvas.backgroundColor = 'rgba(0, 0, 0, 0)';
+            // fabcanvas.backgroundColor = 'rgba(0, 0, 0, 0)';
+            fabcanvas.backgroundColor = 'rgba(255,255,255,1)';
 
-            // Serialize the Fabric canvas to JSON
-            var canvasJson = JSON.stringify(fabcanvas.toJSON());
 
             // Create a promise to handle the toBlob operation
             new Promise(function(resolve, reject) {
                 $('#upper_canvas').get(0).toBlob(function(blob) {
                     // saveAs(blob, "myIMG.png");
                     resolve(blob);
-                }, 'image/jpeg', 0.8); // You can adjust the quality here
+                }, 'image/png', 0.8); // You can adjust the quality here
             }).then(function(blob) {
 
+                // Serialize the Fabric canvas to JSON
+                var canvasJson = JSON.stringify(fabcanvas.toJSON());
 
                 var formData = new FormData();
                 formData.append('card_objects', canvasJson);

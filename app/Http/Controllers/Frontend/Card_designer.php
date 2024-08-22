@@ -961,7 +961,7 @@ class Card_designer extends Controller
                 $file = $request->file('card_image');
 
                 // Ensure a unique filename based on card ID
-                $imageName = 'card_image_' . $cardId . '.jpg';
+                $imageName = 'card_image_' . $cardId . '.png';
 
                 // Store the image in the 'public' disk under 'storage/app/public' directory
                 $path = $file->storeAs('public', $imageName);
