@@ -274,8 +274,10 @@ class Mycards extends Controller
             $text_format = $userTextFormat->text_format;
 
         }
+        $email_count = 0;
         foreach ($card_recipients as $recipient) {
             if (isset($recipient->email) && !empty($recipient->email)) {
+                $email_count++;
                 // send
                 $data = [];
                 $link = route('play', ['id' => $recipient->card_id, 'recipient_url' => $recipient->url]);
@@ -292,7 +294,10 @@ class Mycards extends Controller
                 Mail::to($recipient->email)->send(new SendCardToRecipient($data));
             }
         }
-        return response()->json(['success' => true, 'message' => 'Email sent']);
+        if ($email_count > 0)
+            return response()->json(['success' => true, 'message' => "Email sent to $email_count recipients."]);
+        else
+            return response()->json(['success' => true, 'message' => 'No email address found for recipient.']);
     }
 
     function card_stats(Request $request)
