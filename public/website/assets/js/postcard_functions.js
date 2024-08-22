@@ -847,7 +847,7 @@
 		// The object will be removed !
 		document.addEventListener('keydown', function(e) {
 			var keyCode = e.keyCode;
-			alert('key: ' + keyCode);
+			// alert('key: ' + keyCode);
 			if (keyCode == 46) { // 46 is the key code for DELETE
 			  console.log("Removing selected element on Fabric.js on DELETE key !");
 			  var activeObject = fabcanvas.getActiveObject();
