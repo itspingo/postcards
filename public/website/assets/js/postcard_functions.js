@@ -840,8 +840,9 @@
 		  document.getElementById(menu).style.display = "block";
 		  evt.currentTarget.className += " active";
 		}
-		document.getElementById("defaultOpen").click();
-
+		if (document.getElementById("defaultOpen")){
+			document.getElementById("defaultOpen").click();
+		}
 		// When the user selects a picture that has been added and press the DEL key
 		// The object will be removed !
 		document.addEventListener('keydown', function(e) {
