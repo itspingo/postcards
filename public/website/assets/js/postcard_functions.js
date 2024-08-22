@@ -24,7 +24,7 @@
 		left:fabcanvas.width/2,
 		top:fabcanvas.height/2,
 		});
-		fabcanvas.add(rect,rect2);
+		// fabcanvas.add(rect,rect2);
 
 		// let fabcanvasback = new fabric.Canvas('lower_canvas');
 		// alert('hi...2');
