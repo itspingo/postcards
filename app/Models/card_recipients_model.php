@@ -26,4 +26,8 @@ class card_recipients_model extends Model
     {
         return $this->belongsTo(cards_model::class, 'card_id');
     }
+    public function transactions()
+    {
+        return $this->belongsTo(transactions_model::class, 'id');
+    }
 }

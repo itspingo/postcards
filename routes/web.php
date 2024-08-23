@@ -282,6 +282,7 @@ Route::get('mycards/recipient_detail/{id}', [Mycards::class, 'recipient_detail']
 Route::post('mycards/save_recipient_prefix/{id}', [Mycards::class, 'save_recipient_prefix'])->middleware(['auth'])->name('mycards.save_recipient_prefix');
 Route::post('mycards/send_email_to_recipients', [Mycards::class, 'send_email_to_recipients'])->middleware(['auth'])->name('mycards.send_email_to_recipients');
 Route::post('mycards/card_stats', [Mycards::class, 'card_stats'])->middleware(['auth'])->name('mycards.card_stats');
+Route::post('mycards/deduct_bronze_stamp', [Mycards::class, 'deduct_bronze_stamp_for_recipient'])->middleware(['auth'])->name('mycards.deduct_bronze_stamp');
 
 Route::get('chargplan', [Chargplan::class, 'index'])->middleware(['auth'])->name('chargplan');
 Route::get('charge_cacelled', [Chargplan::class, 'charge_cacelled'])->middleware(['auth'])->name('charge_cacelled');
