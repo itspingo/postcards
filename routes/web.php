@@ -56,6 +56,8 @@ use App\Http\Controllers\Frontend\TicketCheckoutController;
 use App\Http\Controllers\Frontend\CardCheckoutController;
 use App\Http\Controllers\Frontend\Transactions;
 use App\Http\Controllers\Frontend\Receivers;
+use App\Http\Controllers\Frontend\Faqs;
+use App\Http\Controllers\Frontend\About;
 
 
 use App\Http\Controllers\Backend\Stickers;
@@ -296,6 +298,8 @@ Route::get('play/{id}/{recipient_url?}', [Play::class, 'index'])->name('play');
 Route::post('play/save_answers', [Play::class, 'save_answers'])->name('play.save_answers');
 
 // Route::get('shop_items', [Shop::class, 'index'])->name('shop');
+Route::get('faqs', [Faqs::class, 'index'])->name('faqs');
+Route::get('about', [About::class, 'index'])->name('about');
 
 // Route::get('/stripe', [StripeController::class, 'index'])->name('index');
 // Route::get('/stripe/checkout/{orderid}', [StripeController::class, 'checkout'])->name('frontend.stripe.checkout');
