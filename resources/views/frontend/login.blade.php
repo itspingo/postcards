@@ -80,11 +80,11 @@
               <div class="account_comment-box__form-inner">
                 <div class="account_comment-box__form-input">
                   <h2 class="account-title">Email address</h2>
-                  <input class="form-control bg-white" type="text" name="email" id="txtEmail" placeholder="Enter your email">
+                  <input class="form-control bg-white" type="text" name="email" id="txtEmail" placeholder="Enter your email" required>
                 </div>
                 <div class="account_comment-box__form-input">
-                  <h2 class="account-title">Password*</h2>
-                  <input class="form-control bg-white" type="text" name="password" id="txtPassword" placeholder="typepassword">
+                  <h2 class="account-title">Password *</h2>
+                  <input class="form-control bg-white" type="password" name="password" id="txtPassword" placeholder="typepassword" required>
                 </div>
                 <div class="account-condition-block">
                   <span class="account-condition"><input type="checkbox" id="checkbox">Remember me </span>

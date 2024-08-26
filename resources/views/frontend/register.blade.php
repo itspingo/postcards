@@ -76,8 +76,8 @@
                   <input class="form-control bg-white" type="text" name="email" id="email" placeholder="Enter your email">
                 </div>
                 <div class="account_comment-box__form-input">
-                  <h2 class="account-title">Password*</h2>
-                  <input class="form-control bg-white" type="text" name="password" id="password" placeholder="typepassword">
+                  <h2 class="account-title">Password *</h2>
+                  <input class="form-control bg-white" type="password" name="password" id="password" placeholder="typepassword">
                 </div>
                 <div class="account-condition-block">
                   <div id="item-list">

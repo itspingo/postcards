@@ -114,6 +114,8 @@ Route::get('backend/logout', [AuthController::class, 'logout'])->name('backend.l
 
 Route::get('backend/home', [HomeController::class, 'index'])->middleware(['auth'])->name('backend.home');
 
+
+
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
@@ -170,6 +172,7 @@ Route::post('newsletter/confirm/{recid}', [Newsletter::class, 'confirm'])->name(
 
 Route::get('/', [Website::class, 'index']);
 Route::get('home', [Website::class, 'index'])->name('home');
+Route::post('home/addto_favorites', [Website::class, 'addto_favorites'])->middleware(['auth'])->name('home.addto_favorites');
 Route::get('logout', [Websiteauth::class, 'logout'])->name('logout');
 
 Route::get('login', [Websiteauth::class, 'index'])->name('login');
@@ -187,7 +190,9 @@ Route::get('google/callback', [Websiteauth::class, 'handleGoogleCallback'])->nam
 Route::get('categories', [Categories::class, 'index'])->name('categories');
 Route::get('cardslist', [Cardslist::class, 'index'])->name('cardslist');
 Route::get('categorycards', [Categorycards::class, 'index'])->name('categorycards');
-Route::get('card', [Card::class, 'index'])->name('card');
+Route::get('card/{id}', [Card::class, 'index'])->name('card');
+Route::post('save_feedback', [Card::class, 'save_feedback'])->name('save_feedback');
+
 Route::get('blogs', [Blogs::class, 'index'])->name('blogs');
 Route::get('blog', [Blog::class, 'index'])->name('blog');
 
@@ -269,7 +274,10 @@ Route::post('card_designer/updateEffects', [Card_designer::class, 'updateEffects
 Route::post('card_designer/updateMusic', [Card_designer::class, 'updateMusic'])->middleware(['auth'])->name('card_designer.updateMusic');
 Route::post('card_designer/saveCardObjects', [Card_designer::class, 'saveCardObjects'])->middleware(['auth'])->name('card_designer.saveCardObjects');
 Route::get('card_designer/store_card/{id}', [Card_designer::class, 'store_card'])->middleware(['auth'])->name('card_designer.store_card');
+Route::get('card_designer/load_card/{id}', [Card_designer::class, 'load_card'])->middleware(['auth'])->name('card_designer.load_card');
 Route::get('get-canvas-image/{cardId}', [Card_designer::class, 'getCanvasImage'])->name('getCanvasImage');
+
+
 
 Route::get('mycards', [Mycards::class, 'index'])->middleware(['auth'])->name('mycards');
 Route::get('mycards/messages/{id}', [Mycards::class, 'card_messages'])->middleware(['auth'])->name('mycards.messages');
@@ -292,7 +300,7 @@ Route::get('charge_success', [Chargplan::class, 'charge_success'])->middleware([
 Route::get('transactions', [Transactions::class, 'index'])->middleware(['auth'])->name('transactions');
 
 
-
+ 
 
 Route::get('play/{id}/{recipient_url?}', [Play::class, 'index'])->name('play');
 Route::post('play/save_answers', [Play::class, 'save_answers'])->name('play.save_answers');

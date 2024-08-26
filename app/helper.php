@@ -1441,3 +1441,27 @@ function get_recipient_messages_count($cardId, $recipient_id)
     Log::info("memorial que count = " . $answer_memorial_ques_count);
     return $opt_ques_count + $text_ques_count + $attend_ques_count + $answer_memorial_ques_count;
 }
+
+if (!function_exists('isFavorited')) {
+    
+    function isFavorited($recId)
+    {
+        $favourites=[];
+        // Check if the user is logged in
+        if (Auth::check()) {
+            $favourites = DB::table('favourites')
+            ->where('active', '1')
+            ->where('card_id', $recId)
+            ->where('web_user_id', auth()->user()->id)
+            ->get();
+        }else{
+            return false;
+        }
+
+        if(count($favourites)>0){
+            return true;
+        }else{
+            return false; // User is not logged in
+        }
+    }
+}

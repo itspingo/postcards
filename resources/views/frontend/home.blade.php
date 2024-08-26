@@ -503,66 +503,107 @@
         @foreach ($mycards as $mycard)
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="course-card h-100">
-              <div class="course-card__image">
+              <div class="course-card__image" style="background-image: url({{ $mycard->background_image }})">
 
 
               
-            <div class="item is-desktop">
-                <div class="picture">
+              <div class="item is-desktop">
+                  <div class="picture" style="position: relative;">
 
-                    @if ($mycard->background_image)
-                    <div class="background lazy entered loaded" data-bg="{{ $mycard->background_image }}"
-                        data-bg-hidpi="{{ $mycard->background_image }}"
-                        style="background-color: rgb(163, 108, 66); background-image: url(&quot;{{ $mycard->background_image }}&quot;);"
-                        data-ll-status="loaded"></div>
-                    @else
-                    <div class="background lazy entered loaded"
-                        data-bg="/data/assets/background_thumbnails/61624_tn_1x.webp"
-                        data-bg-hidpi="/data/assets/background_thumbnails/61624_tn_2x.webp"
-                        style="background-color: rgb(163, 108, 66); background-image: url(&quot;/data/assets/background_thumbnails/61624_tn_1x.webp&quot;);"
-                        data-ll-status="loaded"></div>
-                    @endif
+                      @if ($mycard->background_image)
+                      <div class="background lazy entered loaded" data-bg="{{ $mycard->background_image }}"
+                          data-bg-hidpi="{{ $mycard->background_image }}"
+                          style="background-color: rgb(163, 108, 66); background-image: url(&quot;{{ $mycard->background_image }}&quot;);"
+                          data-ll-status="loaded"></div>
+                      @else
+                      <div class="background lazy entered loaded"
+                          data-bg="/data/assets/background_thumbnails/61624_tn_1x.webp"
+                          data-bg-hidpi="/data/assets/background_thumbnails/61624_tn_2x.webp"
+                          style="background-color: rgb(163, 108, 66); background-image: url(&quot;/data/assets/background_thumbnails/61624_tn_1x.webp&quot;);"
+                          data-ll-status="loaded"></div>
+                      @endif
 
-                    @if ($mycard->back_image)
-                    <img class="envelope lazy entered loaded" src="{{ $mycard->flap_image }}"
-                        style="width:150px; height:120px; transform: scaleY(-1); margin-bottom:98px;">
-                    <img class="envelope lazy entered loaded" src="{{ $mycard->envelop_inside_image }}"
-                        style="width:150px; height:200px; margin-bottom:20px;">
+                      @if ($mycard->back_image)
+                      <img class="envelope lazy entered loaded" src="{{ $mycard->flap_image }}"
+                          style="width:150px; height:120px; transform: scaleY(-1); margin-bottom:98px;">
+                      <img class="envelope lazy entered loaded" src="{{ $mycard->envelop_inside_image }}"
+                          style="width:150px; height:200px; margin-bottom:20px;">
 
-                    <img class="envelope lazy entered loaded" data-src="{{ $mycard->back_image }}"
-                        data-srcset="{{ $mycard->back_image }}" data-ll-status="loaded"
-                        srcset="{{ $mycard->back_image }}" src="{{ $mycard->back_image }}"
-                        style="width:150px; height:100px">
+                      <img class="envelope lazy entered loaded" data-src="{{ $mycard->back_image }}"
+                          data-srcset="{{ $mycard->back_image }}" data-ll-status="loaded"
+                          srcset="{{ $mycard->back_image }}" src="{{ $mycard->back_image }}"
+                          style="width:150px; height:100px">
 
-                    <img class="envelope lazy entered loaded"
-                        src="{{ url('website/assets/images/flap-shadow.png') }}"
-                        style="width:150px; height:200px; margin-bottom:98px;">
-                    @else
-                    <img class="envelope lazy entered loaded" width="200" height="269"
-                        data-src="{{ url('website/assets/images/1002.webp') }}"
-                        data-srcset="{{ url('website/assets/images/1002.webp') }}" data-ll-status="loaded"
-                        srcset="{{ url('website/assets/images/1002.webp') }}"
-                        src="{{ url('website/assets/images/1002.webp') }}">
-                    @endif
+                      <img class="envelope lazy entered loaded"
+                          src="{{ url('website/assets/images/flap-shadow.png') }}"
+                          style="width:150px; height:200px; margin-bottom:98px;">
+                      @else
+                      <img class="envelope lazy entered loaded" width="200" height="269"
+                          data-src="{{ url('website/assets/images/1002.webp') }}"
+                          data-srcset="{{ url('website/assets/images/1002.webp') }}" data-ll-status="loaded"
+                          srcset="{{ url('website/assets/images/1002.webp') }}"
+                          src="{{ url('website/assets/images/1002.webp') }}">
+                      @endif
 
-                    @if ($mycard->card_image)
-                    <div class="inner">
-                        <img class="card lazy front entered loaded" width="200" height="284"
-                            data-src="{{ url('storage/' . str_replace('public/', '', $mycard->card_image)) }}"
-                            data-ll-status="loaded"
-                            src="{{ url('storage/' . str_replace('public/', '', $mycard->card_image)) }}">
-                    </div>
-                    @else
-                    <div class="inner">
-                        <img class="card lazy front entered loaded" width="200" height="284"
-                            data-src="/userdata/thumb/B2405/29/n7eqfec7mfckfge.jpg" data-ll-status="loaded"
-                            src="{{ url('website/assets/images/n7eqfec7mfckfge.jpg') }}">
-                        <!-- <img class="card lazy back" width="200" height="284" data-src="" style="display: none;"> -->
-                    </div>
-                    @endif
-                    <div></div>
-                </div>
-            </div>
+                      @if ($mycard->card_image)
+                      <div class="inner">
+                          <img class="card lazy front entered loaded" width="200" height="284"
+                              data-src="{{ url('storage/' . str_replace('public/', '', $mycard->card_image)) }}"
+                              data-ll-status="loaded"
+                              src="{{ url('storage/' . str_replace('public/', '', $mycard->card_image)) }}">
+                      </div>
+                      @else
+                      <div class="inner">
+                          <img class="card lazy front entered loaded" width="200" height="284"
+                              data-src="/userdata/thumb/B2405/29/n7eqfec7mfckfge.jpg" data-ll-status="loaded"
+                              src="{{ url('website/assets/images/n7eqfec7mfckfge.jpg') }}">
+                          <!-- <img class="card lazy back" width="200" height="284" data-src="" style="display: none;"> -->
+                      </div>
+                      @endif
+
+                      <!-- Heart Icon  <i class="fas fa-heart"></i> -->
+                      <div class="heart-icon" style="position: absolute; top: 10px; right: 10px; z-index: 10;">
+                        @if(isFavorited($mycard->id))
+                          <i data-card-id="{{$mycard->id}}" class="fas fa-heart" style="color: red;   font-size: 24px; cursor: pointer;" onclick="addToFavorites({{ $mycard->id }})"></i>
+                        @else
+                          <i data-card-id="{{$mycard->id}}" class="far fa-heart" style="color: red;   font-size: 24px; cursor: pointer;" onclick="addToFavorites({{ $mycard->id }})"></i>
+                        @endif
+                      </div>
+
+                      <div></div>
+                  </div>
+              </div>
+
+              <script>
+                function addToFavorites(cardId) {
+                    $.ajax({
+                        url: '{{ url("home/addto_favorites") }}', // Use the named route
+                        type: 'POST',
+                        data: {
+                            card_id: cardId,
+                            _token: '{{ csrf_token() }}' // Include CSRF token for security
+                        },
+                        success: function(response) {
+                            if (response.success) {
+                                // Change the heart icon to filled
+                                var heartIcon = $('.heart-icon i[data-card-id="' + cardId + '"]'); //.removeClass('far fa-heart').addClass('fas fa-heart');
+                                // alert(response.message); // Optional: Show success message
+
+                            }if (heartIcon.hasClass('far fa-heart')) {
+                                // Change the heart icon to filled
+                                heartIcon.removeClass('far fa-heart').addClass('fas fa-heart');
+                            } else {
+                                // Change the heart icon to outlined
+                                heartIcon.removeClass('fas fa-heart').addClass('far fa-heart');
+                            }
+                        },
+                        error: function(xhr) {
+                            // Handle errors
+                            alert('An error occurred while adding to favorites. Please try again.');
+                        }
+                    });
+                }
+            </script>
 
 
 
@@ -571,17 +612,17 @@
               <div class="course-card__body">
                 <div class="course-card__meta">
                   <div class="course-card__meta-tag">
-                    <span>Digital Marketing</span>
-                    <span>942 cards</span>
+                    <span>{{'card category'}}</span>
+                    <span>2 comments</span>
                   </div>
                   <div class="course-card__meta-rating">
-                    <i class="fa-solid fa-star"></i>4.8
+                    <i class="fa-solid fa-star"></i>4
                   </div>
                 </div>
-                <h3 class="course-card__title">Digital marketing course gives you modern skills</h3>
+                <h3 class="course-card__title">{{$mycard->title}}</h3>
               </div>
               <div class="course-card__footer">
-                <a class='btn-masco btn-primary-l04 btn-shadow rounded-pill w-100 btn-shadow--reverse btn-shadow--reverse-center ' href='pricing-2.html'>Purchase only $10.00</a>
+                <a class='btn-masco btn-primary-l04 btn-shadow rounded-pill w-100 btn-shadow--reverse btn-shadow--reverse-center ' href="{{url('card_designer/load_card/'.$mycard->id)}}">Load This Card</a>
               </div>
             </div>
           </div>

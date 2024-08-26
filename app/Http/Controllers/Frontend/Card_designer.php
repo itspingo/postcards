@@ -13,7 +13,7 @@ use App\Models\stickers_model;
 use App\Models\backgrounds_model;
 use App\Models\envelop_inside_images_model;
 use App\Models\stamp_images_model;
-;
+
 use App\Models\stamp_designs_model;
 use App\Models\seal_designs_model;
 use App\Models\envelop_designs_model;
@@ -23,6 +23,19 @@ use App\Models\cards_model;
 use App\Models\ticket_types_model;
 use App\Models\transactions_model;
 
+use App\Models\widget_attend_quest_model;
+use App\Models\widget_contact_comm_model;
+use App\Models\widget_countdown_model;
+use App\Models\widget_image_model;
+use App\Models\widget_link_model;
+use App\Models\widget_memorial_model;
+use App\Models\widget_optional_question_model;
+use App\Models\widget_separator_model;
+use App\Models\widget_social_network_model;
+use App\Models\widget_text_question_model;
+use App\Models\widget_user_text_model;
+use App\Models\widget_video_model;
+use App\Models\widgets_ticket_type_model;
 
 use Illuminate\Broadcasting\Broadcasters\LogBroadcaster;
 
@@ -1325,6 +1338,157 @@ class Card_designer extends Controller
             }
         }
         return false;
+    }
+
+
+    // public function load_card($id){
+    //     // copy all records with loggedin user id
+        
+
+    //     $originalRecord = cards_model::find($id);
+    //     $newRecord = $originalRecord->replicate();
+    //     $newRecord->web_user_id = auth()->user()->id;
+    //     $newRecord->save();
+
+    //     $dbmodl = new DB_model();
+    //     $dbmodl->settable('widget_attend_quest');
+    //     $dbmodel_recs = $dbmodl->where(['card_id' => $id])->get();
+    //     foreach ($dbmodel_recs as $dbmodel_rec) {
+    //         $new_dbmodel_rec = $dbmodel_rec->replicate();
+    //         $new_dbmodel_rec->web_user_id = auth()->user()->id;
+    //         $new_dbmodel_rec->card_id = $dbmodel_rec->id;
+    //         $new_dbmodel_rec->save();
+    //     }
+
+    //     return redirect('card_designer/'.$newRecord->id);
+
+    // }
+   
+    public function load_card($id)
+    {
+        // Step 1: Retrieve the original card record
+        $originalCardRecord = cards_model::find($id);
+    
+        // Check if the original card record exists
+        if (!$originalCardRecord) {
+            return redirect()->back()->with('error', 'Original card record not found.');
+        }
+    
+        // Step 2: Create a copy of the card record
+        $newCardRecord = $originalCardRecord->replicate();
+        $newCardRecord->web_user_id = auth()->user()->id;
+        $newCardRecord->save();
+    
+        $originalAttendQuestRecords = widget_attend_quest_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_contact_comm_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_countdown_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_image_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_link_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_memorial_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_optional_question_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_separator_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_social_network_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_text_question_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_user_text_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widget_video_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        $originalAttendQuestRecords = widgets_ticket_type_model::where(['card_id' => $id])->get();
+        foreach ($originalAttendQuestRecords as $originalAttendQuestRecord) {
+            $newAttendQuestRecord = $originalAttendQuestRecord->replicate();
+            $newAttendQuestRecord->web_user_id = auth()->user()->id;
+            $newAttendQuestRecord->card_id = $newCardRecord->id;
+            $newAttendQuestRecord->save();
+        }
+
+        
+
+        
+    
+        // Step 5: Redirect to the card designer with the new card record's ID
+        return redirect('card_designer/' . $newCardRecord->id);
     }
 
 }
