@@ -100,6 +100,71 @@ class Card_designer extends Controller
         return view('frontend/card_designer/card_designer', $data);
     }
 
+    
+    //--------------------------------------------------------//
+
+    public function add_widget_card_title(Request $request)
+    {
+        // dd('you are here ... 123');
+        // $data['card_id'] = session()->get('sess_card_id');
+        $data['title'] = $request->post('title');
+        $data['short_descr'] = $request->post('short_descr');
+
+        // Retrieve the session variable for card ID
+        $recid = session()->get('sess_card_id');
+
+        $dbmodl = new DB_model();
+        $dbmodl->setTable('cards');
+        $dbmodl->setFillable(['title', 'short_descr']);
+
+        if (empty($recid)) {
+            // Create a new record if recid is empty
+            $recid = $dbmodl->create($data)->id;
+        } else {
+            // Update the existing record if recid is not empty
+            $recdata = $dbmodl->find($recid);
+
+            if ($recdata) { // Check if the record exists
+                // dd($data);
+                $recdata->fill($data);
+                $recdata->save();
+            } else {
+                // Handle the case where the record is not found
+                // You might want to throw an exception or log an error
+                throw new Exception("Record with ID {$recid} not found.");
+            }
+        }
+
+        // $data['recid_widget_link'] = $recid;
+        // $dbmodl_card = new DB_model();
+        // $dbmodl_card->setTable('cards')->where('id', session()->get('sess_card_id'))->update(['widget_link_id' => $recid]);
+        // $widgetView = view('frontend/formated_widgets/link', $data);
+
+        return $recdata;
+    }
+
+
+    public function edit_widget_card_title(Request $request)
+    {
+
+        // $data['card_id'] = session()->get('sess_card_id');
+        $data['title'] = $request->post('title');
+        $data['short_descr'] = $request->post('short_descr');
+
+        $recid = session()->get('sess_card_id');
+        // dd($recid);
+        $dbmodl = new DB_model();
+        $dbmodl->setTable('cards');
+        $recdata = $dbmodl->where('id', $recid)->first();
+        $recdata->fill($data);
+        $recdata->save();
+
+        return $recdata;
+    }
+
+   
+
+
     //--------------------------------------------------------//
 
     public function add_widget_link(Request $request)
@@ -962,31 +1027,57 @@ class Card_designer extends Controller
             $card_token_details = [];
             $tot_tokens_reqd = 0;
             $tokensAvailable = transactions_model::where('web_user_id', auth()->user()->id)->sum('tokens');
-
-            //Log::info('Card found:', ['card' => $card]);
-
+            
             // Update the card_objects column with JSON data
             $card->card_objects = $request->input('card_objects');
-            //Log::info('Card objects updated:', ['card_objects' => $card->card_objects]);
-
+            
             // Handle the uploaded image if present
             if ($request->hasFile('card_image') && $request->file('card_image')->isValid()) {
                 $file = $request->file('card_image');
-
+            
                 // Ensure a unique filename based on card ID
-                $imageName = 'card_image_' . $cardId . '.png';
-
-                // Store the image in the 'public' disk under 'storage/app/public' directory
-                $path = $file->storeAs('public', $imageName);
-                //Log::info('Image stored:', ['path' => $path]);
-
+                $imageName = 'card_image_' . $cardId . '.png'; // Save as PNG for transparency
+            
+                // Create a new image from the uploaded file
+                $image = imagecreatefromstring(file_get_contents($file->getRealPath()));
+            
+                // Check if the canvas background is provided
+                if ($request->input('canvas_background')) {
+                    // Get the background color from the request (assuming it's in hex format)
+                    $bgColorHex = $request->input('canvas_background');
+                    $bgColor = sscanf($bgColorHex, "#%02x%02x%02x");
+                    $backgroundColor = imagecolorallocate($image, $bgColor[0], $bgColor[1], $bgColor[2]);
+                } else {
+                    // Default to white background if no canvas background is provided
+                    $backgroundColor = imagecolorallocate($image, 255, 255, 255);
+                }
+            
+                // Create a new true color image with the same dimensions
+                $width = imagesx($image);
+                $height = imagesy($image);
+                $newImage = imagecreatetruecolor($width, $height);
+            
+                // Fill the new image with the background color
+                imagefill($newImage, 0, 0, $backgroundColor);
+            
+                // Copy the original image onto the new image
+                imagecopy($newImage, $image, 0, 0, 0, 0, $width, $height);
+            
+                // Save the new image as PNG
+                imagepng($newImage, storage_path('app/public/' . $imageName));
+            
+                // Clean up
+                imagedestroy($image);
+                imagedestroy($newImage);
+            
                 // Update the card_image column with the storage path
-                $card->card_image = $path;
+                $card->card_image = 'public/' . $imageName; // Store relative path
             } else {
-                //Log::info('No valid file received');
+                // Handle case where no valid file is received
             }
+            
+            // Set the user ID and save the card model with updated data
             $card->web_user_id = auth()->user()->id;
-            // Save the card model with updated data
             $card->save();
             //Log::info('Card saved successfully');
 

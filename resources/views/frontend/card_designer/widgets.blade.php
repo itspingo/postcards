@@ -3,6 +3,73 @@
 
  <!-- =============================== Widgets =============================== -->
 
+
+ <div id="div_widget_card_title" class="jetp-dialog-overlay show" style="display: flex;">
+     <div class="jetp-dialog auto-size small">
+         <div class="jetp-header">
+             <div class="jetp-back" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24"
+                     height="24" viewBox="0 0 24 24" class="icon localize">
+                     <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                 </svg></div>
+             <div class="jetp-title no-wrap pr-20"><span wudooh="true"
+                     style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                     <font style="vertical-align: inherit;">
+                         <font style="vertical-align: inherit;">Card Info</font>
+                     </font>
+                 </span></div>
+             <div style="display: none;"></div>
+             <div class="jetp-close"><svg xmlns="http://www.w3.org/2000/svg"
+                     onclick="hide_div('div_widget_card_title')" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"
+                     class="icon">
+                     <path
+                         d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+                     </path>
+                 </svg></div>
+         </div>
+         <div class="jetp-content nice-scrollbar">
+             <div class="w-100">
+                 <div class="jetp-cover-input m-20-10 mt-20">
+                     <div class="label"><span wudooh="true"
+                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                             <font style="vertical-align: inherit;">
+                                 <font style="vertical-align: inherit;">Title</font>
+                             </font>
+                         </span></div><input type="text" id="card_title" name="card_title" maxlength="150" value="{{$card_info->title ?? ''}}">
+                 </div>
+                 <div class="jetp-cover-input m-20-10 mt-20">
+                     <div class="label"><span wudooh="true"
+                             style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                             <font style="vertical-align: inherit;">
+                                 <font style="vertical-align: inherit;">Description</font>
+                             </font>
+                         </span></div>
+                         <textarea id="card_descr" name="card_descr" >{{$card_info->short_descr ?? ''}}</textarea>
+                 </div>
+                 <input type="hidden" name="widget_card_title_id" id="widget_card_title_id"  value="">
+             </div>
+         </div>
+         <div class="jetp-footer p-20-10" style="display: flex;">
+             <button class="success w-120px" onclick="add_widget_card_title()">
+                 <span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">
+                     <font style="vertical-align: inherit;">
+                         <font style="vertical-align: inherit;">confirmation</font>
+                     </font>
+                 </span></button>
+             <div id="div_btn_widget_question_delete">
+
+             </div>
+         </div>
+         <div class="jetp-loading-wrapper" style="display: none;">
+             <div class="spinner large"></div>
+         </div>
+     </div>
+ </div>
+
+
+
+
  <div id="div_widgets" class="jetp-dialog-overlay show" style="display: none;" dir="ltr">
      <div class="jetp-dialog medium" style="width: 600px;">
          <div class="jetp-header">
@@ -2911,6 +2978,54 @@
      }
 
      // ------------------------------------------------------------------  //
+
+
+
+     
+     function add_widget_card_title() {
+
+        
+
+        var vtitle = document.getElementById('card_title').value;
+        var vshort_descr = document.getElementById('card_descr').value;
+        
+
+        // alert('vtitle: '+vtitle+' ,vshort_descr: '+vshort_descr);
+
+        // document.getElementById('link_text').value = '';
+        // document.getElementById('link_url').value = '';
+        // document.getElementById('recid_widget_link').value = '';
+
+        // document.getElementById('widget_card_title').style.display = 'none';
+
+        $.ajax({
+            url: "{{ route('card_designer.add_widget_card_title') }}",
+            type: "post",
+            data: {
+                title: vtitle,
+                short_descr: vshort_descr,
+                _token: "{{ csrf_token() }}"
+            },
+            success: function(result) {
+                // // alert('Link added successfully');
+
+                // // Assuming 'result' contains the new HTML to be added
+                // var newHtml = '<div class="list-group-item">' + result + '</div>';
+                // // alert('recid_widget_link: '+recid_widget_link);
+                // if (recid_widget_link == '') {
+                //     $('#simpleList').append(newHtml);
+                // } else {
+                //     document.getElementById('div_widget_link' + recid_widget_link).innerHTML = newHtml;
+                // }
+
+                hide_div('div_widget_card_title');
+            },
+            error: function(xhr, status, error) {
+                // Handle the error
+                alert('Error adding / updating card info ' + error);
+            }
+        });
+    }
 
 
      function add_widget_link() {

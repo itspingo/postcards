@@ -201,6 +201,9 @@ Route::get('blog', [Blog::class, 'index'])->name('blog');
 Route::get('card_designer/{id}', [Card_designer::class, 'index'])->middleware(['auth'])->name('card_designer');
 Route::get('card_designer', [Card_designer::class, 'index'])->middleware(['auth'])->name('card_designer');
 
+Route::post('card_designer/add_widget_card_title', [Card_designer::class, 'add_widget_card_title'])->middleware(['auth'])->name('card_designer.add_widget_card_title');
+Route::post('card_designer/add_widget_card_title', [Card_designer::class, 'add_widget_card_title'])->middleware(['auth'])->name('card_designer.add_widget_card_title');
+
 Route::post('card_designer/add_widget_link', [Card_designer::class, 'add_widget_link'])->middleware(['auth'])->name('card_designer.add_widget_link');
 Route::post('card_designer/edit_widget_link', [Card_designer::class, 'edit_widget_link'])->middleware(['auth'])->name('card_designer.edit_widget_link');
 Route::post('card_designer/delete_widget_link', [Card_designer::class, 'delete_widget_link'])->middleware(['auth'])->name('card_designer.delete_widget_link');

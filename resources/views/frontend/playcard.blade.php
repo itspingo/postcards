@@ -238,6 +238,8 @@
 
                     </div>
                 </div>
+
+                
                 <!-- front container of letter -->
                 <div class="flip-card-front" style="position: relative;height:auto;">
                     <!-- image of person that shows after open the letter -->
@@ -293,11 +295,17 @@
         </div>
         <!-- Control Strip -->
         <div class="control-strip">
+            @if(count($card_info->music_file)
             <button id="playButton" class="music_btn"><i class="fas fa-play"
                     style="margin-right: 8px; cursor: pointer;"></i></button>
-            <button id="stopButton" class="music_btn" style="display:none;"><i class="fas fa-stop"
-                    style="margin-right: 8px; cursor: pointer;"></i></button>
+            <button id="stopButton" class="music_btn" style="display:none;"><i class="fas fa-stop" 
+                    style="margin-right: 8px; cursor: pointer;"></i></button>            
+           @endif
+            @if(count($card_info->widgetAttendQuest) > 0 || count($card_info->widgetMemorial) > 0 || count($card_info->widgetOptionalQuestion) > 0 || count($card_info->widgetTextQuestion) > 0)
             <button id="popupButton" class="details_btn">Event Information</button>
+           
+            @endif
+
             <!-- <button id="fullScreenButton"><i class="fa-solid fa-expand"></i></button> -->
         </div>
 
@@ -1155,7 +1163,14 @@
             }
         };
     </script>
+
+   
     <script>
+
+
+               
+
+
         document.addEventListener("DOMContentLoaded", () => {
             var duration = 15 * 1000;
             var animationEnd = Date.now() + duration;
@@ -1166,6 +1181,11 @@
                 zIndex: 0
             };
 
+
+            
+            
+
+
             function randomInRange(min, max) {
                 return Math.random() * (max - min) + min;
             }
@@ -1173,6 +1193,7 @@
             let style = false;
             let time = false;
             let logic = false;
+            let audio ;
 
             const changeStyle = async () => {
                 style = !style;
@@ -1183,7 +1204,19 @@
                     document.getElementById("imageFront3").style.zIndex = style ? "0" : "1";
                     nextStyle()
                 }, 300);
+                // alert('open letter completed');
+                // alert('{{ url('storage/' . str_replace('public/', '', $card_info->music_file)) }}');
+                @if($card_info->music_file)
+                    audio = new Audio('{{ url('storage/' . str_replace('public/', '', $card_info->music_file)) }}');
+                    audio.loop = true;
+                    audio.play();
+                    document.getElementById("playButton").style.display = "none";
+                    document.getElementById("stopButton").style.display = "block";
+                @endif
+
+
             };
+            
 
             const nextStyle = () => {
                 document.getElementById('span_sender_name').style.display = 'none';
@@ -1234,11 +1267,13 @@
                 }
             }
 
+            
+
             // Play/Stop Music
             const playButton = document.getElementById("playButton");
             const stopButton = document.getElementById("stopButton");
-            let audio = new Audio('{{ url('storage' . str_replace('public', '', $card_info->music_file)) }}');
-            audio.loop = true;
+            // audio = new Audio('{{ url('storage' . str_replace('public', '', $card_info->music_file)) }}');
+            // audio.loop = true;
 
             playButton.onclick = () => {
                 audio.play();
