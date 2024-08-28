@@ -1065,23 +1065,52 @@
 
                 // Send the FormData to your Laravel backend using an AJAX request
                 $.ajax({
-                    url: '{{ url('card_designer/saveCardObjects') }}',
-                    type: 'POST',
+                    url: "{{ url('card_designer/saveCardObjects') }}",
+                    type: "POST",
                     data: formData,
                     processData: false,
                     contentType: false,
                     success: function(response) {
-                        alert('Card is saved');
-                        console.log('Canvas objects saved successfully');
+                        alert("Card is saved");
+                        console.log("Canvas objects saved successfully");
+                        var formData2 = new FormData();
+                        formData2.append('_token', '{{ csrf_token() }}');
+
+                        $.ajax({
+                            url: "{{ url('card_designer/update_features') }}",
+                            type: "post",
+                            data: formData,
+                            processData: false,
+                            contentType: false,
+                            success: function(response) {  
+                                    console.log(response);                              
+                                    document.getElementById('card_features_list').innerHTML = response;
+                                    showhide('div_card_features',[]);
+                            },
+                            error: function(xhr, status, error) {
+                                console.log("Failed for update_features", error);
+                                console.log("XHR:", xhr);
+                                console.log("Status:", status);
+                            }
+                        });
+
+                      
+
+                        
                     },
                     error: function(xhr, status, error) {
-                        console.log('Failed to save canvas objects', error);
-                        console.log('XHR:', xhr);
-                        console.log('Status:', status);
+                        console.log("Failed to save canvas objects", error);
+                        console.log("XHR:", xhr);
+                        console.log("Status:", status);
                     }
                 });
+
+
+
+              
+
             }).catch(function(error) {
-                console.error('Error generating blob:', error);
+                console.error("Error generating blob:", error);
             });
         }
     </script>

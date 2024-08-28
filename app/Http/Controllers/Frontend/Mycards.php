@@ -122,6 +122,7 @@ class Mycards extends Controller
                 $recipient->mobile_no = $request->input('mobile_no');
                 $recipient->email = $request->input('email');
                 $recipient->save();
+                $this->deduct_bronze_stamp_for_recipient($recipient);
 
                 return response()->json(['success' => true, 'message' => 'Recipient saved successfully.']);
             } else {
@@ -136,6 +137,7 @@ class Mycards extends Controller
                 //Save only on create. Should not be called while updating.
                 // $recipient->url = unique_id();
                 $recipient->save();
+                $this->deduct_bronze_stamp_for_recipient($recipient);
 
                 return response()->json(['success' => true, 'message' => 'Recipient saved successfully.']);
             }
@@ -157,6 +159,7 @@ class Mycards extends Controller
                     $recipient->recipient_name = $recipient_name;
                     // $recipient->url = unique_id();
                     $recipient->save();
+                    $this->deduct_bronze_stamp_for_recipient($recipient);
                 }
             }
 
@@ -200,6 +203,7 @@ class Mycards extends Controller
             ])->first();
             if ($recipient) {
                 $recipient->delete();
+                $this->delete_trans($recipient);
             } else {
                 return response()->json(['success' => false, 'message' => 'Unknown option']);
             }
@@ -322,7 +326,7 @@ class Mycards extends Controller
         return response()->json($data);
     }
 
-    function deduct_bronze_stamp_for_recipient(Request $request)
+    function deduct_bronze_stamp_for_recipient($recipient_info=null, Request $request)
     {
         $ticket_type = 'Bronze'; //Bronze stamp
         $current_user_id = auth()->user()->id;
@@ -330,10 +334,10 @@ class Mycards extends Controller
         $tot_tokens_reqd = $ticket_type->tokens;
         $tokensAvailable = transactions_model::where([['web_user_id', $current_user_id], ['stamp_type', '=', $ticket_type->id]])->sum('tokens');
 
-        if ($tot_tokens_reqd <= $tokensAvailable) {
+        // if ($tot_tokens_reqd <= $tokensAvailable) {
             $card_token_detail = [
                 'web_user_id' => $current_user_id,
-                'feature' => 'recipient_name_on_card',
+                'feature' => 'recipient_added',
                 'stamp_type' => $ticket_type->ticket_type,
                 'tokens' => -$ticket_type->tokens
             ];
@@ -344,9 +348,13 @@ class Mycards extends Controller
             $card_recipient->url = unique_id();
             $card_recipient->save();
             return response()->json(['success' => true, 'message' => "Transaction successfull. You can share card with recipient now."]);
-        } else {
-            //send popup to show inventory increase.
-            return response()->json(['error' => true, 'error_code' => 'insufficient_balance', 'message' => "You need to buy stamp."]);
-        }
+        // } else {
+        //     //send popup to show inventory increase.
+        //     return response()->json(['error' => true, 'error_code' => 'insufficient_balance', 'message' => "You need to buy stamp."]);
+        // }
+    }
+
+    function delete_trans($recipient, Request $request){
+
     }
 }

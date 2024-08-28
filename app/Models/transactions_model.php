@@ -18,6 +18,8 @@ class transactions_model extends Model
         'tokens',
         'purchase_trans_id',
         'base_lang',
+        'card_id',
+        'recipient_id',
         'ticket_type_id',
         'active',
         'created_at',

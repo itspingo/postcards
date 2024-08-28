@@ -46,6 +46,7 @@ use App\Http\Controllers\Frontend\Categories;
 use App\Http\Controllers\Frontend\Website;
 use App\Http\Controllers\Frontend\Categorycards;
 use App\Http\Controllers\Frontend\Card;
+use App\Http\Controllers\Frontend\Capture;
 use App\Http\Controllers\Frontend\Blogs;
 use App\Http\Controllers\Frontend\Blog;
 use App\Http\Controllers\Frontend\Card_designer;
@@ -58,6 +59,8 @@ use App\Http\Controllers\Frontend\Transactions;
 use App\Http\Controllers\Frontend\Receivers;
 use App\Http\Controllers\Frontend\Faqs;
 use App\Http\Controllers\Frontend\About;
+use App\Http\Controllers\Frontend\My_favourites;
+use App\Http\Controllers\Frontend\My_fav_card;
 
 
 use App\Http\Controllers\Backend\Stickers;
@@ -278,6 +281,7 @@ Route::post('card_designer/updateMusic', [Card_designer::class, 'updateMusic'])-
 Route::post('card_designer/saveCardObjects', [Card_designer::class, 'saveCardObjects'])->middleware(['auth'])->name('card_designer.saveCardObjects');
 Route::get('card_designer/store_card/{id}', [Card_designer::class, 'store_card'])->middleware(['auth'])->name('card_designer.store_card');
 Route::get('card_designer/load_card/{id}', [Card_designer::class, 'load_card'])->middleware(['auth'])->name('card_designer.load_card');
+Route::post('card_designer/update_features', [Card_designer::class, 'update_features'])->middleware(['auth'])->name('card_designer.update_features');
 Route::get('get-canvas-image/{cardId}', [Card_designer::class, 'getCanvasImage'])->name('getCanvasImage');
 
 
@@ -296,6 +300,11 @@ Route::post('mycards/save_recipient_prefix/{id}', [Mycards::class, 'save_recipie
 Route::post('mycards/send_email_to_recipients', [Mycards::class, 'send_email_to_recipients'])->middleware(['auth'])->name('mycards.send_email_to_recipients');
 Route::post('mycards/card_stats', [Mycards::class, 'card_stats'])->middleware(['auth'])->name('mycards.card_stats');
 Route::post('mycards/deduct_bronze_stamp', [Mycards::class, 'deduct_bronze_stamp_for_recipient'])->middleware(['auth'])->name('mycards.deduct_bronze_stamp');
+
+Route::get('my_favourites', [My_favourites::class, 'index'])->middleware(['auth'])->name('my_favourites');
+Route::get('my_fav_card/{id}', [My_fav_card::class, 'index'])->middleware(['auth'])->name('my_fav_card');
+Route::get('capture/{id}', [Capture::class, 'index'])->middleware(['auth'])->name('capture');
+
 
 Route::get('chargplan', [Chargplan::class, 'index'])->middleware(['auth'])->name('chargplan');
 Route::get('charge_cacelled', [Chargplan::class, 'charge_cacelled'])->middleware(['auth'])->name('charge_cacelled');

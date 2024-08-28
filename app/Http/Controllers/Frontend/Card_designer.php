@@ -1091,6 +1091,7 @@ class Card_designer extends Controller
                     $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
                     array_push($card_token_details, [
                         'web_user_id' => auth()->user()->id,
+                        'card_id' => $cardId,
                         'feature' => 'Envelop Design',
                         'stamp_type' => $stamp_rec->ticket_type,
                         'tokens' => -$stamp_rec->tokens
@@ -1107,6 +1108,7 @@ class Card_designer extends Controller
                     $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
                     array_push($card_token_details, [
                         'web_user_id' => auth()->user()->id,
+                        'card_id' => $cardId,
                         'feature' => 'Seal Design',
                         'stamp_type' => $stamp_rec->ticket_type,
                         'tokens' => -$stamp_rec->tokens
@@ -1124,7 +1126,8 @@ class Card_designer extends Controller
                     $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
                     array_push($card_token_details, [
                         'web_user_id' => auth()->user()->id,
-                        'feature' => 'Envelop Design',
+                        'card_id' => $cardId,
+                        'feature' => 'Background Image',
                         'stamp_type' => $stamp_rec->ticket_type,
                         'tokens' => -$stamp_rec->tokens
                     ]);
@@ -1141,6 +1144,7 @@ class Card_designer extends Controller
                     $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
                     array_push($card_token_details, [
                         'web_user_id' => auth()->user()->id,
+                        'card_id' => $cardId,
                         'feature' => 'Envelop Inside Image',
                         'stamp_type' => $stamp_rec->ticket_type,
                         'tokens' => -$stamp_rec->tokens
@@ -1159,6 +1163,7 @@ class Card_designer extends Controller
                     $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
                     array_push($card_token_details, [
                         'web_user_id' => auth()->user()->id,
+                        'card_id' => $cardId,
                         'feature' => 'Stamp Image',
                         'stamp_type' => $stamp_rec->ticket_type,
                         'tokens' => -$stamp_rec->tokens
@@ -1176,6 +1181,7 @@ class Card_designer extends Controller
                     $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
                     array_push($card_token_details, [
                         'web_user_id' => auth()->user()->id,
+                        'card_id' => $cardId,
                         'feature' => 'Stamp Design',
                         'stamp_type' => $stamp_rec->ticket_type,
                         'tokens' => -$stamp_rec->tokens
@@ -1194,6 +1200,7 @@ class Card_designer extends Controller
                     $stamp_rec = $this->get_stamp_rec($ticket_types, $dbmodel_rec->ticket_type_id);
                     array_push($card_token_details, [
                         'web_user_id' => auth()->user()->id,
+                        'card_id' => $cardId,
                         'feature' => 'Music Selection',
                         'stamp_type' => $stamp_rec->ticket_type,
                         'tokens' => -$stamp_rec->tokens
@@ -1206,12 +1213,12 @@ class Card_designer extends Controller
 
             // dd('tot_tokens_reqd: '.$tot_tokens_reqd.' , tokenavailable: '.$tokensAvailable);
             // DB::enableQueryLog();
-            if ($tot_tokens_reqd <= $tokensAvailable) {
+            // if ($tot_tokens_reqd <= $tokensAvailable) {
+                transactions_model::where('card_id',$cardId)->whereIn('feature', ['Envelop Design','Seal Design','Background Image', 'Envelop Inside Image','Stamp Image','Stamp Design', 'Music Selection'])->delete();
                 foreach ($card_token_details as $card_token_detail) {
                     transactions_model::create($card_token_detail);
                 }
-
-            }
+            // }
 
 
 
@@ -1580,6 +1587,17 @@ class Card_designer extends Controller
     
         // Step 5: Redirect to the card designer with the new card record's ID
         return redirect('card_designer/' . $newCardRecord->id);
+    }
+
+    public function update_features(){
+        // dd('card id: '.session()->get('sess_card_id'));
+        //  DB::enableQueryLog();
+        $data['features'] = transactions_model::where('card_id',session()->get('sess_card_id'))->get();
+        
+        $data['tokensAvailable'] = transactions_model::where('web_user_id', auth()->user()->id)->sum('tokens');
+        //  dd(DB::getQueryLog());
+        // dd($data);
+        return view('frontend/card_designer/card_features',$data);
     }
 
 }

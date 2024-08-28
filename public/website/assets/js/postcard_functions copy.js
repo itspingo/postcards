@@ -296,7 +296,7 @@
 			fabcanvas.renderAll();
 		}
 		
-		
+		 
 		function object_copy(){
 			fabcanvas.getActiveObject().clone(function(cloned) {
 				_clipboard = cloned;

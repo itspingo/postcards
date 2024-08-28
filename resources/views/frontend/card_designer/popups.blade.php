@@ -1013,6 +1013,38 @@
 </div>
 
 
+<div id="div_card_features" class="jetp-dialog-overlay show" style="display: none;">
+    <div class="jetp-dialog small">
+        <div class="jetp-header">
+            <div class="jetp-back" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon localize">
+                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                </svg></div>
+            <div class="jetp-title no-wrap pr-20"><span wudooh="true" style="font-size:1.05em;line-height:1.1em;font-family:&quot;Sahl Naskh&quot;;">Card Features</div>
+            <div style="display: none;"></div>
+            <div class="jetp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="hide_div('div_card_features')" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="icon">
+                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="jetp-content nice-scrollbar">
+            <div class="jetp-sticker-dialog jetp-list-dialog">
+                <div class="jetp-category">
+
+                   <div id="card_features_list"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="jetp-footer p-20-10" style="display: none;"></div>
+        <div class="jetp-loading-wrapper" style="display: none;">
+            <div class="spinner large"></div>
+        </div>
+    </div>
+</div>
+
 
 <div id="div_effects" class="jetp-dialog-overlay show" style="display: none;">
     <div class="jetp-dialog small">

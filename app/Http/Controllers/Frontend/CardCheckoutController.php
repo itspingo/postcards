@@ -39,6 +39,17 @@ class CardCheckoutController extends Controller
                 ],
                 'quantity' => 1,
             ];
+        }elseif ($request->stampType === 'bronze') {
+            $lineItems[] = [
+                'price_data' => [
+                    'currency' => 'usd',
+                    'product_data' => [
+                        'name' => 'Silver Stamp',
+                    ],
+                    'unit_amount' => 1000, // $10.00
+                ],
+                'quantity' => 1,
+            ];
         }
 
         session()->put('sess_lineItems', $lineItems);
