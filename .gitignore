@@ -4,7 +4,6 @@ todos.txt
 app/Http/Controllers/Backend/Baseline/
 public/assets/templates/
 resources/views/designer/
-vendor/
 /.phpunit.cache
 /node_modules
 /public/build
