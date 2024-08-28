@@ -303,7 +303,7 @@ Route::post('mycards/deduct_bronze_stamp', [Mycards::class, 'deduct_bronze_stamp
 
 Route::get('my_favourites', [My_favourites::class, 'index'])->middleware(['auth'])->name('my_favourites');
 Route::get('my_fav_card/{id}', [My_fav_card::class, 'index'])->middleware(['auth'])->name('my_fav_card');
-Route::get('capture/{id}', [Capture::class, 'index'])->middleware(['auth'])->name('capture');
+Route::get('capture/{id}', [Capture::class, 'index'])->name('capture');
 
 
 Route::get('chargplan', [Chargplan::class, 'index'])->middleware(['auth'])->name('chargplan');
